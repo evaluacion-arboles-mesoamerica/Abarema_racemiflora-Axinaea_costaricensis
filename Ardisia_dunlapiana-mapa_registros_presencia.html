@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e67d032d7f3f4ff78dc9132b94b81d71 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e67d032d7f3f4ff78dc9132b94b81d71" ></div>
+        
+</body>
+<script>    
+    
+            var map_e67d032d7f3f4ff78dc9132b94b81d71 = L.map(
+                "map_e67d032d7f3f4ff78dc9132b94b81d71",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+
+            
+
+        
+    
+            var tile_layer_1118730f936f4e789896f7e033b83da5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+            var tile_layer_047de875a0ae44ed903ca048698b505c = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+            var circle_marker_5683a86ce4d24bc09e7b84b936247725 = L.circleMarker(
+                [8.475, -83.59200000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_a9c74348d38a4587a574ae6c8692efd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1facbbfce03542a3a17a3166c19911b3 = $(`<div id="html_1facbbfce03542a3a17a3166c19911b3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Corcovado Pavo Forest. <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1988-07-14 00:00:00+00:00 <strong>Recolectores:</strong> C. Kernan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_a9c74348d38a4587a574ae6c8692efd3.setContent(html_1facbbfce03542a3a17a3166c19911b3);
+        
+
+        circle_marker_5683a86ce4d24bc09e7b84b936247725.bindPopup(popup_a9c74348d38a4587a574ae6c8692efd3)
+        ;
+
+        
+    
+    
+            var circle_marker_54d26fb3adba4f75846661d37dd1e928 = L.circleMarker(
+                [8.67, -83.57],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_c32833993b23469c9b926da11c0b8e18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b5aa4f3406a4752bf25905db22d6f34 = $(`<div id="html_6b5aa4f3406a4752bf25905db22d6f34" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Osa Península, Rancho Quemado, ca.15 km W of Rincón; in bottom of S end of valley along Río Riyito. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-06-02 00:00:00+00:00 <strong>Recolectores:</strong> B. Hammel, G. Herrera, M. Chavarría & A. Solis <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c32833993b23469c9b926da11c0b8e18.setContent(html_6b5aa4f3406a4752bf25905db22d6f34);
+        
+
+        circle_marker_54d26fb3adba4f75846661d37dd1e928.bindPopup(popup_c32833993b23469c9b926da11c0b8e18)
+        ;
+
+        
+    
+    
+            var circle_marker_2b88bd69396e4d2f9e8c3cd1fa391ee6 = L.circleMarker(
+                [8.69, -83.48],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_2e7dd5da1647431ba62da5f359972465 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6babeb345fe14c4c8f7109fbe48dfe6b = $(`<div id="html_6babeb345fe14c4c8f7109fbe48dfe6b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Esquinas Experiment Station, sea level <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1949-04-16 00:00:00+00:00 <strong>Recolectores:</strong> P. H. Allen <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2e7dd5da1647431ba62da5f359972465.setContent(html_6babeb345fe14c4c8f7109fbe48dfe6b);
+        
+
+        circle_marker_2b88bd69396e4d2f9e8c3cd1fa391ee6.bindPopup(popup_2e7dd5da1647431ba62da5f359972465)
+        ;
+
+        
+    
+    
+            var circle_marker_9254dd8a8bd241d6a1c622e8ef4f1cf8 = L.circleMarker(
+                [8.6717, -83.5047],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_f245fdba2b1744339e44323c97306342 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17545e9943b243df853cc2d346640f62 = $(`<div id="html_17545e9943b243df853cc2d346640f62" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe.  Reserva Forestal Golfo Dulce; Rincón, cerca de Banegas Los Charcos, 1 km. al Este del centro del pueblo Banegas, Estación Biológica Los Charcos de Osa <strong>Elevación:</strong> 49.0 m  <strong>Fecha:</strong> 2009-07-15 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> J. M. Ricketson</div>`)[0];
+            popup_f245fdba2b1744339e44323c97306342.setContent(html_17545e9943b243df853cc2d346640f62);
+        
+
+        circle_marker_9254dd8a8bd241d6a1c622e8ef4f1cf8.bindPopup(popup_f245fdba2b1744339e44323c97306342)
+        ;
+
+        
+    
+    
+            var circle_marker_47cfaf3f2f094f5c88fe3a56602cfd3c = L.circleMarker(
+                [8.70083, -83.20167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_4187f6a560064edc8310217b6ebdd83e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e4747c5f4414f12b6dd2ee280c1787f = $(`<div id="html_4e4747c5f4414f12b6dd2ee280c1787f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, Puntarenas Province, Canton Golfito. Garden of Field Station La Gamba. <strong>Elevación:</strong> 80.0 m  <strong>Fecha:</strong> 2016-10-28 00:00:00+00:00 <strong>Recolectores:</strong> Berger,A. <strong>Identificadores:</strong> A. Berger 2016-10</div>`)[0];
+            popup_4187f6a560064edc8310217b6ebdd83e.setContent(html_4e4747c5f4414f12b6dd2ee280c1787f);
+        
+
+        circle_marker_47cfaf3f2f094f5c88fe3a56602cfd3c.bindPopup(popup_4187f6a560064edc8310217b6ebdd83e)
+        ;
+
+        
+    
+    
+            var circle_marker_0fded198872043149c56995e63688ff5 = L.circleMarker(
+                [8.68333, -83.21667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_80008447c90d48559a36a2ab2a8bc075 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d62cee78adc74bb0ae7e9e9192ca6def = $(`<div id="html_d62cee78adc74bb0ae7e9e9192ca6def" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Golfito. P.N. Piedras Blancas. Way from La Gamba to Golfito. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-10-20 00:00:00+00:00 <strong>Recolectores:</strong> Huber,W. & Weissenhofer,A. <strong>Identificadores:</strong> W. Huber & A. Weissenhofer (WU)</div>`)[0];
+            popup_80008447c90d48559a36a2ab2a8bc075.setContent(html_d62cee78adc74bb0ae7e9e9192ca6def);
+        
+
+        circle_marker_0fded198872043149c56995e63688ff5.bindPopup(popup_80008447c90d48559a36a2ab2a8bc075)
+        ;
+
+        
+    
+    
+            var circle_marker_8f34c1cc307644f2849f64c941aba284 = L.circleMarker(
+                [8.68, -83.56],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_9f0a7157c11241eb8dd0c7991c31399f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae295cfbbdfc43ff82099d462f0b157a = $(`<div id="html_ae295cfbbdfc43ff82099d462f0b157a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado, Estación Forestal, Finca Eloy Cubero <strong>Elevación:</strong> 230.0 m  <strong>Fecha:</strong> 1991-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Juan Marín <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_9f0a7157c11241eb8dd0c7991c31399f.setContent(html_ae295cfbbdfc43ff82099d462f0b157a);
+        
+
+        circle_marker_8f34c1cc307644f2849f64c941aba284.bindPopup(popup_9f0a7157c11241eb8dd0c7991c31399f)
+        ;
+
+        
+    
+    
+            var circle_marker_4b37d429f75d4609a1a853052aefdbf3 = L.circleMarker(
+                [8.66, -83.56],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_3d73cff55adc4421904493ae94908a96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdf366eb6e354e13ab1e394922f2c8db = $(`<div id="html_fdf366eb6e354e13ab1e394922f2c8db" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Osa Península, Rancho Quemado, ca. 15 km W of Rincón; in bottom of S end of valley along Río Riyito. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Gerardo Herrera Ch.|María Marta Chavarría|Ángel Solís <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_3d73cff55adc4421904493ae94908a96.setContent(html_fdf366eb6e354e13ab1e394922f2c8db);
+        
+
+        circle_marker_4b37d429f75d4609a1a853052aefdbf3.bindPopup(popup_3d73cff55adc4421904493ae94908a96)
+        ;
+
+        
+    
+    
+            var circle_marker_2529d52e9230495e86b15e5a3e4672c1 = L.circleMarker(
+                [8.46, -83.58],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_667c6709dda843d3acd27c8ae69a9667 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_885f2050ce8848bf82232ec3d48536ac = $(`<div id="html_885f2050ce8848bf82232ec3d48536ac" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Corcovado Sirena, Los Patos Forest <strong>Elevación:</strong> 25.5 m  <strong>Fecha:</strong> 1989-07-08 00:00:00+00:00 <strong>Recolectores:</strong> Christopher Kernan <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_667c6709dda843d3acd27c8ae69a9667.setContent(html_885f2050ce8848bf82232ec3d48536ac);
+        
+
+        circle_marker_2529d52e9230495e86b15e5a3e4672c1.bindPopup(popup_667c6709dda843d3acd27c8ae69a9667)
+        ;
+
+        
+    
+    
+            var circle_marker_f405e92a9bb64d9aa91d1e9e74a8fa01 = L.circleMarker(
+                [8.76, -83.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_27a4d806424949e7a1e712918db09736 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc74b2003a204e2392feec2a75ed55f7 = $(`<div id="html_cc74b2003a204e2392feec2a75ed55f7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado; Valle de Coto Colorado. Estación Esquinas, sendero a la Calathea <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-06-27 00:00:00+00:00 <strong>Recolectores:</strong> Marianela Segura|F. J. Quesada <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_27a4d806424949e7a1e712918db09736.setContent(html_cc74b2003a204e2392feec2a75ed55f7);
+        
+
+        circle_marker_f405e92a9bb64d9aa91d1e9e74a8fa01.bindPopup(popup_27a4d806424949e7a1e712918db09736)
+        ;
+
+        
+    
+    
+            var circle_marker_3fce6c79bc27477ebd467112676829f7 = L.circleMarker(
+                [8.45, -83.55],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_4031226ee6c8447ca9bd4024cfea7a19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91fe60e8b73646419236ad424999de09 = $(`<div id="html_91fe60e8b73646419236ad424999de09" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Corcovado Pavo Forest. Poorly drained lowland forest. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1988-07-14 00:00:00+00:00 <strong>Recolectores:</strong> Christopher Kernan <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_4031226ee6c8447ca9bd4024cfea7a19.setContent(html_91fe60e8b73646419236ad424999de09);
+        
+
+        circle_marker_3fce6c79bc27477ebd467112676829f7.bindPopup(popup_4031226ee6c8447ca9bd4024cfea7a19)
+        ;
+
+        
+    
+    
+            var circle_marker_f5a02d70789c4285b2ea8ef9559becc3 = L.circleMarker(
+                [8.69, -83.48],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_bb794d59c4914207901762ada0614d0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3eb9b94f71a24b9fa01b5b6a01731701 = $(`<div id="html_3eb9b94f71a24b9fa01b5b6a01731701" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Esquinas Experimnet Station. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1949-04-16 00:00:00+00:00 <strong>Recolectores:</strong> Paul H. Allen <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_bb794d59c4914207901762ada0614d0c.setContent(html_3eb9b94f71a24b9fa01b5b6a01731701);
+        
+
+        circle_marker_f5a02d70789c4285b2ea8ef9559becc3.bindPopup(popup_bb794d59c4914207901762ada0614d0c)
+        ;
+
+        
+    
+    
+            var circle_marker_a9c3809e33ff4230be5dfa39ac1578fd = L.circleMarker(
+                [8.7, -83.5833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_070f43a491ed414baeb5568be1e5546c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_234a57be02094cb78137a4cfa41434b4 = $(`<div id="html_234a57be02094cb78137a4cfa41434b4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Rancho Quemado. Tierra de los conservacionistas de Rancho <strong>Elevación:</strong> 425.0 m  <strong>Fecha:</strong> 1991-10-17 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_070f43a491ed414baeb5568be1e5546c.setContent(html_234a57be02094cb78137a4cfa41434b4);
+        
+
+        circle_marker_a9c3809e33ff4230be5dfa39ac1578fd.bindPopup(popup_070f43a491ed414baeb5568be1e5546c)
+        ;
+
+        
+    
+    
+            var circle_marker_a6ac217b0e024bc48d3598b4db2c8a91 = L.circleMarker(
+                [8.7667, -83.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_b965d817ad904ec6a50071623261c265 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2f1201b6ac04340815cb0f304287f3c = $(`<div id="html_f2f1201b6ac04340815cb0f304287f3c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Parque Nacional Corcovado, Valle de Coto Colorado, alrededores de la Estación Esquinas" <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-10-08 00:00:00+00:00 <strong>Recolectores:</strong> Marianela Segura <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_b965d817ad904ec6a50071623261c265.setContent(html_f2f1201b6ac04340815cb0f304287f3c);
+        
+
+        circle_marker_a6ac217b0e024bc48d3598b4db2c8a91.bindPopup(popup_b965d817ad904ec6a50071623261c265)
+        ;
+
+        
+    
+    
+            var circle_marker_30d8174899f94293b9088b3ebde39bae = L.circleMarker(
+                [8.7667, -83.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_e23a77a6334d47288b9dfad48f869b19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eea762516e4a4e339619cc7bfe63f7f0 = $(`<div id="html_eea762516e4a4e339619cc7bfe63f7f0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Parque Nacional Corcovado, Valle de Coto Colorado, Estación Esquinas. Sección Esquinas" <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-08-25 00:00:00+00:00 <strong>Recolectores:</strong> Marianela Segura <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_e23a77a6334d47288b9dfad48f869b19.setContent(html_eea762516e4a4e339619cc7bfe63f7f0);
+        
+
+        circle_marker_30d8174899f94293b9088b3ebde39bae.bindPopup(popup_e23a77a6334d47288b9dfad48f869b19)
+        ;
+
+        
+    
+    
+            var circle_marker_eb196fac2d114a4baea23a9e8d3a8e06 = L.circleMarker(
+                [8.7, -83.5167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_c34f7c29ec864a249fb1237d0d170839 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a75b99ef7d849ca80dc2510e3368f7f = $(`<div id="html_9a75b99ef7d849ca80dc2510e3368f7f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Osa Peninsula, Aguabuena, 3.5 km W of Rincón, at trail N of the house of don Quecho, W of BOSCOSA station" <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1994-10-06 00:00:00+00:00 <strong>Recolectores:</strong> Karsten Thomsen <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_c34f7c29ec864a249fb1237d0d170839.setContent(html_9a75b99ef7d849ca80dc2510e3368f7f);
+        
+
+        circle_marker_eb196fac2d114a4baea23a9e8d3a8e06.bindPopup(popup_c34f7c29ec864a249fb1237d0d170839)
+        ;
+
+        
+    
+    
+            var circle_marker_ac4ab0a5394b4c34a85216cb76bf344e = L.circleMarker(
+                [8.821660000000001, -83.18966],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_d2afebcb74e54ae582e9c9b972d1119a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_709ff78e13244551be5c7703ee319cbc = $(`<div id="html_709ff78e13244551be5c7703ee319cbc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Fila Costeña, Fila Cruces Cabeceras del Río Piedras Blancas" <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1994-05-12 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_d2afebcb74e54ae582e9c9b972d1119a.setContent(html_709ff78e13244551be5c7703ee319cbc);
+        
+
+        circle_marker_ac4ab0a5394b4c34a85216cb76bf344e.bindPopup(popup_d2afebcb74e54ae582e9c9b972d1119a)
+        ;
+
+        
+    
+    
+            var circle_marker_f7b1a53f4ac94a988b1b5cd888fdcb5e = L.circleMarker(
+                [8.73333, -83.436],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_9f952ed6a4be4559ae910bfbfd7e6185 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d2b254ef0844f608cff8e20439406c6 = $(`<div id="html_0d2b254ef0844f608cff8e20439406c6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Distrito Sierpe, Reserva Forestal Golfo Dulce, Mogos, a 33 km de Chacarita, entrada San Luis ca. de la Quebrada Chal, finca de Isidro Mora" <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2001-10-24 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_9f952ed6a4be4559ae910bfbfd7e6185.setContent(html_0d2b254ef0844f608cff8e20439406c6);
+        
+
+        circle_marker_f7b1a53f4ac94a988b1b5cd888fdcb5e.bindPopup(popup_9f952ed6a4be4559ae910bfbfd7e6185)
+        ;
+
+        
+    
+    
+            var circle_marker_17cdfb4687cf4aa49cbb2e9c2c7c113f = L.circleMarker(
+                [8.671660000000001, -83.50466],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_8a104637db1f47b198edf79343af6c74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2999f9f03f934ce18ac5f937513c393b = $(`<div id="html_2999f9f03f934ce18ac5f937513c393b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Distrito Sierpe, Reserva Forestal Golfo Dulce, Rincón, cerca de Banegas Los Charcos, 1 km al Este del centro del pueblo Banegas, Estacuión Biológica Los Charcos de Osa" <strong>Elevación:</strong> 49.0 m  <strong>Fecha:</strong> 2009-07-15 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_8a104637db1f47b198edf79343af6c74.setContent(html_2999f9f03f934ce18ac5f937513c393b);
+        
+
+        circle_marker_17cdfb4687cf4aa49cbb2e9c2c7c113f.bindPopup(popup_8a104637db1f47b198edf79343af6c74)
+        ;
+
+        
+    
+    
+            var circle_marker_e5ca627e00cd4399837d5dfc2346e5eb = L.circleMarker(
+                [8.66083, -83.71383],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_a44302c87b2d43bea865cbf6a9ca2cab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98d4954872a949a4b0a82a10f7997365 = $(`<div id="html_98d4954872a949a4b0a82a10f7997365" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Reserva Forestal Golfo Dulce. Península de Osa, Playa Campanario o San Josecito, Sierpe" <strong>Elevación:</strong> 5.5 m  <strong>Fecha:</strong> 1991-06-20 00:00:00+00:00 <strong>Recolectores:</strong> Patrick K. Harmon <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_a44302c87b2d43bea865cbf6a9ca2cab.setContent(html_98d4954872a949a4b0a82a10f7997365);
+        
+
+        circle_marker_e5ca627e00cd4399837d5dfc2346e5eb.bindPopup(popup_a44302c87b2d43bea865cbf6a9ca2cab)
+        ;
+
+        
+    
+    
+            var circle_marker_ad97239f59584bf88e57caaaf0f008a7 = L.circleMarker(
+                [8.75833, -83.26183],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_a241e3a4a21d4f6bb239fe7d9a0f5a17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a97141b237524c6281ca62dad16a5835 = $(`<div id="html_a97141b237524c6281ca62dad16a5835" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Parque Nacional Piedras Blancas, Seranías de Golfito, Río Esquinas, Sendero Quebrada Arena" <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1998-05-07 00:00:00+00:00 <strong>Recolectores:</strong> Eida Fletes <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_a241e3a4a21d4f6bb239fe7d9a0f5a17.setContent(html_a97141b237524c6281ca62dad16a5835);
+        
+
+        circle_marker_ad97239f59584bf88e57caaaf0f008a7.bindPopup(popup_a241e3a4a21d4f6bb239fe7d9a0f5a17)
+        ;
+
+        
+    
+    
+            var circle_marker_d26d53021eb3461d866697d99a74d5fa = L.circleMarker(
+                [8.75, -83.434722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_86788af1850848059e4d9eca7bd1d9c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa625aae2db64a1ba14e4f549ee4b604 = $(`<div id="html_fa625aae2db64a1ba14e4f549ee4b604" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito Sierpe.  Reserva Forestal Golfo Dulce; Mogos, a 33 km de Chacarita Entrada de San Luis, fin del camino, antes de llegar a la finca de Luis Miejia. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2001-10-24 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_86788af1850848059e4d9eca7bd1d9c6.setContent(html_fa625aae2db64a1ba14e4f549ee4b604);
+        
+
+        circle_marker_d26d53021eb3461d866697d99a74d5fa.bindPopup(popup_86788af1850848059e4d9eca7bd1d9c6)
+        ;
+
+        
+    
+    
+            var circle_marker_39b785c76cc4401db7441f4f4e3fad12 = L.circleMarker(
+                [8.662222, -83.199722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_3685f8c97d53453593bd45be5c3e849d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a1cb011fc1f429dbaaea03fbd121ab2 = $(`<div id="html_0a1cb011fc1f429dbaaea03fbd121ab2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Montura, Sendero La Gamba. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2000-06-12 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_3685f8c97d53453593bd45be5c3e849d.setContent(html_0a1cb011fc1f429dbaaea03fbd121ab2);
+        
+
+        circle_marker_39b785c76cc4401db7441f4f4e3fad12.bindPopup(popup_3685f8c97d53453593bd45be5c3e849d)
+        ;
+
+        
+    
+    
+            var circle_marker_87cfaf5b629e42fe8c48044494fa284c = L.circleMarker(
+                [8.662222, -83.199722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_e8465011dc7246d89a15799986b94bc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5248f9d3ee85428ebdc416d610c223bd = $(`<div id="html_5248f9d3ee85428ebdc416d610c223bd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Montura, Sendero La Gamba. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2000-06-12 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_e8465011dc7246d89a15799986b94bc2.setContent(html_5248f9d3ee85428ebdc416d610c223bd);
+        
+
+        circle_marker_87cfaf5b629e42fe8c48044494fa284c.bindPopup(popup_e8465011dc7246d89a15799986b94bc2)
+        ;
+
+        
+    
+    
+            var circle_marker_cf2fd5800b2b4d3cb1343951797ac2a0 = L.circleMarker(
+                [8.662222, -83.199722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_f3289c4180034022be5fb64f91512034 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5946f27c3b524bbfbc745cf9d1ff43c3 = $(`<div id="html_5946f27c3b524bbfbc745cf9d1ff43c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Montura, Sendero La Gamba. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2000-06-12 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_f3289c4180034022be5fb64f91512034.setContent(html_5946f27c3b524bbfbc745cf9d1ff43c3);
+        
+
+        circle_marker_cf2fd5800b2b4d3cb1343951797ac2a0.bindPopup(popup_f3289c4180034022be5fb64f91512034)
+        ;
+
+        
+    
+    
+            var circle_marker_0f8b27e129824701bc0834afde8ff3f7 = L.circleMarker(
+                [8.662222, -83.199722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_2b34598d8dc54aee9e23be7bb6f42190 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b24a81d18ab49a78ad996a552931f60 = $(`<div id="html_9b24a81d18ab49a78ad996a552931f60" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Montura, Sendero La Gamba. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 2000-06-12 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Gerardo Soto ; Geovanny Sancho <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_2b34598d8dc54aee9e23be7bb6f42190.setContent(html_9b24a81d18ab49a78ad996a552931f60);
+        
+
+        circle_marker_0f8b27e129824701bc0834afde8ff3f7.bindPopup(popup_2b34598d8dc54aee9e23be7bb6f42190)
+        ;
+
+        
+    
+    
+            var circle_marker_480ac09a8bf94168b1f61b6041222cac = L.circleMarker(
+                [8.758458000000001, -83.262222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_9045508de4124d73bf0b2b6a65683d72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5baeef19aa064be1b2b935c35ee4a676 = $(`<div id="html_5baeef19aa064be1b2b935c35ee4a676" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas. Río Esquinas.  Sendero a quebrada Arena. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1998-05-07 00:00:00+00:00 <strong>Recolectores:</strong> Eida Fletes <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_9045508de4124d73bf0b2b6a65683d72.setContent(html_5baeef19aa064be1b2b935c35ee4a676);
+        
+
+        circle_marker_480ac09a8bf94168b1f61b6041222cac.bindPopup(popup_9045508de4124d73bf0b2b6a65683d72)
+        ;
+
+        
+    
+    
+            var circle_marker_03678bcc773943d79c41a9cce3170de6 = L.circleMarker(
+                [8.758458000000001, -83.262222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_8dc1a3a5428d46e7a2ee4e209bb94e88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2587d33d5e904b2296c4dc0b13146a7b = $(`<div id="html_2587d33d5e904b2296c4dc0b13146a7b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas. Río Esquinas.  Sendero a quebrada Arena. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1998-05-07 00:00:00+00:00 <strong>Recolectores:</strong> Eida Fletes <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_8dc1a3a5428d46e7a2ee4e209bb94e88.setContent(html_2587d33d5e904b2296c4dc0b13146a7b);
+        
+
+        circle_marker_03678bcc773943d79c41a9cce3170de6.bindPopup(popup_8dc1a3a5428d46e7a2ee4e209bb94e88)
+        ;
+
+        
+    
+    
+            var circle_marker_3401f16470d549549b5f69a83d336229 = L.circleMarker(
+                [8.758458000000001, -83.262222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_ac7ddef93b714cc792c6fb1da29b050a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8281f48d34214eed804a4834b5db2187 = $(`<div id="html_8281f48d34214eed804a4834b5db2187" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas. Río Esquinas.  Sendero a quebrada Arena. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1998-05-07 00:00:00+00:00 <strong>Recolectores:</strong> Eida Fletes <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_ac7ddef93b714cc792c6fb1da29b050a.setContent(html_8281f48d34214eed804a4834b5db2187);
+        
+
+        circle_marker_3401f16470d549549b5f69a83d336229.bindPopup(popup_ac7ddef93b714cc792c6fb1da29b050a)
+        ;
+
+        
+    
+    
+            var circle_marker_f90a7b07c14241c0b36510b7a9094512 = L.circleMarker(
+                [8.758458000000001, -83.262222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_520245775f71464fa427eb930366a4ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_639dfad3aab84a248143c0c1b064e895 = $(`<div id="html_639dfad3aab84a248143c0c1b064e895" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas. Río Esquinas.  Sendero a quebrada Arena. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1998-05-07 00:00:00+00:00 <strong>Recolectores:</strong> Eida Fletes <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_520245775f71464fa427eb930366a4ee.setContent(html_639dfad3aab84a248143c0c1b064e895);
+        
+
+        circle_marker_f90a7b07c14241c0b36510b7a9094512.bindPopup(popup_520245775f71464fa427eb930366a4ee)
+        ;
+
+        
+    
+    
+            var circle_marker_0714d5326317498e93290ed16527062f = L.circleMarker(
+                [8.466667, -83.583338],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_5a6944745bf24a809c5ab4f43049707f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91801ec54e5f40ca842cfe784cf1208f = $(`<div id="html_91801ec54e5f40ca842cfe784cf1208f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sirena. Sendero Pavo, sector a 50 msnm <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1988-07-14 00:00:00+00:00 <strong>Recolectores:</strong> C. Kernan <strong>Identificadores:</strong> Grayum, Michael H.</div>`)[0];
+            popup_5a6944745bf24a809c5ab4f43049707f.setContent(html_91801ec54e5f40ca842cfe784cf1208f);
+        
+
+        circle_marker_0714d5326317498e93290ed16527062f.bindPopup(popup_5a6944745bf24a809c5ab4f43049707f)
+        ;
+
+        
+    
+    
+            var circle_marker_5b74d61f7a994dd7bc8e040b24149da4 = L.circleMarker(
+                [8.683333, -83.216667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_8b003022a2b3401aa8e44c31b922f5e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_089c274db7884ff5b19a6277c7093253 = $(`<div id="html_089c274db7884ff5b19a6277c7093253" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Gamba, 3 Km NE camino entre Golfito y Villa Briceno. <strong>Elevación:</strong> 202.5 m  <strong>Fecha:</strong> 1997-05-21 00:00:00+00:00 <strong>Recolectores:</strong> Werner Huber; A. Weissenhofer <strong>Identificadores:</strong> Huber, Werner</div>`)[0];
+            popup_8b003022a2b3401aa8e44c31b922f5e9.setContent(html_089c274db7884ff5b19a6277c7093253);
+        
+
+        circle_marker_5b74d61f7a994dd7bc8e040b24149da4.bindPopup(popup_8b003022a2b3401aa8e44c31b922f5e9)
+        ;
+
+        
+    
+    
+            var circle_marker_03d1f4cd099149de9d1a72eb998dc9d5 = L.circleMarker(
+                [8.766667, -83.250001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_32d7b6baac484611a8921f9eb3c93a5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e097434100a46efa188c220d512d3ca = $(`<div id="html_3e097434100a46efa188c220d512d3ca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Esquinas; Seccion Esquinas. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-08-25 00:00:00+00:00 <strong>Recolectores:</strong> Marianella Segura <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_32d7b6baac484611a8921f9eb3c93a5c.setContent(html_3e097434100a46efa188c220d512d3ca);
+        
+
+        circle_marker_03d1f4cd099149de9d1a72eb998dc9d5.bindPopup(popup_32d7b6baac484611a8921f9eb3c93a5c)
+        ;
+
+        
+    
+    
+            var circle_marker_9033db0e449540ce8f8aa83735f8efea = L.circleMarker(
+                [8.766667, -83.250001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_03583ce5a487466cacf68afa5d3b0eff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9be8f1e09c814963b85bc9f9830a88b4 = $(`<div id="html_9be8f1e09c814963b85bc9f9830a88b4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alrededores de la Estacion Esquinas. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-10-08 00:00:00+00:00 <strong>Recolectores:</strong> Marianella Segura <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_03583ce5a487466cacf68afa5d3b0eff.setContent(html_9be8f1e09c814963b85bc9f9830a88b4);
+        
+
+        circle_marker_9033db0e449540ce8f8aa83735f8efea.bindPopup(popup_03583ce5a487466cacf68afa5d3b0eff)
+        ;
+
+        
+    
+    
+            var circle_marker_fa479f463ba44b08b6ee1357f7067d0d = L.circleMarker(
+                [8.817222000000001, -83.189722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_be7ebd1c6489471eaf71cbc4129a6288 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4e0c7e3e85c468f94292093d6f50554 = $(`<div id="html_f4e0c7e3e85c468f94292093d6f50554" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Cruces Cabeceras del Rio Piedras Blancas. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1994-05-12 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_be7ebd1c6489471eaf71cbc4129a6288.setContent(html_f4e0c7e3e85c468f94292093d6f50554);
+        
+
+        circle_marker_fa479f463ba44b08b6ee1357f7067d0d.bindPopup(popup_be7ebd1c6489471eaf71cbc4129a6288)
+        ;
+
+        
+    
+    
+            var circle_marker_1d023f4f200d4b22b952aebe284d3cdb = L.circleMarker(
+                [8.766667, -83.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_5a70ed85e5114725b34a0e7fb4f0e7a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae05a8c83bbe4595a486353c4529ab05 = $(`<div id="html_ae05a8c83bbe4595a486353c4529ab05" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Esquinas, sendero a la Calathea <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-06-27 00:00:00+00:00 <strong>Recolectores:</strong> Marianella Segura <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_5a70ed85e5114725b34a0e7fb4f0e7a9.setContent(html_ae05a8c83bbe4595a486353c4529ab05);
+        
+
+        circle_marker_1d023f4f200d4b22b952aebe284d3cdb.bindPopup(popup_5a70ed85e5114725b34a0e7fb4f0e7a9)
+        ;
+
+        
+    
+    
+            var circle_marker_3c61ac47724e4b48b4815a60b5ad7753 = L.circleMarker(
+                [8.466667, -83.583334],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_ee9b516766b248b7aed2f824f582436a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b69cc8b48d44b05a4a87a4488bd9347 = $(`<div id="html_0b69cc8b48d44b05a4a87a4488bd9347" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sirena. Los Patos Forest, 1-50 msnm <strong>Elevación:</strong> 25.5 m  <strong>Fecha:</strong> 1989-07-08 00:00:00+00:00 <strong>Recolectores:</strong> C. Kernan <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_ee9b516766b248b7aed2f824f582436a.setContent(html_0b69cc8b48d44b05a4a87a4488bd9347);
+        
+
+        circle_marker_3c61ac47724e4b48b4815a60b5ad7753.bindPopup(popup_ee9b516766b248b7aed2f824f582436a)
+        ;
+
+        
+    
+    
+            var circle_marker_eff25463b96e479db28f22eb2a4ab73f = L.circleMarker(
+                [8.684722, -83.563889],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_84e8c6a0039042de938102fa6f93c0c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7e01193ad0b4bcc8ff92ab1cdf7c6c1 = $(`<div id="html_c7e01193ad0b4bcc8ff92ab1cdf7c6c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado. Eston Forestal. Finca Eloy Cubero. <strong>Elevación:</strong> 230.0 m  <strong>Fecha:</strong> 1991-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Juan Marin <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_84e8c6a0039042de938102fa6f93c0c7.setContent(html_c7e01193ad0b4bcc8ff92ab1cdf7c6c1);
+        
+
+        circle_marker_eff25463b96e479db28f22eb2a4ab73f.bindPopup(popup_84e8c6a0039042de938102fa6f93c0c7)
+        ;
+
+        
+    
+    
+            var circle_marker_806e380f32ce4e9cae03544aaad6bc2d = L.circleMarker(
+                [8.666667, -83.56666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_bd17cd97f15d4abd8b10b3c20e27550a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4f6236dcb444632810c0b6f0b0ab8d3 = $(`<div id="html_e4f6236dcb444632810c0b6f0b0ab8d3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado, ca. 15 km W of Rincon; in bottom of S end of valley along Rio Riyito. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_bd17cd97f15d4abd8b10b3c20e27550a.setContent(html_e4f6236dcb444632810c0b6f0b0ab8d3);
+        
+
+        circle_marker_806e380f32ce4e9cae03544aaad6bc2d.bindPopup(popup_bd17cd97f15d4abd8b10b3c20e27550a)
+        ;
+
+        
+    
+    
+            var circle_marker_914ca9d3b16849df816c0da6bb617b56 = L.circleMarker(
+                [8.660833, -83.713889],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_dd1bd67acaf84273836258c7570e8a29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a4f2bb674424cdd8a5ec8da0273d61e = $(`<div id="html_9a4f2bb674424cdd8a5ec8da0273d61e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Playa Campanario o San Josecito. Sierpe. Primary forest. <strong>Elevación:</strong> 5.5 m  <strong>Fecha:</strong> 1991-06-20 00:00:00+00:00 <strong>Recolectores:</strong> Patrick Harmon <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_dd1bd67acaf84273836258c7570e8a29.setContent(html_9a4f2bb674424cdd8a5ec8da0273d61e);
+        
+
+        circle_marker_914ca9d3b16849df816c0da6bb617b56.bindPopup(popup_dd1bd67acaf84273836258c7570e8a29)
+        ;
+
+        
+    
+    
+            var circle_marker_8212287c2fa9474980f0c49b3ee0bbd4 = L.circleMarker(
+                [8.7, -83.594445],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_b2ad57d99b38416e8ce0abc1c01f91c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e8548debc4042b4bb2674821d586ecc = $(`<div id="html_5e8548debc4042b4bb2674821d586ecc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado. Tierra de Conservacion. <strong>Elevación:</strong> 425.0 m  <strong>Fecha:</strong> 1991-10-17 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_b2ad57d99b38416e8ce0abc1c01f91c3.setContent(html_5e8548debc4042b4bb2674821d586ecc);
+        
+
+        circle_marker_8212287c2fa9474980f0c49b3ee0bbd4.bindPopup(popup_b2ad57d99b38416e8ce0abc1c01f91c3)
+        ;
+
+        
+    
+    
+            var circle_marker_7c9cbc2a6f4146ffa781d6c9eafcd62e = L.circleMarker(
+                [8.705556, -83.525],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_d8d80b01b8534342ba88e0122819565b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_688a808478504083be5257dfa1fca2cf = $(`<div id="html_688a808478504083be5257dfa1fca2cf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincon de Osa. Agua Buena. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-06-21 00:00:00+00:00 <strong>Recolectores:</strong> Karsten Thomsen <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d8d80b01b8534342ba88e0122819565b.setContent(html_688a808478504083be5257dfa1fca2cf);
+        
+
+        circle_marker_7c9cbc2a6f4146ffa781d6c9eafcd62e.bindPopup(popup_d8d80b01b8534342ba88e0122819565b)
+        ;
+
+        
+    
+    
+            var circle_marker_7300a2b3be3740e2ad901aea2fcb788b = L.circleMarker(
+                [10.0, -84.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_037e5867fdac496b972cdcc0839b57c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eec211d99a3c4f22a91fdd8c46b01c4d = $(`<div id="html_eec211d99a3c4f22a91fdd8c46b01c4d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1949-04-16 00:00:00+00:00 <strong>Recolectores:</strong> P. H. Allen <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_037e5867fdac496b972cdcc0839b57c2.setContent(html_eec211d99a3c4f22a91fdd8c46b01c4d);
+        
+
+        circle_marker_7300a2b3be3740e2ad901aea2fcb788b.bindPopup(popup_037e5867fdac496b972cdcc0839b57c2)
+        ;
+
+        
+    
+    
+            var circle_marker_3550ae177f68499f8dc5b2461f4e341a = L.circleMarker(
+                [9.97028, -84.18806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_dd86339e5ad646c2b0f3fdf4fe2de5b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55bdc847c68044e8bb41ec3b06f190f0 = $(`<div id="html_55bdc847c68044e8bb41ec3b06f190f0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2000-06-12 00:00:00+00:00 <strong>Recolectores:</strong> Acosta, L., G. Sancho & G. Soto (Coll. G) <strong>Identificadores:</strong> Ricketson, J. M. (2010)</div>`)[0];
+            popup_dd86339e5ad646c2b0f3fdf4fe2de5b2.setContent(html_55bdc847c68044e8bb41ec3b06f190f0);
+        
+
+        circle_marker_3550ae177f68499f8dc5b2461f4e341a.bindPopup(popup_dd86339e5ad646c2b0f3fdf4fe2de5b2)
+        ;
+
+        
+    
+    
+            var circle_marker_fe39d5f200524903abb02eb176e4d3c9 = L.circleMarker(
+                [8.68333, -83.21667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_59cb235124e74d1ab354a380da9ac497 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2045d564e0784b33a1b590428e2653bd = $(`<div id="html_2045d564e0784b33a1b590428e2653bd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puntarenas/Golfito; P.N. Piedras Blancas, Bosque Esquinas, Sendero a Valle Bonito. 8°41' N, 83°13' W. Alt. 100 m. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2001-08-29 00:00:00+00:00 <strong>Recolectores:</strong> Arauz S.,E.G. <strong>Identificadores:</strong> W. Huber (WU)</div>`)[0];
+            popup_59cb235124e74d1ab354a380da9ac497.setContent(html_2045d564e0784b33a1b590428e2653bd);
+        
+
+        circle_marker_fe39d5f200524903abb02eb176e4d3c9.bindPopup(popup_59cb235124e74d1ab354a380da9ac497)
+        ;
+
+        
+    
+    
+            var circle_marker_a10d51c15e4a481198dbbaa909cf8493 = L.circleMarker(
+                [8.68333, -83.21667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_37e90ceb96b643b5971c523ef0950e9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a42ea9367feb49aebdf7286a4ae76ba5 = $(`<div id="html_a42ea9367feb49aebdf7286a4ae76ba5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2000-09-22 00:00:00+00:00 <strong>Recolectores:</strong> Huber,W. & Weissenhofer,A. <strong>Identificadores:</strong> W. Huber & A. Weissenhofer (WU)</div>`)[0];
+            popup_37e90ceb96b643b5971c523ef0950e9d.setContent(html_a42ea9367feb49aebdf7286a4ae76ba5);
+        
+
+        circle_marker_a10d51c15e4a481198dbbaa909cf8493.bindPopup(popup_37e90ceb96b643b5971c523ef0950e9d)
+        ;
+
+        
+    
+    
+            var circle_marker_ccda61384e3e46a7a6585c9f76ca4d79 = L.circleMarker(
+                [8.75, -83.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_df7dfb5fe32f4c7e9cbf53cc89179674 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93d60a1dd73b453898e10787223693ac = $(`<div id="html_93d60a1dd73b453898e10787223693ac" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Flora de Costa Rica. Puntarenas: Golfito. P. N. Piedras Blancas. Serranías de Golfito. Río Esquinas. Sendero Quebrada Arena. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1998-05-07 00:00:00+00:00 <strong>Recolectores:</strong> E. Fletes <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_df7dfb5fe32f4c7e9cbf53cc89179674.setContent(html_93d60a1dd73b453898e10787223693ac);
+        
+
+        circle_marker_ccda61384e3e46a7a6585c9f76ca4d79.bindPopup(popup_df7dfb5fe32f4c7e9cbf53cc89179674)
+        ;
+
+        
+    
+    
+            var circle_marker_351e3ee872f94fb9b8237171e55b066a = L.circleMarker(
+                [8.685, -82.923167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_8a03004cdb0d43c882f7d9e057d64d93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91ab8846959949e39a3024120c682978 = $(`<div id="html_91ab8846959949e39a3024120c682978" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> -</div>`)[0];
+            popup_8a03004cdb0d43c882f7d9e057d64d93.setContent(html_91ab8846959949e39a3024120c682978);
+        
+
+        circle_marker_351e3ee872f94fb9b8237171e55b066a.bindPopup(popup_8a03004cdb0d43c882f7d9e057d64d93)
+        ;
+
+        
+    
+    
+            var circle_marker_7623e038c3d346648aa707e70cc65351 = L.circleMarker(
+                [8.766667, -83.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_7790b7169b024099931548d5f1d224da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57a2e0f4a1874a4184a7162bb1275258 = $(`<div id="html_57a2e0f4a1874a4184a7162bb1275258" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Corcovado, S. Esquinas Golfito Golfo Dulce ca. Rio Esquinas Estacion Esquinas, sendero a la Calathea <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-06-27 00:00:00+00:00 <strong>Recolectores:</strong> M. Segura <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7790b7169b024099931548d5f1d224da.setContent(html_57a2e0f4a1874a4184a7162bb1275258);
+        
+
+        circle_marker_7623e038c3d346648aa707e70cc65351.bindPopup(popup_7790b7169b024099931548d5f1d224da)
+        ;
+
+        
+    
+    
+            var circle_marker_dc9b0f4f493d465c80329807fc92d02c = L.circleMarker(
+                [8.766667, -83.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_952a9817597840de9ae40fc589169b4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f05a279c1ed41ba8e78d177bb5bc725 = $(`<div id="html_8f05a279c1ed41ba8e78d177bb5bc725" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Canton de GOLFITO P.N. Corcovado Valle de Coto Colorado. Estacion Esquinas: Section Esquinas. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-08-25 00:00:00+00:00 <strong>Recolectores:</strong> M. Segura <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_952a9817597840de9ae40fc589169b4e.setContent(html_8f05a279c1ed41ba8e78d177bb5bc725);
+        
+
+        circle_marker_dc9b0f4f493d465c80329807fc92d02c.bindPopup(popup_952a9817597840de9ae40fc589169b4e)
+        ;
+
+        
+    
+    
+            var circle_marker_f1fcece5c8e04d7e8742c1c71c5801b1 = L.circleMarker(
+                [8.817222000000001, -83.189722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_fb99a6762ecb4c6b85d27dab2b601e6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f55d5382ae514e769350bf4778d23d17 = $(`<div id="html_f55d5382ae514e769350bf4778d23d17" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Canton de Golfito. Fila Costeña. Fila Cruces Cabecerasd del rio Piedras Blancas. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1994-05-12 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fb99a6762ecb4c6b85d27dab2b601e6b.setContent(html_f55d5382ae514e769350bf4778d23d17);
+        
+
+        circle_marker_f1fcece5c8e04d7e8742c1c71c5801b1.bindPopup(popup_fb99a6762ecb4c6b85d27dab2b601e6b)
+        ;
+
+        
+    
+    
+            var circle_marker_9aa27cac33094f3ba642bc8983b72cac = L.circleMarker(
+                [8.45, -83.55],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_015191ad0bfe4f6e86f217c7c688a1d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffa920adc1a94a99b062269da1052c9a = $(`<div id="html_ffa920adc1a94a99b062269da1052c9a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Corcovado Pavo Forest. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1988-07-14 00:00:00+00:00 <strong>Recolectores:</strong> C. N. Kernan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_015191ad0bfe4f6e86f217c7c688a1d7.setContent(html_ffa920adc1a94a99b062269da1052c9a);
+        
+
+        circle_marker_9aa27cac33094f3ba642bc8983b72cac.bindPopup(popup_015191ad0bfe4f6e86f217c7c688a1d7)
+        ;
+
+        
+    
+    
+            var circle_marker_557d2dca83204a838fbef75a3087f185 = L.circleMarker(
+                [8.68, -83.21],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_0163539f0dc445459e2f13d251dc5c7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d75541aa6bf42089cbe3d09b12ee2d9 = $(`<div id="html_2d75541aa6bf42089cbe3d09b12ee2d9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Piedras Blancas P.N.Piedras Blancas, way from La Gamba to Golfito. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-10-20 00:00:00+00:00 <strong>Recolectores:</strong> Huber, Werner <strong>Identificadores:</strong> Huber, Werner & Weissenhofer, Anton</div>`)[0];
+            popup_0163539f0dc445459e2f13d251dc5c7d.setContent(html_2d75541aa6bf42089cbe3d09b12ee2d9);
+        
+
+        circle_marker_557d2dca83204a838fbef75a3087f185.bindPopup(popup_0163539f0dc445459e2f13d251dc5c7d)
+        ;
+
+        
+    
+    
+            var circle_marker_1ad0d9d4f2374a198cd99d4aa6a1afcf = L.circleMarker(
+                [8.68, -83.21],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_445948b7beb64ba28f89a4fec29d6f21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7bcf1dee95149c98b665f5f42d3f420 = $(`<div id="html_a7bcf1dee95149c98b665f5f42d3f420" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Cuatro Esquinas, Sección Bosque de los Austriacos, W on the way from Sendero Bajaro to the Fila-way <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 1998-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Huber, Werner <strong>Identificadores:</strong> Huber, Werner & Weissenhofer, Anton</div>`)[0];
+            popup_445948b7beb64ba28f89a4fec29d6f21.setContent(html_a7bcf1dee95149c98b665f5f42d3f420);
+        
+
+        circle_marker_1ad0d9d4f2374a198cd99d4aa6a1afcf.bindPopup(popup_445948b7beb64ba28f89a4fec29d6f21)
+        ;
+
+        
+    
+    
+            var circle_marker_51e835c5eb44485faa228ff264c51d49 = L.circleMarker(
+                [8.68, -83.21],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_5b546cef142b407faf701a49876cd158 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_996e85ca23464af78e066ab66254eadf = $(`<div id="html_996e85ca23464af78e066ab66254eadf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque de Los Austriacos, Primary forest, reseach plot-La Gamba <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1994-02-12 00:00:00+00:00 <strong>Recolectores:</strong> Huber, Werner <strong>Identificadores:</strong> Allen, Paul H.</div>`)[0];
+            popup_5b546cef142b407faf701a49876cd158.setContent(html_996e85ca23464af78e066ab66254eadf);
+        
+
+        circle_marker_51e835c5eb44485faa228ff264c51d49.bindPopup(popup_5b546cef142b407faf701a49876cd158)
+        ;
+
+        
+    
+    
+            var circle_marker_8bd8bd328d3c4d5d8260b692936c3384 = L.circleMarker(
+                [8.68, -83.21],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_9f415812490646f59636d5aa336dfdd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f70caabcdea438c8c2fdb9bff6a6d6b = $(`<div id="html_5f70caabcdea438c8c2fdb9bff6a6d6b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque de Los Austriacos, Primary forest, reseach plot-La Gamba <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1994-04-05 00:00:00+00:00 <strong>Recolectores:</strong> Huber, Werner <strong>Identificadores:</strong> Huber, Werner</div>`)[0];
+            popup_9f415812490646f59636d5aa336dfdd3.setContent(html_5f70caabcdea438c8c2fdb9bff6a6d6b);
+        
+
+        circle_marker_8bd8bd328d3c4d5d8260b692936c3384.bindPopup(popup_9f415812490646f59636d5aa336dfdd3)
+        ;
+
+        
+    
+    
+            var circle_marker_fc1d6906db014f6685d5d1556d8ad0d9 = L.circleMarker(
+                [8.71, -83.51],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_e8e440d0aa6c4ba087b351e5b4d904bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a885e7342ab41c98ec6ace742bb64d2 = $(`<div id="html_3a885e7342ab41c98ec6ace742bb64d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena.3 km W of Rincón. Along trail leading north from the house of Don Quecho, W of BOSCOSA STATION.Tall undistrbed forest in elevated, well drained terrain <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1994-10-06 00:00:00+00:00 <strong>Recolectores:</strong> Thomsen, Karsten <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_e8e440d0aa6c4ba087b351e5b4d904bc.setContent(html_3a885e7342ab41c98ec6ace742bb64d2);
+        
+
+        circle_marker_fc1d6906db014f6685d5d1556d8ad0d9.bindPopup(popup_e8e440d0aa6c4ba087b351e5b4d904bc)
+        ;
+
+        
+    
+    
+            var circle_marker_a8eed4a8b72741189586a9ad64996949 = L.circleMarker(
+                [8.68333, -83.2167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_07d0388f81e7483592834a2067718a76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cd4d637c8b84ff582011a2fa5970f56 = $(`<div id="html_4cd4d637c8b84ff582011a2fa5970f56" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas, Bosque Esquinas, Sendero a Valle Bonito <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2001-08-29 00:00:00+00:00 <strong>Recolectores:</strong> Arauz Suarez Eduardo Gerrado <strong>Identificadores:</strong> Huber Werner</div>`)[0];
+            popup_07d0388f81e7483592834a2067718a76.setContent(html_4cd4d637c8b84ff582011a2fa5970f56);
+        
+
+        circle_marker_a8eed4a8b72741189586a9ad64996949.bindPopup(popup_07d0388f81e7483592834a2067718a76)
+        ;
+
+        
+    
+    
+            var circle_marker_e38f4ad0e98646549686ce72675e68e2 = L.circleMarker(
+                [8.68333, -83.2167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_98fbe9d53a134dc7a85e638d905f2432 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f86728d0990443f9ab8393f0b3649de5 = $(`<div id="html_f86728d0990443f9ab8393f0b3649de5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas, Bosque Esquinas, Sendero a Valle Bonito <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2001-08-29 00:00:00+00:00 <strong>Recolectores:</strong> Arauz Suarez Eduardo Gerrado <strong>Identificadores:</strong> Huber Werner</div>`)[0];
+            popup_98fbe9d53a134dc7a85e638d905f2432.setContent(html_f86728d0990443f9ab8393f0b3649de5);
+        
+
+        circle_marker_e38f4ad0e98646549686ce72675e68e2.bindPopup(popup_98fbe9d53a134dc7a85e638d905f2432)
+        ;
+
+        
+    
+    
+            var circle_marker_cb4c3959ba8d4f7796a62e6b04e92e8b = L.circleMarker(
+                [8.68333, -83.2167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_a68ea318d16a40f7b1cc06fba9a36cdf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da0abb86b70d400aa6503eb75b5e6f5e = $(`<div id="html_da0abb86b70d400aa6503eb75b5e6f5e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas, way from La Gamba to Golfito <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-10-20 00:00:00+00:00 <strong>Recolectores:</strong> Huber Werner, Weissenhofer Anton <strong>Identificadores:</strong> Huber Werner, Weissenhofer Anton</div>`)[0];
+            popup_a68ea318d16a40f7b1cc06fba9a36cdf.setContent(html_da0abb86b70d400aa6503eb75b5e6f5e);
+        
+
+        circle_marker_cb4c3959ba8d4f7796a62e6b04e92e8b.bindPopup(popup_a68ea318d16a40f7b1cc06fba9a36cdf)
+        ;
+
+        
+    
+    
+            var circle_marker_8ef986f0fe4f436281aed0f5aeb96d1f = L.circleMarker(
+                [8.68333, -83.2167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_e8a8c76dd8424d25a73d9692e0b62856 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7700195dd0142a8907b3045d9e951ba = $(`<div id="html_c7700195dd0142a8907b3045d9e951ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas, way from La Gamba to La Bolsa <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2000-09-22 00:00:00+00:00 <strong>Recolectores:</strong> Huber Werner, Weissenhofer Anton <strong>Identificadores:</strong> Huber Werner, Weissenhofer Anton</div>`)[0];
+            popup_e8a8c76dd8424d25a73d9692e0b62856.setContent(html_c7700195dd0142a8907b3045d9e951ba);
+        
+
+        circle_marker_8ef986f0fe4f436281aed0f5aeb96d1f.bindPopup(popup_e8a8c76dd8424d25a73d9692e0b62856)
+        ;
+
+        
+    
+    
+            var circle_marker_eee923b56f0d431aa901ae7c8e178dad = L.circleMarker(
+                [8.68333, -83.2167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_1a89720c0dfe47259aaaa3010a28fa63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32c4d73116b24112b6698fb186dabefc = $(`<div id="html_32c4d73116b24112b6698fb186dabefc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas, way from La Gamba to Golfito <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-10-20 00:00:00+00:00 <strong>Recolectores:</strong> Huber Werner, Weissenhofer Anton <strong>Identificadores:</strong> Huber Werner, Weissenhofer Anton</div>`)[0];
+            popup_1a89720c0dfe47259aaaa3010a28fa63.setContent(html_32c4d73116b24112b6698fb186dabefc);
+        
+
+        circle_marker_eee923b56f0d431aa901ae7c8e178dad.bindPopup(popup_1a89720c0dfe47259aaaa3010a28fa63)
+        ;
+
+        
+    
+    
+            var circle_marker_6cea07bab1304976a0ce40923231ffce = L.circleMarker(
+                [8.68333, -83.2167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_6a4bf8e11d3a4976a87672fdd948139e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc62dd06d90748fc82476b69f38d8144 = $(`<div id="html_dc62dd06d90748fc82476b69f38d8144" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Bosque de los Austriacos", La Gamba, on the way to the research plot <strong>Elevación:</strong> 185.0 m  <strong>Fecha:</strong> 1994-02-12 00:00:00+00:00 <strong>Recolectores:</strong> Huber Werner, Weissenhofer Anton <strong>Identificadores:</strong> Huber Werner, Weissenhofer Anton</div>`)[0];
+            popup_6a4bf8e11d3a4976a87672fdd948139e.setContent(html_dc62dd06d90748fc82476b69f38d8144);
+        
+
+        circle_marker_6cea07bab1304976a0ce40923231ffce.bindPopup(popup_6a4bf8e11d3a4976a87672fdd948139e)
+        ;
+
+        
+    
+    
+            var circle_marker_02d777fe7f4a43a6b436250b92f953e9 = L.circleMarker(
+                [8.68333, -83.2167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_92c92d3baac641cc919fb780b69fe35b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d301c72b0f04ffc831385124b4bafbd = $(`<div id="html_4d301c72b0f04ffc831385124b4bafbd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Esquinas "Bosque de los Austriacos" on the way from the Sendero Bajaro to the Fila-way <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 1998-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Huber Werner, Weissenhofer Anton <strong>Identificadores:</strong> Huber Werner, Weissenhofer Anton</div>`)[0];
+            popup_92c92d3baac641cc919fb780b69fe35b.setContent(html_4d301c72b0f04ffc831385124b4bafbd);
+        
+
+        circle_marker_02d777fe7f4a43a6b436250b92f953e9.bindPopup(popup_92c92d3baac641cc919fb780b69fe35b)
+        ;
+
+        
+    
+    
+            var circle_marker_5cf22cd59bf346b1b2c80afa8db931f7 = L.circleMarker(
+                [8.68333, -83.2167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_1e9addec280b447eaddaff397967e6f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a431fac2cb69490bb99c785c3606734a = $(`<div id="html_a431fac2cb69490bb99c785c3606734a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Bosque de los Austriacos", on the fila next to the research-plot La Gamba <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1997-05-21 00:00:00+00:00 <strong>Recolectores:</strong> Huber Werner, Weissenhofer Anton <strong>Identificadores:</strong> Huber Werner, Weissenhofer Anton</div>`)[0];
+            popup_1e9addec280b447eaddaff397967e6f1.setContent(html_a431fac2cb69490bb99c785c3606734a);
+        
+
+        circle_marker_5cf22cd59bf346b1b2c80afa8db931f7.bindPopup(popup_1e9addec280b447eaddaff397967e6f1)
+        ;
+
+        
+    
+    
+            var circle_marker_2e12c892e8124c14aa15dcb4bfb35837 = L.circleMarker(
+                [8.68333, -83.2167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+        
+    
+        var popup_04b04f1d5fd6458ab181d63d969275bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d252c200e3e348c5bb94c2abde72abcd = $(`<div id="html_d252c200e3e348c5bb94c2abde72abcd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas, Bosque Esquinas, Sendero a Valle Bonito <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2001-08-29 00:00:00+00:00 <strong>Recolectores:</strong> Arauz Suarez Eduardo Gerrado <strong>Identificadores:</strong> Huber Werner</div>`)[0];
+            popup_04b04f1d5fd6458ab181d63d969275bb.setContent(html_d252c200e3e348c5bb94c2abde72abcd);
+        
+
+        circle_marker_2e12c892e8124c14aa15dcb4bfb35837.bindPopup(popup_04b04f1d5fd6458ab181d63d969275bb)
+        ;
+
+        
+    
+    
+            var layer_control_40beec9dd8c54dce80555527563361c6 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_1118730f936f4e789896f7e033b83da5,
+                    "ESRI World Imagery" : tile_layer_047de875a0ae44ed903ca048698b505c,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_40beec9dd8c54dce80555527563361c6.base_layers,
+                layer_control_40beec9dd8c54dce80555527563361c6.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_e67d032d7f3f4ff78dc9132b94b81d71);
+            tile_layer_047de875a0ae44ed903ca048698b505c.remove();
+        
+</script>

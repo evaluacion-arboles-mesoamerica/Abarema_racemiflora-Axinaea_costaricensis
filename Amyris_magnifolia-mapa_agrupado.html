@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9074aa1d677b45a49527b39f71d2f4c1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9074aa1d677b45a49527b39f71d2f4c1" ></div>
+        
+</body>
+<script>    
+    
+            var map_9074aa1d677b45a49527b39f71d2f4c1 = L.map(
+                "map_9074aa1d677b45a49527b39f71d2f4c1",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_9074aa1d677b45a49527b39f71d2f4c1);
+
+            
+
+        
+    
+            var tile_layer_ae85fb57fe574367ae730b59bb5192f3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9074aa1d677b45a49527b39f71d2f4c1);
+        
+    
+            var tile_layer_3891455247734fca98583ae2384fbdc6 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9074aa1d677b45a49527b39f71d2f4c1);
+        
+    
+            var marker_cluster_01c86039f9084ca2977f7011ab7f8a4a = L.markerClusterGroup(
+                {}
+            );
+            map_9074aa1d677b45a49527b39f71d2f4c1.addLayer(marker_cluster_01c86039f9084ca2977f7011ab7f8a4a);
+        
+    
+            var marker_f902bdaa63f6406bac748c4263b7f2da = L.marker(
+                [9.75, -84.53],
+                {}
+            ).addTo(marker_cluster_01c86039f9084ca2977f7011ab7f8a4a);
+        
+    
+        var popup_2584cd220ba04c6f9d8b7f382fa971e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_232f74dc32de4f7ea769998afb022910 = $(`<div id="html_232f74dc32de4f7ea769998afb022910" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Carara, Valle del Tárcoles, edge or park near Río del Sur, foothills of Montañas de Jamaica, ** INBio parataxonomy course <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1993-04-03 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Barry E. Hammel|Michael H. Grayum|Nelson Zamora|INBio Parataxonomy Course <strong>Identificadores:</strong> J. Gómez-Laurito (USJ) & Q. Jiménez (INB)</div>`)[0];
+            popup_2584cd220ba04c6f9d8b7f382fa971e0.setContent(html_232f74dc32de4f7ea769998afb022910);
+        
+
+        marker_f902bdaa63f6406bac748c4263b7f2da.bindPopup(popup_2584cd220ba04c6f9d8b7f382fa971e0)
+        ;
+
+        
+    
+    
+            var marker_c309d389abf941c789890d0c88e3d7fa = L.marker(
+                [8.77, -83.37],
+                {}
+            ).addTo(marker_cluster_01c86039f9084ca2977f7011ab7f8a4a);
+        
+    
+        var popup_4ff0572aa3b1403eac5b7b5ff9c1904f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a439a41ed4284ce98abb047bd6c8ed2f = $(`<div id="html_a439a41ed4284ce98abb047bd6c8ed2f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Rancho Quemado. Fila al oeste Tierra de Conservación, camino a Cerro Brujo. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1993-11-15 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar|Barry E. Hammel <strong>Identificadores:</strong> J. Gómez-Laurito (USJ) & Q. Jiménez (INB)</div>`)[0];
+            popup_4ff0572aa3b1403eac5b7b5ff9c1904f.setContent(html_a439a41ed4284ce98abb047bd6c8ed2f);
+        
+
+        marker_c309d389abf941c789890d0c88e3d7fa.bindPopup(popup_4ff0572aa3b1403eac5b7b5ff9c1904f)
+        ;
+
+        
+    
+    
+            var marker_41c186b4a2724990907959074e9e5cc7 = L.marker(
+                [8.76, -83.36],
+                {}
+            ).addTo(marker_cluster_01c86039f9084ca2977f7011ab7f8a4a);
+        
+    
+        var popup_4ec2a9949e0848f6bb40978f7c45eba5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edcb536815dc423aaa425e612e3cf113 = $(`<div id="html_edcb536815dc423aaa425e612e3cf113" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Los Mogos. Bahia Chal. Entrada Chocuaco. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1994-01-01 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> J. Gómez-Laurito (USJ) & Q. Jiménez (INB)</div>`)[0];
+            popup_4ec2a9949e0848f6bb40978f7c45eba5.setContent(html_edcb536815dc423aaa425e612e3cf113);
+        
+
+        marker_41c186b4a2724990907959074e9e5cc7.bindPopup(popup_4ec2a9949e0848f6bb40978f7c45eba5)
+        ;
+
+        
+    
+    
+            var marker_4af75b2e51274a1b8ad3eee064b2a116 = L.marker(
+                [8.673611, -83.188889],
+                {}
+            ).addTo(marker_cluster_01c86039f9084ca2977f7011ab7f8a4a);
+        
+    
+        var popup_148a2f0bee6847ce93a0f4d1f8462e77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_285cb5a1127f4f25b8811c4f4a340dc3 = $(`<div id="html_285cb5a1127f4f25b8811c4f4a340dc3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.N.V.S. Golfito. Valle de Coto Colorado. Sendero natural siguiendo la fila, 3 km al norte del aeropuerto. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1992-01-27 00:00:00+00:00 <strong>Recolectores:</strong> Cristina Formoso|Nora Martín|Michael H. Grayum|Reinaldo Aguilar <strong>Identificadores:</strong> J. Gómez-Laurito (USJ) & Q. Jiménez (INB)</div>`)[0];
+            popup_148a2f0bee6847ce93a0f4d1f8462e77.setContent(html_285cb5a1127f4f25b8811c4f4a340dc3);
+        
+
+        marker_4af75b2e51274a1b8ad3eee064b2a116.bindPopup(popup_148a2f0bee6847ce93a0f4d1f8462e77)
+        ;
+
+        
+    
+    
+            var marker_563fae61f19b4d3fb58d6c4b06202ad4 = L.marker(
+                [8.66, -83.56],
+                {}
+            ).addTo(marker_cluster_01c86039f9084ca2977f7011ab7f8a4a);
+        
+    
+        var popup_b410f70420744b2d83c814f1b4f48a84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_067b50f9a04542ef85beb304066ba3f5 = $(`<div id="html_067b50f9a04542ef85beb304066ba3f5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Osa Península, Rancho Quemado, ca. 15 km W of Rincón; in bottom of S end of valley along Río Riyito and Quebrada Quebradón. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-06-03 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Gerardo Herrera Ch.|María Marta Chavarría <strong>Identificadores:</strong> J. Gómez-Laurito (USJ) & Q. Jiménez (INB)</div>`)[0];
+            popup_b410f70420744b2d83c814f1b4f48a84.setContent(html_067b50f9a04542ef85beb304066ba3f5);
+        
+
+        marker_563fae61f19b4d3fb58d6c4b06202ad4.bindPopup(popup_b410f70420744b2d83c814f1b4f48a84)
+        ;
+
+        
+    
+    
+            var marker_8676ce545d9a42efa7b9b35ca9c949d9 = L.marker(
+                [8.6725, -83.244167],
+                {}
+            ).addTo(marker_cluster_01c86039f9084ca2977f7011ab7f8a4a);
+        
+    
+        var popup_6c69d20e27a345f385684cb3e23190dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1269b83445bf4261b34572c93198cadd = $(`<div id="html_1269b83445bf4261b34572c93198cadd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Piedras Blancas. Serranías de Golfito. Sobre Fila Golfito. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 2000-06-09 00:00:00+00:00 <strong>Recolectores:</strong> Luis Acosta <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_6c69d20e27a345f385684cb3e23190dc.setContent(html_1269b83445bf4261b34572c93198cadd);
+        
+
+        marker_8676ce545d9a42efa7b9b35ca9c949d9.bindPopup(popup_6c69d20e27a345f385684cb3e23190dc)
+        ;
+
+        
+    
+    
+            var marker_be083a467dfc4c2b9ba8c5b5dd5af75f = L.marker(
+                [9.850750999999999, -84.318747],
+                {}
+            ).addTo(marker_cluster_01c86039f9084ca2977f7011ab7f8a4a);
+        
+    
+        var popup_49414ac476bd41acbf5a1b9c1a4c0205 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e32bbe177aab4dc699391f5fbe760693 = $(`<div id="html_e32bbe177aab4dc699391f5fbe760693" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puriscal <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2002-12-22 00:00:00+00:00 <strong>Recolectores:</strong> Julio Bustamante <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_49414ac476bd41acbf5a1b9c1a4c0205.setContent(html_e32bbe177aab4dc699391f5fbe760693);
+        
+
+        marker_be083a467dfc4c2b9ba8c5b5dd5af75f.bindPopup(popup_49414ac476bd41acbf5a1b9c1a4c0205)
+        ;
+
+        
+    
+    
+            var marker_0c2ef9b2413441a5bb8cd2988d1a19de = L.marker(
+                [8.672538000000001, -83.244148],
+                {}
+            ).addTo(marker_cluster_01c86039f9084ca2977f7011ab7f8a4a);
+        
+    
+        var popup_889a4ac1a2cd453aa31010723cc73238 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ea8a506c4b64ceeb032b25330d0e557 = $(`<div id="html_6ea8a506c4b64ceeb032b25330d0e557" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero a San Josecito <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 2000-06-09 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez ; Gerardo Soto ; Geovanny Sancho ; Edgar Mora <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_889a4ac1a2cd453aa31010723cc73238.setContent(html_6ea8a506c4b64ceeb032b25330d0e557);
+        
+
+        marker_0c2ef9b2413441a5bb8cd2988d1a19de.bindPopup(popup_889a4ac1a2cd453aa31010723cc73238)
+        ;
+
+        
+    
+    
+            var marker_c27e0aa78cb34cb697398add64b2d07f = L.marker(
+                [8.672538000000001, -83.244148],
+                {}
+            ).addTo(marker_cluster_01c86039f9084ca2977f7011ab7f8a4a);
+        
+    
+        var popup_668ae1b1b3a44080b9257bb29431fe1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_830a71f48c2246fcb72cb5c162ece182 = $(`<div id="html_830a71f48c2246fcb72cb5c162ece182" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero a San Josecito <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 2000-06-09 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez ; Gerardo Soto ; Geovanny Sancho ; Edgar Mora <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_668ae1b1b3a44080b9257bb29431fe1e.setContent(html_830a71f48c2246fcb72cb5c162ece182);
+        
+
+        marker_c27e0aa78cb34cb697398add64b2d07f.bindPopup(popup_668ae1b1b3a44080b9257bb29431fe1e)
+        ;
+
+        
+    
+    
+            var layer_control_59cea708b530482b8345080b862a41c9 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ae85fb57fe574367ae730b59bb5192f3,
+                    "ESRI World Imagery" : tile_layer_3891455247734fca98583ae2384fbdc6,
+                },
+                overlays :  {
+                    "macro_element_01c86039f9084ca2977f7011ab7f8a4a" : marker_cluster_01c86039f9084ca2977f7011ab7f8a4a,
+                },
+            };
+            L.control.layers(
+                layer_control_59cea708b530482b8345080b862a41c9.base_layers,
+                layer_control_59cea708b530482b8345080b862a41c9.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_9074aa1d677b45a49527b39f71d2f4c1);
+            tile_layer_3891455247734fca98583ae2384fbdc6.remove();
+        
+</script>

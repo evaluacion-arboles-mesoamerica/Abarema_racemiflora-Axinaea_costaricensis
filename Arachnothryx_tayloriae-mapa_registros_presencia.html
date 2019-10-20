@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_893df2d8947443feb1e63248d37eae50 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_893df2d8947443feb1e63248d37eae50" ></div>
+        
+</body>
+<script>    
+    
+            var map_893df2d8947443feb1e63248d37eae50 = L.map(
+                "map_893df2d8947443feb1e63248d37eae50",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_893df2d8947443feb1e63248d37eae50);
+
+            
+
+        
+    
+            var tile_layer_3c6ac766d7cc4977831c1bc477778f84 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+            var tile_layer_203a5aa67438460a88c0bf132b315980 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+            var circle_marker_ee12d1b027cc4fd08485081243f258a0 = L.circleMarker(
+                [9.797222, -83.091667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_fbd065713da743d0b504c91f5607abb5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d16e73f2a8354f3d98eb218f0ee7c2ea = $(`<div id="html_d16e73f2a8354f3d98eb218f0ee7c2ea" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Muchilla, Fila Matama.  Cordillera de Talamanca. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1989-04-06 00:00:00+00:00 <strong>Recolectores:</strong> Rafael Robles|Abelardo Chacón <strong>Identificadores:</strong> D.H. Lorence, PTBG</div>`)[0];
+            popup_fbd065713da743d0b504c91f5607abb5.setContent(html_d16e73f2a8354f3d98eb218f0ee7c2ea);
+        
+
+        circle_marker_ee12d1b027cc4fd08485081243f258a0.bindPopup(popup_fbd065713da743d0b504c91f5607abb5)
+        ;
+
+        
+    
+    
+            var circle_marker_12526f7090c54e409fb32f748dee405e = L.circleMarker(
+                [9.78, -83.09],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_b80b75a4a8d9496884e2a4d1d0ae09a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26358562732c4e64a9a1ece6fd23ab3a = $(`<div id="html_26358562732c4e64a9a1ece6fd23ab3a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Limón Cerro Muchilla, Fila Matama. CORDILLERA DE TALAMANCA <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1989-04-05 00:00:00+00:00 <strong>Recolectores:</strong> Rafael Robles|Abelardo Chacón <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b80b75a4a8d9496884e2a4d1d0ae09a3.setContent(html_26358562732c4e64a9a1ece6fd23ab3a);
+        
+
+        circle_marker_12526f7090c54e409fb32f748dee405e.bindPopup(popup_b80b75a4a8d9496884e2a4d1d0ae09a3)
+        ;
+
+        
+    
+    
+            var circle_marker_deaf6f38c35443a2856981281f77be27 = L.circleMarker(
+                [9.78, -83.14],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_e714643387f549f1ade15063f1af2c4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1fa89fd5bc94262988283819aab058d = $(`<div id="html_e1fa89fd5bc94262988283819aab058d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Limón. El Progreso, siguiendo el sendero de la avioneta, por la fila hasta los 1700 m. Fila Matama. Valle de La Estrella. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1989-04-19 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Abelardo Chacón <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e714643387f549f1ade15063f1af2c4f.setContent(html_e1fa89fd5bc94262988283819aab058d);
+        
+
+        circle_marker_deaf6f38c35443a2856981281f77be27.bindPopup(popup_e714643387f549f1ade15063f1af2c4f)
+        ;
+
+        
+    
+    
+            var circle_marker_4db0c987bd374e0eb18de4c8561d09e5 = L.circleMarker(
+                [9.39, -83.08],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_ed6c89e1de924e6f8bdd47761273edb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19433cfd372e4098af7da3398abb99d0 = $(`<div id="html_19433cfd372e4098af7da3398abb99d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bratsi. Alto Lari. Kivut. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1992-03-15 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar|Heidi H. Schmidt <strong>Identificadores:</strong> D. Lorence</div>`)[0];
+            popup_ed6c89e1de924e6f8bdd47761273edb8.setContent(html_19433cfd372e4098af7da3398abb99d0);
+        
+
+        circle_marker_4db0c987bd374e0eb18de4c8561d09e5.bindPopup(popup_ed6c89e1de924e6f8bdd47761273edb8)
+        ;
+
+        
+    
+    
+            var circle_marker_fa64c27856ee48448a63a0933357d0da = L.circleMarker(
+                [9.81742, -83.16669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_54d3698e9e8c487d8df115cbc5013a53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_482c78e92a6a48b1bd101d63e2931936 = $(`<div id="html_482c78e92a6a48b1bd101d63e2931936" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limon, Valle de la Estrella, Fila Matama. Cerca de 11 km SW del pueblo de Aguas Zarcas. Sitio La Laguna. Bosque dominado por Dystovomita paniculata, Ocotea insularis, Calatola costaricensis y Hyeronima oblonga. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2007-10-30 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano|Alexánder Rodríguez|Billen Gamboa R.|Daniel Santamaría|Eduardo Boza|M. Hernández Peña|Marcos Moraga|Ó. Chacón Chavarría|R. Delgado Dávila <strong>Identificadores:</strong> C. Taylor</div>`)[0];
+            popup_54d3698e9e8c487d8df115cbc5013a53.setContent(html_482c78e92a6a48b1bd101d63e2931936);
+        
+
+        circle_marker_fa64c27856ee48448a63a0933357d0da.bindPopup(popup_54d3698e9e8c487d8df115cbc5013a53)
+        ;
+
+        
+    
+    
+            var circle_marker_2b6ec7faaad84ee184c1c3ca1747c2c4 = L.circleMarker(
+                [9.81742, -83.16669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_fe0fcee564e24dee9fef2d28460c7ea4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e409df8b6506446a9efbcf6df7dcb1d9 = $(`<div id="html_e409df8b6506446a9efbcf6df7dcb1d9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> FIla Matama. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2007-10-30 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_fe0fcee564e24dee9fef2d28460c7ea4.setContent(html_e409df8b6506446a9efbcf6df7dcb1d9);
+        
+
+        circle_marker_2b6ec7faaad84ee184c1c3ca1747c2c4.bindPopup(popup_fe0fcee564e24dee9fef2d28460c7ea4)
+        ;
+
+        
+    
+    
+            var circle_marker_cb799b82a67b4d0c9955bf0900d7ab79 = L.circleMarker(
+                [9.81742, -83.16669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_e652b64bda334e46b66762608d5dfc52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c09a4eaa0400436da563a2312f831488 = $(`<div id="html_c09a4eaa0400436da563a2312f831488" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> FIla Matama. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2007-10-30 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_e652b64bda334e46b66762608d5dfc52.setContent(html_c09a4eaa0400436da563a2312f831488);
+        
+
+        circle_marker_cb799b82a67b4d0c9955bf0900d7ab79.bindPopup(popup_e652b64bda334e46b66762608d5dfc52)
+        ;
+
+        
+    
+    
+            var circle_marker_68b989665846444188b681e14132292a = L.circleMarker(
+                [9.81742, -83.16669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_34e7aa6290ff44179ac34d1844331043 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71002777e54846869d6ba997ef749421 = $(`<div id="html_71002777e54846869d6ba997ef749421" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> FIla Matama. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2007-10-30 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_34e7aa6290ff44179ac34d1844331043.setContent(html_71002777e54846869d6ba997ef749421);
+        
+
+        circle_marker_68b989665846444188b681e14132292a.bindPopup(popup_34e7aa6290ff44179ac34d1844331043)
+        ;
+
+        
+    
+    
+            var circle_marker_91083b67adef4734afcce1d1947b652c = L.circleMarker(
+                [9.81742, -83.16669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_9cd089e05af24abf86b34b8a0a2fd17c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ece176e8779f4ac49c6b59e53f605001 = $(`<div id="html_ece176e8779f4ac49c6b59e53f605001" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> FIla Matama. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2007-10-30 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_9cd089e05af24abf86b34b8a0a2fd17c.setContent(html_ece176e8779f4ac49c6b59e53f605001);
+        
+
+        circle_marker_91083b67adef4734afcce1d1947b652c.bindPopup(popup_9cd089e05af24abf86b34b8a0a2fd17c)
+        ;
+
+        
+    
+    
+            var circle_marker_8c2f1598751443c181fa98aca62bb845 = L.circleMarker(
+                [9.81742, -83.16669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_6d67ec0b7a2d42599bd6fa267e211c40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_880ee5e1da124b42ab6dc807769d128f = $(`<div id="html_880ee5e1da124b42ab6dc807769d128f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> FIla Matama. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2007-10-30 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_6d67ec0b7a2d42599bd6fa267e211c40.setContent(html_880ee5e1da124b42ab6dc807769d128f);
+        
+
+        circle_marker_8c2f1598751443c181fa98aca62bb845.bindPopup(popup_6d67ec0b7a2d42599bd6fa267e211c40)
+        ;
+
+        
+    
+    
+            var circle_marker_8852d11c8fc14c52842f304ebd133886 = L.circleMarker(
+                [9.81742, -83.16669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_7275827c70ab4e2e8f5f59d6d67d6d2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71a53645a94540eb948318208e62bc70 = $(`<div id="html_71a53645a94540eb948318208e62bc70" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> FIla Matama. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2007-10-30 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_7275827c70ab4e2e8f5f59d6d67d6d2c.setContent(html_71a53645a94540eb948318208e62bc70);
+        
+
+        circle_marker_8852d11c8fc14c52842f304ebd133886.bindPopup(popup_7275827c70ab4e2e8f5f59d6d67d6d2c)
+        ;
+
+        
+    
+    
+            var circle_marker_1f958666d8d9479baf8f763c5be297c2 = L.circleMarker(
+                [9.81742, -83.16669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_94a09a592f7c4f64b8f10521e8763075 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9936690565b6444c93e9a544b955bf6f = $(`<div id="html_9936690565b6444c93e9a544b955bf6f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> FIla Matama. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2007-10-30 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_94a09a592f7c4f64b8f10521e8763075.setContent(html_9936690565b6444c93e9a544b955bf6f);
+        
+
+        circle_marker_1f958666d8d9479baf8f763c5be297c2.bindPopup(popup_94a09a592f7c4f64b8f10521e8763075)
+        ;
+
+        
+    
+    
+            var circle_marker_05abcbd727ba40dd94740aae417a039b = L.circleMarker(
+                [9.81742, -83.16669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_1ef39b97d89044ddaac17d6351f08bb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ad59f4de43b47619cdcae5db9e3fe27 = $(`<div id="html_9ad59f4de43b47619cdcae5db9e3fe27" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> FIla Matama. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2007-10-30 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_1ef39b97d89044ddaac17d6351f08bb4.setContent(html_9ad59f4de43b47619cdcae5db9e3fe27);
+        
+
+        circle_marker_05abcbd727ba40dd94740aae417a039b.bindPopup(popup_1ef39b97d89044ddaac17d6351f08bb4)
+        ;
+
+        
+    
+    
+            var circle_marker_f61925ba6f964fd19752dc29c2de815e = L.circleMarker(
+                [9.81742, -83.16669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_4b002e293361407fa7d8cb8c1e7bb788 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4649189336a1435bb5530b924fb0a486 = $(`<div id="html_4649189336a1435bb5530b924fb0a486" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> FIla Matama. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2007-10-30 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_4b002e293361407fa7d8cb8c1e7bb788.setContent(html_4649189336a1435bb5530b924fb0a486);
+        
+
+        circle_marker_f61925ba6f964fd19752dc29c2de815e.bindPopup(popup_4b002e293361407fa7d8cb8c1e7bb788)
+        ;
+
+        
+    
+    
+            var circle_marker_4704ddfb59a948719d756816d4ad63db = L.circleMarker(
+                [9.81742, -83.16669],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_5604575dfec8420d8fa33e01f506547b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e0530662b094f899d4b52ff02c56062 = $(`<div id="html_4e0530662b094f899d4b52ff02c56062" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> FIla Matama. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2007-10-30 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_5604575dfec8420d8fa33e01f506547b.setContent(html_4e0530662b094f899d4b52ff02c56062);
+        
+
+        circle_marker_4704ddfb59a948719d756816d4ad63db.bindPopup(popup_5604575dfec8420d8fa33e01f506547b)
+        ;
+
+        
+    
+    
+            var circle_marker_2a7ef00a01054b43af99ce8d83f5157f = L.circleMarker(
+                [9.788333, -83.145833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_f90f8293109d4637b1e0b75e301cd8e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de06167967014ad1b23bfff3e233f104 = $(`<div id="html_de06167967014ad1b23bfff3e233f104" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Progreso, siguiendo el sendero de la avioneta, por la fila hasta los 1700 m. Fila Matama. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1989-04-19 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_f90f8293109d4637b1e0b75e301cd8e7.setContent(html_de06167967014ad1b23bfff3e233f104);
+        
+
+        circle_marker_2a7ef00a01054b43af99ce8d83f5157f.bindPopup(popup_f90f8293109d4637b1e0b75e301cd8e7)
+        ;
+
+        
+    
+    
+            var circle_marker_60a1dbef1cf34dd5b702cba9e950ee14 = L.circleMarker(
+                [9.780555999999999, -83.091667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_2b743baf0f394c01b43b236600e4dec7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_329630d2c1244439ad0b77aceb3e9197 = $(`<div id="html_329630d2c1244439ad0b77aceb3e9197" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Muchilla, Fila Matama. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1989-04-05 00:00:00+00:00 <strong>Recolectores:</strong> Rafael Robles <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_2b743baf0f394c01b43b236600e4dec7.setContent(html_329630d2c1244439ad0b77aceb3e9197);
+        
+
+        circle_marker_60a1dbef1cf34dd5b702cba9e950ee14.bindPopup(popup_2b743baf0f394c01b43b236600e4dec7)
+        ;
+
+        
+    
+    
+            var circle_marker_c45060e0abaa495e9d5a787796bfd61b = L.circleMarker(
+                [9.397222, -83.088889],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_c2b39f7d037c476c95befabde5ceeb40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c198232b2e8f4ff3807ec5eaf64f21d5 = $(`<div id="html_c198232b2e8f4ff3807ec5eaf64f21d5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alto Lari. Kivut. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1992-03-15 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_c2b39f7d037c476c95befabde5ceeb40.setContent(html_c198232b2e8f4ff3807ec5eaf64f21d5);
+        
+
+        circle_marker_c45060e0abaa495e9d5a787796bfd61b.bindPopup(popup_c2b39f7d037c476c95befabde5ceeb40)
+        ;
+
+        
+    
+    
+            var circle_marker_5512ca5cce89431d844dc8e64733ac5a = L.circleMarker(
+                [9.797222, -83.091667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_ea073e289d754bc7a374deb70ae48fe7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99d9fc641cb64174a99c6754809a3227 = $(`<div id="html_99d9fc641cb64174a99c6754809a3227" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Muchilla, Fila Matama. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1989-04-06 00:00:00+00:00 <strong>Recolectores:</strong> Rafael Robles <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_ea073e289d754bc7a374deb70ae48fe7.setContent(html_99d9fc641cb64174a99c6754809a3227);
+        
+
+        circle_marker_5512ca5cce89431d844dc8e64733ac5a.bindPopup(popup_ea073e289d754bc7a374deb70ae48fe7)
+        ;
+
+        
+    
+    
+            var circle_marker_c0476b83eb1e489fa4246066827e2fb8 = L.circleMarker(
+                [10.0114, -83.9519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_88d223ce1f244598a0f55a8ec44c67a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a240412a66b1421fab2af83ff459b331 = $(`<div id="html_a240412a66b1421fab2af83ff459b331" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-04-19 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera C. & A. Chacón <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_88d223ce1f244598a0f55a8ec44c67a0.setContent(html_a240412a66b1421fab2af83ff459b331);
+        
+
+        circle_marker_c0476b83eb1e489fa4246066827e2fb8.bindPopup(popup_88d223ce1f244598a0f55a8ec44c67a0)
+        ;
+
+        
+    
+    
+            var circle_marker_22fefe9987a54703859917672db39b39 = L.circleMarker(
+                [10.0, -83.8667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_7fa189df928b4368be43c15360b1a255 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae5b6a5b92484baf96d9db23f117abe4 = $(`<div id="html_ae5b6a5b92484baf96d9db23f117abe4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-04-05 00:00:00+00:00 <strong>Recolectores:</strong> R. Robles G. <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_7fa189df928b4368be43c15360b1a255.setContent(html_ae5b6a5b92484baf96d9db23f117abe4);
+        
+
+        circle_marker_22fefe9987a54703859917672db39b39.bindPopup(popup_7fa189df928b4368be43c15360b1a255)
+        ;
+
+        
+    
+    
+            var circle_marker_483986288c8b4e19a3d4d41f9bf14333 = L.circleMarker(
+                [10.0114, -83.9519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_5756b1c38c494f6b82cd3ec15608d31c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de99275716034f869b32fb414566f0d4 = $(`<div id="html_de99275716034f869b32fb414566f0d4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-04-19 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera C. & A. Chacón <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_5756b1c38c494f6b82cd3ec15608d31c.setContent(html_de99275716034f869b32fb414566f0d4);
+        
+
+        circle_marker_483986288c8b4e19a3d4d41f9bf14333.bindPopup(popup_5756b1c38c494f6b82cd3ec15608d31c)
+        ;
+
+        
+    
+    
+            var circle_marker_d62ddcb7618645cbbb1068470fd37c74 = L.circleMarker(
+                [9.39, -83.08],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_3998b81a071b465a9acd80f633c3c1f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e8329634d78454291430636cc041f16 = $(`<div id="html_2e8329634d78454291430636cc041f16" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alto Lari. Kivut. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1992-03-15 00:00:00+00:00 <strong>Recolectores:</strong> Aguilar, Reinaldo <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_3998b81a071b465a9acd80f633c3c1f4.setContent(html_2e8329634d78454291430636cc041f16);
+        
+
+        circle_marker_d62ddcb7618645cbbb1068470fd37c74.bindPopup(popup_3998b81a071b465a9acd80f633c3c1f4)
+        ;
+
+        
+    
+    
+            var circle_marker_2b92a8c392e0407d9170901a2a7d1c40 = L.circleMarker(
+                [10.38, -84.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+        
+    
+        var popup_61b517276b4c4c27a2dc63efedf5b6b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96e1759f2f30430ea8e666ce1c3aa4ae = $(`<div id="html_96e1759f2f30430ea8e666ce1c3aa4ae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque Eterno de los Niños. Valley of Rìo Agua Gata. Atlantic slope, 13 km NE of Monteverde. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1991-04-18 00:00:00+00:00 <strong>Recolectores:</strong> Haber, William <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_61b517276b4c4c27a2dc63efedf5b6b8.setContent(html_96e1759f2f30430ea8e666ce1c3aa4ae);
+        
+
+        circle_marker_2b92a8c392e0407d9170901a2a7d1c40.bindPopup(popup_61b517276b4c4c27a2dc63efedf5b6b8)
+        ;
+
+        
+    
+    
+            var layer_control_90870923c30f40ed988dc1276c81d47a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_3c6ac766d7cc4977831c1bc477778f84,
+                    "ESRI World Imagery" : tile_layer_203a5aa67438460a88c0bf132b315980,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_90870923c30f40ed988dc1276c81d47a.base_layers,
+                layer_control_90870923c30f40ed988dc1276c81d47a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_893df2d8947443feb1e63248d37eae50);
+            tile_layer_203a5aa67438460a88c0bf132b315980.remove();
+        
+</script>

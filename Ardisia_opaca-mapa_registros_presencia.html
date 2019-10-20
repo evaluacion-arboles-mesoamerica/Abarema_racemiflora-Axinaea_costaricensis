@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aaf3722743db4889b661f2e0fdbeb88c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_aaf3722743db4889b661f2e0fdbeb88c" ></div>
+        
+</body>
+<script>    
+    
+            var map_aaf3722743db4889b661f2e0fdbeb88c = L.map(
+                "map_aaf3722743db4889b661f2e0fdbeb88c",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_aaf3722743db4889b661f2e0fdbeb88c);
+
+            
+
+        
+    
+            var tile_layer_ea09e42f445d41858a46dc7dd2051479 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aaf3722743db4889b661f2e0fdbeb88c);
+        
+    
+            var tile_layer_9d9e831a8dac490198b999196d49a1f3 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aaf3722743db4889b661f2e0fdbeb88c);
+        
+    
+            var circle_marker_ba2c0fa78f6c4b5799b4c400e13f599f = L.circleMarker(
+                [2.39716, -77.6878],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_aaf3722743db4889b661f2e0fdbeb88c);
+        
+    
+        var popup_bb1f61f85b664fa59143e663d3ef43c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dad83e11c702422397a91fad5679e72c = $(`<div id="html_dad83e11c702422397a91fad5679e72c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> SI. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Lozano C., G. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_bb1f61f85b664fa59143e663d3ef43c7.setContent(html_dad83e11c702422397a91fad5679e72c);
+        
+
+        circle_marker_ba2c0fa78f6c4b5799b4c400e13f599f.bindPopup(popup_bb1f61f85b664fa59143e663d3ef43c7)
+        ;
+
+        
+    
+    
+            var circle_marker_fefb681e94d6413885b79777ac191dac = L.circleMarker(
+                [9.2, -83.05],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_aaf3722743db4889b661f2e0fdbeb88c);
+        
+    
+        var popup_9472a8f8735042e2924beaf3222e193e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a708ceff89d4be8b947d51d2e79b481 = $(`<div id="html_9a708ceff89d4be8b947d51d2e79b481" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón-Puntarenas border; Cordillera de Talamanca, Cerro Kasir, on the continental divide. <strong>Elevación:</strong> 2950.0 m  <strong>Fecha:</strong> 1984-09-20 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_9472a8f8735042e2924beaf3222e193e.setContent(html_9a708ceff89d4be8b947d51d2e79b481);
+        
+
+        circle_marker_fefb681e94d6413885b79777ac191dac.bindPopup(popup_9472a8f8735042e2924beaf3222e193e)
+        ;
+
+        
+    
+    
+            var circle_marker_844315caa2f847a680016192e77203f0 = L.circleMarker(
+                [9.25, -82.983333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_aaf3722743db4889b661f2e0fdbeb88c);
+        
+    
+        var popup_5b11fd8cb1014ebdbaabe8959bec2ba0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2aca1a48341143cb9eea754b0f857b47 = $(`<div id="html_2aca1a48341143cb9eea754b0f857b47" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, Atlantic slope, Kámuk massif, ridge between the Río Tararia and the northeastern most Kámuk páramo. <strong>Elevación:</strong> 2650.0 m  <strong>Fecha:</strong> 1984-09-17 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_5b11fd8cb1014ebdbaabe8959bec2ba0.setContent(html_2aca1a48341143cb9eea754b0f857b47);
+        
+
+        circle_marker_844315caa2f847a680016192e77203f0.bindPopup(popup_5b11fd8cb1014ebdbaabe8959bec2ba0)
+        ;
+
+        
+    
+    
+            var circle_marker_fe40509bd4d04675aa17f854530ea0ef = L.circleMarker(
+                [8.15, -77.31666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_aaf3722743db4889b661f2e0fdbeb88c);
+        
+    
+        var popup_5e795e64e32345de9f33d7f88642c622 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b493a2a685a04b8592f0c45e82c10c2e = $(`<div id="html_b493a2a685a04b8592f0c45e82c10c2e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Tacarcuna Expedition. Vicinity of Cerro Tacarcuna summit camp, along stream N of camp. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1975-02-01 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Scott A. Mori <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_5e795e64e32345de9f33d7f88642c622.setContent(html_b493a2a685a04b8592f0c45e82c10c2e);
+        
+
+        circle_marker_fe40509bd4d04675aa17f854530ea0ef.bindPopup(popup_5e795e64e32345de9f33d7f88642c622)
+        ;
+
+        
+    
+    
+            var circle_marker_ed2c19fba4c146419f2c3c6b37713379 = L.circleMarker(
+                [9.95, -82.81],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_aaf3722743db4889b661f2e0fdbeb88c);
+        
+    
+        var popup_3e1cacb0c6904c3e9eabaf211c37a3b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7f9b8e3b2ec4a0c81911d3c853e3799 = $(`<div id="html_b7f9b8e3b2ec4a0c81911d3c853e3799" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cord. Talamanca, area between headwaters of Río Bella Vista and Sitio Cotón <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1983-08-25 00:00:00+00:00 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Hammel, Barry E.</div>`)[0];
+            popup_3e1cacb0c6904c3e9eabaf211c37a3b8.setContent(html_b7f9b8e3b2ec4a0c81911d3c853e3799);
+        
+
+        circle_marker_ed2c19fba4c146419f2c3c6b37713379.bindPopup(popup_3e1cacb0c6904c3e9eabaf211c37a3b8)
+        ;
+
+        
+    
+    
+            var layer_control_43f3f9ee31b34710ba4647329b2eb87e = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ea09e42f445d41858a46dc7dd2051479,
+                    "ESRI World Imagery" : tile_layer_9d9e831a8dac490198b999196d49a1f3,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_43f3f9ee31b34710ba4647329b2eb87e.base_layers,
+                layer_control_43f3f9ee31b34710ba4647329b2eb87e.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_aaf3722743db4889b661f2e0fdbeb88c);
+            tile_layer_9d9e831a8dac490198b999196d49a1f3.remove();
+        
+</script>

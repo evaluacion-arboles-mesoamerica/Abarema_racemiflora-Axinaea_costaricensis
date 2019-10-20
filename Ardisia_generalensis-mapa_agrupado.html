@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b9643bf5dc05413f8db472f19549b25e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b9643bf5dc05413f8db472f19549b25e" ></div>
+        
+</body>
+<script>    
+    
+            var map_b9643bf5dc05413f8db472f19549b25e = L.map(
+                "map_b9643bf5dc05413f8db472f19549b25e",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_b9643bf5dc05413f8db472f19549b25e);
+
+            
+
+        
+    
+            var tile_layer_1a1ac3ff9b7f4febbe6fcff7275ea595 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b9643bf5dc05413f8db472f19549b25e);
+        
+    
+            var tile_layer_ca6419bc27324d26a16877be94683ef2 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b9643bf5dc05413f8db472f19549b25e);
+        
+    
+            var marker_cluster_90b9334917d94381870a2bfd573398fe = L.markerClusterGroup(
+                {}
+            );
+            map_b9643bf5dc05413f8db472f19549b25e.addLayer(marker_cluster_90b9334917d94381870a2bfd573398fe);
+        
+    
+            var marker_dab99872659b4ba3ba84a187a44583ae = L.marker(
+                [8.9, -77.76666],
+                {}
+            ).addTo(marker_cluster_90b9334917d94381870a2bfd573398fe);
+        
+    
+        var popup_d85f420b3daf487b82ad10f6c8e634d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ef242c7114943adaf8bf4e2e4d083ed = $(`<div id="html_4ef242c7114943adaf8bf4e2e4d083ed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de San Blas, desde Quebrada Masargandi hasta cerro Bo Yala (cerro Neblina), Frente a la Isla de Tubualá <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1993-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Heraclio Herrera|Prudencio González <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d85f420b3daf487b82ad10f6c8e634d5.setContent(html_4ef242c7114943adaf8bf4e2e4d083ed);
+        
+
+        marker_dab99872659b4ba3ba84a187a44583ae.bindPopup(popup_d85f420b3daf487b82ad10f6c8e634d5)
+        ;
+
+        
+    
+    
+            var layer_control_2993e0bb75af487bb8ece97539750586 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_1a1ac3ff9b7f4febbe6fcff7275ea595,
+                    "ESRI World Imagery" : tile_layer_ca6419bc27324d26a16877be94683ef2,
+                },
+                overlays :  {
+                    "macro_element_90b9334917d94381870a2bfd573398fe" : marker_cluster_90b9334917d94381870a2bfd573398fe,
+                },
+            };
+            L.control.layers(
+                layer_control_2993e0bb75af487bb8ece97539750586.base_layers,
+                layer_control_2993e0bb75af487bb8ece97539750586.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b9643bf5dc05413f8db472f19549b25e);
+            tile_layer_ca6419bc27324d26a16877be94683ef2.remove();
+        
+</script>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0a5f22b7c29f4e148ca83eac06ad56ec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0a5f22b7c29f4e148ca83eac06ad56ec" ></div>
+        
+</body>
+<script>    
+    
+            var map_0a5f22b7c29f4e148ca83eac06ad56ec = L.map(
+                "map_0a5f22b7c29f4e148ca83eac06ad56ec",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+
+            
+
+        
+    
+            var tile_layer_232095c5d98e4cc6a2736b0b6cb4b005 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+            var tile_layer_ebfd05dc9241465090fe8ce81c9e9265 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+            var circle_marker_f35fbbd1b81442799a19a810fad05ddd = L.circleMarker(
+                [8.81, -83.45],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_97c4a4bb85ab403d8378acbe0afeee31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82e4d358eab74129a287f7f68679efa6 = $(`<div id="html_82e4d358eab74129a287f7f68679efa6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle del Reventazón, Grano de Oro, Moravia de Chirripó <strong>Elevación:</strong> 1110.0 m  <strong>Fecha:</strong> 1993-06-29 00:00:00+00:00 <strong>Recolectores:</strong> Priscila Campos <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_97c4a4bb85ab403d8378acbe0afeee31.setContent(html_82e4d358eab74129a287f7f68679efa6);
+        
+
+        circle_marker_f35fbbd1b81442799a19a810fad05ddd.bindPopup(popup_97c4a4bb85ab403d8378acbe0afeee31)
+        ;
+
+        
+    
+    
+            var circle_marker_ff6becbd58744710b21cd62cc80b87b5 = L.circleMarker(
+                [9.81, -83.45],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_6774d8b66bfe42c9b0db4f9f1f9b124a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6146d1d71a074617856326ce4b1bf1d5 = $(`<div id="html_6146d1d71a074617856326ce4b1bf1d5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle del Reventazón, Grano de Oro, Moravia de Chirripó <strong>Elevación:</strong> 1115.0 m  <strong>Fecha:</strong> 1992-10-10 00:00:00+00:00 <strong>Recolectores:</strong> Priscila Campos <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_6774d8b66bfe42c9b0db4f9f1f9b124a.setContent(html_6146d1d71a074617856326ce4b1bf1d5);
+        
+
+        circle_marker_ff6becbd58744710b21cd62cc80b87b5.bindPopup(popup_6774d8b66bfe42c9b0db4f9f1f9b124a)
+        ;
+
+        
+    
+    
+            var circle_marker_9cb2e42d899b4e6497481465680e3691 = L.circleMarker(
+                [9.9, -83.62],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_fe581c56aee340e1bfc212f3997f2d83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a51313f6cb044995bb57d8e3f6ce858f = $(`<div id="html_a51313f6cb044995bb57d8e3f6ce858f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road between Juan Viñas and Turrialba, 7 km west of Turrialba, along ditch. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1976-07-01 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_fe581c56aee340e1bfc212f3997f2d83.setContent(html_a51313f6cb044995bb57d8e3f6ce858f);
+        
+
+        circle_marker_9cb2e42d899b4e6497481465680e3691.bindPopup(popup_fe581c56aee340e1bfc212f3997f2d83)
+        ;
+
+        
+    
+    
+            var circle_marker_ac55d9920a1e403f8f180da0eb880ac0 = L.circleMarker(
+                [9.75, -83.16666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_9c37eb091228440cb5294af9cdbf640a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d0078ea06244d07a7c452f73b8647bc = $(`<div id="html_6d0078ea06244d07a7c452f73b8647bc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca.  N flank of Fila de Matama in headwaters of Río Boyei <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1995-08-17 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_9c37eb091228440cb5294af9cdbf640a.setContent(html_6d0078ea06244d07a7c452f73b8647bc);
+        
+
+        circle_marker_ac55d9920a1e403f8f180da0eb880ac0.bindPopup(popup_9c37eb091228440cb5294af9cdbf640a)
+        ;
+
+        
+    
+    
+            var circle_marker_119e86477be846d7a2b5219886cede7b = L.circleMarker(
+                [9.622819, -83.27875999999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_2cf26d4072a24c029a1281a4ea7cf8e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb4c24af866a4cbfbda248201115530e = $(`<div id="html_cb4c24af866a4cbfbda248201115530e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bratis. Punto 10. NE de Laguna Sacabico. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2007-07-27 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_2cf26d4072a24c029a1281a4ea7cf8e6.setContent(html_cb4c24af866a4cbfbda248201115530e);
+        
+
+        circle_marker_119e86477be846d7a2b5219886cede7b.bindPopup(popup_2cf26d4072a24c029a1281a4ea7cf8e6)
+        ;
+
+        
+    
+    
+            var circle_marker_c8c729887d434a60a2eb3d0601e70f13 = L.circleMarker(
+                [9.622819, -83.278758],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_15afadba611d4e1e8525581fe0cd9a51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8fb744e0551433089c3e8b2bb61db94 = $(`<div id="html_e8fb744e0551433089c3e8b2bb61db94" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alrededores Laguna Sacabico. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 2007-07-27 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; Oscar Chacón Chavarría ; William Gamboa <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_15afadba611d4e1e8525581fe0cd9a51.setContent(html_e8fb744e0551433089c3e8b2bb61db94);
+        
+
+        circle_marker_c8c729887d434a60a2eb3d0601e70f13.bindPopup(popup_15afadba611d4e1e8525581fe0cd9a51)
+        ;
+
+        
+    
+    
+            var circle_marker_12d1563c2f7a4b5c8efc712a46b45ddc = L.circleMarker(
+                [9.622819, -83.278758],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_0205e29ba7414801b62fa6a50fbc1d5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7391b59cf1640cb92a3e9d84288e8df = $(`<div id="html_c7391b59cf1640cb92a3e9d84288e8df" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alrededores Laguna Sacabico. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 2007-07-27 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; Oscar Chacón Chavarría ; William Gamboa <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_0205e29ba7414801b62fa6a50fbc1d5d.setContent(html_c7391b59cf1640cb92a3e9d84288e8df);
+        
+
+        circle_marker_12d1563c2f7a4b5c8efc712a46b45ddc.bindPopup(popup_0205e29ba7414801b62fa6a50fbc1d5d)
+        ;
+
+        
+    
+    
+            var circle_marker_306391bdc48045ee86d0449d797a013b = L.circleMarker(
+                [9.622819, -83.278758],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_074ceef0d1294f17a19fd759df46a061 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e6162d018104c7b9399ef23750b5ead = $(`<div id="html_9e6162d018104c7b9399ef23750b5ead" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alrededores Laguna Sacabico. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 2007-07-27 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; Oscar Chacón Chavarría ; William Gamboa <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_074ceef0d1294f17a19fd759df46a061.setContent(html_9e6162d018104c7b9399ef23750b5ead);
+        
+
+        circle_marker_306391bdc48045ee86d0449d797a013b.bindPopup(popup_074ceef0d1294f17a19fd759df46a061)
+        ;
+
+        
+    
+    
+            var circle_marker_e8eaae577eef41a9a49c20b0a8538dab = L.circleMarker(
+                [9.622819, -83.278758],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_53d9a87d9b4949c2807b0ec08ca6e713 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee3919c849c4440e92d2fd101b260060 = $(`<div id="html_ee3919c849c4440e92d2fd101b260060" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alrededores Laguna Sacabico. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 2007-07-27 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; Oscar Chacón Chavarría ; William Gamboa <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_53d9a87d9b4949c2807b0ec08ca6e713.setContent(html_ee3919c849c4440e92d2fd101b260060);
+        
+
+        circle_marker_e8eaae577eef41a9a49c20b0a8538dab.bindPopup(popup_53d9a87d9b4949c2807b0ec08ca6e713)
+        ;
+
+        
+    
+    
+            var circle_marker_9c9b5e7b9a2d4978b53233e105c9dc89 = L.circleMarker(
+                [9.891671, -83.64999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_3e4078d9263b40488d2e6b90f817354e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d5130f07627491b97fb1f4c04fd6406 = $(`<div id="html_2d5130f07627491b97fb1f4c04fd6406" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cartago. Turrialba centro <strong>Elevación:</strong> 612.5 m  <strong>Fecha:</strong> 1976-07-01 00:00:00+00:00 <strong>Recolectores:</strong> Thomas Bernard Croat <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_3e4078d9263b40488d2e6b90f817354e.setContent(html_2d5130f07627491b97fb1f4c04fd6406);
+        
+
+        circle_marker_9c9b5e7b9a2d4978b53233e105c9dc89.bindPopup(popup_3e4078d9263b40488d2e6b90f817354e)
+        ;
+
+        
+    
+    
+            var circle_marker_c2b8aa29f490480e993fd6b7e6aa76e7 = L.circleMarker(
+                [9.75, -83.31666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_8ff45d5530ae4a21a8ee4b23c76d8a7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98326ce31d93465bacf9a7b122681185 = $(`<div id="html_98326ce31d93465bacf9a7b122681185" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> N flank of Fila de Matama in headwaters of Rio Boyei. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1995-08-17 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_8ff45d5530ae4a21a8ee4b23c76d8a7f.setContent(html_98326ce31d93465bacf9a7b122681185);
+        
+
+        circle_marker_c2b8aa29f490480e993fd6b7e6aa76e7.bindPopup(popup_8ff45d5530ae4a21a8ee4b23c76d8a7f)
+        ;
+
+        
+    
+    
+            var circle_marker_4d12e9e6bf0142339a2ce76b0e462731 = L.circleMarker(
+                [9.819444, -83.458333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_80d25c5342b740478686375dfafde946 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d83b26f9707e4182b489666dd2962160 = $(`<div id="html_d83b26f9707e4182b489666dd2962160" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Grano de Oro. Moravia de Chirripo. <strong>Elevación:</strong> 1115.0 m  <strong>Fecha:</strong> 1992-10-10 00:00:00+00:00 <strong>Recolectores:</strong> Priscilla Campos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_80d25c5342b740478686375dfafde946.setContent(html_d83b26f9707e4182b489666dd2962160);
+        
+
+        circle_marker_4d12e9e6bf0142339a2ce76b0e462731.bindPopup(popup_80d25c5342b740478686375dfafde946)
+        ;
+
+        
+    
+    
+            var circle_marker_76409ab23315454e9b538daaeba7da13 = L.circleMarker(
+                [9.819444, -83.458333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_d98f6371b19c42eba2ab4deb91daf7ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_386dc4a29ac7417b9a6dcab75d785210 = $(`<div id="html_386dc4a29ac7417b9a6dcab75d785210" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Grano de Oro. Moravia de Chirripo. <strong>Elevación:</strong> 1110.0 m  <strong>Fecha:</strong> 1993-06-29 00:00:00+00:00 <strong>Recolectores:</strong> Priscilla Campos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d98f6371b19c42eba2ab4deb91daf7ae.setContent(html_386dc4a29ac7417b9a6dcab75d785210);
+        
+
+        circle_marker_76409ab23315454e9b538daaeba7da13.bindPopup(popup_d98f6371b19c42eba2ab4deb91daf7ae)
+        ;
+
+        
+    
+    
+            var circle_marker_f7b4698b654b4a388c41bbfec985c33c = L.circleMarker(
+                [10.0114, -83.9519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_e832431151764afa95740dbce04a2c7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_962d185449f1440bad17063661cfc951 = $(`<div id="html_962d185449f1440bad17063661cfc951" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1976-07-01 00:00:00+00:00 <strong>Recolectores:</strong> T. B. Croat <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e832431151764afa95740dbce04a2c7a.setContent(html_962d185449f1440bad17063661cfc951);
+        
+
+        circle_marker_f7b4698b654b4a388c41bbfec985c33c.bindPopup(popup_e832431151764afa95740dbce04a2c7a)
+        ;
+
+        
+    
+    
+            var circle_marker_db654807a57b43fdb9b1c808430cd103 = L.circleMarker(
+                [9.97028, -84.18806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_e8d05eff72a54c26ae7f8b76a9a95f40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e16e3086804d4c2889b4e2449c869b15 = $(`<div id="html_e16e3086804d4c2889b4e2449c869b15" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Pittier, H. (Coll. G) <strong>Identificadores:</strong> Ricketson, J. M. (2010)</div>`)[0];
+            popup_e8d05eff72a54c26ae7f8b76a9a95f40.setContent(html_e16e3086804d4c2889b4e2449c869b15);
+        
+
+        circle_marker_db654807a57b43fdb9b1c808430cd103.bindPopup(popup_e8d05eff72a54c26ae7f8b76a9a95f40)
+        ;
+
+        
+    
+    
+            var circle_marker_5913d3b9585d485fbd4ee9418b9467e8 = L.circleMarker(
+                [8.819444, -84.458333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_19f93718c8054b99a01a22fdf55f73cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96ac264e84c64c9c8a08998c1043d010 = $(`<div id="html_96ac264e84c64c9c8a08998c1043d010" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle del Reventazón. Grano de Oro. Moravia de Chirripó. <strong>Elevación:</strong> 1110.0 m  <strong>Fecha:</strong> 1993-06-29 00:00:00+00:00 <strong>Recolectores:</strong> P. Campos <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_19f93718c8054b99a01a22fdf55f73cf.setContent(html_96ac264e84c64c9c8a08998c1043d010);
+        
+
+        circle_marker_5913d3b9585d485fbd4ee9418b9467e8.bindPopup(popup_19f93718c8054b99a01a22fdf55f73cf)
+        ;
+
+        
+    
+    
+            var circle_marker_87fa66db11194ad4a975e89cfc1602c1 = L.circleMarker(
+                [9.819444, -83.458333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+        
+    
+        var popup_72519eb8fd9c448bb1d4cfefd194f99f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7fdbaa0cd9b4df3a0053519aaa762da = $(`<div id="html_a7fdbaa0cd9b4df3a0053519aaa762da" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle del Reventazón. Grano de Oro. Moravia de Chirripó. <strong>Elevación:</strong> 1115.0 m  <strong>Fecha:</strong> 1992-10-10 00:00:00+00:00 <strong>Recolectores:</strong> P. Campos <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_72519eb8fd9c448bb1d4cfefd194f99f.setContent(html_a7fdbaa0cd9b4df3a0053519aaa762da);
+        
+
+        circle_marker_87fa66db11194ad4a975e89cfc1602c1.bindPopup(popup_72519eb8fd9c448bb1d4cfefd194f99f)
+        ;
+
+        
+    
+    
+            var layer_control_deb78d2ebf0641ba90d8ca5158637604 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_232095c5d98e4cc6a2736b0b6cb4b005,
+                    "ESRI World Imagery" : tile_layer_ebfd05dc9241465090fe8ce81c9e9265,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_deb78d2ebf0641ba90d8ca5158637604.base_layers,
+                layer_control_deb78d2ebf0641ba90d8ca5158637604.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_0a5f22b7c29f4e148ca83eac06ad56ec);
+            tile_layer_ebfd05dc9241465090fe8ce81c9e9265.remove();
+        
+</script>

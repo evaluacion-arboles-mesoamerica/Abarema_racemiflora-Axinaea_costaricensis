@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_37ee6048f5c345d78205f626e941244d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_37ee6048f5c345d78205f626e941244d" ></div>
+        
+</body>
+<script>    
+    
+            var map_37ee6048f5c345d78205f626e941244d = L.map(
+                "map_37ee6048f5c345d78205f626e941244d",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_37ee6048f5c345d78205f626e941244d);
+
+            
+
+        
+    
+            var tile_layer_0e27b94edf0149f1b1bf26cb47501390 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_37ee6048f5c345d78205f626e941244d);
+        
+    
+            var tile_layer_6e78376aa25d413a8af50104ee130e45 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_37ee6048f5c345d78205f626e941244d);
+        
+    
+            var marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92 = L.markerClusterGroup(
+                {}
+            );
+            map_37ee6048f5c345d78205f626e941244d.addLayer(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+            var marker_c933567e749d4ebcb478123cb2507ec5 = L.marker(
+                [10.315281, -84.074717],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_955f31ebfd9e4b6d932e47ab522db440 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f909560419144e889d945a66562ffab = $(`<div id="html_6f909560419144e889d945a66562ffab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Heredia. San Ramón de la Virgen de Sarapiquí, Área de Conservación Cordillera Volcánica Central, Estación El Ceibo, Sendero Río Peje a casa de Cascante. <strong>Elevación:</strong> 620.0 m  <strong>Fecha:</strong> 2016-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Braulio Hernández <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_955f31ebfd9e4b6d932e47ab522db440.setContent(html_6f909560419144e889d945a66562ffab);
+        
+
+        marker_c933567e749d4ebcb478123cb2507ec5.bindPopup(popup_955f31ebfd9e4b6d932e47ab522db440)
+        ;
+
+        
+    
+    
+            var marker_e38467a1fe3d4508b69ee02cc8bde77e = L.marker(
+                [10.315281, -84.074717],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_ba8e591320ad479bb3bca2e9ad3dce17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3981439a66d4df4997504d6d36cba80 = $(`<div id="html_b3981439a66d4df4997504d6d36cba80" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Heredia. San Ramón de la Virgen de Sarapiquí, Área de Conservación Cordillera Volcánica Central, Estación El Ceibo, Sendero Río Peje a casa de Cascante. <strong>Elevación:</strong> 620.0 m  <strong>Fecha:</strong> 2016-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Braulio Hernández <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_ba8e591320ad479bb3bca2e9ad3dce17.setContent(html_b3981439a66d4df4997504d6d36cba80);
+        
+
+        marker_e38467a1fe3d4508b69ee02cc8bde77e.bindPopup(popup_ba8e591320ad479bb3bca2e9ad3dce17)
+        ;
+
+        
+    
+    
+            var marker_a5987510b5df4af7827108187d59daec = L.marker(
+                [10.315281, -84.074717],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_6c1798ad98d44b64a6cdbeaf115d308b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8425a33383d48fba4824b87e21fcf46 = $(`<div id="html_c8425a33383d48fba4824b87e21fcf46" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Heredia. San Ramón de la Virgen de Sarapiquí, Área de Conservación Cordillera Volcánica Central, Estación El Ceibo, Sendero Río Peje a casa de Cascante. <strong>Elevación:</strong> 620.0 m  <strong>Fecha:</strong> 2016-03-11 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Braulio Hernández <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_6c1798ad98d44b64a6cdbeaf115d308b.setContent(html_c8425a33383d48fba4824b87e21fcf46);
+        
+
+        marker_a5987510b5df4af7827108187d59daec.bindPopup(popup_6c1798ad98d44b64a6cdbeaf115d308b)
+        ;
+
+        
+    
+    
+            var marker_ffeb4faddcaa4de7ba2a041e3618dc94 = L.marker(
+                [10.33, -84.68],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_03428fb9fb7f4686820c25477207c154 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48932fcd99814f2b86c944923a9d0f45 = $(`<div id="html_48932fcd99814f2b86c944923a9d0f45" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde, Bosque Eterno de Los Niños, Salazar's <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1990-03-27 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_03428fb9fb7f4686820c25477207c154.setContent(html_48932fcd99814f2b86c944923a9d0f45);
+        
+
+        marker_ffeb4faddcaa4de7ba2a041e3618dc94.bindPopup(popup_03428fb9fb7f4686820c25477207c154)
+        ;
+
+        
+    
+    
+            var marker_f864534bc14c4f098548fde990250d16 = L.marker(
+                [10.29, -84.07],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_df41dcfd56cf49e48022867d862d6919 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_405d225b40754164b11eddc13ab528eb = $(`<div id="html_405d225b40754164b11eddc13ab528eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Cordillera Central, Puesto El Ceibo, on ridge crest 250 m west of Transect Trail, primary premontane wet forest <strong>Elevación:</strong> 765.0 m  <strong>Fecha:</strong> 1994-04-17 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle|J. A. Pickering <strong>Identificadores:</strong> A. Torres-Montúfar (MEXU)</div>`)[0];
+            popup_df41dcfd56cf49e48022867d862d6919.setContent(html_405d225b40754164b11eddc13ab528eb);
+        
+
+        marker_f864534bc14c4f098548fde990250d16.bindPopup(popup_df41dcfd56cf49e48022867d862d6919)
+        ;
+
+        
+    
+    
+            var marker_026d46aa0af64350a32d193088eb6a29 = L.marker(
+                [10.29, -84.07],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_9a085c04ec3341248295dfebb6abed34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b918a6a29d33426e956087a68896f332 = $(`<div id="html_b918a6a29d33426e956087a68896f332" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Cordillera Central, Puesto El Ceibo, on ridge crest 250 m west of Transect Trail, primary premontane wet forest <strong>Elevación:</strong> 765.0 m  <strong>Fecha:</strong> 1994-03-20 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle|A. Espino <strong>Identificadores:</strong> D. Lorence</div>`)[0];
+            popup_9a085c04ec3341248295dfebb6abed34.setContent(html_b918a6a29d33426e956087a68896f332);
+        
+
+        marker_026d46aa0af64350a32d193088eb6a29.bindPopup(popup_9a085c04ec3341248295dfebb6abed34)
+        ;
+
+        
+    
+    
+            var marker_c01ac57f4de244adb6a51a273af2c407 = L.marker(
+                [10.29, -84.07],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_00b8646e07b4409789941330fc8736d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_650de0ea1a914fba889fb212b2ae7c26 = $(`<div id="html_650de0ea1a914fba889fb212b2ae7c26" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Cordillera Central, Puesto El Ceibo, on ridge crest 250 m east of Transect Trail, primary premontane wet forest <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1994-03-05 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle|L. Esquivel|S. Kelly <strong>Identificadores:</strong> A. Torres-Montúfar (MEXU)</div>`)[0];
+            popup_00b8646e07b4409789941330fc8736d8.setContent(html_650de0ea1a914fba889fb212b2ae7c26);
+        
+
+        marker_c01ac57f4de244adb6a51a273af2c407.bindPopup(popup_00b8646e07b4409789941330fc8736d8)
+        ;
+
+        
+    
+    
+            var marker_3581c360fe724924ab4b6131882b772e = L.marker(
+                [10.35, -84.66],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_476ba226510e4e5e91050e16cc0230af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_452b88cc3f3f4420bdc4ddef035b95ac = $(`<div id="html_452b88cc3f3f4420bdc4ddef035b95ac" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas. Laguna Poco Sol. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1989-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_476ba226510e4e5e91050e16cc0230af.setContent(html_452b88cc3f3f4420bdc4ddef035b95ac);
+        
+
+        marker_3581c360fe724924ab4b6131882b772e.bindPopup(popup_476ba226510e4e5e91050e16cc0230af)
+        ;
+
+        
+    
+    
+            var marker_4fe784eaefaf48a5979e8649939478a6 = L.marker(
+                [10.291667, -84.075],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_6b03e2f508a54feb958032f059583438 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29c4767366aa47428300259ac9b20804 = $(`<div id="html_29c4767366aa47428300259ac9b20804" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Between Río Peje and Río Sardinalito, Atlantic slope of Volcán Barva. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1986-04-03 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6b03e2f508a54feb958032f059583438.setContent(html_29c4767366aa47428300259ac9b20804);
+        
+
+        marker_4fe784eaefaf48a5979e8649939478a6.bindPopup(popup_6b03e2f508a54feb958032f059583438)
+        ;
+
+        
+    
+    
+            var marker_e4236ab4a35749daa629bf4a5b3330ab = L.marker(
+                [10.29083, -84.07555],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_6beb06f641e4449abc2621108488b766 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_959eaa69b3ea46c294f40b225658f74f = $(`<div id="html_959eaa69b3ea46c294f40b225658f74f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, from Park entrance at El Ceibo hike 4 hrs to Casa 1070, then hike ca. 1 hr 30 min S on main trail below Casa 1116. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 2004-03-02 00:00:00+00:00 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6beb06f641e4449abc2621108488b766.setContent(html_959eaa69b3ea46c294f40b225658f74f);
+        
+
+        marker_e4236ab4a35749daa629bf4a5b3330ab.bindPopup(popup_6beb06f641e4449abc2621108488b766)
+        ;
+
+        
+    
+    
+            var marker_c257b9129e9a402c8d750c8e674ea359 = L.marker(
+                [10.283610000000001, -84.08],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_75d51bc3fae44eb992847a2e5392df2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3d54d60c75f41ea9fd1b715e90a470c = $(`<div id="html_f3d54d60c75f41ea9fd1b715e90a470c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, from Park entrance at El Ceibo hike 4 hrs to Casa 1070, then hike ca. 1 hr 30 min S on main trail below Casa. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 2004-02-25 00:00:00+00:00 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_75d51bc3fae44eb992847a2e5392df2c.setContent(html_f3d54d60c75f41ea9fd1b715e90a470c);
+        
+
+        marker_c257b9129e9a402c8d750c8e674ea359.bindPopup(popup_75d51bc3fae44eb992847a2e5392df2c)
+        ;
+
+        
+    
+    
+            var marker_afbd70f8e00b4bb1aa61530cf28d62c2 = L.marker(
+                [10.3, -84.1],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_483acc51608d497ea2995371961b2e21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bc0fb1024d14787be86d001a8977dea = $(`<div id="html_9bc0fb1024d14787be86d001a8977dea" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pasturas, bosque socolado, finca de Bernardo Gómez, Magsasay <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1983-01-21 00:00:00+00:00 <strong>Recolectores:</strong> Isidro A. Chacón G. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_483acc51608d497ea2995371961b2e21.setContent(html_9bc0fb1024d14787be86d001a8977dea);
+        
+
+        marker_afbd70f8e00b4bb1aa61530cf28d62c2.bindPopup(popup_483acc51608d497ea2995371961b2e21)
+        ;
+
+        
+    
+    
+            var marker_f2baba9b03da434a91e2c5d65e0b06b6 = L.marker(
+                [10.588889, -84.93055600000001],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_8084a647a0534148be6670434bf96ac3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d15d83343a894251be558ed3ecf7fc76 = $(`<div id="html_d15d83343a894251be558ed3ecf7fc76" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del Río Frío. Lago Cote-Eco Lodge, Sendero Bromelia. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1997-08-21 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|et al. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_8084a647a0534148be6670434bf96ac3.setContent(html_d15d83343a894251be558ed3ecf7fc76);
+        
+
+        marker_f2baba9b03da434a91e2c5d65e0b06b6.bindPopup(popup_8084a647a0534148be6670434bf96ac3)
+        ;
+
+        
+    
+    
+            var marker_f603701a26b94de3a86b89e092b24d9a = L.marker(
+                [10.588889, -84.93055600000001],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_67f2e54b10ba428296adc1a856a5c368 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5eef241e520b4496bd961390c367dede = $(`<div id="html_5eef241e520b4496bd961390c367dede" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1-2 km west of Lago de Cote, 13 km north of Tilaran, continental divide on SE slope of Volcan Tenorio, Eco-Lodge cloud forest reserve. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1997-08-21 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Randy Evans ; Gerardo Rivera <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_67f2e54b10ba428296adc1a856a5c368.setContent(html_5eef241e520b4496bd961390c367dede);
+        
+
+        marker_f603701a26b94de3a86b89e092b24d9a.bindPopup(popup_67f2e54b10ba428296adc1a856a5c368)
+        ;
+
+        
+    
+    
+            var marker_2a213d0640354587b65e2787f8e03878 = L.marker(
+                [10.588889, -84.93055600000001],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_aea641280bc3452c9e0b31fd989defa5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d9fc70f498545a18d5960bf64fd1a71 = $(`<div id="html_3d9fc70f498545a18d5960bf64fd1a71" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1-2 km west of Lago de Cote, 13 km north of Tilaran, continental divide on SE slope of Volcan Tenorio, Eco-Lodge cloud forest reserve. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1997-08-21 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Randy Evans ; Gerardo Rivera <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_aea641280bc3452c9e0b31fd989defa5.setContent(html_3d9fc70f498545a18d5960bf64fd1a71);
+        
+
+        marker_2a213d0640354587b65e2787f8e03878.bindPopup(popup_aea641280bc3452c9e0b31fd989defa5)
+        ;
+
+        
+    
+    
+            var marker_9fbdf2dee49044fa86d6593508eb4fea = L.marker(
+                [10.588889, -84.93055600000001],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_aa884c586bc142db91dd2922e95f224c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08a500fa38004b5e880182faaeba4039 = $(`<div id="html_08a500fa38004b5e880182faaeba4039" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1-2 km west of Lago de Cote, 13 km north of Tilaran, continental divide on SE slope of Volcan Tenorio, Eco-Lodge cloud forest reserve. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1997-08-21 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Randy Evans ; Gerardo Rivera <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_aa884c586bc142db91dd2922e95f224c.setContent(html_08a500fa38004b5e880182faaeba4039);
+        
+
+        marker_9fbdf2dee49044fa86d6593508eb4fea.bindPopup(popup_aa884c586bc142db91dd2922e95f224c)
+        ;
+
+        
+    
+    
+            var marker_30738e36d0b44d57b8c8aad76dd21012 = L.marker(
+                [10.588889, -84.93055600000001],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_e0a83d60f37f4c5a8e00917118a1c8f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efb1f03220154505a5f6d8b4fce7efab = $(`<div id="html_efb1f03220154505a5f6d8b4fce7efab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1-2 km west of Lago de Cote, 13 km north of Tilaran, continental divide on SE slope of Volcan Tenorio, Eco-Lodge cloud forest reserve. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1997-08-21 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Randy Evans ; Gerardo Rivera <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_e0a83d60f37f4c5a8e00917118a1c8f3.setContent(html_efb1f03220154505a5f6d8b4fce7efab);
+        
+
+        marker_30738e36d0b44d57b8c8aad76dd21012.bindPopup(popup_e0a83d60f37f4c5a8e00917118a1c8f3)
+        ;
+
+        
+    
+    
+            var marker_d3b20d7cf03546c287397c89ac3010d1 = L.marker(
+                [10.4, -84.050833],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_46fa0fc69ef2437c9116d98c9a9c3891 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_564f754e192e42b5b6bf57ab853f1e56 = $(`<div id="html_564f754e192e42b5b6bf57ab853f1e56" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Magsasay, Finca de Bernardo Gomez. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1983-01-21 00:00:00+00:00 <strong>Recolectores:</strong> Isidro Chacón <strong>Identificadores:</strong> Lorence, David H.</div>`)[0];
+            popup_46fa0fc69ef2437c9116d98c9a9c3891.setContent(html_564f754e192e42b5b6bf57ab853f1e56);
+        
+
+        marker_d3b20d7cf03546c287397c89ac3010d1.bindPopup(popup_46fa0fc69ef2437c9116d98c9a9c3891)
+        ;
+
+        
+    
+    
+            var marker_cbf627b2df8d4fbc89b377457602a15f = L.marker(
+                [10.333333, -84.68333299999999],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_277ea1bfd3b4472588f14b71b6b555ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cdc0761c046456f9dc8eb8b89d48766 = $(`<div id="html_9cdc0761c046456f9dc8eb8b89d48766" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Salazar s. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1990-03-27 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_277ea1bfd3b4472588f14b71b6b555ea.setContent(html_9cdc0761c046456f9dc8eb8b89d48766);
+        
+
+        marker_cbf627b2df8d4fbc89b377457602a15f.bindPopup(popup_277ea1bfd3b4472588f14b71b6b555ea)
+        ;
+
+        
+    
+    
+            var marker_ce7febb889154127a3a7ef75c53f683e = L.marker(
+                [10.297222, -84.080556],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_8e312fd5f00c495bb82ab993dfb50707 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_524ffd0bb41f4eb6a45339542d90b857 = $(`<div id="html_524ffd0bb41f4eb6a45339542d90b857" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Primary forest between Rio Peje and Rio Sardinalito, Atlantic slope of Volcan Barva. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1986-04-03 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_8e312fd5f00c495bb82ab993dfb50707.setContent(html_524ffd0bb41f4eb6a45339542d90b857);
+        
+
+        marker_ce7febb889154127a3a7ef75c53f683e.bindPopup(popup_8e312fd5f00c495bb82ab993dfb50707)
+        ;
+
+        
+    
+    
+            var marker_010e9afcbfd849d0aa2073cf3051e235 = L.marker(
+                [10.35, -84.666667],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_b00f6301e6714599b1179df9e0599db0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e34947e5ca85461abd4e54ddb34bb1a2 = $(`<div id="html_e34947e5ca85461abd4e54ddb34bb1a2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas. Laguna Poco Sol. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1989-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_b00f6301e6714599b1179df9e0599db0.setContent(html_e34947e5ca85461abd4e54ddb34bb1a2);
+        
+
+        marker_010e9afcbfd849d0aa2073cf3051e235.bindPopup(popup_b00f6301e6714599b1179df9e0599db0)
+        ;
+
+        
+    
+    
+            var marker_63c970c70ba94f0b8b34633209c30f92 = L.marker(
+                [10.5, -84.5],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_c808432a86904e048b72b5ff750d88a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec919b6c77bd4e46b349ef31f2d87c1b = $(`<div id="html_ec919b6c77bd4e46b349ef31f2d87c1b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-03-27 00:00:00+00:00 <strong>Recolectores:</strong> E. Bello C. <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_c808432a86904e048b72b5ff750d88a1.setContent(html_ec919b6c77bd4e46b349ef31f2d87c1b);
+        
+
+        marker_63c970c70ba94f0b8b34633209c30f92.bindPopup(popup_c808432a86904e048b72b5ff750d88a1)
+        ;
+
+        
+    
+    
+            var marker_8fda80cec13c482f81a90ac60483aa3f = L.marker(
+                [10.58, -84.93],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_33cb00425b4145449e5a64939a9d9c91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6185fee42fd4784a029a9333a7f79bc = $(`<div id="html_c6185fee42fd4784a029a9333a7f79bc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilaràn. 5km Norte del lago Arenal. Cercanìas del Lago Coter. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1996-08-13 00:00:00+00:00 <strong>Recolectores:</strong> Sánchez, Joaquín <strong>Identificadores:</strong> Sánchez, Joaquín</div>`)[0];
+            popup_33cb00425b4145449e5a64939a9d9c91.setContent(html_c6185fee42fd4784a029a9333a7f79bc);
+        
+
+        marker_8fda80cec13c482f81a90ac60483aa3f.bindPopup(popup_33cb00425b4145449e5a64939a9d9c91)
+        ;
+
+        
+    
+    
+            var marker_a4f5e03d2ab9415dbbe00233af57a575 = L.marker(
+                [10.58, -84.93],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_db0b50b78a054ae4b93d0a165ca7a910 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16941494fe31441dab89ce9967dee754 = $(`<div id="html_16941494fe31441dab89ce9967dee754" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilaràn. 5 km Norte del Lago Arenal. Cercanìas del Lago Coter. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1996-08-13 00:00:00+00:00 <strong>Recolectores:</strong> Sánchez, Joaquín <strong>Identificadores:</strong> Sánchez, Joaquín</div>`)[0];
+            popup_db0b50b78a054ae4b93d0a165ca7a910.setContent(html_16941494fe31441dab89ce9967dee754);
+        
+
+        marker_a4f5e03d2ab9415dbbe00233af57a575.bindPopup(popup_db0b50b78a054ae4b93d0a165ca7a910)
+        ;
+
+        
+    
+    
+            var marker_df82926ad605440b9a126c29d501c3bd = L.marker(
+                [10.35, -84.66],
+                {}
+            ).addTo(marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92);
+        
+    
+        var popup_b69bb237c39b4e92bc370d3bdb5f0446 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45f1829e0ebc41aabb68f0aeaba3f066 = $(`<div id="html_45f1829e0ebc41aabb68f0aeaba3f066" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Monteverde Rìo Peñas Blancas. Laguna Poco Sol. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1989-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Bello, Erick <strong>Identificadores:</strong> D. H. Lorence</div>`)[0];
+            popup_b69bb237c39b4e92bc370d3bdb5f0446.setContent(html_45f1829e0ebc41aabb68f0aeaba3f066);
+        
+
+        marker_df82926ad605440b9a126c29d501c3bd.bindPopup(popup_b69bb237c39b4e92bc370d3bdb5f0446)
+        ;
+
+        
+    
+    
+            var layer_control_8a1502b4bef441fe9550b9e8ce695573 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0e27b94edf0149f1b1bf26cb47501390,
+                    "ESRI World Imagery" : tile_layer_6e78376aa25d413a8af50104ee130e45,
+                },
+                overlays :  {
+                    "macro_element_3cc1f7db065b4ad69df369fac1eb5c92" : marker_cluster_3cc1f7db065b4ad69df369fac1eb5c92,
+                },
+            };
+            L.control.layers(
+                layer_control_8a1502b4bef441fe9550b9e8ce695573.base_layers,
+                layer_control_8a1502b4bef441fe9550b9e8ce695573.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_37ee6048f5c345d78205f626e941244d);
+            tile_layer_6e78376aa25d413a8af50104ee130e45.remove();
+        
+</script>

@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3e70ef553aa1406a9f1c2a8c80ca390e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3e70ef553aa1406a9f1c2a8c80ca390e" ></div>
+        
+</body>
+<script>    
+    
+            var map_3e70ef553aa1406a9f1c2a8c80ca390e = L.map(
+                "map_3e70ef553aa1406a9f1c2a8c80ca390e",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+
+            
+
+        
+    
+            var tile_layer_d5f96ea3a33b4875adbcd49545667174 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+            var tile_layer_3a61824f0b9d4b3abce84c0b7f1b09df = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+            var circle_marker_d6b4a06a50c44053b55a70cd97fc03d6 = L.circleMarker(
+                [8.55, -83.58],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_1b7b124a8b14405d9d16e51cf644aa65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_405bfebebcb94e67a3689a17eba0b29c = $(`<div id="html_405bfebebcb94e67a3689a17eba0b29c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Florestal Golfo Dulce Osa Península, Rancho Quemado, ca. 15 km W of Rincón; on ridge at NW end of valley, near Fila Ganado. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1988-05-30 00:00:00+00:00 <strong>Recolectores:</strong> B. Hammel, G. Herrera, M. Chavarría & A. Solis <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1b7b124a8b14405d9d16e51cf644aa65.setContent(html_405bfebebcb94e67a3689a17eba0b29c);
+        
+
+        circle_marker_d6b4a06a50c44053b55a70cd97fc03d6.bindPopup(popup_1b7b124a8b14405d9d16e51cf644aa65)
+        ;
+
+        
+    
+    
+            var circle_marker_53d2a5cfc0a44ba0ba4d29e2ce541683 = L.circleMarker(
+                [8.608333, -83.708333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_a143894cb8284f5ca8efe1158877e0d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f4799a94deb44beb1b1d252e071489c = $(`<div id="html_3f4799a94deb44beb1b1d252e071489c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Osa Peninsula, slopes above Llorona <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1977-07-13 00:00:00+00:00 <strong>Recolectores:</strong> R. L. Liesner <strong>Identificadores:</strong> C. L. Lundell</div>`)[0];
+            popup_a143894cb8284f5ca8efe1158877e0d8.setContent(html_3f4799a94deb44beb1b1d252e071489c);
+        
+
+        circle_marker_53d2a5cfc0a44ba0ba4d29e2ce541683.bindPopup(popup_a143894cb8284f5ca8efe1158877e0d8)
+        ;
+
+        
+    
+    
+            var circle_marker_46c8775863b24abda29584e151698273 = L.circleMarker(
+                [8.69, -83.55],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_1c86ac597bc04fcabd0399ee49e8f8ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05023620a9b14e34a6ff3e01566af579 = $(`<div id="html_05023620a9b14e34a6ff3e01566af579" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Rancho Quemado. Rincón <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1991-08-20 00:00:00+00:00 <strong>Recolectores:</strong> Juan Marín <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_1c86ac597bc04fcabd0399ee49e8f8ff.setContent(html_05023620a9b14e34a6ff3e01566af579);
+        
+
+        circle_marker_46c8775863b24abda29584e151698273.bindPopup(popup_1c86ac597bc04fcabd0399ee49e8f8ff)
+        ;
+
+        
+    
+    
+            var circle_marker_d2c5c6549e6b4adbb453346cda801bed = L.circleMarker(
+                [8.55, -83.58],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_dd185bdd6a9b4f2eb3d6b9b66b7426a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01b2b6ba0c8b4af392fc14af87028291 = $(`<div id="html_01b2b6ba0c8b4af392fc14af87028291" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Osa Península, Rancho Quemado, ca. 15 km W of Rincón; on ridge at NW end of valley, near Fila Ganado. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1988-05-30 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Gerardo Herrera Ch.|María Marta Chavarría|Ángel Solís <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_dd185bdd6a9b4f2eb3d6b9b66b7426a5.setContent(html_01b2b6ba0c8b4af392fc14af87028291);
+        
+
+        circle_marker_d2c5c6549e6b4adbb453346cda801bed.bindPopup(popup_dd185bdd6a9b4f2eb3d6b9b66b7426a5)
+        ;
+
+        
+    
+    
+            var circle_marker_8cc2d58035574923af98f7f6b74b62aa = L.circleMarker(
+                [8.46, -83.58],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_d879a8b7e23445efafabd5ea1c8c3e44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2284ff6af6e4af9972d00c63ac70da7 = $(`<div id="html_b2284ff6af6e4af9972d00c63ac70da7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Corcovado Sirena, Los Patos Forest <strong>Elevación:</strong> 25.5 m  <strong>Fecha:</strong> 1989-05-26 00:00:00+00:00 <strong>Recolectores:</strong> Christopher Kernan|Pamela Phillips <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_d879a8b7e23445efafabd5ea1c8c3e44.setContent(html_b2284ff6af6e4af9972d00c63ac70da7);
+        
+
+        circle_marker_8cc2d58035574923af98f7f6b74b62aa.bindPopup(popup_d879a8b7e23445efafabd5ea1c8c3e44)
+        ;
+
+        
+    
+    
+            var circle_marker_2eaf4a6a099441c582371be75fc716e9 = L.circleMarker(
+                [8.66, -83.56],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_79feb9d616784b0688a3518ed93d29f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_036e499bd801415d8eb69ff421b98a52 = $(`<div id="html_036e499bd801415d8eb69ff421b98a52" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. En el valle de Rancho Quemado, ca. 15 km al oeste de Rincón; en el sur del valle por la Quebrada Quebradón y Río Riyito. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-09-11 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Helen Kennedy|James C. Solomon <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_79feb9d616784b0688a3518ed93d29f2.setContent(html_036e499bd801415d8eb69ff421b98a52);
+        
+
+        circle_marker_2eaf4a6a099441c582371be75fc716e9.bindPopup(popup_79feb9d616784b0688a3518ed93d29f2)
+        ;
+
+        
+    
+    
+            var circle_marker_ea288b9b0c8141d5818335ae4638a1e4 = L.circleMarker(
+                [8.68, -83.55],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_b6fbacb269db40daacb322bdc491a4f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b12cbe1f9cb74097ae9b4bc0b874d262 = $(`<div id="html_b12cbe1f9cb74097ae9b4bc0b874d262" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Rancho Quemado, ca. 15 km W de Rincón; en fila justamente antes de llegar al valle de Rancho Quemado. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1992-11-01 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Reinaldo Aguilar <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_b6fbacb269db40daacb322bdc491a4f1.setContent(html_b12cbe1f9cb74097ae9b4bc0b874d262);
+        
+
+        circle_marker_ea288b9b0c8141d5818335ae4638a1e4.bindPopup(popup_b6fbacb269db40daacb322bdc491a4f1)
+        ;
+
+        
+    
+    
+            var circle_marker_422cd8c2a49a48a0aa09236a4697cb4d = L.circleMarker(
+                [8.616667, -83.466667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_056f2c8a3e604d449babfa6c5d39da99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b515915528b495aa8969411b370df3e = $(`<div id="html_7b515915528b495aa8969411b370df3e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Osa Península; Trocha de La Tarde rd. 10 km SW of La Palma, S of Rincón de Osa. Primary forest along red clay soil ridge E of the Río Rincón valley. Apr. 28-30. <strong>Elevación:</strong> 175.0 m  <strong>Fecha:</strong> 1988-04-28 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Rafael Robles <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_056f2c8a3e604d449babfa6c5d39da99.setContent(html_7b515915528b495aa8969411b370df3e);
+        
+
+        circle_marker_422cd8c2a49a48a0aa09236a4697cb4d.bindPopup(popup_056f2c8a3e604d449babfa6c5d39da99)
+        ;
+
+        
+    
+    
+            var circle_marker_3923d431911947a892bbdf43a8874eb2 = L.circleMarker(
+                [8.68, -83.54],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_60a74468760743ce87cebaff460950f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a6b2be76708495194dffc8be910a384 = $(`<div id="html_5a6b2be76708495194dffc8be910a384" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ridge between Río Riyito (valley of Laguna Chocuaco) and Quebrada Banegas, S of Cerro Rancho Quemado (ca. 7 km W of Rincón de Osa). 8º41'N 83º32.5'W 200-300 m <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1986-05-26 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Barry E. Hammel|Greg C. de Nevers <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_60a74468760743ce87cebaff460950f3.setContent(html_5a6b2be76708495194dffc8be910a384);
+        
+
+        circle_marker_3923d431911947a892bbdf43a8874eb2.bindPopup(popup_60a74468760743ce87cebaff460950f3)
+        ;
+
+        
+    
+    
+            var circle_marker_9303d11ba08744ea8daad290d6566bc9 = L.circleMarker(
+                [8.52777, -83.43276999999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_9c8c7ff337a743399461c56d36f4b79b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27bbd3b842304aabb912f1ec718db76b = $(`<div id="html_27bbd3b842304aabb912f1ec718db76b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Península de Osa. A.C.O., Golfito, Parque Nacional Corcovado, Estación Agujas, La Bonanza. <strong>Elevación:</strong> 495.0 m  <strong>Fecha:</strong> 1997-11-12 00:00:00+00:00 <strong>Recolectores:</strong> Manuel Lobo <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_9c8c7ff337a743399461c56d36f4b79b.setContent(html_27bbd3b842304aabb912f1ec718db76b);
+        
+
+        circle_marker_9303d11ba08744ea8daad290d6566bc9.bindPopup(popup_9c8c7ff337a743399461c56d36f4b79b)
+        ;
+
+        
+    
+    
+            var circle_marker_79178cdc546f4f0f90291a6695691352 = L.circleMarker(
+                [8.6, -83.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_823b98b005394b02bf56f3aff63227b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6a85d9967c24b549605c21c4d33bff0 = $(`<div id="html_f6a85d9967c24b549605c21c4d33bff0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Corcovado National Park. Primary forest, slopes above Llorona. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1977-07-13 00:00:00+00:00 <strong>Recolectores:</strong> Ronald L. Liesner <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_823b98b005394b02bf56f3aff63227b9.setContent(html_f6a85d9967c24b549605c21c4d33bff0);
+        
+
+        circle_marker_79178cdc546f4f0f90291a6695691352.bindPopup(popup_823b98b005394b02bf56f3aff63227b9)
+        ;
+
+        
+    
+    
+            var circle_marker_42f24e816eed44989b511fe13dd0d3fd = L.circleMarker(
+                [8.6, -83.4833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_e1eb6265a1d3404f9f0bbe05383efad9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de0f4131de5f47b1a7fdf4406789c6a6 = $(`<div id="html_de0f4131de5f47b1a7fdf4406789c6a6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce Dos Brazos de Cerro de Oro. Confluencia del Río Pavón y Río Rincón <strong>Elevación:</strong> 244.0 m  <strong>Fecha:</strong> 1991-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_e1eb6265a1d3404f9f0bbe05383efad9.setContent(html_de0f4131de5f47b1a7fdf4406789c6a6);
+        
+
+        circle_marker_42f24e816eed44989b511fe13dd0d3fd.bindPopup(popup_e1eb6265a1d3404f9f0bbe05383efad9)
+        ;
+
+        
+    
+    
+            var circle_marker_174f65ec358c4b9c96748459de14c064 = L.circleMarker(
+                [8.7, -83.5167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_2352899d8a00485b81371e064f51dbd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_407f0cf9033246c99bd879f335e9ec39 = $(`<div id="html_407f0cf9033246c99bd879f335e9ec39" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Osa Peninsula, Aguabuena, 3.5 km W of Rincón, along trail leading north from the house of don Quecho, W of BOSCOSA station" <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1994-10-06 00:00:00+00:00 <strong>Recolectores:</strong> Karsten Thomsen <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_2352899d8a00485b81371e064f51dbd8.setContent(html_407f0cf9033246c99bd879f335e9ec39);
+        
+
+        circle_marker_174f65ec358c4b9c96748459de14c064.bindPopup(popup_2352899d8a00485b81371e064f51dbd8)
+        ;
+
+        
+    
+    
+            var circle_marker_f333e0bde2d545e984c03cf21b3649da = L.circleMarker(
+                [8.7167, -83.5667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_14f0eb4fc4cc4f719df508a0eaf71ad3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66d1efd2a1674b25adf713bf78df6aa1 = $(`<div id="html_66d1efd2a1674b25adf713bf78df6aa1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Reserva Forestal Golfo Dulce, Península de Osa, Rancho Quemado, fila Rancho Quemado" <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1993-09-21 00:00:00+00:00 <strong>Recolectores:</strong> Ada Luz Marín <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_14f0eb4fc4cc4f719df508a0eaf71ad3.setContent(html_66d1efd2a1674b25adf713bf78df6aa1);
+        
+
+        circle_marker_f333e0bde2d545e984c03cf21b3649da.bindPopup(popup_14f0eb4fc4cc4f719df508a0eaf71ad3)
+        ;
+
+        
+    
+    
+            var circle_marker_4700144994944db89ff71bc68a63a6da = L.circleMarker(
+                [8.72216, -83.44166],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_cbf036d2bfb74f2fa11c31001d31c7e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bd0f145cf3b4fdc8ffb700ccd66bd1c = $(`<div id="html_4bd0f145cf3b4fdc8ffb700ccd66bd1c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Reserva Forestal Golfo Dulce, Península de Osa, Los Mogos, Bahía Chal" <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1993-07-30 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_cbf036d2bfb74f2fa11c31001d31c7e3.setContent(html_4bd0f145cf3b4fdc8ffb700ccd66bd1c);
+        
+
+        circle_marker_4700144994944db89ff71bc68a63a6da.bindPopup(popup_cbf036d2bfb74f2fa11c31001d31c7e3)
+        ;
+
+        
+    
+    
+            var circle_marker_b74e4e6c4259491aa402655e8ef52067 = L.circleMarker(
+                [8.536614, -83.42551],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_b4125042669f4d66b8fe6d767c488ae5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0b495687d86474aa6e7da8eb916ef41 = $(`<div id="html_a0b495687d86474aa6e7da8eb916ef41" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Rio Agujas, sendero Zamia. Bosque primario. " <strong>Elevación:</strong> 325.0 m  <strong>Fecha:</strong> 1998-06-10 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_b4125042669f4d66b8fe6d767c488ae5.setContent(html_a0b495687d86474aa6e7da8eb916ef41);
+        
+
+        circle_marker_b74e4e6c4259491aa402655e8ef52067.bindPopup(popup_b4125042669f4d66b8fe6d767c488ae5)
+        ;
+
+        
+    
+    
+            var circle_marker_5584b74e9dd645dc9d90b738bff4fa6d = L.circleMarker(
+                [8.752889, -83.466389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_f2a9706e2f02499fb83d8f7f9585f73b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c2f6a80d8fc4e229a6c86bff7949c4d = $(`<div id="html_0c2f6a80d8fc4e229a6c86bff7949c4d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahía Chal, Rincón de Osa. Finca Marvin Artavia. <strong>Elevación:</strong> 282.0 m  <strong>Fecha:</strong> 2014-04-11 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Reinaldo Aguilar ; William Montero ; Guillermo Villalobos ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_f2a9706e2f02499fb83d8f7f9585f73b.setContent(html_0c2f6a80d8fc4e229a6c86bff7949c4d);
+        
+
+        circle_marker_5584b74e9dd645dc9d90b738bff4fa6d.bindPopup(popup_f2a9706e2f02499fb83d8f7f9585f73b)
+        ;
+
+        
+    
+    
+            var circle_marker_d5728be1cdbb4d3f9e9b05395ce9569f = L.circleMarker(
+                [8.752889, -83.466389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_e648ec10dd364a3797d09e100a31c036 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3fdc50e2d2c4d1cae8f48f2d2615950 = $(`<div id="html_b3fdc50e2d2c4d1cae8f48f2d2615950" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahía Chal, Rincón de Osa. Finca Marvin Artavia. <strong>Elevación:</strong> 282.0 m  <strong>Fecha:</strong> 2014-04-11 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Reinaldo Aguilar ; William Montero ; Guillermo Villalobos ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_e648ec10dd364a3797d09e100a31c036.setContent(html_b3fdc50e2d2c4d1cae8f48f2d2615950);
+        
+
+        circle_marker_d5728be1cdbb4d3f9e9b05395ce9569f.bindPopup(popup_e648ec10dd364a3797d09e100a31c036)
+        ;
+
+        
+    
+    
+            var circle_marker_0b3f57e2958f482b9d4fab3806a7e5c6 = L.circleMarker(
+                [8.752889, -83.466389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_43991a11ce774a80b0243fb28b985e99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3efc42edcda49048b5f5f4ca537d549 = $(`<div id="html_c3efc42edcda49048b5f5f4ca537d549" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahía Chal, Rincón de Osa. Finca Marvin Artavia. <strong>Elevación:</strong> 282.0 m  <strong>Fecha:</strong> 2014-04-11 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Reinaldo Aguilar ; William Montero ; Guillermo Villalobos ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_43991a11ce774a80b0243fb28b985e99.setContent(html_c3efc42edcda49048b5f5f4ca537d549);
+        
+
+        circle_marker_0b3f57e2958f482b9d4fab3806a7e5c6.bindPopup(popup_43991a11ce774a80b0243fb28b985e99)
+        ;
+
+        
+    
+    
+            var circle_marker_ae8dc8fe7e91403299219b658dfbd49b = L.circleMarker(
+                [8.536614, -83.425512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_62bb839e75574d9bae5b59a7efdf5ad6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84652fe0a9b14942a79d17de96c4dd80 = $(`<div id="html_84652fe0a9b14942a79d17de96c4dd80" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Estación Agujas. <strong>Elevación:</strong> 325.0 m  <strong>Fecha:</strong> 1998-06-10 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa Zúñiga <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_62bb839e75574d9bae5b59a7efdf5ad6.setContent(html_84652fe0a9b14942a79d17de96c4dd80);
+        
+
+        circle_marker_ae8dc8fe7e91403299219b658dfbd49b.bindPopup(popup_62bb839e75574d9bae5b59a7efdf5ad6)
+        ;
+
+        
+    
+    
+            var circle_marker_0b88d5b3477246699460e7d5c9652d24 = L.circleMarker(
+                [8.536614, -83.425512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_34f6c972a2a44bf498b9d10752a1bf70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59fdce8a91464622a7747a3f3cb8ac19 = $(`<div id="html_59fdce8a91464622a7747a3f3cb8ac19" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Estación Agujas. <strong>Elevación:</strong> 325.0 m  <strong>Fecha:</strong> 1998-06-10 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa Zúñiga <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_34f6c972a2a44bf498b9d10752a1bf70.setContent(html_59fdce8a91464622a7747a3f3cb8ac19);
+        
+
+        circle_marker_0b88d5b3477246699460e7d5c9652d24.bindPopup(popup_34f6c972a2a44bf498b9d10752a1bf70)
+        ;
+
+        
+    
+    
+            var circle_marker_01f3af7e9a9a403f9501e4d9383146a5 = L.circleMarker(
+                [8.536614, -83.425512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_de4e2ebb472b49d0af41ab1e087e79f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ddb79dce6284d65884d623435a66790 = $(`<div id="html_3ddb79dce6284d65884d623435a66790" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Estación Agujas. <strong>Elevación:</strong> 325.0 m  <strong>Fecha:</strong> 1998-06-10 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa Zúñiga <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_de4e2ebb472b49d0af41ab1e087e79f8.setContent(html_3ddb79dce6284d65884d623435a66790);
+        
+
+        circle_marker_01f3af7e9a9a403f9501e4d9383146a5.bindPopup(popup_de4e2ebb472b49d0af41ab1e087e79f8)
+        ;
+
+        
+    
+    
+            var circle_marker_b7704b6fdb16467d87db23a8af33cb89 = L.circleMarker(
+                [8.536614, -83.425512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_17b016b32eb54af499aba7bbadf8c04a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92e5b45b762d44ed8691eb6395e62bbd = $(`<div id="html_92e5b45b762d44ed8691eb6395e62bbd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Estación Agujas. <strong>Elevación:</strong> 325.0 m  <strong>Fecha:</strong> 1998-06-10 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa Zúñiga <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_17b016b32eb54af499aba7bbadf8c04a.setContent(html_92e5b45b762d44ed8691eb6395e62bbd);
+        
+
+        circle_marker_b7704b6fdb16467d87db23a8af33cb89.bindPopup(popup_17b016b32eb54af499aba7bbadf8c04a)
+        ;
+
+        
+    
+    
+            var circle_marker_68182e17aad3488f984ea7bd12a3d357 = L.circleMarker(
+                [8.536614, -83.425512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_1b797c9cc1dc44ae969178a06a0c9330 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6c03f27ee054fb0a7f8a0a518042218 = $(`<div id="html_e6c03f27ee054fb0a7f8a0a518042218" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Estación Agujas. <strong>Elevación:</strong> 325.0 m  <strong>Fecha:</strong> 1998-06-10 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa Zúñiga <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_1b797c9cc1dc44ae969178a06a0c9330.setContent(html_e6c03f27ee054fb0a7f8a0a518042218);
+        
+
+        circle_marker_68182e17aad3488f984ea7bd12a3d357.bindPopup(popup_1b797c9cc1dc44ae969178a06a0c9330)
+        ;
+
+        
+    
+    
+            var circle_marker_aa00f3afc64e4327865ffef38332d4b0 = L.circleMarker(
+                [8.536614, -83.425512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_8e2cb61c338c45cdb5b43ed17089305a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47a44ebd7039485d9625b84d137d426a = $(`<div id="html_47a44ebd7039485d9625b84d137d426a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Estación Agujas. <strong>Elevación:</strong> 325.0 m  <strong>Fecha:</strong> 1998-06-10 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa Zúñiga <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_8e2cb61c338c45cdb5b43ed17089305a.setContent(html_47a44ebd7039485d9625b84d137d426a);
+        
+
+        circle_marker_aa00f3afc64e4327865ffef38332d4b0.bindPopup(popup_8e2cb61c338c45cdb5b43ed17089305a)
+        ;
+
+        
+    
+    
+            var circle_marker_1e0057f5e1e64e079f7f64fbd94fd78d = L.circleMarker(
+                [8.566667, -83.516667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_11b1d780f3e544c495ee43869627902a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a8ce53a6d454db1894a3a0954abb089 = $(`<div id="html_8a8ce53a6d454db1894a3a0954abb089" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Los Patos. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1994-06-06 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_11b1d780f3e544c495ee43869627902a.setContent(html_8a8ce53a6d454db1894a3a0954abb089);
+        
+
+        circle_marker_1e0057f5e1e64e079f7f64fbd94fd78d.bindPopup(popup_11b1d780f3e544c495ee43869627902a)
+        ;
+
+        
+    
+    
+            var circle_marker_d8609132ad0c4e9183df36d78f6170f5 = L.circleMarker(
+                [8.566667, -83.516667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_fd3651fff79c439982e6509caaa0466f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc2847d731df417c999747343412bfe5 = $(`<div id="html_dc2847d731df417c999747343412bfe5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Los Patos. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1994-06-06 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_fd3651fff79c439982e6509caaa0466f.setContent(html_dc2847d731df417c999747343412bfe5);
+        
+
+        circle_marker_d8609132ad0c4e9183df36d78f6170f5.bindPopup(popup_fd3651fff79c439982e6509caaa0466f)
+        ;
+
+        
+    
+    
+            var circle_marker_f2502651dd2c4041aea139b37c88267e = L.circleMarker(
+                [8.566667, -83.516667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_96803fb80d6a42acb8914767e976fba6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47f1b70abce54a8eb65c4a74baeea0f3 = $(`<div id="html_47f1b70abce54a8eb65c4a74baeea0f3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Los Patos. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1994-06-06 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_96803fb80d6a42acb8914767e976fba6.setContent(html_47f1b70abce54a8eb65c4a74baeea0f3);
+        
+
+        circle_marker_f2502651dd2c4041aea139b37c88267e.bindPopup(popup_96803fb80d6a42acb8914767e976fba6)
+        ;
+
+        
+    
+    
+            var circle_marker_6c4d45b6241842939ec9615674642493 = L.circleMarker(
+                [8.566667, -83.516667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_ce97672ce7814614b7f5064a75f0d87c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47da31fdce994a7c87ddcc0d2f72a9b4 = $(`<div id="html_47da31fdce994a7c87ddcc0d2f72a9b4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Los Patos. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1994-06-06 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_ce97672ce7814614b7f5064a75f0d87c.setContent(html_47da31fdce994a7c87ddcc0d2f72a9b4);
+        
+
+        circle_marker_6c4d45b6241842939ec9615674642493.bindPopup(popup_ce97672ce7814614b7f5064a75f0d87c)
+        ;
+
+        
+    
+    
+            var circle_marker_68586a8c32154f428e2a74b0e85f053c = L.circleMarker(
+                [8.566667, -83.516667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_54c9576304c54dee826d20f43c073929 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c20875920d624303936ec93312de995d = $(`<div id="html_c20875920d624303936ec93312de995d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Los Patos. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1994-06-06 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_54c9576304c54dee826d20f43c073929.setContent(html_c20875920d624303936ec93312de995d);
+        
+
+        circle_marker_68586a8c32154f428e2a74b0e85f053c.bindPopup(popup_54c9576304c54dee826d20f43c073929)
+        ;
+
+        
+    
+    
+            var circle_marker_933ab24a841e4c51b8c9bbc54dd50034 = L.circleMarker(
+                [8.566667, -83.516667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_f8176213acd74e74846cea23224894d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b64d4d849384fe2ba283538e48730cb = $(`<div id="html_5b64d4d849384fe2ba283538e48730cb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Los Patos. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1994-06-06 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_f8176213acd74e74846cea23224894d4.setContent(html_5b64d4d849384fe2ba283538e48730cb);
+        
+
+        circle_marker_933ab24a841e4c51b8c9bbc54dd50034.bindPopup(popup_f8176213acd74e74846cea23224894d4)
+        ;
+
+        
+    
+    
+            var circle_marker_ed16339ae2794dbbb8232a192aa34992 = L.circleMarker(
+                [8.566667, -83.516667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_24760ee02cd2439a906c8dbf7c961453 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c33b8da89da403da6c8f5faefc6d625 = $(`<div id="html_1c33b8da89da403da6c8f5faefc6d625" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Los Patos. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1994-06-06 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_24760ee02cd2439a906c8dbf7c961453.setContent(html_1c33b8da89da403da6c8f5faefc6d625);
+        
+
+        circle_marker_ed16339ae2794dbbb8232a192aa34992.bindPopup(popup_24760ee02cd2439a906c8dbf7c961453)
+        ;
+
+        
+    
+    
+            var circle_marker_d0463b66dee94e49a924af8550fb6519 = L.circleMarker(
+                [8.533333, -83.43333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_bb4cf45289e9466983bfd06a9dec5ec6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2000ffcf80eb4c4b9ca066f0b7c393e8 = $(`<div id="html_2000ffcf80eb4c4b9ca066f0b7c393e8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Torre, cabeceras del Rio Agujas. Finca de Los Azofeifa. Puerto Jimenez. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2000-03-14 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_bb4cf45289e9466983bfd06a9dec5ec6.setContent(html_2000ffcf80eb4c4b9ca066f0b7c393e8);
+        
+
+        circle_marker_d0463b66dee94e49a924af8550fb6519.bindPopup(popup_bb4cf45289e9466983bfd06a9dec5ec6)
+        ;
+
+        
+    
+    
+            var circle_marker_5a5dbb6ab4bf421aadb09e237698585b = L.circleMarker(
+                [8.528025, -83.43278199999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_1140eb09320241778e723fe4a26044fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d847d8ef81c248b69ade4f5182f84a72 = $(`<div id="html_d847d8ef81c248b69ade4f5182f84a72" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Agujas.  Sendero Bonanza. <strong>Elevación:</strong> 495.0 m  <strong>Fecha:</strong> 1997-11-12 00:00:00+00:00 <strong>Recolectores:</strong> Manuel Lobo <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_1140eb09320241778e723fe4a26044fc.setContent(html_d847d8ef81c248b69ade4f5182f84a72);
+        
+
+        circle_marker_5a5dbb6ab4bf421aadb09e237698585b.bindPopup(popup_1140eb09320241778e723fe4a26044fc)
+        ;
+
+        
+    
+    
+            var circle_marker_134fb5e7e44d40e1bcfb27178cdfde8a = L.circleMarker(
+                [8.528025, -83.43278199999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_c1844112471546db9d72b4573b6869cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5e62026c2734f13af50c32f2582595a = $(`<div id="html_a5e62026c2734f13af50c32f2582595a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Agujas.  Sendero Bonanza. <strong>Elevación:</strong> 495.0 m  <strong>Fecha:</strong> 1997-11-12 00:00:00+00:00 <strong>Recolectores:</strong> Manuel Lobo <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_c1844112471546db9d72b4573b6869cb.setContent(html_a5e62026c2734f13af50c32f2582595a);
+        
+
+        circle_marker_134fb5e7e44d40e1bcfb27178cdfde8a.bindPopup(popup_c1844112471546db9d72b4573b6869cb)
+        ;
+
+        
+    
+    
+            var circle_marker_2a022294902245d9bdd5d324cc5f19c0 = L.circleMarker(
+                [8.528025, -83.43278199999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_d4ed718ac76d4fe7994238845a74c39a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23ddea41c2bf445a9a0e95c17beabaf2 = $(`<div id="html_23ddea41c2bf445a9a0e95c17beabaf2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Agujas.  Sendero Bonanza. <strong>Elevación:</strong> 495.0 m  <strong>Fecha:</strong> 1997-11-12 00:00:00+00:00 <strong>Recolectores:</strong> Manuel Lobo <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d4ed718ac76d4fe7994238845a74c39a.setContent(html_23ddea41c2bf445a9a0e95c17beabaf2);
+        
+
+        circle_marker_2a022294902245d9bdd5d324cc5f19c0.bindPopup(popup_d4ed718ac76d4fe7994238845a74c39a)
+        ;
+
+        
+    
+    
+            var circle_marker_96b14406774445bb8aa7cc2218cda154 = L.circleMarker(
+                [8.528025, -83.43278199999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_9d79126f80f442e2b7634f0978036b39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a896090ca7f4464870de05c67f12ceb = $(`<div id="html_4a896090ca7f4464870de05c67f12ceb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Agujas.  Sendero Bonanza. <strong>Elevación:</strong> 495.0 m  <strong>Fecha:</strong> 1997-11-12 00:00:00+00:00 <strong>Recolectores:</strong> Manuel Lobo <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_9d79126f80f442e2b7634f0978036b39.setContent(html_4a896090ca7f4464870de05c67f12ceb);
+        
+
+        circle_marker_96b14406774445bb8aa7cc2218cda154.bindPopup(popup_9d79126f80f442e2b7634f0978036b39)
+        ;
+
+        
+    
+    
+            var circle_marker_7333e0df17df47d28da58dfc7d1228c7 = L.circleMarker(
+                [8.536614, -83.425512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_cdfa93052bc64f8086758c0f83a1ed37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0e3cbe86fc64f409faf977550103255 = $(`<div id="html_b0e3cbe86fc64f409faf977550103255" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Estación Agujas. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1997-10-04 00:00:00+00:00 <strong>Recolectores:</strong> Manuel Lobo <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_cdfa93052bc64f8086758c0f83a1ed37.setContent(html_b0e3cbe86fc64f409faf977550103255);
+        
+
+        circle_marker_7333e0df17df47d28da58dfc7d1228c7.bindPopup(popup_cdfa93052bc64f8086758c0f83a1ed37)
+        ;
+
+        
+    
+    
+            var circle_marker_19457745e72844cd949a7476f4867231 = L.circleMarker(
+                [8.536614, -83.425512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_2a19d51d4b2b4797bf7d7f43e7958481 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bce294d8d944cc0a3977f0d461fcb75 = $(`<div id="html_9bce294d8d944cc0a3977f0d461fcb75" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Estación Agujas. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1997-10-04 00:00:00+00:00 <strong>Recolectores:</strong> Manuel Lobo <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_2a19d51d4b2b4797bf7d7f43e7958481.setContent(html_9bce294d8d944cc0a3977f0d461fcb75);
+        
+
+        circle_marker_19457745e72844cd949a7476f4867231.bindPopup(popup_2a19d51d4b2b4797bf7d7f43e7958481)
+        ;
+
+        
+    
+    
+            var circle_marker_11b4c95273b84e3ab514dfa0eedba573 = L.circleMarker(
+                [8.536614, -83.425512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_32c9276f92ad4dc4aac41df2529abdc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a284bd626a44fb1a51a0e93e5a7028a = $(`<div id="html_4a284bd626a44fb1a51a0e93e5a7028a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Estación Agujas. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1997-10-04 00:00:00+00:00 <strong>Recolectores:</strong> Manuel Lobo <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_32c9276f92ad4dc4aac41df2529abdc9.setContent(html_4a284bd626a44fb1a51a0e93e5a7028a);
+        
+
+        circle_marker_11b4c95273b84e3ab514dfa0eedba573.bindPopup(popup_32c9276f92ad4dc4aac41df2529abdc9)
+        ;
+
+        
+    
+    
+            var circle_marker_36b9adec3b6f4da6b15d357281908b89 = L.circleMarker(
+                [8.536614, -83.425512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_80224b5aea2a464a8a0065ea50fe29fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a983f6f9ceb458486cdc83e90b851be = $(`<div id="html_0a983f6f9ceb458486cdc83e90b851be" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Estación Agujas. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1997-10-04 00:00:00+00:00 <strong>Recolectores:</strong> Manuel Lobo <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_80224b5aea2a464a8a0065ea50fe29fb.setContent(html_0a983f6f9ceb458486cdc83e90b851be);
+        
+
+        circle_marker_36b9adec3b6f4da6b15d357281908b89.bindPopup(popup_80224b5aea2a464a8a0065ea50fe29fb)
+        ;
+
+        
+    
+    
+            var circle_marker_044d72653b964913870923724b31845e = L.circleMarker(
+                [8.536614, -83.425512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_592bf8a29da64381b08d77446bdcafdc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6a065a191004c4fb73286076efd39d2 = $(`<div id="html_c6a065a191004c4fb73286076efd39d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado. Estación Agujas. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1997-10-04 00:00:00+00:00 <strong>Recolectores:</strong> Manuel Lobo <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_592bf8a29da64381b08d77446bdcafdc.setContent(html_c6a065a191004c4fb73286076efd39d2);
+        
+
+        circle_marker_044d72653b964913870923724b31845e.bindPopup(popup_592bf8a29da64381b08d77446bdcafdc)
+        ;
+
+        
+    
+    
+            var circle_marker_0cc0886c292d4c24a9776682d161923a = L.circleMarker(
+                [8.616667, -83.733334],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_860e5f43fa6e4dc2b59b9a7523554c6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63e0fa44174b42fc9862f1de4b055b9e = $(`<div id="html_63e0fa44174b42fc9862f1de4b055b9e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion San Pedrillo. Sendero que va al limite <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-09-19 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_860e5f43fa6e4dc2b59b9a7523554c6d.setContent(html_63e0fa44174b42fc9862f1de4b055b9e);
+        
+
+        circle_marker_0cc0886c292d4c24a9776682d161923a.bindPopup(popup_860e5f43fa6e4dc2b59b9a7523554c6d)
+        ;
+
+        
+    
+    
+            var circle_marker_9c3915713a794d5e8174bc348275f087 = L.circleMarker(
+                [8.616667, -83.733333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_6856927b90784334ad832bce38d190e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fde37607bb9f4e59b8ae3076fe9dd2b4 = $(`<div id="html_fde37607bb9f4e59b8ae3076fe9dd2b4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion San Pedrillo. Alrededores del limite <strong>Elevación:</strong> 55.0 m  <strong>Fecha:</strong> 1994-02-19 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_6856927b90784334ad832bce38d190e0.setContent(html_fde37607bb9f4e59b8ae3076fe9dd2b4);
+        
+
+        circle_marker_9c3915713a794d5e8174bc348275f087.bindPopup(popup_6856927b90784334ad832bce38d190e0)
+        ;
+
+        
+    
+    
+            var circle_marker_2fe8f921e77b42368cac7d7d8f5f1092 = L.circleMarker(
+                [8.466667, -83.583334],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_bf7ee8962e574bc983b0a71421c95c10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_555733ce1cb043849b18ddd2e73fcaad = $(`<div id="html_555733ce1cb043849b18ddd2e73fcaad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sirena. Los Patos Forest, 1-50 msnm <strong>Elevación:</strong> 25.5 m  <strong>Fecha:</strong> 1989-05-26 00:00:00+00:00 <strong>Recolectores:</strong> C. Kernan <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_bf7ee8962e574bc983b0a71421c95c10.setContent(html_555733ce1cb043849b18ddd2e73fcaad);
+        
+
+        circle_marker_2fe8f921e77b42368cac7d7d8f5f1092.bindPopup(popup_bf7ee8962e574bc983b0a71421c95c10)
+        ;
+
+        
+    
+    
+            var circle_marker_53108831b9804a46b276904834016312 = L.circleMarker(
+                [8.694444, -83.559722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_0b168035f5ce4f11858a4dbe7d2633dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60f442d0d1f7447ca2e85478620afb87 = $(`<div id="html_60f442d0d1f7447ca2e85478620afb87" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Rancho Quemado. Rincon <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1991-08-20 00:00:00+00:00 <strong>Recolectores:</strong> Juan Marin <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_0b168035f5ce4f11858a4dbe7d2633dd.setContent(html_60f442d0d1f7447ca2e85478620afb87);
+        
+
+        circle_marker_53108831b9804a46b276904834016312.bindPopup(popup_0b168035f5ce4f11858a4dbe7d2633dd)
+        ;
+
+        
+    
+    
+            var circle_marker_38bd27766b6747309778046e471f9aa5 = L.circleMarker(
+                [8.616667, -83.466667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_07680fb9cadb498793638442b98793af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f9eb5a3b4f34496b88c6f408a458f4c = $(`<div id="html_2f9eb5a3b4f34496b88c6f408a458f4c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Trocha La Tarde. 10 Km SO de Rincon, aguas arriba Rio Rincon. Bosque primario <strong>Elevación:</strong> 175.0 m  <strong>Fecha:</strong> 1988-04-28 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_07680fb9cadb498793638442b98793af.setContent(html_2f9eb5a3b4f34496b88c6f408a458f4c);
+        
+
+        circle_marker_38bd27766b6747309778046e471f9aa5.bindPopup(popup_07680fb9cadb498793638442b98793af)
+        ;
+
+        
+    
+    
+            var circle_marker_c01b325a8f8749e28494a34c70731e0f = L.circleMarker(
+                [8.716667, -83.580556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_2e471e141e6b4108bfe580b8e53094e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dcc61e34bfe4d069f33ed3f99415a8e = $(`<div id="html_6dcc61e34bfe4d069f33ed3f99415a8e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado; fila Rancho Quemado. <strong>Elevación:</strong> 275.0 m  <strong>Fecha:</strong> 1993-09-21 00:00:00+00:00 <strong>Recolectores:</strong> Ada Luz Marin <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_2e471e141e6b4108bfe580b8e53094e0.setContent(html_6dcc61e34bfe4d069f33ed3f99415a8e);
+        
+
+        circle_marker_c01b325a8f8749e28494a34c70731e0f.bindPopup(popup_2e471e141e6b4108bfe580b8e53094e0)
+        ;
+
+        
+    
+    
+            var circle_marker_4074e24cbe3149df84115236feeff2d3 = L.circleMarker(
+                [8.686111, -83.55555600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_7d5e2e2fb42c4492b6954eb5340cac90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bbd1bca4f3c42cf942ae77b5acf5006 = $(`<div id="html_0bbd1bca4f3c42cf942ae77b5acf5006" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado, ca. 15 km W de Rincon; en fila justamente antes de llegar al valle de Rancho Quemado. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1992-11-01 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_7d5e2e2fb42c4492b6954eb5340cac90.setContent(html_0bbd1bca4f3c42cf942ae77b5acf5006);
+        
+
+        circle_marker_4074e24cbe3149df84115236feeff2d3.bindPopup(popup_7d5e2e2fb42c4492b6954eb5340cac90)
+        ;
+
+        
+    
+    
+            var circle_marker_4a5e95e928c145c8a0cd4c1463dc5083 = L.circleMarker(
+                [8.666667, -83.56666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_0739e786636842409175ba14dd51a2f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3549fd2ac30f40f3a77d7634d1fb6a2b = $(`<div id="html_3549fd2ac30f40f3a77d7634d1fb6a2b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En el valle de Rancho Quemado, ca. 15 km al oeste de Rincon; en el sur del valle por la Quebrada Quebradon y Rio Riyito. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-09-11 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_0739e786636842409175ba14dd51a2f2.setContent(html_3549fd2ac30f40f3a77d7634d1fb6a2b);
+        
+
+        circle_marker_4a5e95e928c145c8a0cd4c1463dc5083.bindPopup(popup_0739e786636842409175ba14dd51a2f2)
+        ;
+
+        
+    
+    
+            var circle_marker_51e00354d468438eb1a29b9187952402 = L.circleMarker(
+                [8.566667, -83.516667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_da83712a83d242058680e8e84f4c06f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ef18fbaae86486f92afc7bee5debcdd = $(`<div id="html_3ef18fbaae86486f92afc7bee5debcdd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Los Patos. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1994-06-06 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_da83712a83d242058680e8e84f4c06f1.setContent(html_3ef18fbaae86486f92afc7bee5debcdd);
+        
+
+        circle_marker_51e00354d468438eb1a29b9187952402.bindPopup(popup_da83712a83d242058680e8e84f4c06f1)
+        ;
+
+        
+    
+    
+            var circle_marker_e61df5e48802479b960513d91b39d3cc = L.circleMarker(
+                [8.55, -83.583333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_c449b865c5d3403f9702ace75ff33373 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39951d399e3e428792304bcf99a4d593 = $(`<div id="html_39951d399e3e428792304bcf99a4d593" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado, ca. 15 km W of Rincon; on ridge at NW end of valley, near Fila Ganado. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1988-05-30 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_c449b865c5d3403f9702ace75ff33373.setContent(html_39951d399e3e428792304bcf99a4d593);
+        
+
+        circle_marker_e61df5e48802479b960513d91b39d3cc.bindPopup(popup_c449b865c5d3403f9702ace75ff33373)
+        ;
+
+        
+    
+    
+            var circle_marker_b5fbafb5db214f148bfd5422e4d28d45 = L.circleMarker(
+                [8.722222, -83.44166700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_45c6870ceed9418ba652f3daa29cf29f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_634e12aafd074a8c9e5637e2a8a14699 = $(`<div id="html_634e12aafd074a8c9e5637e2a8a14699" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Los Mogos; Bahia Chal. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1993-07-30 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_45c6870ceed9418ba652f3daa29cf29f.setContent(html_634e12aafd074a8c9e5637e2a8a14699);
+        
+
+        circle_marker_b5fbafb5db214f148bfd5422e4d28d45.bindPopup(popup_45c6870ceed9418ba652f3daa29cf29f)
+        ;
+
+        
+    
+    
+            var circle_marker_1015f220da4249e19637ad1f557f20d3 = L.circleMarker(
+                [8.605278, -83.498889],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_093c57ca5f19413a94baf2d46c45521d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c52457c3d8284ff19bd42461ec29347e = $(`<div id="html_c52457c3d8284ff19bd42461ec29347e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dos Brazos de Cerro de Oro. Confluencia del Rio Pavon y Rio Rincon. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1991-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_093c57ca5f19413a94baf2d46c45521d.setContent(html_c52457c3d8284ff19bd42461ec29347e);
+        
+
+        circle_marker_1015f220da4249e19637ad1f557f20d3.bindPopup(popup_093c57ca5f19413a94baf2d46c45521d)
+        ;
+
+        
+    
+    
+            var circle_marker_1c2b3d09d53d41b9af39be97bb31c53d = L.circleMarker(
+                [8.660833, -83.713889],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_1a1da87a7c90432da1324002e0412b1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a5c1540cc6a4c23aa5b318d970e24f0 = $(`<div id="html_6a5c1540cc6a4c23aa5b318d970e24f0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Playa Campanario o San Josecito. Sierpe. Primary forest. <strong>Elevación:</strong> 5.5 m  <strong>Fecha:</strong> 1991-01-05 00:00:00+00:00 <strong>Recolectores:</strong> Patrick Harmon <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_1a1da87a7c90432da1324002e0412b1e.setContent(html_6a5c1540cc6a4c23aa5b318d970e24f0);
+        
+
+        circle_marker_1c2b3d09d53d41b9af39be97bb31c53d.bindPopup(popup_1a1da87a7c90432da1324002e0412b1e)
+        ;
+
+        
+    
+    
+            var circle_marker_42bbbfee5e80494880ee357a0277dcc5 = L.circleMarker(
+                [8.716667, -83.516667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_d5960addb31e4fed8841719d485b92b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2123bf81e51c4fca833e891da126c52f = $(`<div id="html_2123bf81e51c4fca833e891da126c52f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena, 3.5 Km W of Rincon. Four- hectare permanent sample plot 1 km N of BOSCOSA station in well-drained undulating terrain with slopes of 15-35 <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1992-09-09 00:00:00+00:00 <strong>Recolectores:</strong> Karsten Thomsen <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d5960addb31e4fed8841719d485b92b9.setContent(html_2123bf81e51c4fca833e891da126c52f);
+        
+
+        circle_marker_42bbbfee5e80494880ee357a0277dcc5.bindPopup(popup_d5960addb31e4fed8841719d485b92b9)
+        ;
+
+        
+    
+    
+            var circle_marker_25aa2fc9537f470b8a1bd0935f5ddc58 = L.circleMarker(
+                [8.7, -83.5],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_c3bb581f7e7847f78e6dee29bda7107c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24708f7a6a6f42ea913b54c12309e7a8 = $(`<div id="html_24708f7a6a6f42ea913b54c12309e7a8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena, 3 Km W of Rincon. One-hectare permanent sample plot 800 m N of the house of Henry Monge in well-drained. <strong>Elevación:</strong> 130.0 m  <strong>Fecha:</strong> 1993-05-05 00:00:00+00:00 <strong>Recolectores:</strong> Karsten Thomsen <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_c3bb581f7e7847f78e6dee29bda7107c.setContent(html_24708f7a6a6f42ea913b54c12309e7a8);
+        
+
+        circle_marker_25aa2fc9537f470b8a1bd0935f5ddc58.bindPopup(popup_c3bb581f7e7847f78e6dee29bda7107c)
+        ;
+
+        
+    
+    
+            var circle_marker_607faf653f9549a2aade572b18a122ce = L.circleMarker(
+                [8.683333, -83.541667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_60af491f13c3491bb1aa59dbb888f586 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2807b266ef0e4fe6ba7e48ccd588fec2 = $(`<div id="html_2807b266ef0e4fe6ba7e48ccd588fec2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado; ridge between Rio Riyito (valley of Laguna Chocuaco) and Quebrada Banegas, S of Cerro Rancho Quemado (ca. 7 km W of Rincon de Osa). <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1986-05-26 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_60af491f13c3491bb1aa59dbb888f586.setContent(html_2807b266ef0e4fe6ba7e48ccd588fec2);
+        
+
+        circle_marker_607faf653f9549a2aade572b18a122ce.bindPopup(popup_60af491f13c3491bb1aa59dbb888f586)
+        ;
+
+        
+    
+    
+            var circle_marker_d76344e5818644e3b5517771b42640bd = L.circleMarker(
+                [8.781528, -82.971111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_687090be795b4ad9a0c30d215d5fa70a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1354fddc613b4571b7d8f19a4d026ce5 = $(`<div id="html_1354fddc613b4571b7d8f19a4d026ce5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> Oviedo-Brenes, Federico</div>`)[0];
+            popup_687090be795b4ad9a0c30d215d5fa70a.setContent(html_1354fddc613b4571b7d8f19a4d026ce5);
+        
+
+        circle_marker_d76344e5818644e3b5517771b42640bd.bindPopup(popup_687090be795b4ad9a0c30d215d5fa70a)
+        ;
+
+        
+    
+    
+            var circle_marker_534b0dfdbdd64bcab2e3a425dcf794e8 = L.circleMarker(
+                [8.466667, -83.583333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_7c8c1d1e9fe24526892f49d00dae24d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92ec41d25a594b90a01582e08da2e89d = $(`<div id="html_92ec41d25a594b90a01582e08da2e89d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Corcovado  Sirena, Los Patos Forest <strong>Elevación:</strong> 25.0 m  <strong>Fecha:</strong> 1989-05-26 00:00:00+00:00 <strong>Recolectores:</strong> C. N. Kernan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7c8c1d1e9fe24526892f49d00dae24d6.setContent(html_92ec41d25a594b90a01582e08da2e89d);
+        
+
+        circle_marker_534b0dfdbdd64bcab2e3a425dcf794e8.bindPopup(popup_7c8c1d1e9fe24526892f49d00dae24d6)
+        ;
+
+        
+    
+    
+            var circle_marker_7c2d36d62afd4737a1a4f98ab7632326 = L.circleMarker(
+                [8.466667, -83.583333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_088ae75ec44446408ed1fde70669a9ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d167fc7ac28412fb288d134de370f6c = $(`<div id="html_8d167fc7ac28412fb288d134de370f6c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Corcovado  Sirena, Los Patos Forest <strong>Elevación:</strong> 25.0 m  <strong>Fecha:</strong> 1989-05-26 00:00:00+00:00 <strong>Recolectores:</strong> C. N. Kernan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_088ae75ec44446408ed1fde70669a9ef.setContent(html_8d167fc7ac28412fb288d134de370f6c);
+        
+
+        circle_marker_7c2d36d62afd4737a1a4f98ab7632326.bindPopup(popup_088ae75ec44446408ed1fde70669a9ef)
+        ;
+
+        
+    
+    
+            var circle_marker_608946b0c0ec495bba7f12191551a1cb = L.circleMarker(
+                [8.55, -83.583333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_64a93b87c0504a18996c2ae7d50ce3f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dacfae1657544622afd9e49f831a2da5 = $(`<div id="html_dacfae1657544622afd9e49f831a2da5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce  Osa Península, Rancho Quemado, ca. 15 km  W of Rincón; on ridge at NW end of  valley, near Fila Ganado. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1988-05-30 00:00:00+00:00 <strong>Recolectores:</strong> B. Hammel <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_64a93b87c0504a18996c2ae7d50ce3f4.setContent(html_dacfae1657544622afd9e49f831a2da5);
+        
+
+        circle_marker_608946b0c0ec495bba7f12191551a1cb.bindPopup(popup_64a93b87c0504a18996c2ae7d50ce3f4)
+        ;
+
+        
+    
+    
+            var circle_marker_d06813e2d0ba4608965189e5a73ffc3f = L.circleMarker(
+                [8.722222, -83.44166700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_0a88be897d9542daa899e8539bd7fec9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_068049609bfa4a618ae399a563c92688 = $(`<div id="html_068049609bfa4a618ae399a563c92688" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> PUNTARENAS: Cantón de OSA R.F. Golfo. Dulce Península de Osa. Los Mogos: Bahía Chal. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1993-07-30 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0a88be897d9542daa899e8539bd7fec9.setContent(html_068049609bfa4a618ae399a563c92688);
+        
+
+        circle_marker_d06813e2d0ba4608965189e5a73ffc3f.bindPopup(popup_0a88be897d9542daa899e8539bd7fec9)
+        ;
+
+        
+    
+    
+            var circle_marker_4ed769a768864cbb9abeb34301257979 = L.circleMarker(
+                [8.716667, -83.516667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+        
+    
+        var popup_88e520a74b0c4300a98a7dcace0f0556 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bb7b307c4a24aed9e6929fe74eacca2 = $(`<div id="html_3bb7b307c4a24aed9e6929fe74eacca2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena, 3.5 km W of Rincon. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1992-09-09 00:00:00+00:00 <strong>Recolectores:</strong> K. Thomsen <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_88e520a74b0c4300a98a7dcace0f0556.setContent(html_3bb7b307c4a24aed9e6929fe74eacca2);
+        
+
+        circle_marker_4ed769a768864cbb9abeb34301257979.bindPopup(popup_88e520a74b0c4300a98a7dcace0f0556)
+        ;
+
+        
+    
+    
+            var layer_control_11f705d4c0544937941500a1405a7d08 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_d5f96ea3a33b4875adbcd49545667174,
+                    "ESRI World Imagery" : tile_layer_3a61824f0b9d4b3abce84c0b7f1b09df,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_11f705d4c0544937941500a1405a7d08.base_layers,
+                layer_control_11f705d4c0544937941500a1405a7d08.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_3e70ef553aa1406a9f1c2a8c80ca390e);
+            tile_layer_3a61824f0b9d4b3abce84c0b7f1b09df.remove();
+        
+</script>

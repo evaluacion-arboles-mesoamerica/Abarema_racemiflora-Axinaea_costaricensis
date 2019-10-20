@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8299f5b224b3493facdc6f98074ef4f8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8299f5b224b3493facdc6f98074ef4f8" ></div>
+        
+</body>
+<script>    
+    
+            var map_8299f5b224b3493facdc6f98074ef4f8 = L.map(
+                "map_8299f5b224b3493facdc6f98074ef4f8",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_8299f5b224b3493facdc6f98074ef4f8);
+
+            
+
+        
+    
+            var tile_layer_47434ad554454bdaad52a7072448004a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8299f5b224b3493facdc6f98074ef4f8);
+        
+    
+            var tile_layer_9a62b1ab59ce4eb5a4986f458a42a1ff = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8299f5b224b3493facdc6f98074ef4f8);
+        
+    
+            var marker_cluster_364b8694627a4064a9c896bfd08445b1 = L.markerClusterGroup(
+                {}
+            );
+            map_8299f5b224b3493facdc6f98074ef4f8.addLayer(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+            var marker_25e0f7d550ad4484a70e0d995861dca4 = L.marker(
+                [8.7, -83.5153],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_239434d6e0a445289daa7c9bede14188 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8df8f2ee7be4cce871e496c4268ccc5 = $(`<div id="html_b8df8f2ee7be4cce871e496c4268ccc5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe. Reserva Forestal Golfo Dulce; Rincón, Cuenca Oeste de la Quebrada Aguabuena, fin de campo de aterrizaje Centro Boscosa, bosques alrededor <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 2008-04-06 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> B. E. Hammel</div>`)[0];
+            popup_239434d6e0a445289daa7c9bede14188.setContent(html_b8df8f2ee7be4cce871e496c4268ccc5);
+        
+
+        marker_25e0f7d550ad4484a70e0d995861dca4.bindPopup(popup_239434d6e0a445289daa7c9bede14188)
+        ;
+
+        
+    
+    
+            var marker_abe6f8a1594c4d37a267eaac5a035331 = L.marker(
+                [8.7, -83.5153],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_56bd174fe8e64a55aa4bb34176f9df46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ddd4dc7a102425caa6257af92bd5cc4 = $(`<div id="html_5ddd4dc7a102425caa6257af92bd5cc4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe. Reserva Forestal Golfo Dulce; Rincón, Cuenca Oeste de la Quebrada Aguabuena, fin de campo de aterrizaje Centro Boscosa, bosques alrededor <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 2011-02-04 00:00:00+00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> R. Aguilar</div>`)[0];
+            popup_56bd174fe8e64a55aa4bb34176f9df46.setContent(html_5ddd4dc7a102425caa6257af92bd5cc4);
+        
+
+        marker_abe6f8a1594c4d37a267eaac5a035331.bindPopup(popup_56bd174fe8e64a55aa4bb34176f9df46)
+        ;
+
+        
+    
+    
+            var marker_ffb19c78f9d94482a6f8230ad01b8530 = L.marker(
+                [8.66, -83.56],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_012527268db9473abd9895eb325b77a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33a3fdf4f7fd4a9cb34c043b2fa573ab = $(`<div id="html_33a3fdf4f7fd4a9cb34c043b2fa573ab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Rancho Quemado; camino a lo largo de Quebrada Quebradon hasta donde se junta con Río Riyito. <strong>Elevación:</strong> 180.0 m  <strong>Fecha:</strong> 1991-02-06 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|María Marta Chavarría|Paul J. M. Maas|Hiltje Maas <strong>Identificadores:</strong> P. Delprete & C. Persson</div>`)[0];
+            popup_012527268db9473abd9895eb325b77a7.setContent(html_33a3fdf4f7fd4a9cb34c043b2fa573ab);
+        
+
+        marker_ffb19c78f9d94482a6f8230ad01b8530.bindPopup(popup_012527268db9473abd9895eb325b77a7)
+        ;
+
+        
+    
+    
+            var marker_3d6863c905bd40adad6bf2a77006a088 = L.marker(
+                [9.52, -82.92],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_ca5a470820ac418295d0d9710f38fa8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6fd134d8f0d40c8a11e104ffd8af172 = $(`<div id="html_e6fd134d8f0d40c8a11e104ffd8af172" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Talamanca Amubri; camino al noreste del pueblo, entre Katsi y Sheuab. Lomas de Sheuab. Pequeño parche de bosque primario en la cima de una loma. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1989-06-25 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Abelardo Chacón|Gerardo Herrera Ch. <strong>Identificadores:</strong> C. M. Taylor (MO)</div>`)[0];
+            popup_ca5a470820ac418295d0d9710f38fa8f.setContent(html_e6fd134d8f0d40c8a11e104ffd8af172);
+        
+
+        marker_3d6863c905bd40adad6bf2a77006a088.bindPopup(popup_ca5a470820ac418295d0d9710f38fa8f)
+        ;
+
+        
+    
+    
+            var marker_a5435d81eac940db9616dcbf3184d64d = L.marker(
+                [10.405, -84.05833299999999],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_f0d64df9c1d24394bb70347b15749108 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7035c24a647c43288769cbc5738198fa = $(`<div id="html_7035c24a647c43288769cbc5738198fa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo Estación Magsasay. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-06-15 00:00:00+00:00 <strong>Recolectores:</strong> Celso Alvarado <strong>Identificadores:</strong> C. M. Taylor (MO)</div>`)[0];
+            popup_f0d64df9c1d24394bb70347b15749108.setContent(html_7035c24a647c43288769cbc5738198fa);
+        
+
+        marker_a5435d81eac940db9616dcbf3184d64d.bindPopup(popup_f0d64df9c1d24394bb70347b15749108)
+        ;
+
+        
+    
+    
+            var marker_9b365d360a98444c863b3dcb7a66dd1b = L.marker(
+                [8.68, -83.56],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_77891e45342d4621abb5054c534c93e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f3a2fb5dc234788b9000222b09b8791 = $(`<div id="html_3f3a2fb5dc234788b9000222b09b8791" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1989-02-22 00:00:00+00:00 <strong>Recolectores:</strong> Quírico Jiménez|E. Vargas|Juan J. Jiménez <strong>Identificadores:</strong> Piero Delprete</div>`)[0];
+            popup_77891e45342d4621abb5054c534c93e4.setContent(html_3f3a2fb5dc234788b9000222b09b8791);
+        
+
+        marker_9b365d360a98444c863b3dcb7a66dd1b.bindPopup(popup_77891e45342d4621abb5054c534c93e4)
+        ;
+
+        
+    
+    
+            var marker_e357f93c184944a7ad88467f2c445b30 = L.marker(
+                [8.705556, -83.525],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_00f2f02f526d4934b318a41c0e35c4d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1d2c0b04ca34d838e2238474637a216 = $(`<div id="html_e1d2c0b04ca34d838e2238474637a216" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce, Península de Osa. Agua Buena sur, Don Toño. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1992-11-19 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar|Nora Martín|Nelson Zamora|Gerald F. Bills|Víctor H. Ramírez <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_00f2f02f526d4934b318a41c0e35c4d8.setContent(html_e1d2c0b04ca34d838e2238474637a216);
+        
+
+        marker_e357f93c184944a7ad88467f2c445b30.bindPopup(popup_00f2f02f526d4934b318a41c0e35c4d8)
+        ;
+
+        
+    
+    
+            var marker_d6be1701f9e044189e16b47e25b59b20 = L.marker(
+                [9.49, -82.99],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_942da00d6b1f4ca789e318b269605ba0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f99328fbb806491bb3ddccc19e4a2f55 = $(`<div id="html_f99328fbb806491bb3ddccc19e4a2f55" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri. Margen derecho del Río Lari. Lomas aledañas a Cachabri. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1989-06-28 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> C. M. Taylor (MO)</div>`)[0];
+            popup_942da00d6b1f4ca789e318b269605ba0.setContent(html_f99328fbb806491bb3ddccc19e4a2f55);
+        
+
+        marker_d6be1701f9e044189e16b47e25b59b20.bindPopup(popup_942da00d6b1f4ca789e318b269605ba0)
+        ;
+
+        
+    
+    
+            var marker_3d0b3380bf4c46309bbddcc0ea18b91b = L.marker(
+                [9.56, -82.66],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_b079df27c62449a69dca435ba2549fb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5915351d0b534b5b98cae6c926401ed3 = $(`<div id="html_5915351d0b534b5b98cae6c926401ed3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills between headwaters of Quebrada Mata de Limón and upper branches of Quebrada Tigre, and lowland forest of Quebrada Tigre drainage, Finca Anai. Elev. 25-30 m. 9º34'N, 82º40'W. (Sixaola region). <strong>Elevación:</strong> 27.5 m  <strong>Fecha:</strong> 1984-11-18 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum|Gerardo Herrera Ch.|Felipe Chavarría D. <strong>Identificadores:</strong> C. M. Taylor (MO)</div>`)[0];
+            popup_b079df27c62449a69dca435ba2549fb9.setContent(html_5915351d0b534b5b98cae6c926401ed3);
+        
+
+        marker_3d0b3380bf4c46309bbddcc0ea18b91b.bindPopup(popup_b079df27c62449a69dca435ba2549fb9)
+        ;
+
+        
+    
+    
+            var marker_992b5aac1b1f40788e76b84a4ac158fe = L.marker(
+                [8.6, -83.7],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_2e297e93d9de4e60b344af6a08095dd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8e0d73663b348d9b7203ce0abfc7ed3 = $(`<div id="html_d8e0d73663b348d9b7203ce0abfc7ed3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Corcovado National Park. Primary forest, slopes above Llorona. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1977-07-13 00:00:00+00:00 <strong>Recolectores:</strong> Ronald L. Liesner <strong>Identificadores:</strong> J. Dwyer (MO)</div>`)[0];
+            popup_2e297e93d9de4e60b344af6a08095dd9.setContent(html_d8e0d73663b348d9b7203ce0abfc7ed3);
+        
+
+        marker_992b5aac1b1f40788e76b84a4ac158fe.bindPopup(popup_2e297e93d9de4e60b344af6a08095dd9)
+        ;
+
+        
+    
+    
+            var marker_6cb8147bd3c241fcb3b28c573daf4e0a = L.marker(
+                [10.61, -84.04],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_4fc1cbd40b50454fac108d54be5f6f6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec0985201de24312a0519fd29fb8f619 = $(`<div id="html_ec0985201de24312a0519fd29fb8f619" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along the bank of the Río Toro, about 10 km upstream from the confluence with the Río Sarapiquí <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1974-05-09 00:00:00+00:00 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> P. Delprete & C. Persson</div>`)[0];
+            popup_4fc1cbd40b50454fac108d54be5f6f6a.setContent(html_ec0985201de24312a0519fd29fb8f619);
+        
+
+        marker_6cb8147bd3c241fcb3b28c573daf4e0a.bindPopup(popup_4fc1cbd40b50454fac108d54be5f6f6a)
+        ;
+
+        
+    
+    
+            var marker_85498c636c8045f29b82531404d53822 = L.marker(
+                [8.7, -83.516667],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_f998f7d8234747768618466469849e64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a0dbe5cd7784eb8ac7a000ce6c993b9 = $(`<div id="html_1a0dbe5cd7784eb8ac7a000ce6c993b9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincon de Osa. Slopes adjacent to airport. <strong>Elevación:</strong> 160.0 m  <strong>Fecha:</strong> 1974-02-08 00:00:00+00:00 <strong>Recolectores:</strong> Ronald L. Liesner <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_f998f7d8234747768618466469849e64.setContent(html_1a0dbe5cd7784eb8ac7a000ce6c993b9);
+        
+
+        marker_85498c636c8045f29b82531404d53822.bindPopup(popup_f998f7d8234747768618466469849e64)
+        ;
+
+        
+    
+    
+            var marker_0fdc3128fd8e4f0cb232cc11c10caaf8 = L.marker(
+                [10.46, -83.99],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_af0583dcc45549a8881d078302fec7dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ba116f59ad04244b0aa102c1ec848d2 = $(`<div id="html_9ba116f59ad04244b0aa102c1ec848d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near Puerto Viejo along road near the Río Sucio. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1976-05-27 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> P.G. Delprete & C. Persson (NY)</div>`)[0];
+            popup_af0583dcc45549a8881d078302fec7dd.setContent(html_9ba116f59ad04244b0aa102c1ec848d2);
+        
+
+        marker_0fdc3128fd8e4f0cb232cc11c10caaf8.bindPopup(popup_af0583dcc45549a8881d078302fec7dd)
+        ;
+
+        
+    
+    
+            var marker_a5d13d1944cd47c6bf033b70ecf59dfe = L.marker(
+                [8.7, -83.516667],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_ae2b303e28f9445aabb8cc1df6d6e8c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10b7002779994991bf0c4922cf9a6ab7 = $(`<div id="html_10b7002779994991bf0c4922cf9a6ab7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón de Osa. Streams and slopes adjacent to airfield. <strong>Elevación:</strong> 160.0 m  <strong>Fecha:</strong> 1974-02-06 00:00:00+00:00 <strong>Recolectores:</strong> Ronald L. Liesner <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_ae2b303e28f9445aabb8cc1df6d6e8c4.setContent(html_10b7002779994991bf0c4922cf9a6ab7);
+        
+
+        marker_a5d13d1944cd47c6bf033b70ecf59dfe.bindPopup(popup_ae2b303e28f9445aabb8cc1df6d6e8c4)
+        ;
+
+        
+    
+    
+            var marker_383db7fa8557433db21a1f7e7b736330 = L.marker(
+                [8.7, -83.51527800000001],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_c1889c30d06f4ddf8c21248b6fcfd186 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3048ce877dca4e968f27a1dc1378542f = $(`<div id="html_3048ce877dca4e968f27a1dc1378542f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Sierpe; Reserva Forest Golfo Dulce; Rincón, Cuenca de la Quebrada Aguabuena, fin de campo de aterrizaje Centro Boscosa bosques alrededor. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2011-02-04 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> R. Aguilar</div>`)[0];
+            popup_c1889c30d06f4ddf8c21248b6fcfd186.setContent(html_3048ce877dca4e968f27a1dc1378542f);
+        
+
+        marker_383db7fa8557433db21a1f7e7b736330.bindPopup(popup_c1889c30d06f4ddf8c21248b6fcfd186)
+        ;
+
+        
+    
+    
+            var marker_486f6639efe648b68bb1165e88cc6eb2 = L.marker(
+                [9.825, -83.06389],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_6cbea5fac47045d198be02b33fd94e34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e257dea2088400abe446243062f89d3 = $(`<div id="html_1e257dea2088400abe446243062f89d3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Selva Bananito, a lo largo del Rio Carbon. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> B. Hammel</div>`)[0];
+            popup_6cbea5fac47045d198be02b33fd94e34.setContent(html_1e257dea2088400abe446243062f89d3);
+        
+
+        marker_486f6639efe648b68bb1165e88cc6eb2.bindPopup(popup_6cbea5fac47045d198be02b33fd94e34)
+        ;
+
+        
+    
+    
+            var marker_a4b8cbec95584353931b7b76e7b29513 = L.marker(
+                [8.686667, -83.534444],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_cd6c30dfafc5458180cedc3bd9d1d0e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3c0a0e5c3164bc2bba551b3c6541051 = $(`<div id="html_b3c0a0e5c3164bc2bba551b3c6541051" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón, camino a Rancho Quemado, cruce a Baneguitas, finca de Isidro Guido. <strong>Elevación:</strong> 155.0 m  <strong>Fecha:</strong> 2013-07-19 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar; Nelson A. Zamora Villalobos ; Soo-Yong Kim ; Guillermo Villalobos ; D. Solorzano <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_cd6c30dfafc5458180cedc3bd9d1d0e6.setContent(html_b3c0a0e5c3164bc2bba551b3c6541051);
+        
+
+        marker_a4b8cbec95584353931b7b76e7b29513.bindPopup(popup_cd6c30dfafc5458180cedc3bd9d1d0e6)
+        ;
+
+        
+    
+    
+            var marker_041a95922853442e9787a4bd4b8f56df = L.marker(
+                [8.686667, -83.534444],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_57d87516467b4902b8aca6357b099a35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0ac720c7e494a7db2fcea46f29ee8d4 = $(`<div id="html_e0ac720c7e494a7db2fcea46f29ee8d4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón, camino a Rancho Quemado, cruce a Baneguitas, finca de Isidro Guido. <strong>Elevación:</strong> 155.0 m  <strong>Fecha:</strong> 2013-07-19 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar; Nelson A. Zamora Villalobos ; Soo-Yong Kim ; Guillermo Villalobos ; D. Solorzano <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_57d87516467b4902b8aca6357b099a35.setContent(html_e0ac720c7e494a7db2fcea46f29ee8d4);
+        
+
+        marker_041a95922853442e9787a4bd4b8f56df.bindPopup(popup_57d87516467b4902b8aca6357b099a35)
+        ;
+
+        
+    
+    
+            var marker_bd8efb84f94a4b52bccfa2a2130adf48 = L.marker(
+                [8.686667, -83.534444],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_3d8246f8ea854a0eb366156aaf363649 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_999a9495b2014cacb00210a73984a5c5 = $(`<div id="html_999a9495b2014cacb00210a73984a5c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón, camino a Rancho Quemado, cruce a Baneguitas, finca de Isidro Guido. <strong>Elevación:</strong> 155.0 m  <strong>Fecha:</strong> 2013-07-19 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar; Nelson A. Zamora Villalobos ; Soo-Yong Kim ; Guillermo Villalobos ; D. Solorzano <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_3d8246f8ea854a0eb366156aaf363649.setContent(html_999a9495b2014cacb00210a73984a5c5);
+        
+
+        marker_bd8efb84f94a4b52bccfa2a2130adf48.bindPopup(popup_3d8246f8ea854a0eb366156aaf363649)
+        ;
+
+        
+    
+    
+            var marker_140eaad0b9344a5dbe7382314bc389c3 = L.marker(
+                [9.825, -83.063889],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_f1ea2a09aed340f8bbe1f2b4ead01a1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_031c1b78b8fc4c4a8f55a1f6771cf616 = $(`<div id="html_031c1b78b8fc4c4a8f55a1f6771cf616" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama, Cerro Muchilla, Falda NW. Ro Bananito, Selva Bananito Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2008-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Sharon Christoph ; Chris. Davidson ; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_f1ea2a09aed340f8bbe1f2b4ead01a1c.setContent(html_031c1b78b8fc4c4a8f55a1f6771cf616);
+        
+
+        marker_140eaad0b9344a5dbe7382314bc389c3.bindPopup(popup_f1ea2a09aed340f8bbe1f2b4ead01a1c)
+        ;
+
+        
+    
+    
+            var marker_2c3b189941d449e99c82caf2da294589 = L.marker(
+                [9.825, -83.063889],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_bfedf6c2cb9d448e820cd1bb403e7d63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3061dfb970aa490fbcee44e9485b132b = $(`<div id="html_3061dfb970aa490fbcee44e9485b132b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama, Cerro Muchilla, Falda NW. Ro Bananito, Selva Bananito Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2008-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Sharon Christoph ; Chris. Davidson ; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_bfedf6c2cb9d448e820cd1bb403e7d63.setContent(html_3061dfb970aa490fbcee44e9485b132b);
+        
+
+        marker_2c3b189941d449e99c82caf2da294589.bindPopup(popup_bfedf6c2cb9d448e820cd1bb403e7d63)
+        ;
+
+        
+    
+    
+            var marker_05aef2eb516848e88f890e9eb6c80fcb = L.marker(
+                [9.825, -83.063889],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_ca28e6dda5cd4404af20e93f71a2be3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f40d225991d0439ba52a01ed42711e79 = $(`<div id="html_f40d225991d0439ba52a01ed42711e79" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama, Cerro Muchilla, Falda NW. Ro Bananito, Selva Bananito Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2008-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Sharon Christoph ; Chris. Davidson ; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_ca28e6dda5cd4404af20e93f71a2be3b.setContent(html_f40d225991d0439ba52a01ed42711e79);
+        
+
+        marker_05aef2eb516848e88f890e9eb6c80fcb.bindPopup(popup_ca28e6dda5cd4404af20e93f71a2be3b)
+        ;
+
+        
+    
+    
+            var marker_8485716b13004419bb50e6f047f54a8d = L.marker(
+                [9.825, -83.063889],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_1dfb1cf64a904182b3b90bfc6a276646 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc9f99d490b34794aac07e1d8570a5b3 = $(`<div id="html_cc9f99d490b34794aac07e1d8570a5b3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama, Cerro Muchilla, Falda NW. Ro Bananito, Selva Bananito Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2008-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Sharon Christoph ; Chris. Davidson ; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_1dfb1cf64a904182b3b90bfc6a276646.setContent(html_cc9f99d490b34794aac07e1d8570a5b3);
+        
+
+        marker_8485716b13004419bb50e6f047f54a8d.bindPopup(popup_1dfb1cf64a904182b3b90bfc6a276646)
+        ;
+
+        
+    
+    
+            var marker_d8fc050b345b4724ad3bbfa202e85b0a = L.marker(
+                [9.825, -83.063889],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_86bddd1d14b545799d72ec765d5a1f08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9988156cefd492daad10f8a28f31035 = $(`<div id="html_a9988156cefd492daad10f8a28f31035" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama, Cerro Muchilla, Falda NW. Ro Bananito, Selva Bananito Lodge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2008-04-12 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Sharon Christoph ; Chris. Davidson ; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_86bddd1d14b545799d72ec765d5a1f08.setContent(html_a9988156cefd492daad10f8a28f31035);
+        
+
+        marker_d8fc050b345b4724ad3bbfa202e85b0a.bindPopup(popup_86bddd1d14b545799d72ec765d5a1f08)
+        ;
+
+        
+    
+    
+            var marker_248af7b190d648dda04df3b04b947a1f = L.marker(
+                [8.741944, -83.464444],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_d5479c93956c48918eabec98f2404788 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86b31209edc94f98ab38ede362fceeec = $(`<div id="html_86b31209edc94f98ab38ede362fceeec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahía Chal.  Finca Felo Rojas. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2005-09-20 00:00:00+00:00 <strong>Recolectores:</strong> Claes Persson; Daniel Santamaría <strong>Identificadores:</strong> Persson, Claes</div>`)[0];
+            popup_d5479c93956c48918eabec98f2404788.setContent(html_86b31209edc94f98ab38ede362fceeec);
+        
+
+        marker_248af7b190d648dda04df3b04b947a1f.bindPopup(popup_d5479c93956c48918eabec98f2404788)
+        ;
+
+        
+    
+    
+            var marker_b46ab9db338e453f8d7dff4b277e2f0e = L.marker(
+                [10.405, -84.05833299999999],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_e76db987ad6741308fd3dc2637eab05d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b955bbec92b0404d83d8b75ce2de7333 = $(`<div id="html_b955bbec92b0404d83d8b75ce2de7333" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Magsasay. Bosque primario y secundario. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1990-06-15 00:00:00+00:00 <strong>Recolectores:</strong> Celso Alvarado <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_e76db987ad6741308fd3dc2637eab05d.setContent(html_b955bbec92b0404d83d8b75ce2de7333);
+        
+
+        marker_b46ab9db338e453f8d7dff4b277e2f0e.bindPopup(popup_e76db987ad6741308fd3dc2637eab05d)
+        ;
+
+        
+    
+    
+            var marker_dd8a3876cfcd4c49804751be923b042b = L.marker(
+                [8.680556, -83.580556],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_23cbca3867ff4102b7a7801298ecb000 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bec0add342ac424f9f55cba7385058de = $(`<div id="html_bec0add342ac424f9f55cba7385058de" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tierras del Grupo de Conservacion de Rancho Quemado. Sierpe. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1991-10-17 00:00:00+00:00 <strong>Recolectores:</strong> Juan Marin <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_23cbca3867ff4102b7a7801298ecb000.setContent(html_bec0add342ac424f9f55cba7385058de);
+        
+
+        marker_dd8a3876cfcd4c49804751be923b042b.bindPopup(popup_23cbca3867ff4102b7a7801298ecb000)
+        ;
+
+        
+    
+    
+            var marker_c626b8730ba54f7ba833323fc5d04b42 = L.marker(
+                [9.494444, -82.994445],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_9fb6e5db3864448fa9c2f9c045175292 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_547da5134c4f459482b9220e113703aa = $(`<div id="html_547da5134c4f459482b9220e113703aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri. Margen derecho del Rio Lari. Lomas aledanas a Cachabri. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1989-06-28 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_9fb6e5db3864448fa9c2f9c045175292.setContent(html_547da5134c4f459482b9220e113703aa);
+        
+
+        marker_c626b8730ba54f7ba833323fc5d04b42.bindPopup(popup_9fb6e5db3864448fa9c2f9c045175292)
+        ;
+
+        
+    
+    
+            var marker_3473b1cd4e6040c1915e45cd5f2b7ffe = L.marker(
+                [8.666667, -83.56666700000001],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_5550e05c1694489c800e1171b89c87c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_230b7202be704e63aa3d2a271614f1c0 = $(`<div id="html_230b7202be704e63aa3d2a271614f1c0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado; camino a lo largo de Quebrada Quebradon hasta donde se junta con Rio Riyito. <strong>Elevación:</strong> 180.0 m  <strong>Fecha:</strong> 1991-02-06 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_5550e05c1694489c800e1171b89c87c0.setContent(html_230b7202be704e63aa3d2a271614f1c0);
+        
+
+        marker_3473b1cd4e6040c1915e45cd5f2b7ffe.bindPopup(popup_5550e05c1694489c800e1171b89c87c0)
+        ;
+
+        
+    
+    
+            var marker_63e6fb45bd2940e2a0e5c36ee27e33e4 = L.marker(
+                [9.525, -82.925],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_b42b14258418432ba34514ad20570b41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60acfc1568a847f98f3ac46df406f04a = $(`<div id="html_60acfc1568a847f98f3ac46df406f04a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri; camino al noreste del pueblo, entre Katsi y Sheuab. Lomas de Sheuab. Pequeno parche de bosque primario en la cima de una loma. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1989-06-25 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_b42b14258418432ba34514ad20570b41.setContent(html_60acfc1568a847f98f3ac46df406f04a);
+        
+
+        marker_63e6fb45bd2940e2a0e5c36ee27e33e4.bindPopup(popup_b42b14258418432ba34514ad20570b41)
+        ;
+
+        
+    
+    
+            var marker_c81e1f59516543d2bf1317564f8a27b7 = L.marker(
+                [8.666667, -83.56666700000001],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_2c218c703cef47238de3be8dcb78bf4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39fab03e12284982b3b6226134773c63 = $(`<div id="html_39fab03e12284982b3b6226134773c63" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado, ca. 15 km W of Rincon; in bottom of S end of valley along Rio Riyito. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1988-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_2c218c703cef47238de3be8dcb78bf4b.setContent(html_39fab03e12284982b3b6226134773c63);
+        
+
+        marker_c81e1f59516543d2bf1317564f8a27b7.bindPopup(popup_2c218c703cef47238de3be8dcb78bf4b)
+        ;
+
+        
+    
+    
+            var marker_18aed3d69aad43819033efb02d41c707 = L.marker(
+                [9.566667, -82.638889],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_3405dd300c2b4477975dae6d89908d38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a84dc8230bd34d42be9cc6db6e9f75ad = $(`<div id="html_a84dc8230bd34d42be9cc6db6e9f75ad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Miguel de Sixaola. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1999-03-01 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_3405dd300c2b4477975dae6d89908d38.setContent(html_a84dc8230bd34d42be9cc6db6e9f75ad);
+        
+
+        marker_18aed3d69aad43819033efb02d41c707.bindPopup(popup_3405dd300c2b4477975dae6d89908d38)
+        ;
+
+        
+    
+    
+            var marker_bb6bcb797c65421ba45fd61da4b45f67 = L.marker(
+                [9.566667, -82.638889],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_f9448cb17d71468189eebf68f427a2ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89d1471feb9e4bc2a4082a2ebcaac269 = $(`<div id="html_89d1471feb9e4bc2a4082a2ebcaac269" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Miguel de Sixaola. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 1999-03-01 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_f9448cb17d71468189eebf68f427a2ff.setContent(html_89d1471feb9e4bc2a4082a2ebcaac269);
+        
+
+        marker_bb6bcb797c65421ba45fd61da4b45f67.bindPopup(popup_f9448cb17d71468189eebf68f427a2ff)
+        ;
+
+        
+    
+    
+            var marker_3f2b1f88d0fe41829533bf3fad5a7e25 = L.marker(
+                [8.705556, -83.525],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_66120f6eda17401795302cb60f670eab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_692aa848492b4ac0be61c28df1ecafb5 = $(`<div id="html_692aa848492b4ac0be61c28df1ecafb5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena sur. Don Tono.                      -- V. H. Ramirez <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1992-11-19 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_66120f6eda17401795302cb60f670eab.setContent(html_692aa848492b4ac0be61c28df1ecafb5);
+        
+
+        marker_3f2b1f88d0fe41829533bf3fad5a7e25.bindPopup(popup_66120f6eda17401795302cb60f670eab)
+        ;
+
+        
+    
+    
+            var marker_26e234e8f1164a99b5893f9ae4a2afeb = L.marker(
+                [8.7, -83.51666800000001],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_2849aea213da477a81e2f8e66de8cff6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49a89605efd94ab0806572114f231a41 = $(`<div id="html_49a89605efd94ab0806572114f231a41" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1993-10-24 00:00:00+00:00 <strong>Recolectores:</strong> Victor Ramírez <strong>Identificadores:</strong> Delprete, Piero</div>`)[0];
+            popup_2849aea213da477a81e2f8e66de8cff6.setContent(html_49a89605efd94ab0806572114f231a41);
+        
+
+        marker_26e234e8f1164a99b5893f9ae4a2afeb.bindPopup(popup_2849aea213da477a81e2f8e66de8cff6)
+        ;
+
+        
+    
+    
+            var marker_f505e24b18174391a2a12572d10e0574 = L.marker(
+                [8.716667, -83.580556],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_bbda69dad85545ea8ad5791bce23fc47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33e325d46718468f8e4489f9d33608ef = $(`<div id="html_33e325d46718468f8e4489f9d33608ef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estero Guerra, Sierpe <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1993-02-11 00:00:00+00:00 <strong>Recolectores:</strong> Ada Luz Marin <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_bbda69dad85545ea8ad5791bce23fc47.setContent(html_33e325d46718468f8e4489f9d33608ef);
+        
+
+        marker_f505e24b18174391a2a12572d10e0574.bindPopup(popup_bbda69dad85545ea8ad5791bce23fc47)
+        ;
+
+        
+    
+    
+            var marker_e519e984e90945dfb88b4b33cfb4b2b0 = L.marker(
+                [8.683333, -83.56666700000001],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_26dfdd25ff3d437f86a2b97a222dcad8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1857881298eb4a2aa5d7d3efdd0f5682 = $(`<div id="html_1857881298eb4a2aa5d7d3efdd0f5682" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado. <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1989-02-22 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Delprete, Piero</div>`)[0];
+            popup_26dfdd25ff3d437f86a2b97a222dcad8.setContent(html_1857881298eb4a2aa5d7d3efdd0f5682);
+        
+
+        marker_e519e984e90945dfb88b4b33cfb4b2b0.bindPopup(popup_26dfdd25ff3d437f86a2b97a222dcad8)
+        ;
+
+        
+    
+    
+            var marker_836046f9f9384b4bbb53e7713df6fd4e = L.marker(
+                [8.686111, -83.583333],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_282f704f7e8f48e3957e3b1452629168 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9f4df14a469487a81e9598ecffe659c = $(`<div id="html_d9f4df14a469487a81e9598ecffe659c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho Quemado. Sector oeste. <strong>Elevación:</strong> 230.0 m  <strong>Fecha:</strong> 1992-02-18 00:00:00+00:00 <strong>Recolectores:</strong> Juan Marin <strong>Identificadores:</strong> Delprete, Piero</div>`)[0];
+            popup_282f704f7e8f48e3957e3b1452629168.setContent(html_d9f4df14a469487a81e9598ecffe659c);
+        
+
+        marker_836046f9f9384b4bbb53e7713df6fd4e.bindPopup(popup_282f704f7e8f48e3957e3b1452629168)
+        ;
+
+        
+    
+    
+            var marker_fc954fbba00d4151a4145e8331e817ff = L.marker(
+                [10.0, -84.8333],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_732898d16998498fb6553fd14a475153 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a3d9bfa21494a138a3f3c48da656c1b = $(`<div id="html_1a3d9bfa21494a138a3f3c48da656c1b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1988-06-02 00:00:00+00:00 <strong>Recolectores:</strong> B. E. Hammel <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_732898d16998498fb6553fd14a475153.setContent(html_1a3d9bfa21494a138a3f3c48da656c1b);
+        
+
+        marker_fc954fbba00d4151a4145e8331e817ff.bindPopup(popup_732898d16998498fb6553fd14a475153)
+        ;
+
+        
+    
+    
+            var marker_d12481e442a6486d80de82f745736a4d = L.marker(
+                [10.0, -83.8667],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_8b2e8ed097d84c2f8b1561c9246db192 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2af897007c74a35aa6602ce01cc2914 = $(`<div id="html_a2af897007c74a35aa6602ce01cc2914" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-06-28 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera C. <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_8b2e8ed097d84c2f8b1561c9246db192.setContent(html_a2af897007c74a35aa6602ce01cc2914);
+        
+
+        marker_d12481e442a6486d80de82f745736a4d.bindPopup(popup_8b2e8ed097d84c2f8b1561c9246db192)
+        ;
+
+        
+    
+    
+            var marker_cc170728679944168b1743e300acc0e8 = L.marker(
+                [10.0, -84.8333],
+                {}
+            ).addTo(marker_cluster_364b8694627a4064a9c896bfd08445b1);
+        
+    
+        var popup_a6af22a7e6484f27bf0c00f2c0cbfc48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb9e742d9e344a9db8e6dc8c613a6e0f = $(`<div id="html_eb9e742d9e344a9db8e6dc8c613a6e0f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1992-02-18 00:00:00+00:00 <strong>Recolectores:</strong> J. Marín <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_a6af22a7e6484f27bf0c00f2c0cbfc48.setContent(html_eb9e742d9e344a9db8e6dc8c613a6e0f);
+        
+
+        marker_cc170728679944168b1743e300acc0e8.bindPopup(popup_a6af22a7e6484f27bf0c00f2c0cbfc48)
+        ;
+
+        
+    
+    
+            var layer_control_20cc5bdbfb63420cbe976f44441373c8 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_47434ad554454bdaad52a7072448004a,
+                    "ESRI World Imagery" : tile_layer_9a62b1ab59ce4eb5a4986f458a42a1ff,
+                },
+                overlays :  {
+                    "macro_element_364b8694627a4064a9c896bfd08445b1" : marker_cluster_364b8694627a4064a9c896bfd08445b1,
+                },
+            };
+            L.control.layers(
+                layer_control_20cc5bdbfb63420cbe976f44441373c8.base_layers,
+                layer_control_20cc5bdbfb63420cbe976f44441373c8.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_8299f5b224b3493facdc6f98074ef4f8);
+            tile_layer_9a62b1ab59ce4eb5a4986f458a42a1ff.remove();
+        
+</script>

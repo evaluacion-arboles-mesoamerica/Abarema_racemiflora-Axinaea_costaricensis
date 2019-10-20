@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1246cf6ed51e48dda94754a613c1f280 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1246cf6ed51e48dda94754a613c1f280" ></div>
+        
+</body>
+<script>    
+    
+            var map_1246cf6ed51e48dda94754a613c1f280 = L.map(
+                "map_1246cf6ed51e48dda94754a613c1f280",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_1246cf6ed51e48dda94754a613c1f280);
+
+            
+
+        
+    
+            var tile_layer_41de514f86f54619aef3c229dbdebfad = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+            var tile_layer_b8afbcf883714788a9b776a96958d65a = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+            var circle_marker_f9c01f29114c48ee8be4720d8be86f3f = L.circleMarker(
+                [21.69667, -102.79],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_a816f2468d8744b484bcf5be3fade445 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_905031372db84affa560c435dad9db61 = $(`<div id="html_905031372db84affa560c435dad9db61" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> W base of Cerro La Antorcha, Rancho San Antonio, 6.5 km SSE of Rancho La Higuera. R. La H. is along Hwy 70 c. 16 km SW of Calvillo <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1999-07-15 00:00:00+00:00 <strong>Recolectores:</strong> Mitch Provance; Juanita Provance, Seychelle Provance, Joseph Gomez, Pablo and Maria Velasquez, and Alphonso Serna Serna <strong>Identificadores:</strong> Mitch Provance</div>`)[0];
+            popup_a816f2468d8744b484bcf5be3fade445.setContent(html_905031372db84affa560c435dad9db61);
+        
+
+        circle_marker_f9c01f29114c48ee8be4720d8be86f3f.bindPopup(popup_a816f2468d8744b484bcf5be3fade445)
+        ;
+
+        
+    
+    
+            var circle_marker_0a5bf7ee17124a2cb62cf092bb68163a = L.circleMarker(
+                [20.676389, -103.33],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_b64f051c27874049ae0f80fad8736a50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8eedf592259e47b79f4ac98dd572b3ae = $(`<div id="html_8eedf592259e47b79f4ac98dd572b3ae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Barranca of Guadalajara. <strong>Elevación:</strong> 1219.0 m  <strong>Fecha:</strong> 1898-06-15 00:00:00+00:00 <strong>Recolectores:</strong> C. G. Pringle <strong>Identificadores:</strong> M. H. Nee</div>`)[0];
+            popup_b64f051c27874049ae0f80fad8736a50.setContent(html_8eedf592259e47b79f4ac98dd572b3ae);
+        
+
+        circle_marker_0a5bf7ee17124a2cb62cf092bb68163a.bindPopup(popup_b64f051c27874049ae0f80fad8736a50)
+        ;
+
+        
+    
+    
+            var circle_marker_aef49289309b4e2089ddcba7556cdc7b = L.circleMarker(
+                [21.163332999999998, -103.16833299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_0d22f56a9705485dad5184e2a8e55cd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b320d7c92b36462da56cdad8c2eee6b8 = $(`<div id="html_b320d7c92b36462da56cdad8c2eee6b8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro la Bota, al oeste de Las Palmas, camino de terraceria Las Palmas - El Pitayito <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1992-09-14 00:00:00+00:00 <strong>Recolectores:</strong> J.J. Balleza C.; M. Adame G. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_0d22f56a9705485dad5184e2a8e55cd5.setContent(html_b320d7c92b36462da56cdad8c2eee6b8);
+        
+
+        circle_marker_aef49289309b4e2089ddcba7556cdc7b.bindPopup(popup_0d22f56a9705485dad5184e2a8e55cd5)
+        ;
+
+        
+    
+    
+            var circle_marker_b47e5a83842c4af9a5de75cdfb5f8275 = L.circleMarker(
+                [21.358056, -103.2125],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_baafc7443d6f4cbd987e0b52eba8dd1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d33ffb73383a4325a5df0470aa260213 = $(`<div id="html_d33ffb73383a4325a5df0470aa260213" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Casa de Jesús Ayala, Cerro de Piñones <strong>Elevación:</strong> 1711.0 m  <strong>Fecha:</strong> 1998-07-09 00:00:00+00:00 <strong>Recolectores:</strong> J.J. Balleza C.; E.D. Enríquez E. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_baafc7443d6f4cbd987e0b52eba8dd1c.setContent(html_d33ffb73383a4325a5df0470aa260213);
+        
+
+        circle_marker_b47e5a83842c4af9a5de75cdfb5f8275.bindPopup(popup_baafc7443d6f4cbd987e0b52eba8dd1c)
+        ;
+
+        
+    
+    
+            var circle_marker_ce7890ebff78488b9653933b873d8a69 = L.circleMarker(
+                [21.35, -103.221944],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_0eb87515b7074fa0a0b26cd136f50bee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54585139dcbd484699746538d3e3ab4b = $(`<div id="html_54585139dcbd484699746538d3e3ab4b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 4 km al oeste de Pueblo Viejo, Sierra de Morones <strong>Elevación:</strong> 2110.0 m  <strong>Fecha:</strong> 1999-09-13 00:00:00+00:00 <strong>Recolectores:</strong> J.J. Balleza C.; M. Adame G. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_0eb87515b7074fa0a0b26cd136f50bee.setContent(html_54585139dcbd484699746538d3e3ab4b);
+        
+
+        circle_marker_ce7890ebff78488b9653933b873d8a69.bindPopup(popup_0eb87515b7074fa0a0b26cd136f50bee)
+        ;
+
+        
+    
+    
+            var circle_marker_7ad1b2e76d3d452492223058dd3a0ccd = L.circleMarker(
+                [21.196389, -103.185278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_68bf707ed9924623bf0b6ce38bba682f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6216e776faf48de90b6b25866021141 = $(`<div id="html_c6216e776faf48de90b6b25866021141" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa, Cañón del Río Juchipila <strong>Elevación:</strong> 1260.0 m  <strong>Fecha:</strong> 1993-06-29 00:00:00+00:00 <strong>Recolectores:</strong> E.D. Enríquez E. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_68bf707ed9924623bf0b6ce38bba682f.setContent(html_c6216e776faf48de90b6b25866021141);
+        
+
+        circle_marker_7ad1b2e76d3d452492223058dd3a0ccd.bindPopup(popup_68bf707ed9924623bf0b6ce38bba682f)
+        ;
+
+        
+    
+    
+            var circle_marker_c426d60dc033436c99fe3681e2dfa3bf = L.circleMarker(
+                [21.196389, -103.185278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_aa7f40f0842f4815a95b6e8814e41443 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c3e68d0f66d4ec995014f4650e67ad1 = $(`<div id="html_9c3e68d0f66d4ec995014f4650e67ad1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa, Cañón del Río Juchipila <strong>Elevación:</strong> 1260.0 m  <strong>Fecha:</strong> 1993-07-29 00:00:00+00:00 <strong>Recolectores:</strong> E.D. Enríquez E. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_aa7f40f0842f4815a95b6e8814e41443.setContent(html_9c3e68d0f66d4ec995014f4650e67ad1);
+        
+
+        circle_marker_c426d60dc033436c99fe3681e2dfa3bf.bindPopup(popup_aa7f40f0842f4815a95b6e8814e41443)
+        ;
+
+        
+    
+    
+            var circle_marker_33406fbed36649fdb562b2cb2af7c8f5 = L.circleMarker(
+                [21.391667, -103.116667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_ae921ba4e8b64721b0689899ac8d9d0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98c6841d3ad344599dbc6bff8a9f055e = $(`<div id="html_98c6841d3ad344599dbc6bff8a9f055e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de Las Ventanas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1992-10-16 00:00:00+00:00 <strong>Recolectores:</strong> E.D. Enríquez E. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_ae921ba4e8b64721b0689899ac8d9d0f.setContent(html_98c6841d3ad344599dbc6bff8a9f055e);
+        
+
+        circle_marker_33406fbed36649fdb562b2cb2af7c8f5.bindPopup(popup_ae921ba4e8b64721b0689899ac8d9d0f)
+        ;
+
+        
+    
+    
+            var circle_marker_fef767c55c9e42cba50957f11f922865 = L.circleMarker(
+                [21.391667, -103.116667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_ecda79ac6cd347b4b7591381b7076075 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9990a6f2e45641faa7aea296b5731dac = $(`<div id="html_9990a6f2e45641faa7aea296b5731dac" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de Las Ventanas <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 2007-07-21 00:00:00+00:00 <strong>Recolectores:</strong> J. Ramírez P. <strong>Identificadores:</strong> M. Adame G.; J. Ramírez P.</div>`)[0];
+            popup_ecda79ac6cd347b4b7591381b7076075.setContent(html_9990a6f2e45641faa7aea296b5731dac);
+        
+
+        circle_marker_fef767c55c9e42cba50957f11f922865.bindPopup(popup_ecda79ac6cd347b4b7591381b7076075)
+        ;
+
+        
+    
+    
+            var circle_marker_7ef93a80d63e480788a6095c38b25693 = L.circleMarker(
+                [21.095833, -103.465278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_432103c88fa64507ab5dd34d2e3dcd03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19b7980ca90f4950b01746233e016fd0 = $(`<div id="html_19b7980ca90f4950b01746233e016fd0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> EL PALO VERDE, 4 KM AL SW DE SAN CRISTOBAL DE LA BARRANCA, MPIO. SAN CRISTOBAL DE LA BARRANCA, JAL. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 2001-07-12 00:00:00+00:00 <strong>Recolectores:</strong> P. Carrillo; G. David <strong>Identificadores:</strong> P. Carrillo</div>`)[0];
+            popup_432103c88fa64507ab5dd34d2e3dcd03.setContent(html_19b7980ca90f4950b01746233e016fd0);
+        
+
+        circle_marker_7ef93a80d63e480788a6095c38b25693.bindPopup(popup_432103c88fa64507ab5dd34d2e3dcd03)
+        ;
+
+        
+    
+    
+            var circle_marker_8ad6b1ba35f44a81b98aadaa6427944a = L.circleMarker(
+                [20.683611, -103.20666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_216cbe7c2f1a43ec9ffb991bdf17311f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0dab3286fbf9427ebfd208cdc7c65703 = $(`<div id="html_0dab3286fbf9427ebfd208cdc7c65703" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Barranca near Guadalajara. <strong>Elevación:</strong> 1219.2 m  <strong>Fecha:</strong> 1903-09-28 00:00:00+00:00 <strong>Recolectores:</strong> Cyrus G. Pringle <strong>Identificadores:</strong> X. M. Cuevas-Figueroa (IBUG)</div>`)[0];
+            popup_216cbe7c2f1a43ec9ffb991bdf17311f.setContent(html_0dab3286fbf9427ebfd208cdc7c65703);
+        
+
+        circle_marker_8ad6b1ba35f44a81b98aadaa6427944a.bindPopup(popup_216cbe7c2f1a43ec9ffb991bdf17311f)
+        ;
+
+        
+    
+    
+            var circle_marker_4f0b0ccc119e4b8d8f3fe3361d3f2f56 = L.circleMarker(
+                [10.93333, -85.775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_5b1c8a3405384fd9b282b8d3f3aceb2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f10d473acab4098b80474a5f48567a7 = $(`<div id="html_6f10d473acab4098b80474a5f48567a7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guanacaste - Guanacaste: La Cruz. P. N. Santa Rosa. Cuenca de Santa Elena. Sector Murciélago, Bahía Danta, Asociaciones costeras/Provincia de Guanacaste <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2000-06-11 00:00:00+00:00 <strong>Recolectores:</strong> Morales, J. F. & J. González <strong>Identificadores:</strong> Morales, J. F. (2000)</div>`)[0];
+            popup_5b1c8a3405384fd9b282b8d3f3aceb2e.setContent(html_6f10d473acab4098b80474a5f48567a7);
+        
+
+        circle_marker_4f0b0ccc119e4b8d8f3fe3361d3f2f56.bindPopup(popup_5b1c8a3405384fd9b282b8d3f3aceb2e)
+        ;
+
+        
+    
+    
+            var circle_marker_f104c85888334a26b1674cdb92c0122d = L.circleMarker(
+                [20.32, -103.60167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_f2269f4edbda446eb3e8b57a4971ed29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7089583c95344dd489fcb50acc957421 = $(`<div id="html_7089583c95344dd489fcb50acc957421" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Jalisco - State of Jalisco, Barranca of Guadalajara/Estado de Jalisco <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1898-06-15 00:00:00+00:00 <strong>Recolectores:</strong> Pringle, C. G. (Coll. Delessert 1899) <strong>Identificadores:</strong> Chatelain, C. (2008)</div>`)[0];
+            popup_f2269f4edbda446eb3e8b57a4971ed29.setContent(html_7089583c95344dd489fcb50acc957421);
+        
+
+        circle_marker_f104c85888334a26b1674cdb92c0122d.bindPopup(popup_f2269f4edbda446eb3e8b57a4971ed29)
+        ;
+
+        
+    
+    
+            var circle_marker_d952fbe0841048ba8be088154a5c0887 = L.circleMarker(
+                [20.68, -103.35],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_7e206429b9cd48c8837df8e70e981170 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e487537f6b194e76baa88645f157aa90 = $(`<div id="html_e487537f6b194e76baa88645f157aa90" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Label: Barranca of Guadalajara .  GIS: Guadalajara <strong>Elevación:</strong> 1219.0 m  <strong>Fecha:</strong> 1898-06-15 00:00:00+00:00 <strong>Recolectores:</strong> Pringle, C.G. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7e206429b9cd48c8837df8e70e981170.setContent(html_e487537f6b194e76baa88645f157aa90);
+        
+
+        circle_marker_d952fbe0841048ba8be088154a5c0887.bindPopup(popup_7e206429b9cd48c8837df8e70e981170)
+        ;
+
+        
+    
+    
+            var circle_marker_8d6a580862af40f586d35c8beec7a176 = L.circleMarker(
+                [10.87, -85.79],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_11a5c899ca524d238e47d24ef96a8899 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7fb45acb5a34b9b99e0d924db8f7101 = $(`<div id="html_f7fb45acb5a34b9b99e0d924db8f7101" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Santa Rosa Golfo de Papagayo, Península de Santa Elena. Hacienda Santa Elena, playa Molle, costado sureste de Fila La Penca. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1998-01-29 00:00:00+00:00 <strong>Recolectores:</strong> Zamora, Nelson <strong>Identificadores:</strong> Zamora, Nelson</div>`)[0];
+            popup_11a5c899ca524d238e47d24ef96a8899.setContent(html_f7fb45acb5a34b9b99e0d924db8f7101);
+        
+
+        circle_marker_8d6a580862af40f586d35c8beec7a176.bindPopup(popup_11a5c899ca524d238e47d24ef96a8899)
+        ;
+
+        
+    
+    
+            var circle_marker_6cd342e0e2b94870a22d844ae531e5b9 = L.circleMarker(
+                [10.93, -85.76],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_b1c828508fd543649fbe00ac27b37b17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8af71fa282034d7c8ee13bb4b3b2afc1 = $(`<div id="html_8af71fa282034d7c8ee13bb4b3b2afc1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Santa Rosa Península de Santa Elena; Bahía Danta; a lo largo de la costa y en la parte baja de laderas rocosas. <strong>Elevación:</strong> 2.0 m  <strong>Fecha:</strong> 1994-08-20 00:00:00+00:00 <strong>Recolectores:</strong> González, José <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_b1c828508fd543649fbe00ac27b37b17.setContent(html_8af71fa282034d7c8ee13bb4b3b2afc1);
+        
+
+        circle_marker_6cd342e0e2b94870a22d844ae531e5b9.bindPopup(popup_b1c828508fd543649fbe00ac27b37b17)
+        ;
+
+        
+    
+    
+            var circle_marker_7b27f42507454013b2ac41a8462fb807 = L.circleMarker(
+                [10.93, -85.45],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+        
+    
+        var popup_3e0e06eb19e748dbb401c9a038551860 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29da9f5903744acb93c17fd7f8047606 = $(`<div id="html_29da9f5903744acb93c17fd7f8047606" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Guanacaste Islas Murcielago. Isla San José. slope along beach, pistillate and staminate plants <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1987-04-08 00:00:00+00:00 <strong>Recolectores:</strong> Smith, J. F. <strong>Identificadores:</strong> Valerio, M. A.</div>`)[0];
+            popup_3e0e06eb19e748dbb401c9a038551860.setContent(html_29da9f5903744acb93c17fd7f8047606);
+        
+
+        circle_marker_7b27f42507454013b2ac41a8462fb807.bindPopup(popup_3e0e06eb19e748dbb401c9a038551860)
+        ;
+
+        
+    
+    
+            var layer_control_c0213a9d36bf48c49da8f770acff7668 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_41de514f86f54619aef3c229dbdebfad,
+                    "ESRI World Imagery" : tile_layer_b8afbcf883714788a9b776a96958d65a,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_c0213a9d36bf48c49da8f770acff7668.base_layers,
+                layer_control_c0213a9d36bf48c49da8f770acff7668.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_1246cf6ed51e48dda94754a613c1f280);
+            tile_layer_b8afbcf883714788a9b776a96958d65a.remove();
+        
+</script>

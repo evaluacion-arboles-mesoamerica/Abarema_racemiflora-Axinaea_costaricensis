@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3c3fe7bce81c4064baac1a75810dd066 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3c3fe7bce81c4064baac1a75810dd066" ></div>
+        
+</body>
+<script>    
+    
+            var map_3c3fe7bce81c4064baac1a75810dd066 = L.map(
+                "map_3c3fe7bce81c4064baac1a75810dd066",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+
+            
+
+        
+    
+            var tile_layer_d4194dc23c4c48579f7ed292686d493e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+        
+    
+            var tile_layer_5c6fd2d8eba2443ba3484667e420b3b5 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+        
+    
+            var circle_marker_4ad3e014846a402ca54cd6829a48fa13 = L.circleMarker(
+                [7.37, -59.7],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+        
+    
+        var popup_6429f923942c4ede8796536984ba5b1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a69ee9d396b2460d97603f0bb0191169 = $(`<div id="html_a69ee9d396b2460d97603f0bb0191169" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Kariako, Barama River, North-West District <strong>Elevación:</strong> 145.0 m  <strong>Fecha:</strong> 1996-08-13 00:00:00+00:00 <strong>Recolectores:</strong> T. R. van Andel <strong>Identificadores:</strong> M. de L. Rico-Arce</div>`)[0];
+            popup_6429f923942c4ede8796536984ba5b1a.setContent(html_a69ee9d396b2460d97603f0bb0191169);
+        
+
+        circle_marker_4ad3e014846a402ca54cd6829a48fa13.bindPopup(popup_6429f923942c4ede8796536984ba5b1a)
+        ;
+
+        
+    
+    
+            var circle_marker_3c30c86f7d8e48c9917fc32e52199585 = L.circleMarker(
+                [-2.429224, -59.888583],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+        
+    
+        var popup_f5b537ad45504b6eb02ea821f2734a2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb1d9a6ad2b64aa2a6dc5eb3a69c6f39 = $(`<div id="html_cb1d9a6ad2b64aa2a6dc5eb3a69c6f39" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito Agropecuário da SUFRAMA, Rodovia BR 174, km 64, then 23 km east on ZF3, Fazenda Colosso. Reserva 1202. <strong>Elevación:</strong> 135.0 m  <strong>Fecha:</strong> 1995-10-04 00:00:00+00:00 <strong>Recolectores:</strong> C. Dick <strong>Identificadores:</strong> M. de L. Rico-Arce</div>`)[0];
+            popup_f5b537ad45504b6eb02ea821f2734a2e.setContent(html_cb1d9a6ad2b64aa2a6dc5eb3a69c6f39);
+        
+
+        circle_marker_3c30c86f7d8e48c9917fc32e52199585.bindPopup(popup_f5b537ad45504b6eb02ea821f2734a2e)
+        ;
+
+        
+    
+    
+            var circle_marker_a351ced0225a4b3da8241cc4954abf6f = L.circleMarker(
+                [-9.2809, -55.4905],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+        
+    
+        var popup_d077b81a67cd45c992b25b9b421e31c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8f02b80d6ee4aa1a969927a593f8259 = $(`<div id="html_c8f02b80d6ee4aa1a969927a593f8259" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Estadual do Cristalino, Parque Estadual Cristalino. Serra à sudeste da pousada, à oeste da estrada de terra. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2007-06-03 00:00:00+00:00 <strong>Recolectores:</strong> Sasaki, D; Henicka, GS; Piva, JH <strong>Identificadores:</strong> Lewis, GP</div>`)[0];
+            popup_d077b81a67cd45c992b25b9b421e31c8.setContent(html_c8f02b80d6ee4aa1a969927a593f8259);
+        
+
+        circle_marker_a351ced0225a4b3da8241cc4954abf6f.bindPopup(popup_d077b81a67cd45c992b25b9b421e31c8)
+        ;
+
+        
+    
+    
+            var circle_marker_46179e0df7d74124bb1cca37ebaa90c6 = L.circleMarker(
+                [-8.754481, -63.870307999999994],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+        
+    
+        var popup_28024f5643334b07985598b8ecc5af8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe9bdbb28f58406e86761ca831b14e97 = $(`<div id="html_fe9bdbb28f58406e86761ca831b14e97" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Madeira. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2010-06-26 00:00:00+00:00 <strong>Recolectores:</strong> Pereira-Silva, G. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_28024f5643334b07985598b8ecc5af8c.setContent(html_fe9bdbb28f58406e86761ca831b14e97);
+        
+
+        circle_marker_46179e0df7d74124bb1cca37ebaa90c6.bindPopup(popup_28024f5643334b07985598b8ecc5af8c)
+        ;
+
+        
+    
+    
+            var circle_marker_4e6a3f71bb6e460c991c31739108675e = L.circleMarker(
+                [-9.646944, -64.95],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+        
+    
+        var popup_c2cd03128ad04726add2705ce4b310c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8dddd0d5230e4d089e4dd79231662446 = $(`<div id="html_8dddd0d5230e4d089e4dd79231662446" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Mutum Paraná. <strong>Elevación:</strong> 85.0 m  <strong>Fecha:</strong> 2010-08-18 00:00:00+00:00 <strong>Recolectores:</strong> Pereira-Silva, G. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c2cd03128ad04726add2705ce4b310c6.setContent(html_8dddd0d5230e4d089e4dd79231662446);
+        
+
+        circle_marker_4e6a3f71bb6e460c991c31739108675e.bindPopup(popup_c2cd03128ad04726add2705ce4b310c6)
+        ;
+
+        
+    
+    
+            var circle_marker_04314e22c21d456484c54ab2a7d96b03 = L.circleMarker(
+                [15.05, -84.833333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+        
+    
+        var popup_bd729441437041a3844ab7266be2579b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78fbcbe1d889407a829cff554cf68581 = $(`<div id="html_78fbcbe1d889407a829cff554cf68581" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1994-02-10 00:00:00+00:00 <strong>Recolectores:</strong> Paul Raymond House <strong>Identificadores:</strong> Maria de Lourdes (Lulu) Rico Arce</div>`)[0];
+            popup_bd729441437041a3844ab7266be2579b.setContent(html_78fbcbe1d889407a829cff554cf68581);
+        
+
+        circle_marker_04314e22c21d456484c54ab2a7d96b03.bindPopup(popup_bd729441437041a3844ab7266be2579b)
+        ;
+
+        
+    
+    
+            var circle_marker_4290d59fc692458cb9834a081b8f4805 = L.circleMarker(
+                [-9.646944, -64.93],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+        
+    
+        var popup_da89e83850fc4fb5a265c804a7620212 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c1262e1791a4681a52d6221076d9db7 = $(`<div id="html_8c1262e1791a4681a52d6221076d9db7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> UHE Jirau, Margem direita do rio Mutum Paraná. <strong>Elevación:</strong> 42.5 m  <strong>Fecha:</strong> 2010-08-18 00:00:00+00:00 <strong>Recolectores:</strong> Mike Hopkins <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_da89e83850fc4fb5a265c804a7620212.setContent(html_8c1262e1791a4681a52d6221076d9db7);
+        
+
+        circle_marker_4290d59fc692458cb9834a081b8f4805.bindPopup(popup_da89e83850fc4fb5a265c804a7620212)
+        ;
+
+        
+    
+    
+            var circle_marker_2f961eb821fa4394bb64492e6755e001 = L.circleMarker(
+                [-9.623056, -65.1],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+        
+    
+        var popup_43c82503f59342d9884b3c614d28aa59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_520832a9f94a42ea863e7dead4b028d7 = $(`<div id="html_520832a9f94a42ea863e7dead4b028d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> UHE Jirau, Ramal Primavera - BR 364 - rio Madeira. km 8,5. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2010-06-26 00:00:00+00:00 <strong>Recolectores:</strong> Mike Hopkins <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_43c82503f59342d9884b3c614d28aa59.setContent(html_520832a9f94a42ea863e7dead4b028d7);
+        
+
+        circle_marker_2f961eb821fa4394bb64492e6755e001.bindPopup(popup_43c82503f59342d9884b3c614d28aa59)
+        ;
+
+        
+    
+    
+            var circle_marker_8ba36af922144276b5f482a48a733103 = L.circleMarker(
+                [-10.15, -63.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+        
+    
+        var popup_ce860ccec9204803a5afc6ca627c6e09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32fbc60f7ebf4834a762c76144f270a0 = $(`<div id="html_32fbc60f7ebf4834a762c76144f270a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Lat/Long: 10[deg] 9' S, 63[deg] 64' W; BR 364, estrada Cuiabá-Porto Velho, Km 542, linha C-85, travessão B-40 . <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1984-07-05 00:00:00+00:00 <strong>Recolectores:</strong> Guedes, J.; Cid, C.A.; Lima, J.; Coêlho, J. <strong>Identificadores:</strong> Rico, M.L.</div>`)[0];
+            popup_ce860ccec9204803a5afc6ca627c6e09.setContent(html_32fbc60f7ebf4834a762c76144f270a0);
+        
+
+        circle_marker_8ba36af922144276b5f482a48a733103.bindPopup(popup_ce860ccec9204803a5afc6ca627c6e09)
+        ;
+
+        
+    
+    
+            var circle_marker_6a54c3f1444d45d6bb0ec0f1219d3e9f = L.circleMarker(
+                [-9.47, -55.82],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+        
+    
+        var popup_08f1a851c38847639eca869781afe643 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f4157ff4fe5444f9f3673ba06e59b7b = $(`<div id="html_3f4157ff4fe5444f9f3673ba06e59b7b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Estadual Cristalino. Serra à sudeste da pousada, à oeste da estrada de terra.GPS :EF2 039 <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2007-06-03 00:00:00+00:00 <strong>Recolectores:</strong> Piva, J.H.; Henicka, G.S.; Sasaki, D. <strong>Identificadores:</strong> Lewis, G.P.</div>`)[0];
+            popup_08f1a851c38847639eca869781afe643.setContent(html_3f4157ff4fe5444f9f3673ba06e59b7b);
+        
+
+        circle_marker_6a54c3f1444d45d6bb0ec0f1219d3e9f.bindPopup(popup_08f1a851c38847639eca869781afe643)
+        ;
+
+        
+    
+    
+            var layer_control_d77cb7c7e97949c492388099438ed652 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_d4194dc23c4c48579f7ed292686d493e,
+                    "ESRI World Imagery" : tile_layer_5c6fd2d8eba2443ba3484667e420b3b5,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_d77cb7c7e97949c492388099438ed652.base_layers,
+                layer_control_d77cb7c7e97949c492388099438ed652.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_3c3fe7bce81c4064baac1a75810dd066);
+            tile_layer_5c6fd2d8eba2443ba3484667e420b3b5.remove();
+        
+</script>

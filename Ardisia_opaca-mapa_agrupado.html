@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ee62ccf2e4ac4c589843edf0f03f5434 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ee62ccf2e4ac4c589843edf0f03f5434" ></div>
+        
+</body>
+<script>    
+    
+            var map_ee62ccf2e4ac4c589843edf0f03f5434 = L.map(
+                "map_ee62ccf2e4ac4c589843edf0f03f5434",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_ee62ccf2e4ac4c589843edf0f03f5434);
+
+            
+
+        
+    
+            var tile_layer_be3c6eb52a834d58a43be4ed4c5266eb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ee62ccf2e4ac4c589843edf0f03f5434);
+        
+    
+            var tile_layer_1b96ece837104ec2ab5b9175190a7745 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ee62ccf2e4ac4c589843edf0f03f5434);
+        
+    
+            var marker_cluster_682ffba357684393a435b33887ae8e77 = L.markerClusterGroup(
+                {}
+            );
+            map_ee62ccf2e4ac4c589843edf0f03f5434.addLayer(marker_cluster_682ffba357684393a435b33887ae8e77);
+        
+    
+            var marker_00509989fcac423c9f37723137440aa0 = L.marker(
+                [2.39716, -77.6878],
+                {}
+            ).addTo(marker_cluster_682ffba357684393a435b33887ae8e77);
+        
+    
+        var popup_a904869fb8d54a818e51b1757f4d96b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7791983ce2bb440287ede2a900101c0c = $(`<div id="html_7791983ce2bb440287ede2a900101c0c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> SI. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Lozano C., G. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_a904869fb8d54a818e51b1757f4d96b7.setContent(html_7791983ce2bb440287ede2a900101c0c);
+        
+
+        marker_00509989fcac423c9f37723137440aa0.bindPopup(popup_a904869fb8d54a818e51b1757f4d96b7)
+        ;
+
+        
+    
+    
+            var marker_343c094356a74b2b89125bd73dd97682 = L.marker(
+                [9.2, -83.05],
+                {}
+            ).addTo(marker_cluster_682ffba357684393a435b33887ae8e77);
+        
+    
+        var popup_ecfb9d98fc3c41b3a6f7e4b5718e463b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f5d676491e643d6afbc2a9c5b8aebe7 = $(`<div id="html_5f5d676491e643d6afbc2a9c5b8aebe7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón-Puntarenas border; Cordillera de Talamanca, Cerro Kasir, on the continental divide. <strong>Elevación:</strong> 2950.0 m  <strong>Fecha:</strong> 1984-09-20 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_ecfb9d98fc3c41b3a6f7e4b5718e463b.setContent(html_5f5d676491e643d6afbc2a9c5b8aebe7);
+        
+
+        marker_343c094356a74b2b89125bd73dd97682.bindPopup(popup_ecfb9d98fc3c41b3a6f7e4b5718e463b)
+        ;
+
+        
+    
+    
+            var marker_86064a3c3465440b9b0106daee437754 = L.marker(
+                [9.25, -82.983333],
+                {}
+            ).addTo(marker_cluster_682ffba357684393a435b33887ae8e77);
+        
+    
+        var popup_11c6155014ad4686b8057595845eb7c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b183e47bbec2460bb4c27f0d906c34ca = $(`<div id="html_b183e47bbec2460bb4c27f0d906c34ca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, Atlantic slope, Kámuk massif, ridge between the Río Tararia and the northeastern most Kámuk páramo. <strong>Elevación:</strong> 2650.0 m  <strong>Fecha:</strong> 1984-09-17 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_11c6155014ad4686b8057595845eb7c8.setContent(html_b183e47bbec2460bb4c27f0d906c34ca);
+        
+
+        marker_86064a3c3465440b9b0106daee437754.bindPopup(popup_11c6155014ad4686b8057595845eb7c8)
+        ;
+
+        
+    
+    
+            var marker_8648691ec0964d9e9670c484d3e721e1 = L.marker(
+                [8.15, -77.31666700000001],
+                {}
+            ).addTo(marker_cluster_682ffba357684393a435b33887ae8e77);
+        
+    
+        var popup_2b271473582b4407af2440ce9d5343a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbbb6d55187c4e1aa17aed545659311d = $(`<div id="html_fbbb6d55187c4e1aa17aed545659311d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Tacarcuna Expedition. Vicinity of Cerro Tacarcuna summit camp, along stream N of camp. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1975-02-01 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Scott A. Mori <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_2b271473582b4407af2440ce9d5343a4.setContent(html_fbbb6d55187c4e1aa17aed545659311d);
+        
+
+        marker_8648691ec0964d9e9670c484d3e721e1.bindPopup(popup_2b271473582b4407af2440ce9d5343a4)
+        ;
+
+        
+    
+    
+            var marker_8db374335afa46aa98a2dd40b8b535b2 = L.marker(
+                [9.95, -82.81],
+                {}
+            ).addTo(marker_cluster_682ffba357684393a435b33887ae8e77);
+        
+    
+        var popup_df8353e5251747f2b5a8e54d1a7b533d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa1f926a9f2b4e5abe9d8168dbad1bfb = $(`<div id="html_aa1f926a9f2b4e5abe9d8168dbad1bfb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cord. Talamanca, area between headwaters of Río Bella Vista and Sitio Cotón <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1983-08-25 00:00:00+00:00 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Hammel, Barry E.</div>`)[0];
+            popup_df8353e5251747f2b5a8e54d1a7b533d.setContent(html_aa1f926a9f2b4e5abe9d8168dbad1bfb);
+        
+
+        marker_8db374335afa46aa98a2dd40b8b535b2.bindPopup(popup_df8353e5251747f2b5a8e54d1a7b533d)
+        ;
+
+        
+    
+    
+            var layer_control_86d409c2678e402d9682eed3c72f5dae = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_be3c6eb52a834d58a43be4ed4c5266eb,
+                    "ESRI World Imagery" : tile_layer_1b96ece837104ec2ab5b9175190a7745,
+                },
+                overlays :  {
+                    "macro_element_682ffba357684393a435b33887ae8e77" : marker_cluster_682ffba357684393a435b33887ae8e77,
+                },
+            };
+            L.control.layers(
+                layer_control_86d409c2678e402d9682eed3c72f5dae.base_layers,
+                layer_control_86d409c2678e402d9682eed3c72f5dae.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ee62ccf2e4ac4c589843edf0f03f5434);
+            tile_layer_1b96ece837104ec2ab5b9175190a7745.remove();
+        
+</script>

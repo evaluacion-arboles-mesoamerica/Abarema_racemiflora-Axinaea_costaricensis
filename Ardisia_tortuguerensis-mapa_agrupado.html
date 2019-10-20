@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c901db89222e417d9822c46045aabab4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c901db89222e417d9822c46045aabab4" ></div>
+        
+</body>
+<script>    
+    
+            var map_c901db89222e417d9822c46045aabab4 = L.map(
+                "map_c901db89222e417d9822c46045aabab4",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_c901db89222e417d9822c46045aabab4);
+
+            
+
+        
+    
+            var tile_layer_de0eec82a5d447a9827492a13a1d6614 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c901db89222e417d9822c46045aabab4);
+        
+    
+            var tile_layer_a356189371674867890d24b26f751f9a = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c901db89222e417d9822c46045aabab4);
+        
+    
+            var marker_cluster_b0af1ce57ea8488a9904c6ad7b0cbbad = L.markerClusterGroup(
+                {}
+            );
+            map_c901db89222e417d9822c46045aabab4.addLayer(marker_cluster_b0af1ce57ea8488a9904c6ad7b0cbbad);
+        
+    
+            var marker_cf5a9e9453e0424bb885b0d87576d861 = L.marker(
+                [10.4, -83.55],
+                {}
+            ).addTo(marker_cluster_b0af1ce57ea8488a9904c6ad7b0cbbad);
+        
+    
+        var popup_57eb87d87bdb450d8314267cead797db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ff9bb49918d42199d01566fcca68a6c = $(`<div id="html_9ff9bb49918d42199d01566fcca68a6c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Tortuguero Lomas de Sierpe, 4 Km al NE del puesto de P.N. sobre el Río Sierpe. Lomas con pendientes medianamente pronunciadas, abundante hojarasca. Suelo bien drenado. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1988-08-15 00:00:00+00:00 <strong>Recolectores:</strong> Rafael Robles|Gerardo Herrera Ch.|Luis Flores|M. Rojas <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_57eb87d87bdb450d8314267cead797db.setContent(html_9ff9bb49918d42199d01566fcca68a6c);
+        
+
+        marker_cf5a9e9453e0424bb885b0d87576d861.bindPopup(popup_57eb87d87bdb450d8314267cead797db)
+        ;
+
+        
+    
+    
+            var marker_8e573b10c21847bdb455c66cd027ba0e = L.marker(
+                [10.4, -83.5],
+                {}
+            ).addTo(marker_cluster_b0af1ce57ea8488a9904c6ad7b0cbbad);
+        
+    
+        var popup_841574ce3fe04126888cadbfe7f2b9a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e088f8272fb4e1189e61f7689c610d8 = $(`<div id="html_3e088f8272fb4e1189e61f7689c610d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Lomas de Sierpe, 4 Km al NE del puesto de P.N. sobre el Rio Sierpe. Lomas con pendientes medianamente pronunciadas, abundante hojarasca. Suelo bien drenado. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1988-08-15 00:00:00+00:00 <strong>Recolectores:</strong> Rafael Robles <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_841574ce3fe04126888cadbfe7f2b9a0.setContent(html_3e088f8272fb4e1189e61f7689c610d8);
+        
+
+        marker_8e573b10c21847bdb455c66cd027ba0e.bindPopup(popup_841574ce3fe04126888cadbfe7f2b9a0)
+        ;
+
+        
+    
+    
+            var layer_control_3b7f56fb85894bb0b0bbd7d92f9f557a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_de0eec82a5d447a9827492a13a1d6614,
+                    "ESRI World Imagery" : tile_layer_a356189371674867890d24b26f751f9a,
+                },
+                overlays :  {
+                    "macro_element_b0af1ce57ea8488a9904c6ad7b0cbbad" : marker_cluster_b0af1ce57ea8488a9904c6ad7b0cbbad,
+                },
+            };
+            L.control.layers(
+                layer_control_3b7f56fb85894bb0b0bbd7d92f9f557a.base_layers,
+                layer_control_3b7f56fb85894bb0b0bbd7d92f9f557a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c901db89222e417d9822c46045aabab4);
+            tile_layer_a356189371674867890d24b26f751f9a.remove();
+        
+</script>

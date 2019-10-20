@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_add9dbebf2b646f6a6bdf83f51faaaf9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_add9dbebf2b646f6a6bdf83f51faaaf9" ></div>
+        
+</body>
+<script>    
+    
+            var map_add9dbebf2b646f6a6bdf83f51faaaf9 = L.map(
+                "map_add9dbebf2b646f6a6bdf83f51faaaf9",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+
+            
+
+        
+    
+            var tile_layer_677bbc5fa9f24ec68601f8e02b7bc4e9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+            var tile_layer_6542fab29a3344b6a812fced99ad5234 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+            var circle_marker_3b411a899a8948c8909a4ad6d33b1026 = L.circleMarker(
+                [10.05, -84.016667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_67815142809649d9b998a6317874c1ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff0baca7bd2e49189f10f4cfbc15ca77 = $(`<div id="html_ff0baca7bd2e49189f10f4cfbc15ca77" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Open pasture and remnants of lower montane rain forest formations on ridges and steep slopes along the Rio Blanca (pacific drainage) cerro de Zurqui, Heredia and San Jose provinces. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-10-21 00:00:00+00:00 <strong>Recolectores:</strong> Burger WC; Baker R; Utley J <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_67815142809649d9b998a6317874c1ac.setContent(html_ff0baca7bd2e49189f10f4cfbc15ca77);
+        
+
+        circle_marker_3b411a899a8948c8909a4ad6d33b1026.bindPopup(popup_67815142809649d9b998a6317874c1ac)
+        ;
+
+        
+    
+    
+            var circle_marker_94f24bb220ef4587916045ffbe84385d = L.circleMarker(
+                [10.3, -84.766667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_2f27eced0179465286d45e036e96e46a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_735569fe8a3d4daea00ccd5e0f18e877 = $(`<div id="html_735569fe8a3d4daea00ccd5e0f18e877" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Evergreen cloud forest and wet wind-gap formations 9lower montane and premontane rain forest life zone) on and near the Continental Divide about 2 to 5 km east and southwest of Monteverde at elevations of 1580 to 1700m, prov. puntarenas and Alajuela. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1973-03-17 00:00:00+00:00 <strong>Recolectores:</strong> Burger WC; Gentry JL; Gentry Jr <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2f27eced0179465286d45e036e96e46a.setContent(html_735569fe8a3d4daea00ccd5e0f18e877);
+        
+
+        circle_marker_94f24bb220ef4587916045ffbe84385d.bindPopup(popup_2f27eced0179465286d45e036e96e46a)
+        ;
+
+        
+    
+    
+            var circle_marker_2113a3ebdcad432ea1577d7e9e28ef16 = L.circleMarker(
+                [10.731389, -85.018056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_5307f2d0ace6470b8188d194fc28abdf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70a8e6878b884a9b805e97b0d408b08a = $(`<div id="html_70a8e6878b884a9b805e97b0d408b08a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Distrito: Bijagua.  Parque Nacional Tenorio. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 2001-04-25 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_5307f2d0ace6470b8188d194fc28abdf.setContent(html_70a8e6878b884a9b805e97b0d408b08a);
+        
+
+        circle_marker_2113a3ebdcad432ea1577d7e9e28ef16.bindPopup(popup_5307f2d0ace6470b8188d194fc28abdf)
+        ;
+
+        
+    
+    
+            var circle_marker_98fa260c3a624847bb5248d5c3139e50 = L.circleMarker(
+                [10.04, -84.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_f6c1ac0377b44d41b2a2ce6a8559c36d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15a1922a16734544b2d6d33c35230857 = $(`<div id="html_15a1922a16734544b2d6d33c35230857" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Border of San José and Heredia Province, southwest fork of the "upper" Río Pará Blanco on roadside banks and an open pasture on the lower slopes of Cerro Zurquí <strong>Elevación:</strong> 1575.0 m  <strong>Fecha:</strong> 1974-10-15 00:00:00+00:00 <strong>Recolectores:</strong> John F. Utley|K. Burt-Utley <strong>Identificadores:</strong> W. Burger</div>`)[0];
+            popup_f6c1ac0377b44d41b2a2ce6a8559c36d.setContent(html_15a1922a16734544b2d6d33c35230857);
+        
+
+        circle_marker_98fa260c3a624847bb5248d5c3139e50.bindPopup(popup_f6c1ac0377b44d41b2a2ce6a8559c36d)
+        ;
+
+        
+    
+    
+            var circle_marker_cca6098f2bed4df6abaa0c384d527623 = L.circleMarker(
+                [10.05, -84.01666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_e3f796cd260c45cababda45d706f513e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32c59e68d41c4604a7278b5d4bae6b8b = $(`<div id="html_32c59e68d41c4604a7278b5d4bae6b8b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> open pasture and remnants of lower montane rain forest formations on ridges and steep slopes along the Rio Parra Blanca (pacific drainage), Cerro de Zurqui. Heredia and San Jose <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1975-10-21 00:00:00+00:00 <strong>Recolectores:</strong> William C. Burger|Richard A. Baker|John F. Utley <strong>Identificadores:</strong> D. Lorence</div>`)[0];
+            popup_e3f796cd260c45cababda45d706f513e.setContent(html_32c59e68d41c4604a7278b5d4bae6b8b);
+        
+
+        circle_marker_cca6098f2bed4df6abaa0c384d527623.bindPopup(popup_e3f796cd260c45cababda45d706f513e)
+        ;
+
+        
+    
+    
+            var circle_marker_6647ba802a1147dcb5e854bdfedca8f0 = L.circleMarker(
+                [10.21, -84.16],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_01d1f8062aa14c45afe2c8e7fc611c0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc845dfcef7b478fa2329da2b271b89e = $(`<div id="html_fc845dfcef7b478fa2329da2b271b89e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 7.5 km north of Vara Blanca in the vicinity of Río La Paz Grande. Disturbed primary forest remnants <strong>Elevación:</strong> 1310.0 m  <strong>Fecha:</strong> 1976-06-22 00:00:00+00:00 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> D. Lorence</div>`)[0];
+            popup_01d1f8062aa14c45afe2c8e7fc611c0a.setContent(html_fc845dfcef7b478fa2329da2b271b89e);
+        
+
+        circle_marker_6647ba802a1147dcb5e854bdfedca8f0.bindPopup(popup_01d1f8062aa14c45afe2c8e7fc611c0a)
+        ;
+
+        
+    
+    
+            var circle_marker_9dffe22e34a54a1ebd3b22347838fbda = L.circleMarker(
+                [10.17, -84.15],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_04031775d7054680a27fb92736f6a979 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_246d19c5be814904ab111c4025964db2 = $(`<div id="html_246d19c5be814904ab111c4025964db2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> vara blanca de sarapiquí, north slope of Central cordillera, Between Poás and Barba volcanoes <strong>Elevación:</strong> 1585.0 m  <strong>Fecha:</strong> 1937-10-01 00:00:00+00:00 <strong>Recolectores:</strong> Alexander F. Skutch <strong>Identificadores:</strong> David H. Lorence</div>`)[0];
+            popup_04031775d7054680a27fb92736f6a979.setContent(html_246d19c5be814904ab111c4025964db2);
+        
+
+        circle_marker_9dffe22e34a54a1ebd3b22347838fbda.bindPopup(popup_04031775d7054680a27fb92736f6a979)
+        ;
+
+        
+    
+    
+            var circle_marker_750910b7da0d48519c9194346bce7b65 = L.circleMarker(
+                [10.05, -84.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_ae8129a0de51470bb2e783df9b513c1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_938696fb1d784e2bac0f35e0518f54dd = $(`<div id="html_938696fb1d784e2bac0f35e0518f54dd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Collected along the slopes of the Cerro Zurquí above the Río Para Blanco <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1974-12-22 00:00:00+00:00 <strong>Recolectores:</strong> Raymond John Taylor, Jr. <strong>Identificadores:</strong> D. Lorence</div>`)[0];
+            popup_ae8129a0de51470bb2e783df9b513c1d.setContent(html_938696fb1d784e2bac0f35e0518f54dd);
+        
+
+        circle_marker_750910b7da0d48519c9194346bce7b65.bindPopup(popup_ae8129a0de51470bb2e783df9b513c1d)
+        ;
+
+        
+    
+    
+            var circle_marker_c6b87b76aaff4ed9a22502ad13bd890a = L.circleMarker(
+                [10.04, -84.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_f55ea971e40148b4962f98d882fef216 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_667d28e80ee44b4c9d1063dc9444eefd = $(`<div id="html_667d28e80ee44b4c9d1063dc9444eefd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San José/Heredia Province border, south facing slopes of Cerro Zurquí at termination of Calle Zurquí, damp stream banks and thickly wooded slopes <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1978-02-19 00:00:00+00:00 <strong>Recolectores:</strong> Frank Almeda|K. Nakai <strong>Identificadores:</strong> D. Lorence</div>`)[0];
+            popup_f55ea971e40148b4962f98d882fef216.setContent(html_667d28e80ee44b4c9d1063dc9444eefd);
+        
+
+        circle_marker_c6b87b76aaff4ed9a22502ad13bd890a.bindPopup(popup_f55ea971e40148b4962f98d882fef216)
+        ;
+
+        
+    
+    
+            var circle_marker_4d55a2edde1547258dd74c5dc0906e89 = L.circleMarker(
+                [10.066667, -83.9875],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_8f175e85abc349c498148fb5789ad710 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9379265e052f4ef8b0cee11967e35785 = $(`<div id="html_9379265e052f4ef8b0cee11967e35785" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, sendero hacia la Quebrada Zurquí. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1984-06-30 00:00:00+00:00 <strong>Recolectores:</strong> Nelson Zamora|Pablo E. Sánchez V.|Sandra Lobo E. <strong>Identificadores:</strong> C. M. Taylor (dup. CR) 15/Jul./</div>`)[0];
+            popup_8f175e85abc349c498148fb5789ad710.setContent(html_9379265e052f4ef8b0cee11967e35785);
+        
+
+        circle_marker_4d55a2edde1547258dd74c5dc0906e89.bindPopup(popup_8f175e85abc349c498148fb5789ad710)
+        ;
+
+        
+    
+    
+            var circle_marker_0e12d78dfc8b48ee8f5003f43b173947 = L.circleMarker(
+                [10.05, -84.03333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_75447343b27d4a34ab2bff3e607242e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efb83b6c4e7348deaac997bdc7689c24 = $(`<div id="html_efb83b6c4e7348deaac997bdc7689c24" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> near Río Pará Blanco <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1973-07-08 00:00:00+00:00 <strong>Recolectores:</strong> Roy W. Lent <strong>Identificadores:</strong> A. Borhidi</div>`)[0];
+            popup_75447343b27d4a34ab2bff3e607242e2.setContent(html_efb83b6c4e7348deaac997bdc7689c24);
+        
+
+        circle_marker_0e12d78dfc8b48ee8f5003f43b173947.bindPopup(popup_75447343b27d4a34ab2bff3e607242e2)
+        ;
+
+        
+    
+    
+            var circle_marker_68eaac31377945e698b2472cd1aa524b = L.circleMarker(
+                [9.47, -82.93],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_fd09e996e0eb47ce9da270ed195b1fb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_433d12e91554402ba509b06db169c313 = $(`<div id="html_433d12e91554402ba509b06db169c313" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica/Panama <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1972-09-10 00:00:00+00:00 <strong>Recolectores:</strong> Roy W. Lent <strong>Identificadores:</strong> D.Lorence</div>`)[0];
+            popup_fd09e996e0eb47ce9da270ed195b1fb3.setContent(html_433d12e91554402ba509b06db169c313);
+        
+
+        circle_marker_68eaac31377945e698b2472cd1aa524b.bindPopup(popup_fd09e996e0eb47ce9da270ed195b1fb3)
+        ;
+
+        
+    
+    
+            var circle_marker_6c9e85affc554b258ddb3693c4593fee = L.circleMarker(
+                [10.226389, -84.170278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_91ac1506361843f18e07e4053acc6d14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05af974705de4896bd306b40a24c4535 = $(`<div id="html_05af974705de4896bd306b40a24c4535" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Llanura de San Carlos, Cinchona <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-06-23 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> B. E. Hammel (MO)</div>`)[0];
+            popup_91ac1506361843f18e07e4053acc6d14.setContent(html_05af974705de4896bd306b40a24c4535);
+        
+
+        circle_marker_6c9e85affc554b258ddb3693c4593fee.bindPopup(popup_91ac1506361843f18e07e4053acc6d14)
+        ;
+
+        
+    
+    
+            var circle_marker_89d412fec6f742bc8ede2bc3e57466f7 = L.circleMarker(
+                [10.066667, -84.00833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_9a9df6faa08945fb8d2bb9e2a2e842fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99b0f3d517b0486fb9d4d428badd4f40 = $(`<div id="html_99b0f3d517b0486fb9d4d428badd4f40" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo. Cuenca del Sarapiquí. P.N. Braulio Carrillo. El Relleno, alrededores. Acompaña T. Newton. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 2005-11-16 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas|G. Villalobos <strong>Identificadores:</strong> B. Hammel</div>`)[0];
+            popup_9a9df6faa08945fb8d2bb9e2a2e842fb.setContent(html_99b0f3d517b0486fb9d4d428badd4f40);
+        
+
+        circle_marker_89d412fec6f742bc8ede2bc3e57466f7.bindPopup(popup_9a9df6faa08945fb8d2bb9e2a2e842fb)
+        ;
+
+        
+    
+    
+            var circle_marker_6ba968d4fe854af486a49490f045a0ad = L.circleMarker(
+                [10.236388999999999, -84.11778000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_b8576d42d3fc4756871b373b00f4f083 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e2370d951ac45a8a397042081f55791 = $(`<div id="html_9e2370d951ac45a8a397042081f55791" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Cordillera Volcánica Central. Cuenca del Sarapiquí. Finca Murillo, colectando hacia el sur del albergue. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2005-04-13 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano|Daniel Santamaría <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_b8576d42d3fc4756871b373b00f4f083.setContent(html_9e2370d951ac45a8a397042081f55791);
+        
+
+        circle_marker_6ba968d4fe854af486a49490f045a0ad.bindPopup(popup_b8576d42d3fc4756871b373b00f4f083)
+        ;
+
+        
+    
+    
+            var circle_marker_e28ea4c6fcca4d5389f3f7368ad39180 = L.circleMarker(
+                [10.050333, -84.02111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_ed876eb8ccc440a4952e33a036d46deb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3302633c9e64677837f52954b91b63e = $(`<div id="html_e3302633c9e64677837f52954b91b63e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca del Tárcoles. Por el Zurquí, calle lateral oeste a la autopista Braulio Carrillo (ruta 32), aprox. 1 km. Acompaña M. E. Chinchilla. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2011-08-28 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|Isabel Pérez <strong>Identificadores:</strong> B. Hammel</div>`)[0];
+            popup_ed876eb8ccc440a4952e33a036d46deb.setContent(html_e3302633c9e64677837f52954b91b63e);
+        
+
+        circle_marker_e28ea4c6fcca4d5389f3f7368ad39180.bindPopup(popup_ed876eb8ccc440a4952e33a036d46deb)
+        ;
+
+        
+    
+    
+            var circle_marker_6a5846a2f4084a4db2eeffb620b39efd = L.circleMarker(
+                [10.052194, -84.02346999999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_f66845047aaf4271aac4645117cd84fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_231dfd9ab4e04d218cfdd2a0f5d0803e = $(`<div id="html_231dfd9ab4e04d218cfdd2a0f5d0803e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca del Tárcoles. P.N. Braulio Carrillo, entrando por Santa Elena. <strong>Elevación:</strong> 1685.0 m  <strong>Fecha:</strong> 2008-07-24 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas|D. Castillo <strong>Identificadores:</strong> B. Hammel</div>`)[0];
+            popup_f66845047aaf4271aac4645117cd84fa.setContent(html_231dfd9ab4e04d218cfdd2a0f5d0803e);
+        
+
+        circle_marker_6a5846a2f4084a4db2eeffb620b39efd.bindPopup(popup_f66845047aaf4271aac4645117cd84fa)
+        ;
+
+        
+    
+    
+            var circle_marker_fc85b008ff724024bed842cb12d8655f = L.circleMarker(
+                [10.059306, -84.00747],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_957cf755fcca44ed94d0ede5e3db6d89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0bd0ed1c3e049a1b272434d182e77a0 = $(`<div id="html_d0bd0ed1c3e049a1b272434d182e77a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo. Cuenca del Sarapiquí. P. N. Braulio Carrillo. Antes del Túnel Zurquí. <strong>Elevación:</strong> 1509.5 m  <strong>Fecha:</strong> 2007-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas|G. Villalobos <strong>Identificadores:</strong> B. Hammel</div>`)[0];
+            popup_957cf755fcca44ed94d0ede5e3db6d89.setContent(html_d0bd0ed1c3e049a1b272434d182e77a0);
+        
+
+        circle_marker_fc85b008ff724024bed842cb12d8655f.bindPopup(popup_957cf755fcca44ed94d0ede5e3db6d89)
+        ;
+
+        
+    
+    
+            var circle_marker_c578addf998e498aa307133ca3db1c3b = L.circleMarker(
+                [10.236388999999999, -84.11778000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_7c360982c2304248bfd5854b5f6bca87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80316c303a3a4d089e54a28c60ef4306 = $(`<div id="html_80316c303a3a4d089e54a28c60ef4306" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Cordillera Volcánica Central. Cuenca del Sarapiquí. Finca Murillo. Alrededores del albergue. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2005-04-15 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_7c360982c2304248bfd5854b5f6bca87.setContent(html_80316c303a3a4d089e54a28c60ef4306);
+        
+
+        circle_marker_c578addf998e498aa307133ca3db1c3b.bindPopup(popup_7c360982c2304248bfd5854b5f6bca87)
+        ;
+
+        
+    
+    
+            var circle_marker_2168553fcb824ddeb99cfde3c0a5dd94 = L.circleMarker(
+                [10.050333, -84.021111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_1585724116e141d4832be493f1bfe434 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f8e41a47ffc4ccba49b7c6e32e5f860 = $(`<div id="html_1f8e41a47ffc4ccba49b7c6e32e5f860" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Por el Zurquí, calle lateral oeste a la autopista Braulio Carrillo (ruta 32), aprox. 1 km. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2011-08-28 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_1585724116e141d4832be493f1bfe434.setContent(html_1f8e41a47ffc4ccba49b7c6e32e5f860);
+        
+
+        circle_marker_2168553fcb824ddeb99cfde3c0a5dd94.bindPopup(popup_1585724116e141d4832be493f1bfe434)
+        ;
+
+        
+    
+    
+            var circle_marker_e3cf94bbaee04583b3f85dbc0af28947 = L.circleMarker(
+                [10.050333, -84.021111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_0cc985ab487e429e9b9208885c755530 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_845d8d110fc54557b262385afc973692 = $(`<div id="html_845d8d110fc54557b262385afc973692" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Por el Zurquí, calle lateral oeste a la autopista Braulio Carrillo (ruta 32), aprox. 1 km. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2011-08-28 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_0cc985ab487e429e9b9208885c755530.setContent(html_845d8d110fc54557b262385afc973692);
+        
+
+        circle_marker_e3cf94bbaee04583b3f85dbc0af28947.bindPopup(popup_0cc985ab487e429e9b9208885c755530)
+        ;
+
+        
+    
+    
+            var circle_marker_7832b3dfad3a4d0a84c50fe96b60c8ed = L.circleMarker(
+                [10.050333, -84.021111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_70a8b840112a48d08d1a008ec55d1768 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c06fe950a3e34fdd9657aba72fdb9ea4 = $(`<div id="html_c06fe950a3e34fdd9657aba72fdb9ea4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Por el Zurquí, calle lateral oeste a la autopista Braulio Carrillo (ruta 32), aprox. 1 km. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2011-08-28 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_70a8b840112a48d08d1a008ec55d1768.setContent(html_c06fe950a3e34fdd9657aba72fdb9ea4);
+        
+
+        circle_marker_7832b3dfad3a4d0a84c50fe96b60c8ed.bindPopup(popup_70a8b840112a48d08d1a008ec55d1768)
+        ;
+
+        
+    
+    
+            var circle_marker_ec97c00fced1424b8988173d9e75a454 = L.circleMarker(
+                [10.050333, -84.021111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_e66233cd64db4e80941fdab2ab7b39ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9b0b1e5d1ba4e6f93d564c6c6375685 = $(`<div id="html_f9b0b1e5d1ba4e6f93d564c6c6375685" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Por el Zurquí, calle lateral oeste a la autopista Braulio Carrillo (ruta 32), aprox. 1 km. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2011-08-28 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_e66233cd64db4e80941fdab2ab7b39ba.setContent(html_f9b0b1e5d1ba4e6f93d564c6c6375685);
+        
+
+        circle_marker_ec97c00fced1424b8988173d9e75a454.bindPopup(popup_e66233cd64db4e80941fdab2ab7b39ba)
+        ;
+
+        
+    
+    
+            var circle_marker_25807c275aff4311be12c046e5cffcf9 = L.circleMarker(
+                [10.059306, -84.00747199999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_9fb1b43aef6949a8a7ddb0e863b4d909 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa1022f5f3954bf8bdca4fe0722e697e = $(`<div id="html_fa1022f5f3954bf8bdca4fe0722e697e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Antes del Túnel Zurquí. <strong>Elevación:</strong> 1509.5 m  <strong>Fecha:</strong> 2007-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_9fb1b43aef6949a8a7ddb0e863b4d909.setContent(html_fa1022f5f3954bf8bdca4fe0722e697e);
+        
+
+        circle_marker_25807c275aff4311be12c046e5cffcf9.bindPopup(popup_9fb1b43aef6949a8a7ddb0e863b4d909)
+        ;
+
+        
+    
+    
+            var circle_marker_5c0321fe1820447099f43473887bac57 = L.circleMarker(
+                [10.059306, -84.00747199999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_59a4b1930c894f049ba453a84e23810f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0621d71ee524ec3ae2b24f880be4960 = $(`<div id="html_b0621d71ee524ec3ae2b24f880be4960" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Antes del Túnel Zurquí. <strong>Elevación:</strong> 1509.5 m  <strong>Fecha:</strong> 2007-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_59a4b1930c894f049ba453a84e23810f.setContent(html_b0621d71ee524ec3ae2b24f880be4960);
+        
+
+        circle_marker_5c0321fe1820447099f43473887bac57.bindPopup(popup_59a4b1930c894f049ba453a84e23810f)
+        ;
+
+        
+    
+    
+            var circle_marker_073653bee5154ce0b1613d52eff23195 = L.circleMarker(
+                [10.059306, -84.00747199999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_a2bca7f2a334429c9c5832191148ea16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4399a1598a0e42e59591d5602b04c365 = $(`<div id="html_4399a1598a0e42e59591d5602b04c365" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Antes del Túnel Zurquí. <strong>Elevación:</strong> 1509.5 m  <strong>Fecha:</strong> 2007-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_a2bca7f2a334429c9c5832191148ea16.setContent(html_4399a1598a0e42e59591d5602b04c365);
+        
+
+        circle_marker_073653bee5154ce0b1613d52eff23195.bindPopup(popup_a2bca7f2a334429c9c5832191148ea16)
+        ;
+
+        
+    
+    
+            var circle_marker_b38d5db996854ce99676844349b81801 = L.circleMarker(
+                [10.059306, -84.00747199999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_0e9a6a10d0dc4458965b62ae2462b70d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_caa66fc9b5654cc0b88454e0cb8036b2 = $(`<div id="html_caa66fc9b5654cc0b88454e0cb8036b2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Antes del Túnel Zurquí. <strong>Elevación:</strong> 1509.5 m  <strong>Fecha:</strong> 2007-01-11 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_0e9a6a10d0dc4458965b62ae2462b70d.setContent(html_caa66fc9b5654cc0b88454e0cb8036b2);
+        
+
+        circle_marker_b38d5db996854ce99676844349b81801.bindPopup(popup_0e9a6a10d0dc4458965b62ae2462b70d)
+        ;
+
+        
+    
+    
+            var circle_marker_f0062995237b47388ccc2b4f65a2f84b = L.circleMarker(
+                [10.066667, -84.008333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_867fbe7870404459b61741cd9700e5a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_643121d1fe234ac9a680b0c9e2a5c379 = $(`<div id="html_643121d1fe234ac9a680b0c9e2a5c379" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Estación Zurquí. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 2005-11-16 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_867fbe7870404459b61741cd9700e5a3.setContent(html_643121d1fe234ac9a680b0c9e2a5c379);
+        
+
+        circle_marker_f0062995237b47388ccc2b4f65a2f84b.bindPopup(popup_867fbe7870404459b61741cd9700e5a3)
+        ;
+
+        
+    
+    
+            var circle_marker_3c9cf156a7c8494f8d87c4a3d40d2bfb = L.circleMarker(
+                [10.066667, -84.008333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_4bf7234248474c9cbbaa9c91dbf4d64f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_833fe75d1efd46b9af6f3512d4793e2f = $(`<div id="html_833fe75d1efd46b9af6f3512d4793e2f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Estación Zurquí. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 2005-11-16 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_4bf7234248474c9cbbaa9c91dbf4d64f.setContent(html_833fe75d1efd46b9af6f3512d4793e2f);
+        
+
+        circle_marker_3c9cf156a7c8494f8d87c4a3d40d2bfb.bindPopup(popup_4bf7234248474c9cbbaa9c91dbf4d64f)
+        ;
+
+        
+    
+    
+            var circle_marker_2c592d9be1514b6d90ce6c6a58eb5c37 = L.circleMarker(
+                [10.052194, -84.023472],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_b823ab0f63fe4545bff3b317a831a51d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3abb5a790404b34884740709444d98b = $(`<div id="html_e3abb5a790404b34884740709444d98b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entrando por Santa Elena. <strong>Elevación:</strong> 1685.0 m  <strong>Fecha:</strong> 2008-07-24 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Diego Castillo <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_b823ab0f63fe4545bff3b317a831a51d.setContent(html_e3abb5a790404b34884740709444d98b);
+        
+
+        circle_marker_2c592d9be1514b6d90ce6c6a58eb5c37.bindPopup(popup_b823ab0f63fe4545bff3b317a831a51d)
+        ;
+
+        
+    
+    
+            var circle_marker_fa190aa6158d40f78a22c39cf9bf7c87 = L.circleMarker(
+                [10.052194, -84.023472],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_6c4e14de9fa54b949c66acda5449c3dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5557189551842d2a7b8715117768848 = $(`<div id="html_f5557189551842d2a7b8715117768848" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entrando por Santa Elena. <strong>Elevación:</strong> 1685.0 m  <strong>Fecha:</strong> 2008-07-24 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Diego Castillo <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_6c4e14de9fa54b949c66acda5449c3dc.setContent(html_f5557189551842d2a7b8715117768848);
+        
+
+        circle_marker_fa190aa6158d40f78a22c39cf9bf7c87.bindPopup(popup_6c4e14de9fa54b949c66acda5449c3dc)
+        ;
+
+        
+    
+    
+            var circle_marker_5cfe5b10715941859b8a3a61e2460b59 = L.circleMarker(
+                [10.052194, -84.023472],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_123ccc5b726b4c7cbeaa157e7c44d8c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fca0a51ee66d40fea62d2fd9da248af8 = $(`<div id="html_fca0a51ee66d40fea62d2fd9da248af8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entrando por Santa Elena. <strong>Elevación:</strong> 1685.0 m  <strong>Fecha:</strong> 2008-07-24 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Diego Castillo <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_123ccc5b726b4c7cbeaa157e7c44d8c5.setContent(html_fca0a51ee66d40fea62d2fd9da248af8);
+        
+
+        circle_marker_5cfe5b10715941859b8a3a61e2460b59.bindPopup(popup_123ccc5b726b4c7cbeaa157e7c44d8c5)
+        ;
+
+        
+    
+    
+            var circle_marker_c01622348b7545ea8568f4e1bba3062d = L.circleMarker(
+                [10.052194, -84.023472],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_4c2b719b933e4cbd820e34ba4ae372b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6df9d8f20f9d429cbe2e8a33063e9289 = $(`<div id="html_6df9d8f20f9d429cbe2e8a33063e9289" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entrando por Santa Elena. <strong>Elevación:</strong> 1685.0 m  <strong>Fecha:</strong> 2008-07-24 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Vargas; Diego Castillo <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_4c2b719b933e4cbd820e34ba4ae372b5.setContent(html_6df9d8f20f9d429cbe2e8a33063e9289);
+        
+
+        circle_marker_c01622348b7545ea8568f4e1bba3062d.bindPopup(popup_4c2b719b933e4cbd820e34ba4ae372b5)
+        ;
+
+        
+    
+    
+            var circle_marker_17eb8c87543b4fdf81951c4605001cd1 = L.circleMarker(
+                [10.236388999999999, -84.117778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_79e31a7980824c599b87c638ae2a079a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a90f8206c52c4cce9bb4eb1876d85e9f = $(`<div id="html_a90f8206c52c4cce9bb4eb1876d85e9f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 9km NE de Vara Blanca, Finca Murillo, Transecto INBio-OET-ALAS. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2005-04-15 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_79e31a7980824c599b87c638ae2a079a.setContent(html_a90f8206c52c4cce9bb4eb1876d85e9f);
+        
+
+        circle_marker_17eb8c87543b4fdf81951c4605001cd1.bindPopup(popup_79e31a7980824c599b87c638ae2a079a)
+        ;
+
+        
+    
+    
+            var circle_marker_00e3857b74a4429abbbb320a0e972ecf = L.circleMarker(
+                [10.236388999999999, -84.117778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_40372448dc7c4316998b5b846abf08aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_405c4c22a65b45a68efe6de3e0088453 = $(`<div id="html_405c4c22a65b45a68efe6de3e0088453" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 9km NE de Vara Blanca, Finca Murillo, Transecto INBio-OET-ALAS. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2005-04-15 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_40372448dc7c4316998b5b846abf08aa.setContent(html_405c4c22a65b45a68efe6de3e0088453);
+        
+
+        circle_marker_00e3857b74a4429abbbb320a0e972ecf.bindPopup(popup_40372448dc7c4316998b5b846abf08aa)
+        ;
+
+        
+    
+    
+            var circle_marker_a1acaa99ae8549e5870b78dfecc9e001 = L.circleMarker(
+                [10.236388999999999, -84.117778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_7e308806c9f74180a50ad37f517333c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba37353c2dc54441ad73ea1f71ce7abd = $(`<div id="html_ba37353c2dc54441ad73ea1f71ce7abd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 9km NE de Vara Blanca, Finca Murillo, Transecto INBio-OET-ALAS. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2005-04-15 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_7e308806c9f74180a50ad37f517333c6.setContent(html_ba37353c2dc54441ad73ea1f71ce7abd);
+        
+
+        circle_marker_a1acaa99ae8549e5870b78dfecc9e001.bindPopup(popup_7e308806c9f74180a50ad37f517333c6)
+        ;
+
+        
+    
+    
+            var circle_marker_9f06e94e383b48458c4a5dabc4a3274c = L.circleMarker(
+                [10.236388999999999, -84.117778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_9cd8656e5ae9426895c5cbb510194a7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_539924ea026d4f93a06f54346a02c0d9 = $(`<div id="html_539924ea026d4f93a06f54346a02c0d9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 9km NE de Vara Blanca, Finca Murillo, Transecto INBio-OET-ALAS. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2005-04-15 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_9cd8656e5ae9426895c5cbb510194a7c.setContent(html_539924ea026d4f93a06f54346a02c0d9);
+        
+
+        circle_marker_9f06e94e383b48458c4a5dabc4a3274c.bindPopup(popup_9cd8656e5ae9426895c5cbb510194a7c)
+        ;
+
+        
+    
+    
+            var circle_marker_d127b1026de84eb68379178c4064b626 = L.circleMarker(
+                [10.236388999999999, -84.117778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_e820f86e9a4b472f9f93b061bbc81e15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d941065c0ff4835afda5acbe52273d1 = $(`<div id="html_0d941065c0ff4835afda5acbe52273d1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 9km NE de Vara Blanca, Finca Murillo, Transecto INBio-OET-ALAS. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2005-04-13 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_e820f86e9a4b472f9f93b061bbc81e15.setContent(html_0d941065c0ff4835afda5acbe52273d1);
+        
+
+        circle_marker_d127b1026de84eb68379178c4064b626.bindPopup(popup_e820f86e9a4b472f9f93b061bbc81e15)
+        ;
+
+        
+    
+    
+            var circle_marker_f56d01e5922b4e48b615ae235d0dea73 = L.circleMarker(
+                [10.236388999999999, -84.117778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_c31f9f9192c14fae82d98c30888bf6c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f66ab3b78cf4aa3ae05338d4498e3ba = $(`<div id="html_7f66ab3b78cf4aa3ae05338d4498e3ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 9km NE de Vara Blanca, Finca Murillo, Transecto INBio-OET-ALAS. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2005-04-13 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_c31f9f9192c14fae82d98c30888bf6c5.setContent(html_7f66ab3b78cf4aa3ae05338d4498e3ba);
+        
+
+        circle_marker_f56d01e5922b4e48b615ae235d0dea73.bindPopup(popup_c31f9f9192c14fae82d98c30888bf6c5)
+        ;
+
+        
+    
+    
+            var circle_marker_9f7f8c8b164f4373b5205f36c9e14a0d = L.circleMarker(
+                [10.236388999999999, -84.117778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_850357a339fd47a8a66306ae7028941b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c196555e4a94fb0b266ad387333f43d = $(`<div id="html_4c196555e4a94fb0b266ad387333f43d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 9km NE de Vara Blanca, Finca Murillo, Transecto INBio-OET-ALAS. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2005-04-13 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_850357a339fd47a8a66306ae7028941b.setContent(html_4c196555e4a94fb0b266ad387333f43d);
+        
+
+        circle_marker_9f7f8c8b164f4373b5205f36c9e14a0d.bindPopup(popup_850357a339fd47a8a66306ae7028941b)
+        ;
+
+        
+    
+    
+            var circle_marker_aa6c945032c44c299f45d1bf5a9a5cf2 = L.circleMarker(
+                [10.236388999999999, -84.117778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_fd430480cedf4315b629c3ac92128564 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ece5a3e42a9d4ed594575f07ce14a4c7 = $(`<div id="html_ece5a3e42a9d4ed594575f07ce14a4c7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 9km NE de Vara Blanca, Finca Murillo, Transecto INBio-OET-ALAS. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2005-04-13 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_fd430480cedf4315b629c3ac92128564.setContent(html_ece5a3e42a9d4ed594575f07ce14a4c7);
+        
+
+        circle_marker_aa6c945032c44c299f45d1bf5a9a5cf2.bindPopup(popup_fd430480cedf4315b629c3ac92128564)
+        ;
+
+        
+    
+    
+            var circle_marker_2cf40c55746c437786da1c7b06a21096 = L.circleMarker(
+                [10.236388999999999, -84.117778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_8eca6d8e3da74972b351211423abdd45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40525836cccd438abc914f447049fcb4 = $(`<div id="html_40525836cccd438abc914f447049fcb4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 9km NE de Vara Blanca, Finca Murillo, Transecto INBio-OET-ALAS. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2005-04-13 00:00:00+00:00 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_8eca6d8e3da74972b351211423abdd45.setContent(html_40525836cccd438abc914f447049fcb4);
+        
+
+        circle_marker_2cf40c55746c437786da1c7b06a21096.bindPopup(popup_8eca6d8e3da74972b351211423abdd45)
+        ;
+
+        
+    
+    
+            var circle_marker_986a81ca33da496890a839a8f334216d = L.circleMarker(
+                [10.068056, -84.00694399999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_ba34db026f204cdbabdcd81881eb6c2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_693e5e259f5a4fd4a2f71956a6e4f550 = $(`<div id="html_693e5e259f5a4fd4a2f71956a6e4f550" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Zurqui. Cerca al Tunel. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2004-11-29 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_ba34db026f204cdbabdcd81881eb6c2b.setContent(html_693e5e259f5a4fd4a2f71956a6e4f550);
+        
+
+        circle_marker_986a81ca33da496890a839a8f334216d.bindPopup(popup_ba34db026f204cdbabdcd81881eb6c2b)
+        ;
+
+        
+    
+    
+            var circle_marker_b470f4c2fac2436a86ac6313ece6d9fa = L.circleMarker(
+                [10.068056, -84.00694399999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_a31cba37735a4a598c964622ca60b90d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2885f17bd51a4cfaa0ccd67a43b80b2d = $(`<div id="html_2885f17bd51a4cfaa0ccd67a43b80b2d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Zurqui. Cerca al Tunel. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2004-11-29 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_a31cba37735a4a598c964622ca60b90d.setContent(html_2885f17bd51a4cfaa0ccd67a43b80b2d);
+        
+
+        circle_marker_b470f4c2fac2436a86ac6313ece6d9fa.bindPopup(popup_a31cba37735a4a598c964622ca60b90d)
+        ;
+
+        
+    
+    
+            var circle_marker_2f928792489b48e9ba189d8c5abf52f3 = L.circleMarker(
+                [9.755556, -83.783333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_1ad0660a0e524e41b1e177236f12dce1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edf44619c9214567be8d77663c63c786 = $(`<div id="html_edf44619c9214567be8d77663c63c786" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Arboles Caidos. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2002-09-27 00:00:00+00:00 <strong>Recolectores:</strong> Ricardo Kriebel; Armando Soto ; Jun-Da Wen <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_1ad0660a0e524e41b1e177236f12dce1.setContent(html_edf44619c9214567be8d77663c63c786);
+        
+
+        circle_marker_2f928792489b48e9ba189d8c5abf52f3.bindPopup(popup_1ad0660a0e524e41b1e177236f12dce1)
+        ;
+
+        
+    
+    
+            var circle_marker_e254d002e4ac44ac82303bee470bbd61 = L.circleMarker(
+                [10.044444, -84.04083299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_760deb3886a94b36859c8c2c6aad45bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_225e1e706ab44d8c826a58efeff112a0 = $(`<div id="html_225e1e706ab44d8c826a58efeff112a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Concepción Calle Leones. <strong>Elevación:</strong> 1653.0 m  <strong>Fecha:</strong> 2003-07-22 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Jose González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_760deb3886a94b36859c8c2c6aad45bc.setContent(html_225e1e706ab44d8c826a58efeff112a0);
+        
+
+        circle_marker_e254d002e4ac44ac82303bee470bbd61.bindPopup(popup_760deb3886a94b36859c8c2c6aad45bc)
+        ;
+
+        
+    
+    
+            var circle_marker_1c461fa133c144acb7ea97013b3072a1 = L.circleMarker(
+                [10.044444, -84.04083299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_1a5f8fe571384c7fa142644793882ac3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29d80dd74b43477786622286a3dc6c7a = $(`<div id="html_29d80dd74b43477786622286a3dc6c7a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Concepción Calle Leones. <strong>Elevación:</strong> 1653.0 m  <strong>Fecha:</strong> 2003-07-22 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Jose González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_1a5f8fe571384c7fa142644793882ac3.setContent(html_29d80dd74b43477786622286a3dc6c7a);
+        
+
+        circle_marker_1c461fa133c144acb7ea97013b3072a1.bindPopup(popup_1a5f8fe571384c7fa142644793882ac3)
+        ;
+
+        
+    
+    
+            var circle_marker_9b5bd3a5500940d58e4b00791b2bf068 = L.circleMarker(
+                [10.044444, -84.04083299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_c603e2b4cc584dd4885242476ec24cc0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9bf68a5fcba4ac9a5896afe886c70bb = $(`<div id="html_a9bf68a5fcba4ac9a5896afe886c70bb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Concepción Calle Leones. <strong>Elevación:</strong> 1653.0 m  <strong>Fecha:</strong> 2003-07-22 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro; Jose González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_c603e2b4cc584dd4885242476ec24cc0.setContent(html_a9bf68a5fcba4ac9a5896afe886c70bb);
+        
+
+        circle_marker_9b5bd3a5500940d58e4b00791b2bf068.bindPopup(popup_c603e2b4cc584dd4885242476ec24cc0)
+        ;
+
+        
+    
+    
+            var circle_marker_64c63f8bc29345ecb5b443492b35dd4d = L.circleMarker(
+                [10.061111, -84.022222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_c1dceba0ef5644bb8c3da9e14e09f128 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f8f9522ab3e46fcb6cf2498a9b906d8 = $(`<div id="html_1f8f9522ab3e46fcb6cf2498a9b906d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zurqui Station; SW slope of Rio Zurqui, about 1 km WSW of Station. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2000-02-25 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_c1dceba0ef5644bb8c3da9e14e09f128.setContent(html_1f8f9522ab3e46fcb6cf2498a9b906d8);
+        
+
+        circle_marker_64c63f8bc29345ecb5b443492b35dd4d.bindPopup(popup_c1dceba0ef5644bb8c3da9e14e09f128)
+        ;
+
+        
+    
+    
+            var circle_marker_d0e05099c33c4851a7e47b154bf36136 = L.circleMarker(
+                [10.061111, -84.022222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_e48f82618ad5482f899097b631f8be7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_403a2ffd08c94175a9b889e11c254821 = $(`<div id="html_403a2ffd08c94175a9b889e11c254821" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zurqui Station; SW slope of Rio Zurqui, about 1 km WSW of Station. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2000-02-25 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_e48f82618ad5482f899097b631f8be7a.setContent(html_403a2ffd08c94175a9b889e11c254821);
+        
+
+        circle_marker_d0e05099c33c4851a7e47b154bf36136.bindPopup(popup_e48f82618ad5482f899097b631f8be7a)
+        ;
+
+        
+    
+    
+            var circle_marker_d4afd23c50454e028cc6a4aff72b3d60 = L.circleMarker(
+                [10.061111, -84.022222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_02a8ab730bf74465a349a9f958c38d95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bd9f6f466c44dc5b1f3bd06196f3139 = $(`<div id="html_5bd9f6f466c44dc5b1f3bd06196f3139" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zurqui Station; SW slope of Rio Zurqui, about 1 km WSW of Station. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2000-02-25 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_02a8ab730bf74465a349a9f958c38d95.setContent(html_5bd9f6f466c44dc5b1f3bd06196f3139);
+        
+
+        circle_marker_d4afd23c50454e028cc6a4aff72b3d60.bindPopup(popup_02a8ab730bf74465a349a9f958c38d95)
+        ;
+
+        
+    
+    
+            var circle_marker_d696a139a850437e869eaf1893f70463 = L.circleMarker(
+                [10.061111, -84.022222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_df63495971f34a29a73e5a9580c8e751 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4a4e379534043768e9abc9907445cea = $(`<div id="html_a4a4e379534043768e9abc9907445cea" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zurqui Station; SW slope of Rio Zurqui, about 1 km WSW of Station. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 2000-02-25 00:00:00+00:00 <strong>Recolectores:</strong> L. Acosta; Victor Ramírez <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_df63495971f34a29a73e5a9580c8e751.setContent(html_a4a4e379534043768e9abc9907445cea);
+        
+
+        circle_marker_d696a139a850437e869eaf1893f70463.bindPopup(popup_df63495971f34a29a73e5a9580c8e751)
+        ;
+
+        
+    
+    
+            var circle_marker_55aab5ae2b3e4ea0acad4f79184cdc31 = L.circleMarker(
+                [8.65, -83.15],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_769995f392ed4205a5b458a31afaceb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c041f364af2749d49ef86d0eb3f6d46d = $(`<div id="html_c041f364af2749d49ef86d0eb3f6d46d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near and along trail leading from Kilo- metro 3/Torres rd. to Quebrada Culebra (tributary of Rio Sorpresa), ca. 2.5 km (by air) NE of Golfito.   - & J. Marin <strong>Elevación:</strong> 340.0 m  <strong>Fecha:</strong> 1992-02-01 00:00:00+00:00 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_769995f392ed4205a5b458a31afaceb7.setContent(html_c041f364af2749d49ef86d0eb3f6d46d);
+        
+
+        circle_marker_55aab5ae2b3e4ea0acad4f79184cdc31.bindPopup(popup_769995f392ed4205a5b458a31afaceb7)
+        ;
+
+        
+    
+    
+            var circle_marker_1d6b5570ff734f35b9f6e1445bca0496 = L.circleMarker(
+                [10.253889, -84.082778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_e41c3572e60140c29784de6dda91ece5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_363862d1ec3c403cbbf54ebbbd45b2e9 = $(`<div id="html_363862d1ec3c403cbbf54ebbbd45b2e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transect trail to left of trail, approx. 45 minute walk above refuge at 1070 m elevation. Mossy wet cloud forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1997-04-08 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle; T. Carr ; P. O Hara ; J. Peters <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_e41c3572e60140c29784de6dda91ece5.setContent(html_363862d1ec3c403cbbf54ebbbd45b2e9);
+        
+
+        circle_marker_1d6b5570ff734f35b9f6e1445bca0496.bindPopup(popup_e41c3572e60140c29784de6dda91ece5)
+        ;
+
+        
+    
+    
+            var circle_marker_796c4ff8d8494860a59692dcfb36a344 = L.circleMarker(
+                [10.253889, -84.082778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_37de8d43a79e419cb0752ac68fecee69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3957c1a924d84c9898dcb623148d406e = $(`<div id="html_3957c1a924d84c9898dcb623148d406e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transect trail to left of trail, approx. 45 minute walk above refuge at 1070 m elevation. Mossy wet cloud forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1997-04-08 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle; T. Carr ; P. O Hara ; J. Peters <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_37de8d43a79e419cb0752ac68fecee69.setContent(html_3957c1a924d84c9898dcb623148d406e);
+        
+
+        circle_marker_796c4ff8d8494860a59692dcfb36a344.bindPopup(popup_37de8d43a79e419cb0752ac68fecee69)
+        ;
+
+        
+    
+    
+            var circle_marker_5d1ef08805454a35af160194daab1bbe = L.circleMarker(
+                [10.253889, -84.082778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_850d745d655240f4963904afa56faa96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cf31f27bb1247149b1bc29902ebd1ce = $(`<div id="html_6cf31f27bb1247149b1bc29902ebd1ce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transect trail to left of trail, approx. 45 minute walk above refuge at 1070 m elevation. Mossy wet cloud forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1997-04-08 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle; T. Carr ; P. O Hara ; J. Peters <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_850d745d655240f4963904afa56faa96.setContent(html_6cf31f27bb1247149b1bc29902ebd1ce);
+        
+
+        circle_marker_5d1ef08805454a35af160194daab1bbe.bindPopup(popup_850d745d655240f4963904afa56faa96)
+        ;
+
+        
+    
+    
+            var circle_marker_65d786050b474dffa7f143c392e699c2 = L.circleMarker(
+                [10.253889, -84.082778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_fad130fa3fe345acacafc17b44465c4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7795d63ab95542de8c3eb3a83b04917b = $(`<div id="html_7795d63ab95542de8c3eb3a83b04917b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transect trail to left of trail, approx. 45 minute walk above refuge at 1070 m elevation. Mossy wet cloud forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1997-04-08 00:00:00+00:00 <strong>Recolectores:</strong> Brad Boyle; T. Carr ; P. O Hara ; J. Peters <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_fad130fa3fe345acacafc17b44465c4a.setContent(html_7795d63ab95542de8c3eb3a83b04917b);
+        
+
+        circle_marker_65d786050b474dffa7f143c392e699c2.bindPopup(popup_fad130fa3fe345acacafc17b44465c4a)
+        ;
+
+        
+    
+    
+            var circle_marker_24d7e60443b3486f8d250416a64bfaa7 = L.circleMarker(
+                [10.252778, -84.177778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_aa07767188c54f96a605b1e260057b28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a28a65e1fe64af3bea545879ce358af = $(`<div id="html_6a28a65e1fe64af3bea545879ce358af" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cinchona. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-06-23 00:00:00+00:00 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_aa07767188c54f96a605b1e260057b28.setContent(html_6a28a65e1fe64af3bea545879ce358af);
+        
+
+        circle_marker_24d7e60443b3486f8d250416a64bfaa7.bindPopup(popup_aa07767188c54f96a605b1e260057b28)
+        ;
+
+        
+    
+    
+            var circle_marker_233dd788870c4b6abbad57b1d8ab5111 = L.circleMarker(
+                [10.5, -84.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_3e1c7e799fc548c2ba0ce8793c8082e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa07f23e9d9a4b649772cc7bb53ca62e = $(`<div id="html_aa07f23e9d9a4b649772cc7bb53ca62e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1972-09-10 00:00:00+00:00 <strong>Recolectores:</strong> R. W. Lent <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_3e1c7e799fc548c2ba0ce8793c8082e4.setContent(html_aa07f23e9d9a4b649772cc7bb53ca62e);
+        
+
+        circle_marker_233dd788870c4b6abbad57b1d8ab5111.bindPopup(popup_3e1c7e799fc548c2ba0ce8793c8082e4)
+        ;
+
+        
+    
+    
+            var circle_marker_bf5cb7a9f02548b5b3a7215858d8b52b = L.circleMarker(
+                [8.7, -83.59],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_1a0deadfd51b4d0893cc83a1b78a2d2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97e9432604b844ac9411437101fc2c21 = $(`<div id="html_97e9432604b844ac9411437101fc2c21" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Golfo Dulce Rancho Quemado, en fila directamente al Oeste del Pueblo, tierra del grupo de conservacionistas de Rancho. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1991-07-11 00:00:00+00:00 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_1a0deadfd51b4d0893cc83a1b78a2d2f.setContent(html_97e9432604b844ac9411437101fc2c21);
+        
+
+        circle_marker_bf5cb7a9f02548b5b3a7215858d8b52b.bindPopup(popup_1a0deadfd51b4d0893cc83a1b78a2d2f)
+        ;
+
+        
+    
+    
+            var circle_marker_cfaaa91a84364e6098e4283135661508 = L.circleMarker(
+                [9.79, -83.09],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_2113ed731a9848ae80584100ed9768a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_222481213bc144f49484c59ac02056c5 = $(`<div id="html_222481213bc144f49484c59ac02056c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Muchilla. Fila Matama. Cordillera de Talamanca. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1989-04-06 00:00:00+00:00 <strong>Recolectores:</strong> Robles, Rafael <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_2113ed731a9848ae80584100ed9768a3.setContent(html_222481213bc144f49484c59ac02056c5);
+        
+
+        circle_marker_cfaaa91a84364e6098e4283135661508.bindPopup(popup_2113ed731a9848ae80584100ed9768a3)
+        ;
+
+        
+    
+    
+            var circle_marker_697fc77c4eb048ccb330c1f4dcf3d625 = L.circleMarker(
+                [10.05, -84.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_fed34312449d4f06b14a82d895431743 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1634b112390c4da196a21a8f79fc332c = $(`<div id="html_1634b112390c4da196a21a8f79fc332c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Remnant woods and trees along streams near Rìo Parà Blanco. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1972-09-10 00:00:00+00:00 <strong>Recolectores:</strong> Lent, Roy W. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fed34312449d4f06b14a82d895431743.setContent(html_1634b112390c4da196a21a8f79fc332c);
+        
+
+        circle_marker_697fc77c4eb048ccb330c1f4dcf3d625.bindPopup(popup_fed34312449d4f06b14a82d895431743)
+        ;
+
+        
+    
+    
+            var circle_marker_e25c15206f01453d823b26a00c08fabd = L.circleMarker(
+                [10.05, -84.03],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+        
+    
+        var popup_fe2abaf4475842f088e601b90a4a91e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8bd4d134f2fe48978768e106bbbf9ee4 = $(`<div id="html_8bd4d134f2fe48978768e106bbbf9ee4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near Rìo Parà Blanco. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1973-07-08 00:00:00+00:00 <strong>Recolectores:</strong> Lent, Roy W. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fe2abaf4475842f088e601b90a4a91e1.setContent(html_8bd4d134f2fe48978768e106bbbf9ee4);
+        
+
+        circle_marker_e25c15206f01453d823b26a00c08fabd.bindPopup(popup_fe2abaf4475842f088e601b90a4a91e1)
+        ;
+
+        
+    
+    
+            var layer_control_a88d6dcfe41c463d92e616c4ae368ddf = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_677bbc5fa9f24ec68601f8e02b7bc4e9,
+                    "ESRI World Imagery" : tile_layer_6542fab29a3344b6a812fced99ad5234,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_a88d6dcfe41c463d92e616c4ae368ddf.base_layers,
+                layer_control_a88d6dcfe41c463d92e616c4ae368ddf.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_add9dbebf2b646f6a6bdf83f51faaaf9);
+            tile_layer_6542fab29a3344b6a812fced99ad5234.remove();
+        
+</script>

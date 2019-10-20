@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fcc09c11a11744baa19c4314232b76f8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fcc09c11a11744baa19c4314232b76f8" ></div>
+        
+</body>
+<script>    
+    
+            var map_fcc09c11a11744baa19c4314232b76f8 = L.map(
+                "map_fcc09c11a11744baa19c4314232b76f8",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_fcc09c11a11744baa19c4314232b76f8);
+
+            
+
+        
+    
+            var tile_layer_dbe85688632c4a5981c50e65b6d700de = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fcc09c11a11744baa19c4314232b76f8);
+        
+    
+            var tile_layer_79d4eb3a2cd14e72bd501fbd5ff2f0fa = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fcc09c11a11744baa19c4314232b76f8);
+        
+    
+            var marker_cluster_373d52b45e944569bd46605d53a6c893 = L.markerClusterGroup(
+                {}
+            );
+            map_fcc09c11a11744baa19c4314232b76f8.addLayer(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+            var marker_7497cf6ea9014e2185d958aded446465 = L.marker(
+                [9.79, -84.56],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_6b406b2e69804b58bfcab778fcf50f96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aeb30807e8064bbf90db5847dd4e72b4 = $(`<div id="html_aeb30807e8064bbf90db5847dd4e72b4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Carara Sector Río Carara. Sitio Boca de toma. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1991-01-05 00:00:00+00:00 <strong>Recolectores:</strong> Rodolfo Zúñiga <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6b406b2e69804b58bfcab778fcf50f96.setContent(html_aeb30807e8064bbf90db5847dd4e72b4);
+        
+
+        marker_7497cf6ea9014e2185d958aded446465.bindPopup(popup_6b406b2e69804b58bfcab778fcf50f96)
+        ;
+
+        
+    
+    
+            var marker_51778383d1fb4acea1d98a756655f574 = L.marker(
+                [9.75, -84.55],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_a97ffaada4c746888049bff35c58dc89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41d21d8cf45d4f05bd8b766b7e3a3167 = $(`<div id="html_41d21d8cf45d4f05bd8b766b7e3a3167" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Carara. Sector Bijagual. Sitio Lomas Pizote. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1990-11-03 00:00:00+00:00 <strong>Recolectores:</strong> Rodolfo Zúñiga|Gerardo Varela <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_a97ffaada4c746888049bff35c58dc89.setContent(html_41d21d8cf45d4f05bd8b766b7e3a3167);
+        
+
+        marker_51778383d1fb4acea1d98a756655f574.bindPopup(popup_a97ffaada4c746888049bff35c58dc89)
+        ;
+
+        
+    
+    
+            var marker_eb121bb5dc7446f78cb40f6d9155f263 = L.marker(
+                [9.786111, -84.586111],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_5c27dc06b23e4ef8abae44f5156c08bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c7e887c1e344d588b41a282886f5d9c = $(`<div id="html_9c7e887c1e344d588b41a282886f5d9c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Carara. Sendero Quebrada Bonita a Bijagual. Sitio Lomas Pizote. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1989-12-08 00:00:00+00:00 <strong>Recolectores:</strong> Rodolfo Zúñiga|Quírico Jiménez <strong>Identificadores:</strong> D. Lorence</div>`)[0];
+            popup_5c27dc06b23e4ef8abae44f5156c08bc.setContent(html_9c7e887c1e344d588b41a282886f5d9c);
+        
+
+        marker_eb121bb5dc7446f78cb40f6d9155f263.bindPopup(popup_5c27dc06b23e4ef8abae44f5156c08bc)
+        ;
+
+        
+    
+    
+            var marker_f19cac8eef1a45ffae457e90e649efe2 = L.marker(
+                [9.71, -84.37],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_098e80b245a54ea99a3afdde6c068807 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_489ed689d6b64530addcbcff84eb295a = $(`<div id="html_489ed689d6b64530addcbcff84eb295a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora La Cangreja, Cuenca del Tulin, Mastatal, Altos fila Cangreja <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1997-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Quírico Jiménez|A. Solano <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_098e80b245a54ea99a3afdde6c068807.setContent(html_489ed689d6b64530addcbcff84eb295a);
+        
+
+        marker_f19cac8eef1a45ffae457e90e649efe2.bindPopup(popup_098e80b245a54ea99a3afdde6c068807)
+        ;
+
+        
+    
+    
+            var marker_7ed5b56742cc4a2d86a5e259d3802080 = L.marker(
+                [9.69, -84.4],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_2462131cdb514050ae283cb464a5a151 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de5e40ac1e7747b4bd78aad8bc5a2a9a = $(`<div id="html_de5e40ac1e7747b4bd78aad8bc5a2a9a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa de Puriscal <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1973-01-17 00:00:00+00:00 <strong>Recolectores:</strong> Luis J. Poveda Álvarez <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2462131cdb514050ae283cb464a5a151.setContent(html_de5e40ac1e7747b4bd78aad8bc5a2a9a);
+        
+
+        marker_7ed5b56742cc4a2d86a5e259d3802080.bindPopup(popup_2462131cdb514050ae283cb464a5a151)
+        ;
+
+        
+    
+    
+            var marker_d7fbcc0cf6ea43ee8a4955fbd26cbf80 = L.marker(
+                [9.697222, -84.391667],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_2ea1be6c33b34808a07a43ca2c6b6259 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0ab16429b824bd284dea9ae247d41ee = $(`<div id="html_a0ab16429b824bd284dea9ae247d41ee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cercanias del rio Negro. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1998-12-28 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_2ea1be6c33b34808a07a43ca2c6b6259.setContent(html_a0ab16429b824bd284dea9ae247d41ee);
+        
+
+        marker_d7fbcc0cf6ea43ee8a4955fbd26cbf80.bindPopup(popup_2ea1be6c33b34808a07a43ca2c6b6259)
+        ;
+
+        
+    
+    
+            var marker_cdb93a28b1f34b8fae81cf705a6540cb = L.marker(
+                [9.795833, -84.563889],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_c66bf622701a4d7f981c153275ab2625 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a1468d856094c6386792702fcffcd72 = $(`<div id="html_4a1468d856094c6386792702fcffcd72" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Rio Carara. Sitio Boca de Toma. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1991-01-05 00:00:00+00:00 <strong>Recolectores:</strong> Rodolfo Zúñiga <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_c66bf622701a4d7f981c153275ab2625.setContent(html_4a1468d856094c6386792702fcffcd72);
+        
+
+        marker_cdb93a28b1f34b8fae81cf705a6540cb.bindPopup(popup_c66bf622701a4d7f981c153275ab2625)
+        ;
+
+        
+    
+    
+            var marker_ccc9c5ad1801419db893b98988e9f747 = L.marker(
+                [9.697778, -84.389444],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_4d142b16a5464ec2a18ccfbc74ff47e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2cce18174ac4c278e2a40e3dbca19e5 = $(`<div id="html_e2cce18174ac4c278e2a40e3dbca19e5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa de Puriscal. Bosque primario. en las faldas de la fila La Cangreja. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1992-10-19 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_4d142b16a5464ec2a18ccfbc74ff47e7.setContent(html_e2cce18174ac4c278e2a40e3dbca19e5);
+        
+
+        marker_ccc9c5ad1801419db893b98988e9f747.bindPopup(popup_4d142b16a5464ec2a18ccfbc74ff47e7)
+        ;
+
+        
+    
+    
+            var marker_09129e69244a44f6ad611fb4907e5311 = L.marker(
+                [9.758333, -84.552778],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_6b9494e93ce64c77b1bf66cf7d072ef5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5e29f30bcec4fd8b0b6f92b2d6a8992 = $(`<div id="html_d5e29f30bcec4fd8b0b6f92b2d6a8992" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sitio Lomas Pizote. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1990-11-03 00:00:00+00:00 <strong>Recolectores:</strong> Rodolfo Zúñiga <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_6b9494e93ce64c77b1bf66cf7d072ef5.setContent(html_d5e29f30bcec4fd8b0b6f92b2d6a8992);
+        
+
+        marker_09129e69244a44f6ad611fb4907e5311.bindPopup(popup_6b9494e93ce64c77b1bf66cf7d072ef5)
+        ;
+
+        
+    
+    
+            var marker_d6604f07291840c0b58eaab1a157003d = L.marker(
+                [9.719444000000001, -84.373611],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_f87c82a4d9e54cea87542c50ab3c399d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fb045a1ab564efeaf1358233479865d = $(`<div id="html_0fb045a1ab564efeaf1358233479865d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal.Altos Fila Cangreja. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1997-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez; Alejandro Solano <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_f87c82a4d9e54cea87542c50ab3c399d.setContent(html_0fb045a1ab564efeaf1358233479865d);
+        
+
+        marker_d6604f07291840c0b58eaab1a157003d.bindPopup(popup_f87c82a4d9e54cea87542c50ab3c399d)
+        ;
+
+        
+    
+    
+            var marker_ae821cbd5dc24f74a58a2d2e7b557791 = L.marker(
+                [9.719444000000001, -84.373611],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_39ba7adcc88342559d78f7535a81b0bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08a4e561b74e4a63a0df3b74c4852f92 = $(`<div id="html_08a4e561b74e4a63a0df3b74c4852f92" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal.Altos Fila Cangreja. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1997-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez; Alejandro Solano <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_39ba7adcc88342559d78f7535a81b0bd.setContent(html_08a4e561b74e4a63a0df3b74c4852f92);
+        
+
+        marker_ae821cbd5dc24f74a58a2d2e7b557791.bindPopup(popup_39ba7adcc88342559d78f7535a81b0bd)
+        ;
+
+        
+    
+    
+            var marker_7aded372c986403d8b52acb93927bc29 = L.marker(
+                [9.719444000000001, -84.373611],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_3c1c360c909d46d6938343e4e6731584 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99d1c03f25fd4174846ca863e188afed = $(`<div id="html_99d1c03f25fd4174846ca863e188afed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal.Altos Fila Cangreja. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1997-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez; Alejandro Solano <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_3c1c360c909d46d6938343e4e6731584.setContent(html_99d1c03f25fd4174846ca863e188afed);
+        
+
+        marker_7aded372c986403d8b52acb93927bc29.bindPopup(popup_3c1c360c909d46d6938343e4e6731584)
+        ;
+
+        
+    
+    
+            var marker_17acb165c40340fab9044f4038f0e9f6 = L.marker(
+                [9.719444000000001, -84.373611],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_bc345758fc694febab988b0fd47e7292 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c4d2e8dd91544538196a3d6b985956e = $(`<div id="html_8c4d2e8dd91544538196a3d6b985956e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal.Altos Fila Cangreja. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1997-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Quirico Jiménez; Alejandro Solano <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_bc345758fc694febab988b0fd47e7292.setContent(html_8c4d2e8dd91544538196a3d6b985956e);
+        
+
+        marker_17acb165c40340fab9044f4038f0e9f6.bindPopup(popup_bc345758fc694febab988b0fd47e7292)
+        ;
+
+        
+    
+    
+            var marker_6ac69bea243f460e8ea38c10aa04f7f1 = L.marker(
+                [9.6667, -84.0],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_b485136f94264fea8e3580575225afc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a98f3a4ebaf1476cbf830069dc31faf2 = $(`<div id="html_a98f3a4ebaf1476cbf830069dc31faf2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-11-03 00:00:00+00:00 <strong>Recolectores:</strong> R. Zúñiga <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_b485136f94264fea8e3580575225afc2.setContent(html_a98f3a4ebaf1476cbf830069dc31faf2);
+        
+
+        marker_6ac69bea243f460e8ea38c10aa04f7f1.bindPopup(popup_b485136f94264fea8e3580575225afc2)
+        ;
+
+        
+    
+    
+            var marker_ca85ebad099344bd9eb3a37ae4c9517c = L.marker(
+                [9.71, -84.37],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_0f0c0ab515144a9996bece20f651cbb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cec832faaf8a4b5b842d50f1dc7775c6 = $(`<div id="html_cec832faaf8a4b5b842d50f1dc7775c6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. La Cangreja Cuenca del Tulin. Mastatal. Altos Fila Cangreja. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1997-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_0f0c0ab515144a9996bece20f651cbb2.setContent(html_cec832faaf8a4b5b842d50f1dc7775c6);
+        
+
+        marker_ca85ebad099344bd9eb3a37ae4c9517c.bindPopup(popup_0f0c0ab515144a9996bece20f651cbb2)
+        ;
+
+        
+    
+    
+            var marker_2b069ea73e88405ebdf8d6e5b64b71ca = L.marker(
+                [9.79, -84.56],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_fd1a056719e34a34803d1752b6aa64ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a98492d172c0409a979530797614a120 = $(`<div id="html_a98492d172c0409a979530797614a120" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Carara Sector río Carara, sitio Boca de toma. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1991-01-05 00:00:00+00:00 <strong>Recolectores:</strong> Zúñiga, Rodolfo <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_fd1a056719e34a34803d1752b6aa64ec.setContent(html_a98492d172c0409a979530797614a120);
+        
+
+        marker_2b069ea73e88405ebdf8d6e5b64b71ca.bindPopup(popup_fd1a056719e34a34803d1752b6aa64ec)
+        ;
+
+        
+    
+    
+            var marker_2a22db719ffe4168aca7452129b3bd10 = L.marker(
+                [9.7, -84.39],
+                {}
+            ).addTo(marker_cluster_373d52b45e944569bd46605d53a6c893);
+        
+    
+        var popup_60fb04a601344196aa69c5a9e7c1dae3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd3cf12bcbee4273b05a79ed316f8db6 = $(`<div id="html_cd3cf12bcbee4273b05a79ed316f8db6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja Santa Rosa. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1973-01-17 00:00:00+00:00 <strong>Recolectores:</strong> Poveda, Luis Jorge <strong>Identificadores:</strong> D. Lorence</div>`)[0];
+            popup_60fb04a601344196aa69c5a9e7c1dae3.setContent(html_cd3cf12bcbee4273b05a79ed316f8db6);
+        
+
+        marker_2a22db719ffe4168aca7452129b3bd10.bindPopup(popup_60fb04a601344196aa69c5a9e7c1dae3)
+        ;
+
+        
+    
+    
+            var layer_control_6ba4539b99e440e6b6e6ba16bd1e8db5 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_dbe85688632c4a5981c50e65b6d700de,
+                    "ESRI World Imagery" : tile_layer_79d4eb3a2cd14e72bd501fbd5ff2f0fa,
+                },
+                overlays :  {
+                    "macro_element_373d52b45e944569bd46605d53a6c893" : marker_cluster_373d52b45e944569bd46605d53a6c893,
+                },
+            };
+            L.control.layers(
+                layer_control_6ba4539b99e440e6b6e6ba16bd1e8db5.base_layers,
+                layer_control_6ba4539b99e440e6b6e6ba16bd1e8db5.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_fcc09c11a11744baa19c4314232b76f8);
+            tile_layer_79d4eb3a2cd14e72bd501fbd5ff2f0fa.remove();
+        
+</script>

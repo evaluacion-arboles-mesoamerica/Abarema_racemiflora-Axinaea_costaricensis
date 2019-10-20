@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_40727d6d98974386a6e32f5282b9aaf2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_40727d6d98974386a6e32f5282b9aaf2" ></div>
+        
+</body>
+<script>    
+    
+            var map_40727d6d98974386a6e32f5282b9aaf2 = L.map(
+                "map_40727d6d98974386a6e32f5282b9aaf2",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_40727d6d98974386a6e32f5282b9aaf2);
+
+            
+
+        
+    
+            var tile_layer_60ae65addc3944d3bdf4adfab277b9f9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_40727d6d98974386a6e32f5282b9aaf2);
+        
+    
+            var tile_layer_f2501bc4dab3461b881f8a4d2859569a = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_40727d6d98974386a6e32f5282b9aaf2);
+        
+    
+            var marker_cluster_3b08608bd03440f1b88b73974ca030fc = L.markerClusterGroup(
+                {}
+            );
+            map_40727d6d98974386a6e32f5282b9aaf2.addLayer(marker_cluster_3b08608bd03440f1b88b73974ca030fc);
+        
+    
+            var marker_f1d7b025cac04e9e82a33ea529042ccc = L.marker(
+                [8.81, -83.17],
+                {}
+            ).addTo(marker_cluster_3b08608bd03440f1b88b73974ca030fc);
+        
+    
+        var popup_3c846a1200ec4fd78074345a0993f894 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2f0f16934ef47109e6ad92707faf92b = $(`<div id="html_d2f0f16934ef47109e6ad92707faf92b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Costeña. Cabeceras del Río Piedras Blancas; Cerro Anguciana, faldas al Oeste; bosque en roca de cal. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1993-12-10 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_3c846a1200ec4fd78074345a0993f894.setContent(html_d2f0f16934ef47109e6ad92707faf92b);
+        
+
+        marker_f1d7b025cac04e9e82a33ea529042ccc.bindPopup(popup_3c846a1200ec4fd78074345a0993f894)
+        ;
+
+        
+    
+    
+            var marker_a2a9fdf60f0842b7842008c69c7a2c96 = L.marker(
+                [8.815555999999999, -83.17694399999999],
+                {}
+            ).addTo(marker_cluster_3b08608bd03440f1b88b73974ca030fc);
+        
+    
+        var popup_9c3b4666f7f2426e9f35f006dc92ba2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e14e8977f5ed4b63a6e81fae51ad0411 = $(`<div id="html_e14e8977f5ed4b63a6e81fae51ad0411" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cabeceras del Rio Piedras Blancas; Cerro Anguciana, faldas al Oeste; bosque en roca de cal. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1993-12-10 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_9c3b4666f7f2426e9f35f006dc92ba2f.setContent(html_e14e8977f5ed4b63a6e81fae51ad0411);
+        
+
+        marker_a2a9fdf60f0842b7842008c69c7a2c96.bindPopup(popup_9c3b4666f7f2426e9f35f006dc92ba2f)
+        ;
+
+        
+    
+    
+            var layer_control_6d3d39326bd9485da72bf59d928097f1 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_60ae65addc3944d3bdf4adfab277b9f9,
+                    "ESRI World Imagery" : tile_layer_f2501bc4dab3461b881f8a4d2859569a,
+                },
+                overlays :  {
+                    "macro_element_3b08608bd03440f1b88b73974ca030fc" : marker_cluster_3b08608bd03440f1b88b73974ca030fc,
+                },
+            };
+            L.control.layers(
+                layer_control_6d3d39326bd9485da72bf59d928097f1.base_layers,
+                layer_control_6d3d39326bd9485da72bf59d928097f1.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_40727d6d98974386a6e32f5282b9aaf2);
+            tile_layer_f2501bc4dab3461b881f8a4d2859569a.remove();
+        
+</script>

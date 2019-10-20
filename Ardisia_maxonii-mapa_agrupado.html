@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_732f31d0be3746f98d8eb56ad26eac26 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_732f31d0be3746f98d8eb56ad26eac26" ></div>
+        
+</body>
+<script>    
+    
+            var map_732f31d0be3746f98d8eb56ad26eac26 = L.map(
+                "map_732f31d0be3746f98d8eb56ad26eac26",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_732f31d0be3746f98d8eb56ad26eac26);
+
+            
+
+        
+    
+            var tile_layer_c481180472db47e48fe1cbfe48bbad54 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_732f31d0be3746f98d8eb56ad26eac26);
+        
+    
+            var tile_layer_1cb20d4be3a044369ba259d8a9b47f1d = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_732f31d0be3746f98d8eb56ad26eac26);
+        
+    
+            var marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd = L.markerClusterGroup(
+                {}
+            );
+            map_732f31d0be3746f98d8eb56ad26eac26.addLayer(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+            var marker_a92c50572fa94f35b15ef3273d8f5305 = L.marker(
+                [9.3694, -83.3],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_d71f928653c9482fa7f279ab8db78083 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68b66d6a53a545ab878be65992c14111 = $(`<div id="html_68b66d6a53a545ab878be65992c14111" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Buenos Aires Ujarrás, siguiendo la línea divisoria, base del macizo Dúrika, cabecera de Río Coén. <strong>Elevación:</strong> 2800.0 m  <strong>Fecha:</strong> 1989-10-11 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera & J. Cordero <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d71f928653c9482fa7f279ab8db78083.setContent(html_68b66d6a53a545ab878be65992c14111);
+        
+
+        marker_a92c50572fa94f35b15ef3273d8f5305.bindPopup(popup_d71f928653c9482fa7f279ab8db78083)
+        ;
+
+        
+    
+    
+            var marker_d90246493eac4eb7b827e7f5a94416c2 = L.marker(
+                [8.866660000000001, -82.58333],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_1ac0b4649a8244dda131e5593b0cdc29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca608c46b5a24702abacbcbedbcc4ecb = $(`<div id="html_ca608c46b5a24702abacbcbedbcc4ecb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hill E of Audubon Cabin, S of Cerro Punta <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1983-07-12 00:00:00+00:00 <strong>Recolectores:</strong> Clem W. Hamilton|Karen Krager <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_1ac0b4649a8244dda131e5593b0cdc29.setContent(html_ca608c46b5a24702abacbcbedbcc4ecb);
+        
+
+        marker_d90246493eac4eb7b827e7f5a94416c2.bindPopup(popup_1ac0b4649a8244dda131e5593b0cdc29)
+        ;
+
+        
+    
+    
+            var marker_fb60539a76f1412ab0c6785fb61d04b4 = L.marker(
+                [9.70027, -84.18305],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_14a6a4abb1e6446e945f41adaff5039e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94f14a63da88429d9fb00bcc21b89d29 = $(`<div id="html_94f14a63da88429d9fb00bcc21b89d29" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Aguabuena. Hda. Tiquires. Bosque primario, robledales y potreros en la Fila Aguabuena cerca de la Laguna. <strong>Elevación:</strong> 2165.0 m  <strong>Fecha:</strong> 1995-06-02 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_14a6a4abb1e6446e945f41adaff5039e.setContent(html_94f14a63da88429d9fb00bcc21b89d29);
+        
+
+        marker_fb60539a76f1412ab0c6785fb61d04b4.bindPopup(popup_14a6a4abb1e6446e945f41adaff5039e)
+        ;
+
+        
+    
+    
+            var marker_ee5aaa4c3f0b4633a71c8a8993c96fdb = L.marker(
+                [9.39, -83.16],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_429812124b124b249b31de0cf3de6b32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85787069882c41e2a407d83642205048 = $(`<div id="html_85787069882c41e2a407d83642205048" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Cordillera de Talamanca; Cordillera de Talamanca. Flanco NE y cumbre Cerro Biricuacua. Entre Ujarrás y San José Cabécar. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1993-04-02 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_429812124b124b249b31de0cf3de6b32.setContent(html_85787069882c41e2a407d83642205048);
+        
+
+        marker_ee5aaa4c3f0b4633a71c8a8993c96fdb.bindPopup(popup_429812124b124b249b31de0cf3de6b32)
+        ;
+
+        
+    
+    
+            var marker_963f8ea9340646a481c398caafc7349c = L.marker(
+                [8.833333, -82.5],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_4d8524aab8c84d8e9cb5b7f51e442110 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6209f9fdb36442a5a08596ae1c575b3a = $(`<div id="html_6209f9fdb36442a5a08596ae1c575b3a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Baru, east slope on road from Boquete. 8 km W of Boquete (air distance). Oak woodland. Elev. 1900 m. 82º30'W, 8º50'N. <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1983-01-08 00:00:00+00:00 <strong>Recolectores:</strong> Bruce A. Stein <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_4d8524aab8c84d8e9cb5b7f51e442110.setContent(html_6209f9fdb36442a5a08596ae1c575b3a);
+        
+
+        marker_963f8ea9340646a481c398caafc7349c.bindPopup(popup_4d8524aab8c84d8e9cb5b7f51e442110)
+        ;
+
+        
+    
+    
+            var marker_bcb598ed62e545a597a36c8d65bad3e7 = L.marker(
+                [9.369444999999999, -83.3],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_eabdb6eee383421280af2899ffc35058 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bc6896458d3407dad845e26ee3a6e1e = $(`<div id="html_0bc6896458d3407dad845e26ee3a6e1e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ujarrás, siguiendo la línea divisoria, base del macizo Dúrika, cabecera de Río Coén. <strong>Elevación:</strong> 2800.0 m  <strong>Fecha:</strong> 1989-10-11 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch.|J. Cordero <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_eabdb6eee383421280af2899ffc35058.setContent(html_0bc6896458d3407dad845e26ee3a6e1e);
+        
+
+        marker_bcb598ed62e545a597a36c8d65bad3e7.bindPopup(popup_eabdb6eee383421280af2899ffc35058)
+        ;
+
+        
+    
+    
+            var marker_36527ac871ae499a883c3a9e22f3f218 = L.marker(
+                [9.594439999999999, -83.89027],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_e904cafbba5a4e238c94409cad8b98a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b12054c273cb4b2e94372c9af838ff69 = $(`<div id="html_b12054c273cb4b2e94372c9af838ff69" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos. Cuenca del Savegre. R.F. Los Santos. Alto Cañazo entre Providencia y Copey. <strong>Elevación:</strong> 2850.0 m  <strong>Fecha:</strong> 1999-07-18 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_e904cafbba5a4e238c94409cad8b98a6.setContent(html_b12054c273cb4b2e94372c9af838ff69);
+        
+
+        marker_36527ac871ae499a883c3a9e22f3f218.bindPopup(popup_e904cafbba5a4e238c94409cad8b98a6)
+        ;
+
+        
+    
+    
+            var marker_047fc669bbce48de809dfa6c25f3c305 = L.marker(
+                [8.793611, -82.905833],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_627fd97b87644a0480c66adced3ae3ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6bb6fee56b6443f854a138cd5108745 = $(`<div id="html_a6bb6fee56b6443f854a138cd5108745" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Windswept ridge 10 km N of Los Planes de Hornito. IRHE Fortuna Hydroelectric Project. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1982-06-18 00:00:00+00:00 <strong>Recolectores:</strong> Sandy Knapp|M.R. Vodicka <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_627fd97b87644a0480c66adced3ae3ed.setContent(html_a6bb6fee56b6443f854a138cd5108745);
+        
+
+        marker_047fc669bbce48de809dfa6c25f3c305.bindPopup(popup_627fd97b87644a0480c66adced3ae3ed)
+        ;
+
+        
+    
+    
+            var marker_a50cdc6d8dc5413f856587ae0a9ace70 = L.marker(
+                [8.63333, -82.2],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_6fc34c8a260d4f2e9b9a344b03922bdd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b8e730529f5423288adcba962f17b80 = $(`<div id="html_7b8e730529f5423288adcba962f17b80" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Los Planes de Hornito, beyond Gualaca, 2-3 km E of Finca Linare High hills, ca. 1400-1900 m. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1979-11-28 00:00:00+00:00 <strong>Recolectores:</strong> Thomas M. Antonio <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_6fc34c8a260d4f2e9b9a344b03922bdd.setContent(html_7b8e730529f5423288adcba962f17b80);
+        
+
+        marker_a50cdc6d8dc5413f856587ae0a9ace70.bindPopup(popup_6fc34c8a260d4f2e9b9a344b03922bdd)
+        ;
+
+        
+    
+    
+            var marker_3d303fa69c504ff6969b6c7b9ef2421c = L.marker(
+                [8.797222, -82.49],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_26b9b54e065a4caba749ee6b006a130a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e37027838374889863c2e2377a1ca2b = $(`<div id="html_2e37027838374889863c2e2377a1ca2b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 9 km by road WNW of Boquete. <strong>Elevación:</strong> 1870.0 m  <strong>Fecha:</strong> 1975-11-21 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|William G. D'Arcy <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_26b9b54e065a4caba749ee6b006a130a.setContent(html_2e37027838374889863c2e2377a1ca2b);
+        
+
+        marker_3d303fa69c504ff6969b6c7b9ef2421c.bindPopup(popup_26b9b54e065a4caba749ee6b006a130a)
+        ;
+
+        
+    
+    
+            var marker_a37af9fa0b5e49f78edaa4d16353440a = L.marker(
+                [8.78916, -82.49472],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_8d01785cbbbc4de78ce6ae5f0324f915 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aba1a3768a8d441eb47afcf0c1017b75 = $(`<div id="html_aba1a3768a8d441eb47afcf0c1017b75" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Eastern slope of Volcán de Chiriquí (Barú), WNW of Boquete. Partially cleared slopes with patches of original oak forest and mostly secondary growth <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 1975-11-19 00:00:00+00:00 <strong>Recolectores:</strong> Gerrit Davidse|William G. D'Arcy <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_8d01785cbbbc4de78ce6ae5f0324f915.setContent(html_aba1a3768a8d441eb47afcf0c1017b75);
+        
+
+        marker_a37af9fa0b5e49f78edaa4d16353440a.bindPopup(popup_8d01785cbbbc4de78ce6ae5f0324f915)
+        ;
+
+        
+    
+    
+            var marker_abce891375d84d0fbd72f72c5ef12f5a = L.marker(
+                [8.833333, -82.533333],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_27c40d5746b2466f888f0f0432c4c197 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d027d4a12c34206a965fc909a967fd4 = $(`<div id="html_8d027d4a12c34206a965fc909a967fd4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 3.7 km E of bridge NE of Cerro Punta on road through Bajo Grande. <strong>Elevación:</strong> 2325.0 m  <strong>Fecha:</strong> 1980-11-09 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> Jon Ricketson (MO)</div>`)[0];
+            popup_27c40d5746b2466f888f0f0432c4c197.setContent(html_8d027d4a12c34206a965fc909a967fd4);
+        
+
+        marker_abce891375d84d0fbd72f72c5ef12f5a.bindPopup(popup_27c40d5746b2466f888f0f0432c4c197)
+        ;
+
+        
+    
+    
+            var marker_0a1abfba973c468691a66880b81e1206 = L.marker(
+                [9.5167, -83.5833],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_5b4d82ae107b43688e6dbf03fddd02f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2767c8edf00845498546d7b271853775 = $(`<div id="html_2767c8edf00845498546d7b271853775" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Parque Internaciónal La Amistad, Cordillera de Talamanca, Sobre Herradura, que sube a fila Uran" <strong>Elevación:</strong> 2700.0 m  <strong>Fecha:</strong> 1995-04-06 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_5b4d82ae107b43688e6dbf03fddd02f7.setContent(html_2767c8edf00845498546d7b271853775);
+        
+
+        marker_0a1abfba973c468691a66880b81e1206.bindPopup(popup_5b4d82ae107b43688e6dbf03fddd02f7)
+        ;
+
+        
+    
+    
+            var marker_b7d48001035949ffa92b5e8844c97026 = L.marker(
+                [9.5333, -83.5833],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_4c582e968fdc4ea19b85a08fa1b30f93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_013597274c5a41b7b3809e557990ceec = $(`<div id="html_013597274c5a41b7b3809e557990ceec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Parque Internaciónal La Amistad, Cordillera de Talamanca, Sobre el sendero Herradura-Uran" <strong>Elevación:</strong> 2700.0 m  <strong>Fecha:</strong> 1995-04-07 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_4c582e968fdc4ea19b85a08fa1b30f93.setContent(html_013597274c5a41b7b3809e557990ceec);
+        
+
+        marker_b7d48001035949ffa92b5e8844c97026.bindPopup(popup_4c582e968fdc4ea19b85a08fa1b30f93)
+        ;
+
+        
+    
+    
+            var marker_a1b7b7c915004978a3488c9ad5c5d34b = L.marker(
+                [9.5333, -83.5833],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_b75a8532b68f48daacf17243858f1f4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38695b64f0944941bdd4e5428cb72719 = $(`<div id="html_38695b64f0944941bdd4e5428cb72719" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Parque Internaciónal La Amistad, Cordillera de Talamanca, Sobre el sendero Herradura-Uran" <strong>Elevación:</strong> 2700.0 m  <strong>Fecha:</strong> 1995-04-07 00:00:00+00:00 <strong>Recolectores:</strong> Reinaldo Aguilar <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_b75a8532b68f48daacf17243858f1f4a.setContent(html_38695b64f0944941bdd4e5428cb72719);
+        
+
+        marker_a1b7b7c915004978a3488c9ad5c5d34b.bindPopup(popup_b75a8532b68f48daacf17243858f1f4a)
+        ;
+
+        
+    
+    
+            var marker_69bc3408f5104c879fe6e8d5c23e0ecb = L.marker(
+                [8.933333, -82.801389],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_fe378d4fe9274e23b644cf0dcbbe1bf3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92f011015f394f0ba362dae047afc807 = $(`<div id="html_92f011015f394f0ba362dae047afc807" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora Las Tablas, Cordillera de Talamanca, Estación Biológica Las Alturas <strong>Elevación:</strong> 1540.0 m  <strong>Fecha:</strong> 1996-04-22 00:00:00+00:00 <strong>Recolectores:</strong> Enia Navarro V. <strong>Identificadores:</strong> "Jon Ricketson (MO),"</div>`)[0];
+            popup_fe378d4fe9274e23b644cf0dcbbe1bf3.setContent(html_92f011015f394f0ba362dae047afc807);
+        
+
+        marker_69bc3408f5104c879fe6e8d5c23e0ecb.bindPopup(popup_fe378d4fe9274e23b644cf0dcbbe1bf3)
+        ;
+
+        
+    
+    
+            var marker_c7a1de85883f4745a5ce9dda9c9d1d31 = L.marker(
+                [8.5714, -79.9106],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_f7c9dcec5bc142aeae4ccae513930f25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2bdb8b958e44ed9a8ac17fe095a2aae = $(`<div id="html_d2bdb8b958e44ed9a8ac17fe095a2aae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-11-19 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse & J. D'Arcy <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f7c9dcec5bc142aeae4ccae513930f25.setContent(html_d2bdb8b958e44ed9a8ac17fe095a2aae);
+        
+
+        marker_c7a1de85883f4745a5ce9dda9c9d1d31.bindPopup(popup_f7c9dcec5bc142aeae4ccae513930f25)
+        ;
+
+        
+    
+    
+            var marker_1e2b96c5a5cf48f09e54a2de2457d98d = L.marker(
+                [9.6667, -84.0],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_094e7a993ccc4f0887e42a6b625b6462 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d6548175c63452d82c562e3f9ddc6f3 = $(`<div id="html_6d6548175c63452d82c562e3f9ddc6f3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1999-03-04 00:00:00+00:00 <strong>Recolectores:</strong> A. Molina R. <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_094e7a993ccc4f0887e42a6b625b6462.setContent(html_6d6548175c63452d82c562e3f9ddc6f3);
+        
+
+        marker_1e2b96c5a5cf48f09e54a2de2457d98d.bindPopup(popup_094e7a993ccc4f0887e42a6b625b6462)
+        ;
+
+        
+    
+    
+            var marker_3c08bb1878b6464da2af8e73b0d8ba8a = L.marker(
+                [8.5714, -79.9106],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_038321e84fab4472bb784474368bb2c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af9d8b6f40934932a228939ea7f11df4 = $(`<div id="html_af9d8b6f40934932a228939ea7f11df4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1974-12-18 00:00:00+00:00 <strong>Recolectores:</strong> S. A. Mori & et al. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_038321e84fab4472bb784474368bb2c7.setContent(html_af9d8b6f40934932a228939ea7f11df4);
+        
+
+        marker_3c08bb1878b6464da2af8e73b0d8ba8a.bindPopup(popup_038321e84fab4472bb784474368bb2c7)
+        ;
+
+        
+    
+    
+            var marker_e49a245f6ad44711aebb188bdd8889b2 = L.marker(
+                [9.6667, -84.0],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_b87b33a356384669a9a46424edc6d224 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4667f0cd317416aadc1b7a17a36ea91 = $(`<div id="html_c4667f0cd317416aadc1b7a17a36ea91" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1979-08-26 00:00:00+00:00 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_b87b33a356384669a9a46424edc6d224.setContent(html_c4667f0cd317416aadc1b7a17a36ea91);
+        
+
+        marker_e49a245f6ad44711aebb188bdd8889b2.bindPopup(popup_b87b33a356384669a9a46424edc6d224)
+        ;
+
+        
+    
+    
+            var marker_d61dd25ca3c74984bf346a11869f4830 = L.marker(
+                [8.5714, -79.9106],
+                {}
+            ).addTo(marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd);
+        
+    
+        var popup_00524b678f474b1294ac3bfd29be3849 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b663cabfe394715804b9191af792948 = $(`<div id="html_6b663cabfe394715804b9191af792948" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-11-21 00:00:00+00:00 <strong>Recolectores:</strong> G. Davidse & J. D'Arcy <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_00524b678f474b1294ac3bfd29be3849.setContent(html_6b663cabfe394715804b9191af792948);
+        
+
+        marker_d61dd25ca3c74984bf346a11869f4830.bindPopup(popup_00524b678f474b1294ac3bfd29be3849)
+        ;
+
+        
+    
+    
+            var layer_control_20f52df5c4ab4ddfa2f57b8e43287660 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c481180472db47e48fe1cbfe48bbad54,
+                    "ESRI World Imagery" : tile_layer_1cb20d4be3a044369ba259d8a9b47f1d,
+                },
+                overlays :  {
+                    "macro_element_5d1d75b7dad94cc2903d459f1aea50fd" : marker_cluster_5d1d75b7dad94cc2903d459f1aea50fd,
+                },
+            };
+            L.control.layers(
+                layer_control_20f52df5c4ab4ddfa2f57b8e43287660.base_layers,
+                layer_control_20f52df5c4ab4ddfa2f57b8e43287660.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_732f31d0be3746f98d8eb56ad26eac26);
+            tile_layer_1cb20d4be3a044369ba259d8a9b47f1d.remove();
+        
+</script>

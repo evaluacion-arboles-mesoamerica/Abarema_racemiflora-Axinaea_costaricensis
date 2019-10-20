@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bb3e1be6e42e4eed8894ef3d7d090183 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bb3e1be6e42e4eed8894ef3d7d090183" ></div>
+        
+</body>
+<script>    
+    
+            var map_bb3e1be6e42e4eed8894ef3d7d090183 = L.map(
+                "map_bb3e1be6e42e4eed8894ef3d7d090183",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_bb3e1be6e42e4eed8894ef3d7d090183);
+
+            
+
+        
+    
+            var tile_layer_4b3602a834c147d0a92e46b430fd233d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bb3e1be6e42e4eed8894ef3d7d090183);
+        
+    
+            var tile_layer_d83d45e150654e298a65701fe4930471 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bb3e1be6e42e4eed8894ef3d7d090183);
+        
+    
+            var marker_cluster_8acfb128ad364d5d929b171104f6c84f = L.markerClusterGroup(
+                {}
+            );
+            map_bb3e1be6e42e4eed8894ef3d7d090183.addLayer(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+            var marker_91016649d1494c5282201fdaa993fb7d = L.marker(
+                [10.55, -85.28],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_3ec57ab7bbd04140b832fe1709b46160 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24adafa47a10493a9a36b2fcd5f6e767 = $(`<div id="html_24adafa47a10493a9a36b2fcd5f6e767" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guanacaste, Liberia, Estacion Cacao: bosque primario y secundario. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-08-02 00:00:00+00:00 <strong>Recolectores:</strong> Azofeifa Zuniga, Alejandro 32 <strong>Identificadores:</strong> Quirico Jimenez</div>`)[0];
+            popup_3ec57ab7bbd04140b832fe1709b46160.setContent(html_24adafa47a10493a9a36b2fcd5f6e767);
+        
+
+        marker_91016649d1494c5282201fdaa993fb7d.bindPopup(popup_3ec57ab7bbd04140b832fe1709b46160)
+        ;
+
+        
+    
+    
+            var marker_965d1fe12a0b425b9e00d848889a6ee4 = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_6d422aa82ac44d5295c3b53b3fc9301e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d153b8eaed8c48679e207ff3473f80da = $(`<div id="html_d153b8eaed8c48679e207ff3473f80da" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, subcanopy tree in forest understory in lower community <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1981-03-01 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> W.C. Burger, 2000 (F)</div>`)[0];
+            popup_6d422aa82ac44d5295c3b53b3fc9301e.setContent(html_d153b8eaed8c48679e207ff3473f80da);
+        
+
+        marker_965d1fe12a0b425b9e00d848889a6ee4.bindPopup(popup_6d422aa82ac44d5295c3b53b3fc9301e)
+        ;
+
+        
+    
+    
+            var marker_0b451f2160fd44fabc7c0d3e75b0b046 = L.marker(
+                [10.15, -83.92],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_f57332e2c9df438c8aa0756fcff1e9b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b94a97edbb243de95710abe718a487e = $(`<div id="html_3b94a97edbb243de95710abe718a487e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Quebrada Molinete. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1984-02-13 00:00:00+00:00 <strong>Recolectores:</strong> Luis Diego Gómez P.|Gerardo Herrera Ch.|Isidro A. Chacón G. <strong>Identificadores:</strong> W. Burger</div>`)[0];
+            popup_f57332e2c9df438c8aa0756fcff1e9b2.setContent(html_3b94a97edbb243de95710abe718a487e);
+        
+
+        marker_0b451f2160fd44fabc7c0d3e75b0b046.bindPopup(popup_f57332e2c9df438c8aa0756fcff1e9b2)
+        ;
+
+        
+    
+    
+            var marker_196732cfda7d4a95a206bacb28ed383b = L.marker(
+                [10.92, -85.47],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_aae5918ebdcf4374af8940ca695bbab9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f65c792da5540f3a10511e37c5d8267 = $(`<div id="html_6f65c792da5540f3a10511e37c5d8267" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación Cacao. Parque Nacional Guanacaste. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1990-11-21 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza <strong>Identificadores:</strong> Wm. Burger (F)</div>`)[0];
+            popup_aae5918ebdcf4374af8940ca695bbab9.setContent(html_6f65c792da5540f3a10511e37c5d8267);
+        
+
+        marker_196732cfda7d4a95a206bacb28ed383b.bindPopup(popup_aae5918ebdcf4374af8940ca695bbab9)
+        ;
+
+        
+    
+    
+            var marker_14610b0d0afb418b9cf9534dd7a8a519 = L.marker(
+                [9.82, -84.1],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_a15a3fa2a1d04cc0ba05b61fd250e2d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_955a9d19da984a349777dbae578ebc9b = $(`<div id="html_955a9d19da984a349777dbae578ebc9b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros Escazú-La Carpintera. Tarbaca; cerca de Quebrada Honda. <strong>Elevación:</strong> 1840.0 m  <strong>Fecha:</strong> 1993-10-01 00:00:00+00:00 <strong>Recolectores:</strong> Víctor H. Ramírez|J. F. Morales <strong>Identificadores:</strong> Quírico Jiménez (INB)</div>`)[0];
+            popup_a15a3fa2a1d04cc0ba05b61fd250e2d9.setContent(html_955a9d19da984a349777dbae578ebc9b);
+        
+
+        marker_14610b0d0afb418b9cf9534dd7a8a519.bindPopup(popup_a15a3fa2a1d04cc0ba05b61fd250e2d9)
+        ;
+
+        
+    
+    
+            var marker_078bd38b33af49f6ad1aa81c3da8ddf0 = L.marker(
+                [10.61, -84.99],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_f0ee5470ab2749d394d2dca568a28dc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff4a9a40793e48819ac054dbb14303f5 = $(`<div id="html_ff4a9a40793e48819ac054dbb14303f5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Tenorio; Cordillera de Tilarán. Tierras Morenas; Río San Lorenzo. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1993-03-23 00:00:00+00:00 <strong>Recolectores:</strong> Gladys Rodríguez|Quírico Jiménez <strong>Identificadores:</strong> Q. Jiménez (INB), 6 Ene</div>`)[0];
+            popup_f0ee5470ab2749d394d2dca568a28dc3.setContent(html_ff4a9a40793e48819ac054dbb14303f5);
+        
+
+        marker_078bd38b33af49f6ad1aa81c3da8ddf0.bindPopup(popup_f0ee5470ab2749d394d2dca568a28dc3)
+        ;
+
+        
+    
+    
+            var marker_1635caf2d54b4e4e86d359fd9a0a4744 = L.marker(
+                [10.72, -85.05],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_27d10c0a2b98413d909dfae1166d48a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca0c7810a9284d78a0ebfef8e0232163 = $(`<div id="html_ca0c7810a9284d78a0ebfef8e0232163" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Guanacaste, Bijagua, Finca de Werner Hagnauer <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1994-08-12 00:00:00+00:00 <strong>Recolectores:</strong> José Á. González R.|Luis A. González|G. Chaves|Estudiantes del Curso Dendrología <strong>Identificadores:</strong> W. Jiménez, 6 ENE</div>`)[0];
+            popup_27d10c0a2b98413d909dfae1166d48a8.setContent(html_ca0c7810a9284d78a0ebfef8e0232163);
+        
+
+        marker_1635caf2d54b4e4e86d359fd9a0a4744.bindPopup(popup_27d10c0a2b98413d909dfae1166d48a8)
+        ;
+
+        
+    
+    
+            var marker_b108cea6acc8411ca89573f9ac5fb525 = L.marker(
+                [10.3, -84.61],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_8b73297aba8f46bbbab73a95699d3c65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff6bbb94ad334e70abbafed693bb7588 = $(`<div id="html_ff6bbb94ad334e70abbafed693bb7588" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque Eterno De Los Niños, Llanura de San Carlos, 4 km SW of La Tigra de San Carlos, valley of Río La Esperanza, finca Araya Ledezma <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1992-07-01 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski|G. Céspedes|J. Chacón <strong>Identificadores:</strong> Quírico Jiménez (INB)</div>`)[0];
+            popup_8b73297aba8f46bbbab73a95699d3c65.setContent(html_ff6bbb94ad334e70abbafed693bb7588);
+        
+
+        marker_b108cea6acc8411ca89573f9ac5fb525.bindPopup(popup_8b73297aba8f46bbbab73a95699d3c65)
+        ;
+
+        
+    
+    
+            var marker_7136efcb29ee4fadb4519640f2fbe207 = L.marker(
+                [10.83, -85.26],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_90c0e172cdea4d558f1ff645791d5175 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3c04d3cce584db89531a32eafcea618 = $(`<div id="html_b3c04d3cce584db89531a32eafcea618" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colonia Libertad 2 Km al Noreste, Cuenca del Río Caño Negro <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1988-05-05 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> Wm. Burger (F)</div>`)[0];
+            popup_90c0e172cdea4d558f1ff645791d5175.setContent(html_b3c04d3cce584db89531a32eafcea618);
+        
+
+        marker_7136efcb29ee4fadb4519640f2fbe207.bindPopup(popup_90c0e172cdea4d558f1ff645791d5175)
+        ;
+
+        
+    
+    
+            var marker_8ca28e989f7740b19db43c3f0602fec9 = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_217e8580e2d2410ca405c4c50e8a6dbf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8600052f6923487eb5111ee60364d209 = $(`<div id="html_8600052f6923487eb5111ee60364d209" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde community, Stuckey farm.  Stuckey farm. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1989-06-28 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> Wm. Burger (F)</div>`)[0];
+            popup_217e8580e2d2410ca405c4c50e8a6dbf.setContent(html_8600052f6923487eb5111ee60364d209);
+        
+
+        marker_8ca28e989f7740b19db43c3f0602fec9.bindPopup(popup_217e8580e2d2410ca405c4c50e8a6dbf)
+        ;
+
+        
+    
+    
+            var marker_1a8548c18e814cf494b1367f60f8e408 = L.marker(
+                [10.366667, -84.866667],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_af24718c322441e788e32cd0daffbc76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_027c1f489aff46e49574eed6d99e6876 = $(`<div id="html_027c1f489aff46e49574eed6d99e6876" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Chiquito de Tilarán, Río Negro valley, Atlantic slope, lower montane wet forest. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1986-07-30 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> W. Burger</div>`)[0];
+            popup_af24718c322441e788e32cd0daffbc76.setContent(html_027c1f489aff46e49574eed6d99e6876);
+        
+
+        marker_1a8548c18e814cf494b1367f60f8e408.bindPopup(popup_af24718c322441e788e32cd0daffbc76)
+        ;
+
+        
+    
+    
+            var marker_138f28e072ec4241b156b35714b20a14 = L.marker(
+                [10.287778, -84.801389],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_d387a73e4a4b4406b82c879f58940a48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80f15ee4276f458987189de1d9dd9e60 = $(`<div id="html_80f15ee4276f458987189de1d9dd9e60" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis valley. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1985-09-29 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> Susan O. Grose, VI/</div>`)[0];
+            popup_d387a73e4a4b4406b82c879f58940a48.setContent(html_80f15ee4276f458987189de1d9dd9e60);
+        
+
+        marker_138f28e072ec4241b156b35714b20a14.bindPopup(popup_d387a73e4a4b4406b82c879f58940a48)
+        ;
+
+        
+    
+    
+            var marker_0141b29e2645442088cbc5c6a416c092 = L.marker(
+                [10.33, -84.68],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_d100839a9a00412b8609f8313d025388 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_529fdc466ba241828ec54ea1e254b10f = $(`<div id="html_529fdc466ba241828ec54ea1e254b10f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas, Laguna y Quebrada Celeste. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1989-11-04 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> Quírico Jiménez (INB)</div>`)[0];
+            popup_d100839a9a00412b8609f8313d025388.setContent(html_529fdc466ba241828ec54ea1e254b10f);
+        
+
+        marker_0141b29e2645442088cbc5c6a416c092.bindPopup(popup_d100839a9a00412b8609f8313d025388)
+        ;
+
+        
+    
+    
+            var marker_25f41d3cbc594e5ab9ffcdb165594067 = L.marker(
+                [10.89, -85.48],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_578894019f56480d81e254e6b8636e31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c0b875913174b4fa1c51e5857f17202 = $(`<div id="html_0c0b875913174b4fa1c51e5857f17202" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Guanacaste Estación Cacao, bosque primario. <strong>Elevación:</strong> 1060.0 m  <strong>Fecha:</strong> 1990-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Juan C. Saborío <strong>Identificadores:</strong> Quírico Jiménez (INB)</div>`)[0];
+            popup_578894019f56480d81e254e6b8636e31.setContent(html_0c0b875913174b4fa1c51e5857f17202);
+        
+
+        marker_25f41d3cbc594e5ab9ffcdb165594067.bindPopup(popup_578894019f56480d81e254e6b8636e31)
+        ;
+
+        
+    
+    
+            var marker_b0eb4aaa737540e99b1e5d07739300a9 = L.marker(
+                [10.92, -85.47],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_0ffb50a4022c444d8599b13f2cb4f1a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1abccf7b4b01431392ac786e639eb2e3 = $(`<div id="html_1abccf7b4b01431392ac786e639eb2e3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Guanacaste Estación Mengo, Volcán Cacao; sendero entre estación y potrero Los Naranjos; bosque alto, primario. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1989-07-13 00:00:00+00:00 <strong>Recolectores:</strong> Barry E. Hammel|E. Chavarría <strong>Identificadores:</strong> Susan O. Grose, VI/</div>`)[0];
+            popup_0ffb50a4022c444d8599b13f2cb4f1a3.setContent(html_1abccf7b4b01431392ac786e639eb2e3);
+        
+
+        marker_b0eb4aaa737540e99b1e5d07739300a9.bindPopup(popup_0ffb50a4022c444d8599b13f2cb4f1a3)
+        ;
+
+        
+    
+    
+            var marker_bf7477e4fff2438aa459e7eb21d7f31e = L.marker(
+                [10.38333, -84.85],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_3bcb99ffba884f688fabc20070d3b23e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58b577fa11314760817f5e8f226f0a00 = $(`<div id="html_58b577fa11314760817f5e8f226f0a00" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Chiquito, Tilarán Arenal, Zona Monteverde <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1988-03-01 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> W. Burger</div>`)[0];
+            popup_3bcb99ffba884f688fabc20070d3b23e.setContent(html_58b577fa11314760817f5e8f226f0a00);
+        
+
+        marker_bf7477e4fff2438aa459e7eb21d7f31e.bindPopup(popup_3bcb99ffba884f688fabc20070d3b23e)
+        ;
+
+        
+    
+    
+            var marker_e7296159312e4b22b5d85fb02cd6a178 = L.marker(
+                [10.31666, -84.71666],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_a0084ff9feb3474eb4bec42f872096ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a21e7ae71ed484b97565d54349f4b89 = $(`<div id="html_5a21e7ae71ed484b97565d54349f4b89" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas, Campo 4, Río Celeste Vertiente Atlántica <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1987-09-01 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Eladio Cruz L. <strong>Identificadores:</strong> W. Burger</div>`)[0];
+            popup_a0084ff9feb3474eb4bec42f872096ca.setContent(html_5a21e7ae71ed484b97565d54349f4b89);
+        
+
+        marker_e7296159312e4b22b5d85fb02cd6a178.bindPopup(popup_a0084ff9feb3474eb4bec42f872096ca)
+        ;
+
+        
+    
+    
+            var marker_f3d9533c9259426eb44231380178993a = L.marker(
+                [10.33333, -84.71666],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_bead759ba6e448309263ca0e70e99c21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7fc11a6a16a4ac5884927838c110399 = $(`<div id="html_e7fc11a6a16a4ac5884927838c110399" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas, Bosque pluvial premontano <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1987-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> Susan O. Grose, VI/</div>`)[0];
+            popup_bead759ba6e448309263ca0e70e99c21.setContent(html_e7fc11a6a16a4ac5884927838c110399);
+        
+
+        marker_f3d9533c9259426eb44231380178993a.bindPopup(popup_bead759ba6e448309263ca0e70e99c21)
+        ;
+
+        
+    
+    
+            var marker_552e5f1d2838489fa29ca45d41eed5bc = L.marker(
+                [10.33333, -84.75],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_000aaa36005645069ea40c3153101c59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f05e64018fe444ebafdd64f5109cf4a2 = $(`<div id="html_f05e64018fe444ebafdd64f5109cf4a2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde Cloud Forest Reserve, Peñas Blancas river valley, Atlantic slope rain forest <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1986-11-29 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> Wm. Burge (F)</div>`)[0];
+            popup_000aaa36005645069ea40c3153101c59.setContent(html_f05e64018fe444ebafdd64f5109cf4a2);
+        
+
+        marker_552e5f1d2838489fa29ca45d41eed5bc.bindPopup(popup_000aaa36005645069ea40c3153101c59)
+        ;
+
+        
+    
+    
+            var marker_2e429fca8b5f4be78d7f5502859a1b11 = L.marker(
+                [10.333333, -84.833333],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_99c238ae494b4b6891480e6429662092 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b6ac029a6764de2a98d8104ec1a5a5e = $(`<div id="html_7b6ac029a6764de2a98d8104ec1a5a5e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde Reserve and upper San Luis valley below Monteverde; Pacific slope. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1986-09-11 00:00:00+00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C.|Michelle Powell <strong>Identificadores:</strong> Wm. Burger (F)</div>`)[0];
+            popup_99c238ae494b4b6891480e6429662092.setContent(html_7b6ac029a6764de2a98d8104ec1a5a5e);
+        
+
+        marker_2e429fca8b5f4be78d7f5502859a1b11.bindPopup(popup_99c238ae494b4b6891480e6429662092)
+        ;
+
+        
+    
+    
+            var marker_161bac3daf314018a636b2f923bdf6ca = L.marker(
+                [10.71, -85.01],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_c7dd97abe9e34e37b13524e6db539cc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1688f09543d04043b7c66a9a50d263a5 = $(`<div id="html_1688f09543d04043b7c66a9a50d263a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bijagua El Pilón. Camino El Pilón-Bijagua (camino de Arg�ello) subiendo hasta la toma de agua de "AyA" en ladera del Cerro Montezuma <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1988-07-17 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> Susan O. Grose, VI/</div>`)[0];
+            popup_c7dd97abe9e34e37b13524e6db539cc2.setContent(html_1688f09543d04043b7c66a9a50d263a5);
+        
+
+        marker_161bac3daf314018a636b2f923bdf6ca.bindPopup(popup_c7dd97abe9e34e37b13524e6db539cc2)
+        ;
+
+        
+    
+    
+            var marker_b2d23770b6a74e2eba2e85871126e248 = L.marker(
+                [9.82, -84.1],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_2428caba7d754785900545307d155275 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1089fdc60554ad79ea9fcedbc91410a = $(`<div id="html_d1089fdc60554ad79ea9fcedbc91410a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. Cerros de Escazú. Bosque primario en la cuenca del río Tarbaca. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1991-07-15 00:00:00+00:00 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> Quírico Jiménez (INB)</div>`)[0];
+            popup_2428caba7d754785900545307d155275.setContent(html_d1089fdc60554ad79ea9fcedbc91410a);
+        
+
+        marker_b2d23770b6a74e2eba2e85871126e248.bindPopup(popup_2428caba7d754785900545307d155275)
+        ;
+
+        
+    
+    
+            var marker_14e52afdfdf64de8b53afbbe323607af = L.marker(
+                [10.9275, -85.47],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_f9ccdedb557441e8b1a0b08e2b1af6c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fad3a9a3ba3d4861817c0a48dabba6db = $(`<div id="html_fad3a9a3ba3d4861817c0a48dabba6db" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Canton de Liberia P.N. Guanacaste. Cordilelra de Guanacaste. Estacion Cacao; bosque primario y Secudnario. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-02-08 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f9ccdedb557441e8b1a0b08e2b1af6c2.setContent(html_fad3a9a3ba3d4861817c0a48dabba6db);
+        
+
+        marker_14e52afdfdf64de8b53afbbe323607af.bindPopup(popup_f9ccdedb557441e8b1a0b08e2b1af6c2)
+        ;
+
+        
+    
+    
+            var marker_77fdea27a8124d97b6c2f678a4b01164 = L.marker(
+                [10.92861, -85.46944],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_1c2d7b3075ea4745b22b8cd3e87affea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1609919a0a04b81a21e86e603551a00 = $(`<div id="html_c1609919a0a04b81a21e86e603551a00" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Canton de lIberia. P.N. Guanacaste. Cordilelra de Guanacaste. Estacion Cacao; Cerro Cacao. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-02-08 00:00:00+00:00 <strong>Recolectores:</strong> Francisco Alvarado|IV Curso de Parataxónomos <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1c2d7b3075ea4745b22b8cd3e87affea.setContent(html_c1609919a0a04b81a21e86e603551a00);
+        
+
+        marker_77fdea27a8124d97b6c2f678a4b01164.bindPopup(popup_1c2d7b3075ea4745b22b8cd3e87affea)
+        ;
+
+        
+    
+    
+            var marker_6d031ae16bc54e449190e4c8cb8f7780 = L.marker(
+                [10.930589999999999, -85.466227],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_cd1346a41b8a48cfbd8a6a7479f11870 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_937d217299954b54a7ca0f52435df395 = $(`<div id="html_937d217299954b54a7ca0f52435df395" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Derrumbe <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 2014-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Jie Cai ; Yu Min Shui ; G. Lianming ; M. Pengfei ; Roberto Espinoza ; Enia Navarro <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_cd1346a41b8a48cfbd8a6a7479f11870.setContent(html_937d217299954b54a7ca0f52435df395);
+        
+
+        marker_6d031ae16bc54e449190e4c8cb8f7780.bindPopup(popup_cd1346a41b8a48cfbd8a6a7479f11870)
+        ;
+
+        
+    
+    
+            var marker_409480953a2e4aa28bfe925118677e58 = L.marker(
+                [10.930589999999999, -85.466227],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_e05f0380c91947ed9287afe786a93e02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72622ec3f23b4d1da5f21a478a55443e = $(`<div id="html_72622ec3f23b4d1da5f21a478a55443e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Derrumbe <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 2014-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Jie Cai ; Yu Min Shui ; G. Lianming ; M. Pengfei ; Roberto Espinoza ; Enia Navarro <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_e05f0380c91947ed9287afe786a93e02.setContent(html_72622ec3f23b4d1da5f21a478a55443e);
+        
+
+        marker_409480953a2e4aa28bfe925118677e58.bindPopup(popup_e05f0380c91947ed9287afe786a93e02)
+        ;
+
+        
+    
+    
+            var marker_83ce3eceeecc440eb5e6ce250137d0ff = L.marker(
+                [10.930589999999999, -85.466227],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_88bfb9e3453e4e7b8c290fb366b78f61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6096300115db4089b4504906fb01188f = $(`<div id="html_6096300115db4089b4504906fb01188f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Derrumbe <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 2014-08-08 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Jie Cai ; Yu Min Shui ; G. Lianming ; M. Pengfei ; Roberto Espinoza ; Enia Navarro <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_88bfb9e3453e4e7b8c290fb366b78f61.setContent(html_6096300115db4089b4504906fb01188f);
+        
+
+        marker_83ce3eceeecc440eb5e6ce250137d0ff.bindPopup(popup_88bfb9e3453e4e7b8c290fb366b78f61)
+        ;
+
+        
+    
+    
+            var marker_618e794bb76849cf9ec561a301ff534a = L.marker(
+                [10.715194, -84.98702800000001],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_af70bf2d62f34774ae97bad31bc4f071 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f05b831a103b4d8e9d14da4e954c5dec = $(`<div id="html_f05b831a103b4d8e9d14da4e954c5dec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alajuela. Área de Conservación Arenal-Tempisque, P. N. Tenorio. Estación El Pilón, sendero a la catarata, mirador y teñideros. <strong>Elevación:</strong> 703.0 m  <strong>Fecha:</strong> 2012-06-21 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Alejandro Azofeifa Zúñiga ; Soo-Yong Kim <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_af70bf2d62f34774ae97bad31bc4f071.setContent(html_f05b831a103b4d8e9d14da4e954c5dec);
+        
+
+        marker_618e794bb76849cf9ec561a301ff534a.bindPopup(popup_af70bf2d62f34774ae97bad31bc4f071)
+        ;
+
+        
+    
+    
+            var marker_6a1cc5a912f546809685bd60d07bf1dc = L.marker(
+                [10.715194, -84.98702800000001],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_0c47667b9c8947a3b0e726cec3cb349b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4f2bcb9960f41069411d5acbd4543a7 = $(`<div id="html_c4f2bcb9960f41069411d5acbd4543a7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alajuela. Área de Conservación Arenal-Tempisque, P. N. Tenorio. Estación El Pilón, sendero a la catarata, mirador y teñideros. <strong>Elevación:</strong> 703.0 m  <strong>Fecha:</strong> 2012-06-21 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Alejandro Azofeifa Zúñiga ; Soo-Yong Kim <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_0c47667b9c8947a3b0e726cec3cb349b.setContent(html_c4f2bcb9960f41069411d5acbd4543a7);
+        
+
+        marker_6a1cc5a912f546809685bd60d07bf1dc.bindPopup(popup_0c47667b9c8947a3b0e726cec3cb349b)
+        ;
+
+        
+    
+    
+            var marker_53f20b6af05a4c8986ab73157150735d = L.marker(
+                [10.715194, -84.98702800000001],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_70f6e4a65d4244fcaa13464130c4d491 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fce5cc79eb78473d9c9a91d07b82a830 = $(`<div id="html_fce5cc79eb78473d9c9a91d07b82a830" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alajuela. Área de Conservación Arenal-Tempisque, P. N. Tenorio. Estación El Pilón, sendero a la catarata, mirador y teñideros. <strong>Elevación:</strong> 703.0 m  <strong>Fecha:</strong> 2012-06-21 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Alejandro Azofeifa Zúñiga ; Soo-Yong Kim <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_70f6e4a65d4244fcaa13464130c4d491.setContent(html_fce5cc79eb78473d9c9a91d07b82a830);
+        
+
+        marker_53f20b6af05a4c8986ab73157150735d.bindPopup(popup_70f6e4a65d4244fcaa13464130c4d491)
+        ;
+
+        
+    
+    
+            var marker_f44cd7bb51114820978765d7a5997cfc = L.marker(
+                [10.715194, -84.98702800000001],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_aeb81a4618bc443db4f442bed04fd7c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fde94f363eef42548d09695f350c3cef = $(`<div id="html_fde94f363eef42548d09695f350c3cef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alajuela. Área de Conservación Arenal-Tempisque, P. N. Tenorio. Estación El Pilón, sendero a la catarata, mirador y teñideros. <strong>Elevación:</strong> 703.0 m  <strong>Fecha:</strong> 2012-06-21 00:00:00+00:00 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Alejandro Azofeifa Zúñiga ; Soo-Yong Kim <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_aeb81a4618bc443db4f442bed04fd7c5.setContent(html_fde94f363eef42548d09695f350c3cef);
+        
+
+        marker_f44cd7bb51114820978765d7a5997cfc.bindPopup(popup_aeb81a4618bc443db4f442bed04fd7c5)
+        ;
+
+        
+    
+    
+            var marker_6fd44f183c3c4112a2d274e50263c359 = L.marker(
+                [10.928611, -85.469445],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_af4528964404430ea8965b8a27e66422 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d7e46f51e8a4bd6ab10f5391ff40255 = $(`<div id="html_2d7e46f51e8a4bd6ab10f5391ff40255" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Cacao; Cerro Cacao. Falda sur del Volcan Cacao. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-02-10 00:00:00+00:00 <strong>Recolectores:</strong> Marcos Madrigal <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_af4528964404430ea8965b8a27e66422.setContent(html_2d7e46f51e8a4bd6ab10f5391ff40255);
+        
+
+        marker_6fd44f183c3c4112a2d274e50263c359.bindPopup(popup_af4528964404430ea8965b8a27e66422)
+        ;
+
+        
+    
+    
+            var marker_954ecb3ba6cf43ca995303f0ac5d2d29 = L.marker(
+                [10.928611, -85.469445],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_32edf1bb0ccd401291c6902a29f5edf7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ba5a5ff0ad8432097d23ca484a06551 = $(`<div id="html_1ba5a5ff0ad8432097d23ca484a06551" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Cacao; Sendero Nayo, bosque primario. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-02-09 00:00:00+00:00 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_32edf1bb0ccd401291c6902a29f5edf7.setContent(html_1ba5a5ff0ad8432097d23ca484a06551);
+        
+
+        marker_954ecb3ba6cf43ca995303f0ac5d2d29.bindPopup(popup_32edf1bb0ccd401291c6902a29f5edf7)
+        ;
+
+        
+    
+    
+            var marker_dd520c67bb3c4fb4bcb98c3a09304fa6 = L.marker(
+                [10.611111, -84.99583299999999],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_912f839c15f04d13bdbcc4f70a273f22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e7b70b038f34d458dec2500d6df3c8b = $(`<div id="html_6e7b70b038f34d458dec2500d6df3c8b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tierras Morenas; Rio San Lorenzo. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1993-03-23 00:00:00+00:00 <strong>Recolectores:</strong> Gladys Rodriguez <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_912f839c15f04d13bdbcc4f70a273f22.setContent(html_6e7b70b038f34d458dec2500d6df3c8b);
+        
+
+        marker_dd520c67bb3c4fb4bcb98c3a09304fa6.bindPopup(popup_912f839c15f04d13bdbcc4f70a273f22)
+        ;
+
+        
+    
+    
+            var marker_ff4b159626a240fcab642eb6eda3d02a = L.marker(
+                [10.928611, -85.469445],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_187dac8fc3624fdea5afe6a835ccc839 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3faaf9c4de5b4bfbb6c4023b429e6856 = $(`<div id="html_3faaf9c4de5b4bfbb6c4023b429e6856" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Cacao; Cerro Cacao. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-02-08 00:00:00+00:00 <strong>Recolectores:</strong> Francisco Alvarado <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_187dac8fc3624fdea5afe6a835ccc839.setContent(html_3faaf9c4de5b4bfbb6c4023b429e6856);
+        
+
+        marker_ff4b159626a240fcab642eb6eda3d02a.bindPopup(popup_187dac8fc3624fdea5afe6a835ccc839)
+        ;
+
+        
+    
+    
+            var marker_5e089b0853b6456787f244f12fe0eb01 = L.marker(
+                [10.9275, -85.47],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_3c9c4242672040e99ec14a6e9ba6b322 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cbc5043bbb646f99531a80076a01ebd = $(`<div id="html_2cbc5043bbb646f99531a80076a01ebd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Cacao; bosque primario y secundario. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1995-02-08 00:00:00+00:00 <strong>Recolectores:</strong> Alejandro Azofeifa Zúñiga <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_3c9c4242672040e99ec14a6e9ba6b322.setContent(html_2cbc5043bbb646f99531a80076a01ebd);
+        
+
+        marker_5e089b0853b6456787f244f12fe0eb01.bindPopup(popup_3c9c4242672040e99ec14a6e9ba6b322)
+        ;
+
+        
+    
+    
+            var marker_79f78d27671c41339baebadd417ffd46 = L.marker(
+                [10.333333, -84.68333299999999],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_650eed44ee564956bfec2f56c0868061 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23712ff370b04a3dbb52e7c5501f1c71 = $(`<div id="html_23712ff370b04a3dbb52e7c5501f1c71" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas, Laguna y Quebrada Celeste. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1989-11-04 00:00:00+00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_650eed44ee564956bfec2f56c0868061.setContent(html_23712ff370b04a3dbb52e7c5501f1c71);
+        
+
+        marker_79f78d27671c41339baebadd417ffd46.bindPopup(popup_650eed44ee564956bfec2f56c0868061)
+        ;
+
+        
+    
+    
+            var marker_f9c22cf99393485e90d1c7d70f021612 = L.marker(
+                [10.738889, -85.05555600000001],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_6f57186caab747deb19e88ce625266d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de2458386b7e4ae381f250fe0a3dd9cc = $(`<div id="html_de2458386b7e4ae381f250fe0a3dd9cc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bijagua; Finca de Werner Hagnauer. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1994-08-12 00:00:00+00:00 <strong>Recolectores:</strong> Jose González <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_6f57186caab747deb19e88ce625266d8.setContent(html_de2458386b7e4ae381f250fe0a3dd9cc);
+        
+
+        marker_f9c22cf99393485e90d1c7d70f021612.bindPopup(popup_6f57186caab747deb19e88ce625266d8)
+        ;
+
+        
+    
+    
+            var marker_72dc3bbc2b3247cc81e6a655d4081fa1 = L.marker(
+                [10.3, -84.616667],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_881f58113cae4436b9fd72c613d0315b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4d0f950023448468182fbca27d16949 = $(`<div id="html_c4d0f950023448468182fbca27d16949" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 4 km SW of La Tigra de San Carlos, valley of Rio La Esperanza, finca Araya Ledezma/ B. E. de Los Ninos. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1992-07-01 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_881f58113cae4436b9fd72c613d0315b.setContent(html_c4d0f950023448468182fbca27d16949);
+        
+
+        marker_72dc3bbc2b3247cc81e6a655d4081fa1.bindPopup(popup_881f58113cae4436b9fd72c613d0315b)
+        ;
+
+        
+    
+    
+            var marker_aff6d816c6b64df1af143d19b708de30 = L.marker(
+                [9.827778, -84.108333],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_f3e28753b77c442fa480979585159a37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26fbb477f45b47289fe82265837c8cf8 = $(`<div id="html_26fbb477f45b47289fe82265837c8cf8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tarbaca; cerca de Quebrada Honda. <strong>Elevación:</strong> 1840.0 m  <strong>Fecha:</strong> 1993-10-01 00:00:00+00:00 <strong>Recolectores:</strong> Victor Ramírez <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_f3e28753b77c442fa480979585159a37.setContent(html_26fbb477f45b47289fe82265837c8cf8);
+        
+
+        marker_aff6d816c6b64df1af143d19b708de30.bindPopup(popup_f3e28753b77c442fa480979585159a37)
+        ;
+
+        
+    
+    
+            var marker_67373a647ab04b32ba8f202300eb78c4 = L.marker(
+                [10.893889, -85.486389],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_6b268c05a2f34f2f8f36d4dc28e0f5ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8277c90c53744bedbcb513bec4fcf046 = $(`<div id="html_8277c90c53744bedbcb513bec4fcf046" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Cacao, bosque primario. <strong>Elevación:</strong> 1060.0 m  <strong>Fecha:</strong> 1990-06-02 00:00:00+00:00 <strong>Recolectores:</strong> Juan Carlos Saborio <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_6b268c05a2f34f2f8f36d4dc28e0f5ed.setContent(html_8277c90c53744bedbcb513bec4fcf046);
+        
+
+        marker_67373a647ab04b32ba8f202300eb78c4.bindPopup(popup_6b268c05a2f34f2f8f36d4dc28e0f5ed)
+        ;
+
+        
+    
+    
+            var marker_3c4277c4d7084d11b54594f9a519bbd9 = L.marker(
+                [10.503333, -84.69444399999999],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_d22334c7d1e54f6fa3b128261cabdf92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe73452aba46406e8c430b685574c82c = $(`<div id="html_fe73452aba46406e8c430b685574c82c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Fortuna. Finca El Jilguero. Sector basal y medio de volcan Chato. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1992-11-20 00:00:00+00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_d22334c7d1e54f6fa3b128261cabdf92.setContent(html_fe73452aba46406e8c430b685574c82c);
+        
+
+        marker_3c4277c4d7084d11b54594f9a519bbd9.bindPopup(popup_d22334c7d1e54f6fa3b128261cabdf92)
+        ;
+
+        
+    
+    
+            var marker_9cc77c496aa44c4ea4ffea373d3f6ac2 = L.marker(
+                [9.8275, -84.101389],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_d8593792a90e493e8b98e013bb6cda4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e684584cbf494adea67304bbd5787b7f = $(`<div id="html_e684584cbf494adea67304bbd5787b7f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque primario en la cuenca del rio Tarbaca. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1991-07-15 00:00:00+00:00 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_d8593792a90e493e8b98e013bb6cda4e.setContent(html_e684584cbf494adea67304bbd5787b7f);
+        
+
+        marker_9cc77c496aa44c4ea4ffea373d3f6ac2.bindPopup(popup_d8593792a90e493e8b98e013bb6cda4e)
+        ;
+
+        
+    
+    
+            var marker_d816ee92c13c4b6fb97853eb58212ed9 = L.marker(
+                [10.333333, -84.716667],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_b47ae197318047b09297f13f0fd51579 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccc10167060242628ccbc8009101b356 = $(`<div id="html_ccc10167060242628ccbc8009101b356" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas. Bosque pluvial premontano. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1987-02-06 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_b47ae197318047b09297f13f0fd51579.setContent(html_ccc10167060242628ccbc8009101b356);
+        
+
+        marker_d816ee92c13c4b6fb97853eb58212ed9.bindPopup(popup_b47ae197318047b09297f13f0fd51579)
+        ;
+
+        
+    
+    
+            var marker_82d3587dba5b4619bbfb08900968669d = L.marker(
+                [10.3, -84.800003],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_e8f9b5c24cf1485cb99c13f046eb6791 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_286bea787a9549069b4d3f009a26c13b = $(`<div id="html_286bea787a9549069b4d3f009a26c13b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde community, Stuckey farm. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1989-06-28 00:00:00+00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_e8f9b5c24cf1485cb99c13f046eb6791.setContent(html_286bea787a9549069b4d3f009a26c13b);
+        
+
+        marker_82d3587dba5b4619bbfb08900968669d.bindPopup(popup_e8f9b5c24cf1485cb99c13f046eb6791)
+        ;
+
+        
+    
+    
+            var marker_819eda0477184318a0d04640e7371507 = L.marker(
+                [10.929167, -85.472222],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_7e20d1d3f4cc4db485eb866c610acdc0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_038c9b3921a440cd986c3ad4e1a0aa80 = $(`<div id="html_038c9b3921a440cd986c3ad4e1a0aa80" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> bEstacion Mengo, Volcan Cacao; sendero entre estacion y potrero Los Naranjos; bosque alto, primario. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1989-07-13 00:00:00+00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_7e20d1d3f4cc4db485eb866c610acdc0.setContent(html_038c9b3921a440cd986c3ad4e1a0aa80);
+        
+
+        marker_819eda0477184318a0d04640e7371507.bindPopup(popup_7e20d1d3f4cc4db485eb866c610acdc0)
+        ;
+
+        
+    
+    
+            var marker_a0299138b63740e28a4b43ab5e965dad = L.marker(
+                [10.929167, -85.470834],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_48f10e8035f24d23a008d2835fffb097 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f89ac1b88b31471db0d66beadfe94a46 = $(`<div id="html_f89ac1b88b31471db0d66beadfe94a46" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Cacao. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1990-11-21 00:00:00+00:00 <strong>Recolectores:</strong> Roberto Espinoza <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_48f10e8035f24d23a008d2835fffb097.setContent(html_f89ac1b88b31471db0d66beadfe94a46);
+        
+
+        marker_a0299138b63740e28a4b43ab5e965dad.bindPopup(popup_48f10e8035f24d23a008d2835fffb097)
+        ;
+
+        
+    
+    
+            var marker_f440a0a45fa4483c8ea06b5f4955da7e = L.marker(
+                [10.7125, -85.0125],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_f59ebf59855a4eaab8017eb99cd35baf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4539bbde6aa34498a36bb22182d46e70 = $(`<div id="html_4539bbde6aa34498a36bb22182d46e70" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bijagua El Pilon, camino El Pilon-Bijagua (camino de Arguello) <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1988-07-17 00:00:00+00:00 <strong>Recolectores:</strong> G. Herrera C. <strong>Identificadores:</strong> W. C. Burger : Field Museum of Natural History</div>`)[0];
+            popup_f59ebf59855a4eaab8017eb99cd35baf.setContent(html_4539bbde6aa34498a36bb22182d46e70);
+        
+
+        marker_f440a0a45fa4483c8ea06b5f4955da7e.bindPopup(popup_f59ebf59855a4eaab8017eb99cd35baf)
+        ;
+
+        
+    
+    
+            var marker_d124a1f4a8f4463c968277b44eb427a1 = L.marker(
+                [10.21, -84.58],
+                {}
+            ).addTo(marker_cluster_8acfb128ad364d5d929b171104f6c84f);
+        
+    
+        var popup_b827d2a1df914b1b995f3cfb49441e8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52d164d693164f43946dca99af960859 = $(`<div id="html_52d164d693164f43946dca99af960859" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Alberto Manuel Brenes Sendero Saíno. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 2002-06-29 00:00:00+00:00 <strong>Recolectores:</strong> Blanco, Mario <strong>Identificadores:</strong> Blanco, Mario</div>`)[0];
+            popup_b827d2a1df914b1b995f3cfb49441e8c.setContent(html_52d164d693164f43946dca99af960859);
+        
+
+        marker_d124a1f4a8f4463c968277b44eb427a1.bindPopup(popup_b827d2a1df914b1b995f3cfb49441e8c)
+        ;
+
+        
+    
+    
+            var layer_control_d55992839d664042af1cbb33087f8af2 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_4b3602a834c147d0a92e46b430fd233d,
+                    "ESRI World Imagery" : tile_layer_d83d45e150654e298a65701fe4930471,
+                },
+                overlays :  {
+                    "macro_element_8acfb128ad364d5d929b171104f6c84f" : marker_cluster_8acfb128ad364d5d929b171104f6c84f,
+                },
+            };
+            L.control.layers(
+                layer_control_d55992839d664042af1cbb33087f8af2.base_layers,
+                layer_control_d55992839d664042af1cbb33087f8af2.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_bb3e1be6e42e4eed8894ef3d7d090183);
+            tile_layer_d83d45e150654e298a65701fe4930471.remove();
+        
+</script>

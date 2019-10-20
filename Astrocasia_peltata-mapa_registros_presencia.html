@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3caf54de707642679482641e79fd1370 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3caf54de707642679482641e79fd1370" ></div>
+        
+</body>
+<script>    
+    
+            var map_3caf54de707642679482641e79fd1370 = L.map(
+                "map_3caf54de707642679482641e79fd1370",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_3caf54de707642679482641e79fd1370);
+
+            
+
+        
+    
+            var tile_layer_c10940b71ffb486a825d7ba8f527c30d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+            var tile_layer_c67c1a887ae840d491813abd8414b555 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+            var circle_marker_78f889577714439d89c0772a27c40587 = L.circleMarker(
+                [23.179445, -106.42610900000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_31d345c740de4ba89dc75206df74d829 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_140d7ebf024e4d619908e6561618415c = $(`<div id="html_140d7ebf024e4d619908e6561618415c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2019-04-26 10:20:14+00:00 <strong>Recolectores:</strong> Fernando Pío León <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_31d345c740de4ba89dc75206df74d829.setContent(html_140d7ebf024e4d619908e6561618415c);
+        
+
+        circle_marker_78f889577714439d89c0772a27c40587.bindPopup(popup_31d345c740de4ba89dc75206df74d829)
+        ;
+
+        
+    
+    
+            var circle_marker_77fcb742b57a42d2848ac84ff9c3ad39 = L.circleMarker(
+                [21.306604, -106.23623500000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_c3bd8f88496e4b06879c0662788d916e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d78c8dc6a3e541aaa1ebf63035b51f69 = $(`<div id="html_d78c8dc6a3e541aaa1ebf63035b51f69" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2018-10-10 09:49:00+00:00 <strong>Recolectores:</strong> Fernando Pío León <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c3bd8f88496e4b06879c0662788d916e.setContent(html_d78c8dc6a3e541aaa1ebf63035b51f69);
+        
+
+        circle_marker_77fcb742b57a42d2848ac84ff9c3ad39.bindPopup(popup_c3bd8f88496e4b06879c0662788d916e)
+        ;
+
+        
+    
+    
+            var circle_marker_9beb850bbfd841f09c4aaef3ef5ec128 = L.circleMarker(
+                [21.317255, -106.241739],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_29c40a2a2a254a31810ae292bbf58500 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f736cba803e54485bf7048beb18647d5 = $(`<div id="html_f736cba803e54485bf7048beb18647d5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2018-10-10 14:36:00+00:00 <strong>Recolectores:</strong> Fernando Pío León <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_29c40a2a2a254a31810ae292bbf58500.setContent(html_f736cba803e54485bf7048beb18647d5);
+        
+
+        circle_marker_9beb850bbfd841f09c4aaef3ef5ec128.bindPopup(popup_29c40a2a2a254a31810ae292bbf58500)
+        ;
+
+        
+    
+    
+            var circle_marker_8b5ec6c9d48c4cd8ba499871397e920e = L.circleMarker(
+                [23.178155, -106.426372],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_ec43a0e3781c48a293b66e374ef0bc71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dad6421f0dbd445c9f09d868b6752b67 = $(`<div id="html_dad6421f0dbd445c9f09d868b6752b67" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2019-01-20 07:04:00+00:00 <strong>Recolectores:</strong> Sergio Escutia Zúñiga <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ec43a0e3781c48a293b66e374ef0bc71.setContent(html_dad6421f0dbd445c9f09d868b6752b67);
+        
+
+        circle_marker_8b5ec6c9d48c4cd8ba499871397e920e.bindPopup(popup_ec43a0e3781c48a293b66e374ef0bc71)
+        ;
+
+        
+    
+    
+            var circle_marker_76f507fa7ad342238a6cff755153aec5 = L.circleMarker(
+                [19.581, -104.49600000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_efdfe64a07554d709754e4dabc7debbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a6f17a5b50443649b381ea7bf9c7adb = $(`<div id="html_6a6f17a5b50443649b381ea7bf9c7adb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Crucero del Naranjito;  16 mi SW of Autlán, 6.5 mi below the hwy pass. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1960-10-07 00:00:00+00:00 <strong>Recolectores:</strong> Rogers McVaugh <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_efdfe64a07554d709754e4dabc7debbe.setContent(html_6a6f17a5b50443649b381ea7bf9c7adb);
+        
+
+        circle_marker_76f507fa7ad342238a6cff755153aec5.bindPopup(popup_efdfe64a07554d709754e4dabc7debbe)
+        ;
+
+        
+    
+    
+            var circle_marker_4dba436e55fa4e6dbdaf6652de7f7ed8 = L.circleMarker(
+                [19.5287, -104.98100000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_cadeecc50197412cb6385f6e84b60f8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_776b4a5816dc49ccbd8d09568ba2491a = $(`<div id="html_776b4a5816dc49ccbd8d09568ba2491a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Salatillo (Salto);  La Huerta;  Chamela, Estación de Investigación, Experimentación y Difusión <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1976-12-02 00:00:00+00:00 <strong>Recolectores:</strong> J. Arturo S. Magallanes <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_cadeecc50197412cb6385f6e84b60f8e.setContent(html_776b4a5816dc49ccbd8d09568ba2491a);
+        
+
+        circle_marker_4dba436e55fa4e6dbdaf6652de7f7ed8.bindPopup(popup_cadeecc50197412cb6385f6e84b60f8e)
+        ;
+
+        
+    
+    
+            var circle_marker_8b656758512c4d99a89d375e8fc8e99b = L.circleMarker(
+                [23.0, -102.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_523bd04dee934e51bd3e71411ae3daaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d03f3998b48a466fac820f69d1ddc19c = $(`<div id="html_d03f3998b48a466fac820f69d1ddc19c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1932-07-23 00:00:00+00:00 <strong>Recolectores:</strong> J. T. Howell <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_523bd04dee934e51bd3e71411ae3daaa.setContent(html_d03f3998b48a466fac820f69d1ddc19c);
+        
+
+        circle_marker_8b656758512c4d99a89d375e8fc8e99b.bindPopup(popup_523bd04dee934e51bd3e71411ae3daaa)
+        ;
+
+        
+    
+    
+            var circle_marker_8901bc01fa854efa87f913375c201e2b = L.circleMarker(
+                [20.3333, -103.6667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_b81fbcb661644b89b2d97752fd37d451 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69289de432ba485fbf7261b0db0de737 = $(`<div id="html_69289de432ba485fbf7261b0db0de737" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1982-11-05 00:00:00+00:00 <strong>Recolectores:</strong> E. J. Lott <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_b81fbcb661644b89b2d97752fd37d451.setContent(html_69289de432ba485fbf7261b0db0de737);
+        
+
+        circle_marker_8901bc01fa854efa87f913375c201e2b.bindPopup(popup_b81fbcb661644b89b2d97752fd37d451)
+        ;
+
+        
+    
+    
+            var circle_marker_aff7aa582d5448e5ba8f65e50cdf3f7e = L.circleMarker(
+                [23.0, -102.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_9b1efb69fcd34027af89c96e9f9fba0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04bbad9793f249d18b72b72d1be59336 = $(`<div id="html_04bbad9793f249d18b72b72d1be59336" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1897-05-03 00:00:00+00:00 <strong>Recolectores:</strong> E. W. Nelson <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9b1efb69fcd34027af89c96e9f9fba0c.setContent(html_04bbad9793f249d18b72b72d1be59336);
+        
+
+        circle_marker_aff7aa582d5448e5ba8f65e50cdf3f7e.bindPopup(popup_9b1efb69fcd34027af89c96e9f9fba0c)
+        ;
+
+        
+    
+    
+            var circle_marker_4c9c2e2c32b54b1d96b82d46deadd5a8 = L.circleMarker(
+                [20.3333, -103.6667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_6c3601c6145446daa785352984e230f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab47901e28ba4ec5a619bb9418a012c9 = $(`<div id="html_ab47901e28ba4ec5a619bb9418a012c9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1982-10-10 00:00:00+00:00 <strong>Recolectores:</strong> E. J. Lott & S. H. Bullock <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6c3601c6145446daa785352984e230f1.setContent(html_ab47901e28ba4ec5a619bb9418a012c9);
+        
+
+        circle_marker_4c9c2e2c32b54b1d96b82d46deadd5a8.bindPopup(popup_6c3601c6145446daa785352984e230f1)
+        ;
+
+        
+    
+    
+            var circle_marker_78313672f3c64209a219a566bce4c93a = L.circleMarker(
+                [23.0, -102.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_8a416880faba4d1c8d5f8a9df7391b55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c91ebe780d143b4921be27915ef4d6b = $(`<div id="html_4c91ebe780d143b4921be27915ef4d6b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1897-05-03 00:00:00+00:00 <strong>Recolectores:</strong> E. W. Nelson <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_8a416880faba4d1c8d5f8a9df7391b55.setContent(html_4c91ebe780d143b4921be27915ef4d6b);
+        
+
+        circle_marker_78313672f3c64209a219a566bce4c93a.bindPopup(popup_8a416880faba4d1c8d5f8a9df7391b55)
+        ;
+
+        
+    
+    
+            var circle_marker_fcd58ed350ee4870a8e048af5ea24db6 = L.circleMarker(
+                [19.54948150238288, -105.0281247902115],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_08d7b259acf14b919592cfb4180e25b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e24659cd32f4a10bb7d96572eda5b93 = $(`<div id="html_4e24659cd32f4a10bb7d96572eda5b93" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación de Investigación, Experimentación y Difusión Chamela, UNAM, La Huerta <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1983-02-07 00:00:00+00:00 <strong>Recolectores:</strong> J. A. Solís M. <strong>Identificadores:</strong> G. L. Webster; W. S. Armbruster</div>`)[0];
+            popup_08d7b259acf14b919592cfb4180e25b0.setContent(html_4e24659cd32f4a10bb7d96572eda5b93);
+        
+
+        circle_marker_fcd58ed350ee4870a8e048af5ea24db6.bindPopup(popup_08d7b259acf14b919592cfb4180e25b0)
+        ;
+
+        
+    
+    
+            var circle_marker_437b38969ecc4a449184620d3148a9a2 = L.circleMarker(
+                [19.5, -105.05],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_d472a4ab5b144e32915610a82c57c108 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dadfe90ed89c4aae81d331ebae8dd777 = $(`<div id="html_dadfe90ed89c4aae81d331ebae8dd777" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación de Biología Chamela, Camino Antiguo N <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1982-10-10 00:00:00+00:00 <strong>Recolectores:</strong> E. J. Lott <strong>Identificadores:</strong> G. L. Webster; W. S. Armbruster</div>`)[0];
+            popup_d472a4ab5b144e32915610a82c57c108.setContent(html_dadfe90ed89c4aae81d331ebae8dd777);
+        
+
+        circle_marker_437b38969ecc4a449184620d3148a9a2.bindPopup(popup_d472a4ab5b144e32915610a82c57c108)
+        ;
+
+        
+    
+    
+            var circle_marker_4804c8c0a32b4f0a8199eb3b6b92c134 = L.circleMarker(
+                [19.54948150238288, -105.0281247902115],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_e21dea3411fe43c9bcaf0282e8728788 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_969d302d38b345008777772e91b11f34 = $(`<div id="html_969d302d38b345008777772e91b11f34" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estación de Biología, Chamela (UNAM) <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1983-06-08 00:00:00+00:00 <strong>Recolectores:</strong> S. H. Bullock <strong>Identificadores:</strong> E. J. Lott</div>`)[0];
+            popup_e21dea3411fe43c9bcaf0282e8728788.setContent(html_969d302d38b345008777772e91b11f34);
+        
+
+        circle_marker_4804c8c0a32b4f0a8199eb3b6b92c134.bindPopup(popup_e21dea3411fe43c9bcaf0282e8728788)
+        ;
+
+        
+    
+    
+            var circle_marker_b2099418212e440cb527bb8d22225019 = L.circleMarker(
+                [19.509038537029145, -104.99204679596063],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_a2a2284a2e0e4d60bb9bc1109be97968 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02638893b72f49849fb65c5b506561c4 = $(`<div id="html_02638893b72f49849fb65c5b506561c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sobre el arroyo Colorado al E de la Estación de Biología Chamela UNAM <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1998-02-16 00:00:00+00:00 <strong>Recolectores:</strong> J. Calónico S. <strong>Identificadores:</strong> O. Téllez V.</div>`)[0];
+            popup_a2a2284a2e0e4d60bb9bc1109be97968.setContent(html_02638893b72f49849fb65c5b506561c4);
+        
+
+        circle_marker_b2099418212e440cb527bb8d22225019.bindPopup(popup_a2a2284a2e0e4d60bb9bc1109be97968)
+        ;
+
+        
+    
+    
+            var circle_marker_9e11309cc6954566ae000bff2acc63cd = L.circleMarker(
+                [21.158333, -104.275],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_5ad122d85d8e4bc3a5254bc5db63077d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5098bb313818450b9ef7f65f105f71a5 = $(`<div id="html_5098bb313818450b9ef7f65f105f71a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ISLA MA. MADRE, ANTENA DE TELECOMUNICACIONES <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1986-12-01 00:00:00+00:00 <strong>Recolectores:</strong> G. Flores F.; F. Chiang C. <strong>Identificadores:</strong> NO DISPONIBLE</div>`)[0];
+            popup_5ad122d85d8e4bc3a5254bc5db63077d.setContent(html_5098bb313818450b9ef7f65f105f71a5);
+        
+
+        circle_marker_9e11309cc6954566ae000bff2acc63cd.bindPopup(popup_5ad122d85d8e4bc3a5254bc5db63077d)
+        ;
+
+        
+    
+    
+            var circle_marker_b27eaa4327ad4010b1050c94e5ae7f49 = L.circleMarker(
+                [21.158333, -104.275],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_03f74ae238b84ef58ef5480215367bc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44fb14ba85c143c595085080e33319c3 = $(`<div id="html_44fb14ba85c143c595085080e33319c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> PARTE E DE LA ISLA MARIA MAGDALENA, RUMBO AL W DE LOS AGUAJES <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1986-11-22 00:00:00+00:00 <strong>Recolectores:</strong> G. Flores F.; F. Chiang C. <strong>Identificadores:</strong> NO DISPONIBLE</div>`)[0];
+            popup_03f74ae238b84ef58ef5480215367bc3.setContent(html_44fb14ba85c143c595085080e33319c3);
+        
+
+        circle_marker_b27eaa4327ad4010b1050c94e5ae7f49.bindPopup(popup_03f74ae238b84ef58ef5480215367bc3)
+        ;
+
+        
+    
+    
+            var circle_marker_3afab59b390847a1999edffda940828c = L.circleMarker(
+                [19.770833, -104.369444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_a8a6f72e14ba44d1b4c127543f85e5be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5db596d96fd427ab1b423f5a7d8788c = $(`<div id="html_e5db596d96fd427ab1b423f5a7d8788c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> TROPICAL FOREST IN BARRANCA 16 MILES SOUTHWEST OF AUTLAN (SEAWARD SLOPES 6.5 MILES BELOW THE HIGHWAY PASS) <strong>Elevación:</strong> 375.0 m  <strong>Fecha:</strong> 1960-10-07 00:00:00+00:00 <strong>Recolectores:</strong> R. McVaugh; et al. <strong>Identificadores:</strong> R. McVaugh</div>`)[0];
+            popup_a8a6f72e14ba44d1b4c127543f85e5be.setContent(html_e5db596d96fd427ab1b423f5a7d8788c);
+        
+
+        circle_marker_3afab59b390847a1999edffda940828c.bindPopup(popup_a8a6f72e14ba44d1b4c127543f85e5be)
+        ;
+
+        
+    
+    
+            var circle_marker_a427645128e54d2d8210f339a0710c33 = L.circleMarker(
+                [17.7, -101.525],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_bbb371c816f241eb8d40255234db26db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a250269940c47b49fdf91500a776935 = $(`<div id="html_4a250269940c47b49fdf91500a776935" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 750 M AL SW, CAMINO A LA MESA DEL MANGO <strong>Elevación:</strong> 170.0 m  <strong>Fecha:</strong> 1989-11-30 00:00:00+00:00 <strong>Recolectores:</strong> C. Gallardo H.; et al. <strong>Identificadores:</strong> J. Jiménez G.</div>`)[0];
+            popup_bbb371c816f241eb8d40255234db26db.setContent(html_4a250269940c47b49fdf91500a776935);
+        
+
+        circle_marker_a427645128e54d2d8210f339a0710c33.bindPopup(popup_bbb371c816f241eb8d40255234db26db)
+        ;
+
+        
+    
+    
+            var circle_marker_b674290b3be0411db6b2527b6d5a1923 = L.circleMarker(
+                [21.475, -106.45833300000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_72e0663bb7b0462194035b29f299101f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77ca03d04a2349158cdedb4c73cc872a = $(`<div id="html_77ca03d04a2349158cdedb4c73cc872a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Isla María Magadalena. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1981-12-05 00:00:00+00:00 <strong>Recolectores:</strong> J. C. Boyás D. <strong>Identificadores:</strong> NO DISPONIBLE</div>`)[0];
+            popup_72e0663bb7b0462194035b29f299101f.setContent(html_77ca03d04a2349158cdedb4c73cc872a);
+        
+
+        circle_marker_b674290b3be0411db6b2527b6d5a1923.bindPopup(popup_72e0663bb7b0462194035b29f299101f)
+        ;
+
+        
+    
+    
+            var circle_marker_14e936b8f52b40cbac6259ed00692300 = L.circleMarker(
+                [17.7, -101.525],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_32714d43b79f415eaa93599d2c33b036 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c623799f43b3462da92d712a2337fb44 = $(`<div id="html_c623799f43b3462da92d712a2337fb44" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Vainilla, alrededores <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 1992-07-12 00:00:00+00:00 <strong>Recolectores:</strong> C. Gallardo;  L. Lozada <strong>Identificadores:</strong> J. Jiménez</div>`)[0];
+            popup_32714d43b79f415eaa93599d2c33b036.setContent(html_c623799f43b3462da92d712a2337fb44);
+        
+
+        circle_marker_14e936b8f52b40cbac6259ed00692300.bindPopup(popup_32714d43b79f415eaa93599d2c33b036)
+        ;
+
+        
+    
+    
+            var circle_marker_48f4a83cd43848d5999640a7d232ebc9 = L.circleMarker(
+                [19.5, -105.03333300000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_9dbba85fa2484731bf479574eb9ba613 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd82877fdd124bd5a10100c3d5ebd2d7 = $(`<div id="html_bd82877fdd124bd5a10100c3d5ebd2d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Below camino Antiguo Sur, near course of Arroyo Zarco. <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 1984-10-28 00:00:00+00:00 <strong>Recolectores:</strong> Stephen H. Bullock <strong>Identificadores:</strong> S. H. Bulllock</div>`)[0];
+            popup_9dbba85fa2484731bf479574eb9ba613.setContent(html_bd82877fdd124bd5a10100c3d5ebd2d7);
+        
+
+        circle_marker_48f4a83cd43848d5999640a7d232ebc9.bindPopup(popup_9dbba85fa2484731bf479574eb9ba613)
+        ;
+
+        
+    
+    
+            var circle_marker_e4a47226ec3c42d5b1dc73bec4dd6b37 = L.circleMarker(
+                [19.5, -105.03333300000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_befc0cada62644108ab8632517acbb07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4be1578581554bcead2619996b94e911 = $(`<div id="html_4be1578581554bcead2619996b94e911" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near Arroyo Zarco along Cuenca 3 brecha. <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 1983-06-08 00:00:00+00:00 <strong>Recolectores:</strong> Stephen H. Bullock <strong>Identificadores:</strong> E. J. Lott</div>`)[0];
+            popup_befc0cada62644108ab8632517acbb07.setContent(html_4be1578581554bcead2619996b94e911);
+        
+
+        circle_marker_e4a47226ec3c42d5b1dc73bec4dd6b37.bindPopup(popup_befc0cada62644108ab8632517acbb07)
+        ;
+
+        
+    
+    
+            var circle_marker_0799ef3dc31a4163896ee72339d912cb = L.circleMarker(
+                [19.443610999999997, -105.024722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_683c927f35a84d5ea12dda87c79c1672 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7184934c3dd4c45847778b2d9f706cc = $(`<div id="html_b7184934c3dd4c45847778b2d9f706cc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fraccionamiento Pueblo Careyes, Cerca de Chamela. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1978-07-26 00:00:00+00:00 <strong>Recolectores:</strong> Alfredo Pérez-Jiménez <strong>Identificadores:</strong> Emily J. Lott</div>`)[0];
+            popup_683c927f35a84d5ea12dda87c79c1672.setContent(html_b7184934c3dd4c45847778b2d9f706cc);
+        
+
+        circle_marker_0799ef3dc31a4163896ee72339d912cb.bindPopup(popup_683c927f35a84d5ea12dda87c79c1672)
+        ;
+
+        
+    
+    
+            var circle_marker_b7dbb7027178458faf50fb6789f35bbf = L.circleMarker(
+                [19.443610999999997, -105.024722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_a683d6ce3bdd4df08030daf4f6a056ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1201b600707413dab1eebbafa3d2d0e = $(`<div id="html_d1201b600707413dab1eebbafa3d2d0e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fraccionamiento Pueblo Careyes, cerca de Chamela. <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1978-07-26 00:00:00+00:00 <strong>Recolectores:</strong> Alfredo Pérez-Jiménez <strong>Identificadores:</strong> M. J. Huft</div>`)[0];
+            popup_a683d6ce3bdd4df08030daf4f6a056ad.setContent(html_d1201b600707413dab1eebbafa3d2d0e);
+        
+
+        circle_marker_b7dbb7027178458faf50fb6789f35bbf.bindPopup(popup_a683d6ce3bdd4df08030daf4f6a056ad)
+        ;
+
+        
+    
+    
+            var circle_marker_0e6a491b18cd46db854edcb6df78d472 = L.circleMarker(
+                [19.472777999999998, -105.057778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_2663cb8c7bbe482ea0be4ea58b0341be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7ba6141ee4c480c8d0c31830f6a87ce = $(`<div id="html_d7ba6141ee4c480c8d0c31830f6a87ce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rancho el Paraiso. <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1978-07-04 00:00:00+00:00 <strong>Recolectores:</strong> J.A. Solís Magallanes <strong>Identificadores:</strong> M. J. Huft</div>`)[0];
+            popup_2663cb8c7bbe482ea0be4ea58b0341be.setContent(html_d7ba6141ee4c480c8d0c31830f6a87ce);
+        
+
+        circle_marker_0e6a491b18cd46db854edcb6df78d472.bindPopup(popup_2663cb8c7bbe482ea0be4ea58b0341be)
+        ;
+
+        
+    
+    
+            var circle_marker_3af081945cd242cf9df98741d1ac2a69 = L.circleMarker(
+                [19.516667, -105.03333300000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_1853f502562143ffb1b5b2ac4ea8f953 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15fb43f3b3ae40d994e8e6d8156cccac = $(`<div id="html_15fb43f3b3ae40d994e8e6d8156cccac" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Arroyo Colorado. Cerca de las rocas a ca 100 m del Cerro Colorado. <strong>Elevación:</strong> 35.0 m  <strong>Fecha:</strong> 1982-10-10 00:00:00+00:00 <strong>Recolectores:</strong> Stephen H. Bullock <strong>Identificadores:</strong> E. J. Lott</div>`)[0];
+            popup_1853f502562143ffb1b5b2ac4ea8f953.setContent(html_15fb43f3b3ae40d994e8e6d8156cccac);
+        
+
+        circle_marker_3af081945cd242cf9df98741d1ac2a69.bindPopup(popup_1853f502562143ffb1b5b2ac4ea8f953)
+        ;
+
+        
+    
+    
+            var circle_marker_5d3e0fb224284d64a39ff39cd25ec7bf = L.circleMarker(
+                [21.6225, -106.549444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_0830fe95df964883812544defca720dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38fbdd11a52b40aab6df285d29cb9880 = $(`<div id="html_38fbdd11a52b40aab6df285d29cb9880" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Maria Madre, Tres Marias Islands. Woods just south of Penal Colony near beach. <strong>Elevación:</strong> 80.0 m  <strong>Fecha:</strong> 1925-10-21 00:00:00+00:00 <strong>Recolectores:</strong> Roxana S. Ferris <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0830fe95df964883812544defca720dd.setContent(html_38fbdd11a52b40aab6df285d29cb9880);
+        
+
+        circle_marker_5d3e0fb224284d64a39ff39cd25ec7bf.bindPopup(popup_0830fe95df964883812544defca720dd)
+        ;
+
+        
+    
+    
+            var circle_marker_0834636e9e984bd1ad6f048d1f8cc468 = L.circleMarker(
+                [19.5, -103.05],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+        
+    
+        var popup_9cdf155c9af845089506952e31d8208b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ccd6b434e414a019f9438ee41b68515 = $(`<div id="html_7ccd6b434e414a019f9438ee41b68515" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chamela Biological Station. Dry deciduous forest. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1991-08-16 00:00:00+00:00 <strong>Recolectores:</strong> Alwyn H. Gentry|Rodolfo Dirzo|Lindsay Woodruff <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9cdf155c9af845089506952e31d8208b.setContent(html_7ccd6b434e414a019f9438ee41b68515);
+        
+
+        circle_marker_0834636e9e984bd1ad6f048d1f8cc468.bindPopup(popup_9cdf155c9af845089506952e31d8208b)
+        ;
+
+        
+    
+    
+            var layer_control_d9c4083029b84e879f5b627974cdfb4f = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c10940b71ffb486a825d7ba8f527c30d,
+                    "ESRI World Imagery" : tile_layer_c67c1a887ae840d491813abd8414b555,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_d9c4083029b84e879f5b627974cdfb4f.base_layers,
+                layer_control_d9c4083029b84e879f5b627974cdfb4f.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_3caf54de707642679482641e79fd1370);
+            tile_layer_c67c1a887ae840d491813abd8414b555.remove();
+        
+</script>
