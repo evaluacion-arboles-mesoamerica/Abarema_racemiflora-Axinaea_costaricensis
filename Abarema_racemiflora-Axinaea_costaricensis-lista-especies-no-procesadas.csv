@@ -1,0 +1,5 @@
+,inputName,species,genus,family,matchType,status,synonym,speciesKey,usageKey,rank,alternatives
+1,Abutilon purpusii,Callianthe purpusii,Callianthe,Malvaceae,EXACT,SYNONYM,True,8418086,3936341,SPECIES,NULL
+6,Aiouea chavarrianum,Aiouea chavarriana,Aiouea,Lauraceae,FUZZY,ACCEPTED,False,9695833,9695833,SPECIES,NULL
+19,Amphitecna haberi,Amphitecna haberi,Amphitecna,Bignoniaceae,EXACT,DOUBTFUL,False,7597158,7597158,SPECIES,NULL
+52,Ardisia standleyana,Ardisia copeyana,Ardisia,Primulaceae,EXACT,SYNONYM,True,5558881,5557690,SPECIES,NULL
